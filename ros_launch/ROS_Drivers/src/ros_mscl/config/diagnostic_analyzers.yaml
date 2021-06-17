@@ -1,0 +1,45 @@
+analyzers:
+  ros_mscl_node:
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: ros_mscl_node
+    analyzers:
+      general:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: general
+        remove_prefix: 'ros_mscl_node'
+        timeout: 5.0
+        expected: [
+          'ros_mscl_node: Device Model',
+          'ros_mscl_node: Status Selector',
+          'ros_mscl_node: Status Flags',
+          'ros_mscl_node: System State',
+          'ros_mscl_node: System Timer ms',
+          'ros_mscl_node: IMU Stream Enabled',
+          'ros_mscl_node: Filter Stream Enabled']
+        packet:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: packet
+          remove_prefix: 'ros_mscl_node'
+          timeout: 5.0
+          expected: [
+          'ros_mscl_node: IMU Dropped Packets',
+          'ros_mscl_node: Filter Dropped Packets']
+        port:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: port
+          remove_prefix: 'ros_mscl_node'
+          timeout: 5.0
+          expected: [
+           'ros_mscl_node: COM1 Port Bytes Written',
+           'ros_mscl_node: COM1 Port Bytes Read',
+           'ros_mscl_node: COM1 Port Write Overruns',
+           'ros_mscl_node: COM1 Port Read Overruns']
+        imu:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: imu
+          remove_prefix: 'ros_mscl_node'
+          timeout: 5.0
+          expected: [
+            'ros_mscl_node: IMU Parser Errors',
+            'ros_mscl_node: IMU Message Count',
+            'ros_mscl_node: IMU Last Message ms']

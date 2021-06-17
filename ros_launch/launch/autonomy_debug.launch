@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<launch>
+  	<arg name="use_sim_time" default="false"/>             <!-- true: use Ouster, false: use Velodyne-->
+
+  	<!-- ######################### parameter setting #############################-->
+	<arg name="use_dwa_Control" default="true"/>      <!-- true: dwa control, false: direct control-->
+    <arg name="initial_x_arg" default="0.0"/>			    <!--"-13.8"-->
+	<arg name="initial_y_arg" default="0.0"/>			    <!--"-2.9"-->
+	<arg name="initial_a_arg" default="0.0"/>			    <!--"2.1"-->
+	<arg name="using_json_or_not" default="false"/>   <!-- if false, map file specifies as below, if true map file is from AutonomyRuns-->
+	<arg name="json_from_gui_or_not" default="false"/>
+  	<arg name="use_ouster" default="true"/>             <!-- true: use Ouster, false: use Velodyne-->
+  
+  	<!-- ######################### 3D and 2D map setting #############################-->
+	<arg name="map_arg" default="soc_multi"/>     <!--  office_lvl9  ||  mbc || office_multi || nhb  soc_multi || soc_lvl1 || soc_lvl2 || soc_lvl3 --> 
+	<arg name="file_dir" default="$(env HOME)/.data/maps/$(arg map_arg)/"/>
+
+	<arg name="pcd_filename" value="$(arg file_dir)$(arg map_arg).pcd"/>
+  	<!-- ########################################################################-->
+
+  	<node pkg="joy" type="joy_node" name="joy_node">
+    	<param name="deadzone" value="0.3" />
+    	<param name="autorepeat_rate" value="0.0" />
+ 	 </node>
+
+	<node pkg="teleop_twist_joy" name="teleop_twist_joy" type="teleop_node" output="screen">
+		<param name= "scale_linear"  value = "0.8"/>
+		<param name= "scale_angular" value = "0.6"/>
+		<param name= "scale_linear_lateral" value = "0.5"/>
+		<param name= "enable_turbo_button" value = "7"/>
+		<param name= "scale_linear_turbo" value = "1.5"/>
+		<param name= "scale_angular_turbo" value = "0.9"/>
+	</node>
+  
+  	<node pkg="tf" type="static_transform_publisher" name="base_link_to_velodyne"
+			args="0.21 0 0.15 0 0 0 base_link velodyne 100"/>
+
+	<!-- ############################ LiDAR ####################################-->
+	<group if="$(arg use_ouster)">
+		<include file="OS1.launch" >
+		<arg name="sensor_hostname" value="os-122106000494.local"/>
+		<arg name="udp_dest" value="169.254.70.245"/>
+		<arg name="lidar_mode" value="1024x10"/>
+		</include>
+
+		<node pkg="tf" type="static_transform_publisher" name="velodyne_to_ouster"
+		args="0 0 0 0 0 0 velodyne os_sensor 100"/>
+
+	</group>
+
+	<group unless="$(arg use_ouster)">
+		<include file="$(find spot_interface)/launch/VLP16_points.launch" />
+
+	</group>
+
+  	<!-- ############################ Launch Localization node here ####################################-->
+	<node if="1" pkg="hector_trajectory_server" name="trajectory_server_qmcl" type="hector_trajectory_server">
+   		<param name="source_frame_name" value="base_link"/>
+  	</node>
+
+	<node pkg="mcl_3d" name="MCL_3D_NODE" type="mcl_3d_node" required="true" output="screen">
+		<param name="map_filename" value="$(arg pcd_filename)"/>
+		<param name="using_json" value="$(arg using_json_or_not)"/>
+		<param name="initial_x" value="$(arg initial_x_arg)"/>
+		<param name="initial_y" value="$(arg initial_y_arg)"/>
+		<param name="initial_a" value="$(arg initial_a_arg)"/>
+	</node>
+
+  	<!-- ############################ 2D map loading ####################################-->
+	<arg name="2d_map_file" default="$(arg file_dir)$(arg map_arg).yaml"/>
+  	<node if="0" name="map_server" pkg="map_server" type="map_server" args="$(arg 2d_map_file)" output="screen"/>
+
+  	<!-- ############################ 3D map loading ####################################-->
+	<node if="1" pkg="pcl_ros" name="server_map3d" type="pcd_to_pointcloud" 
+		args="$(arg pcd_filename)" output="screen" >
+		<param name="frame_id" value="map"/>
+		<param name="latch" value="true"/>
+		<param name="using_json" value="$(arg using_json_or_not)"/>
+		<param name="json_from_gui" value="$(arg json_from_gui_or_not)"/>
+    <remap from="cloud_pcd" to="cloud_map"/>
+	</node>
+
+</launch>

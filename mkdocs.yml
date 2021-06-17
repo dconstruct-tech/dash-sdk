@@ -1,0 +1,105 @@
+# Project information
+site_name: d.ASH SDK
+site_url: https://dconstruct-tech.github.io/dash-sdk/
+site_author: dConstruct Technologies Team
+
+# Repository
+repo_name: dconstruct-tech/dash-sdk
+repo_url: https://github.com/dconstruct-tech/dash-sdk/
+edit_uri: ""
+
+theme:
+  name: material
+  # name: null
+  # custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Barlow
+    code: Roboto Mono
+    logo: 'img/white.png'
+    favicon: 'img/logo.png'
+  # favicon: white.png
+  # icon:
+  #   logo: logo
+
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+  font:
+    text: Barlow
+    code: Roboto Mono
+
+# Plugins  
+plugins:
+  - search
+
+# Customization
+extra:
+  homepage: https://www.dconstruct.co/
+
+# Extensions
+markdown_extensions:
+    - attr_list
+    - admonition
+    - pymdownx.highlight:
+        linenums_style: pymdownx-inline
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        clickable_checkbox: true
+
+extra_css:
+    - 'stylesheets/extra.css'
+
+# Page tree
+nav:
+  - Home: 
+    - Introduction: index.md
+  - Setup:
+    - 1.0 Installing Desktop Dependencies: setup/desktop-dep.md
+    - 2.0 Payload Registration: setup/payload-reg.md
+    - 3.0 Setting up d.ASH VPN: setup/vpn.md
+    - 4.0 Setting up d.ASH: setup/dash.md
+  - Getting Started:
+    - 1.0 Configuring Spot: getting-started/config-spot.md
+    - 2.0 Configuring Sensors: getting-started/config-connect.md
+    - 3.0 Map Loading: getting-started/map-loading.md
+  - Autonomy Guide: 
+    - 1.0 d.ASH Autonomy Controller: dash-auto/UE-client.md 
+  - SDK Configuration:
+    - 1.0 Rest Configuration: sdk-config/rest-config.md
+    - 2.0 Robot Configuration: sdk-config/robot-config.md
+    - 3.0 Auto Configuration: sdk-config/auto-config.md

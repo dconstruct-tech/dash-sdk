@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="using_json_or_not" default="false"/>
+	<arg name="json_from_gui_or_not" default="false"/>
+    <arg name="online_or_not" default="false"/>
+
+
+<!-- ######################### 3D and 2D map setting and loading #############################-->
+    <arg name="map_arg" default="office_lvl4"/>     <!--  office_lvl9  ||  mbc || office_multi || nhb  soc_multi || soc_lvl1 || soc_lvl2 || soc_lvl3 --> 
+    <arg name="file_dir" default="$(env HOME)/.data/maps/$(arg map_arg)/"/>
+    <arg name="pcd_filename" value="$(arg file_dir)$(arg map_arg).pcd"/>
+
+    <!--  2D map loading -->
+	<arg name="2d_map_file" default="$(arg file_dir)$(arg map_arg).yaml"/>
+  	<node name="map_server" pkg="map_server" type="map_server" args="$(arg 2d_map_file)" output="screen"/>
+
+    <!--  3D map loading -->
+    <node pkg="pcl_ros" name="server_map3d" type="pcd_to_pointcloud" 
+        args="$(arg pcd_filename)" output="screen" >
+        <param name="frame_id" value="map"/>
+        <param name="latch" value="true"/>
+        <param name="using_json" value="$(arg using_json_or_not)"/>
+        <param name="json_from_gui" value="$(arg json_from_gui_or_not)"/>
+        <remap from="cloud_pcd" to="cloud_map"/>
+    </node>
+
+<!-- #######################################################################################-->   
+
+      
+  </launch>

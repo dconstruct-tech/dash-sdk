@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_mscl</name>
+  <version>1.0.0</version>
+  <description>The ros_mscl package provides a driver for the LORD/Microstrain inertial products.</description>
+  <author>Brian Bingham</author>
+  <author>Parker Hannifin Corp</author>
+  <maintainer email="sensing_support@lord.com">Parker Hannifin Corp</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/LORD-MicroStrain/ROS-MSCL</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>cmake_modules</depend>
+  <depend>diagnostic_updater</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>roslint</build_depend>
+  <build_depend>libmscl</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>diagnostic_aggregator</exec_depend>
+
+  <export>
+    <rosdoc config="rosdoc.yaml" />
+  </export>
+</package>

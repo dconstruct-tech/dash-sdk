@@ -11,7 +11,7 @@
         <meta name="author" content="dConstruct Technologies Team">
       
       
-        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk-test/getting-started/config-connect/">
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/getting-started/config-connect/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
@@ -155,7 +155,7 @@
     
       <div class="md-header__source">
         
-<a href="https://github.com/dconstruct-tech/dash-sdk-test/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -237,7 +237,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../UE-client/" class="md-tabs__link">
+      <a href="../../dash-auto/UE-client/" class="md-tabs__link">
         Autonomy Guide
       </a>
     </li>
@@ -293,7 +293,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/dconstruct-tech/dash-sdk-test/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -401,20 +401,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup/dash-server/" class="md-nav__link">
-        3.0 Setting up d.ASH Server
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../setup/vpn/" class="md-nav__link">
-        4.0 Setting up d.ASH VPN
+        3.0 Setting up d.ASH VPN
       </a>
     </li>
   
@@ -425,8 +413,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup/ros-driver/" class="md-nav__link">
-        5.0 Setting up ROS Driver
+      <a href="../../setup/dash/" class="md-nav__link">
+        4.0 Setting up d.ASH
       </a>
     </li>
   
@@ -622,8 +610,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../UE-client/" class="md-nav__link">
-        d.ASH Autonomy Controller
+      <a href="../../dash-auto/UE-client/" class="md-nav__link">
+        1.0 d.ASH Autonomy Controller
       </a>
     </li>
   
@@ -717,9 +705,6 @@
                 <h1 id="configuring-sensors">Configuring Sensors</h1>
 <h2 id="21-velodyne-driver">2.1 Velodyne Driver</h2>
 <p>The <a href="http://wiki.ros.org/velodyne_driver">Velodyne Driver</a> is a driver in the ROS package that provides basic device handling for Velodyne 3D LIDAR sensors.</p>
-<ul>
-<li>For more info, refer to this (insert link on how to set up)</li>
-</ul>
 <h3 id="211-setting-up-on-sensor">2.1.1 <ins>Setting Up on Sensor</ins></h3>
 <p>By default, the Velodyne LIDAR sensor IP address is factory set on default value <code>192.168.1.201</code>. The d.ASH SDK will assume the default Velodyne IP address.</p>
 <h3 id="212-setting-up-on-personal-computer">2.1.2 <ins>Setting Up on Personal Computer</ins></h3>
@@ -729,23 +714,21 @@
 <p>By default, the Ouster LIDAR sensor IP address is factory set on your IPv6/IPv4 link-local address. The addresses lie within the block <code>169.254.0.0</code> to <code>169.254.255.255</code>. To change the static IP address for Ouster, refer to the <a href="https://data.ouster.io/downloads/software-user-manual/software-user-manual-v2p0.pdf">Ouster Documentation</a>. It is recommended to set up your own static IP address. </p>
 <h3 id="222-setting-up-on-personal-computer">2.2.2 <ins>Setting Up on Personal Computer</ins></h3>
 <p>You'll need to configure a static IP address for your computer to use an address within the range <code>192.0.2.XXX</code> where <code>XXX</code> may be any integer from 2 to 254. For example, an appropriate static IP address for your compute could be <code>192.0.2.123</code>. </p>
-<p>User need to go into dash_sdk/ROS_Drivers folder and 
-<div class="highlight"><pre><span></span><code>cd ~/dash_SDK/ROS_Drivers/
-catkin_make #compiles the whole thing
-
-echo &quot;source /home/&lt;User&gt;/dash_SDK/ROS_Drivers/devel/setup.bash&quot; &gt;&gt; ~/.bashrc
+<p>You will need to go into the folder <code>/dash_sdk/launch</code> and execute the following command, replacing <code>&lt;PATH_TO_SDK&gt;</code> with the directory containing the <code>/dash_sdk/</code>:
+<div class="highlight"><pre><span></span><code>cd /dash_sdk/launch/
+catkin_make 
+echo &quot;source &lt;PATH_TO_SDK&gt;/dash_sdk/launch/devel/setup.bash&quot; &gt;&gt; ~/.bashrc
 source ~/.bashrc
 </code></pre></div></p>
-<p>Testing lidar sensors</p>
-<p>velodine 16
+<p>Now, let's test your lidar sensors. To test the Velodyne VLP-16 lidar sensor, run the following command:
 <div class="highlight"><pre><span></span><code>cd dash_sdk/launch
 roslaunch autonomy_velodine.launch
-</code></pre></div></p>
-<p>Ouster 32
+</code></pre></div>
+To test the Ouster OS1-32 lidar sensor, run the following command:
 <div class="highlight"><pre><span></span><code>cd dash_sdk/launch
 roslaunch autonomy_ouster.launch
-</code></pre></div></p>
-<p>to check if the ros messages is published correctly, type this in another terminal
+</code></pre></div>
+Finally, to check if the ROS messages are published correctly, in another terminal, run the following command:
 <div class="highlight"><pre><span></span><code>rostopic echo /velodyne_points
 </code></pre></div></p>
                 

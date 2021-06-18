@@ -13,7 +13,7 @@
       
         <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/setup/dash/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
     
     
@@ -82,8 +82,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-header__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -284,8 +283,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-nav__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     d.ASH SDK
@@ -448,29 +446,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#31-installing-dash-dependencies" class="md-nav__link">
-    3.1 Installing d.ASH Dependencies
+  <a href="#41-installing-dash-dependencies" class="md-nav__link">
+    4.1 Installing d.ASH Dependencies
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-setting-up-dash-server" class="md-nav__link">
-    3.2 Setting up d.ASH Server
+  <a href="#42-setting-up-dash-server" class="md-nav__link">
+    4.2 Setting up d.ASH Server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#33-setting-up-dash-service" class="md-nav__link">
-    3.3 Setting up d.ASH Service
+  <a href="#43-setting-up-dash-service" class="md-nav__link">
+    4.3 Setting up d.ASH Service
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#34-setting-up-dash-autonomy" class="md-nav__link">
-    3.4 Setting up d.ASH Autonomy
+  <a href="#44-setting-up-dash-autonomy" class="md-nav__link">
+    4.4 Setting up d.ASH Autonomy
   </a>
   
 </li>
@@ -638,6 +636,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+        2.0 Register Bot Configuration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../sdk-config/robot-config/" class="md-nav__link">
         2.0 Robot Configuration
       </a>
@@ -678,7 +688,7 @@
                 
                 <h1 id="setting-up-dash">Setting Up d.ASH</h1>
 <p>As mentioned previously, the d.ASH consists of three main components - d.ASH server, d.ASH service, and d.ASH autonomy engine. This section of the d.ASH SDK documentation provides details about setting up the d.ASH server. Information in this section includes compiling, and testing.</p>
-<h3 id="31-installing-dash-dependencies">3.1 <ins>Installing d.ASH Dependencies</ins></h3>
+<h3 id="41-installing-dash-dependencies">4.1 <ins>Installing d.ASH Dependencies</ins></h3>
 <p>To install the remaining d.ASH dependencies using pip, the following <a href="/setup/desktop-dep">desktop dependencies</a> must be set up prior:</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <a href="https://github.com/IntelRealSense/librealsense/releases/tag/v2.45.0">Intel RealSense SDK 2.0</a></li>
@@ -686,11 +696,11 @@
 <li class="task-list-item"><input type="checkbox"/> <a href="https://www.ffmpeg.org/download.html">FFmpeg and others</a></li>
 </ul>
 <p>If the above dependencies have been installed, proceed by running the following command to install the rest of the python packages:
-<div class="highlight"><pre><span></span><code>python3.7 configLibs.py
+<div class="highlight"><pre><span></span><code>python3.7 config_libs.py
 </code></pre></div>
 Please ensure you are in the <code>\dash-sdk</code> directory before running. Following the instructions prompted by the terminal to proceed with installation.</p>
 <hr />
-<h3 id="32-setting-up-dash-server">3.2 <ins>Setting up d.ASH Server</ins></h3>
+<h3 id="42-setting-up-dash-server">4.2 <ins>Setting up d.ASH Server</ins></h3>
 <p>To set up the d.ASH server, you will need to configure the d.ASH server configuration file - <code>robot_config.json</code> - located in the folder <code>\dash-sdk\configs</code>. </p>
 <div class="highlight"><pre><span></span><code>dash-sdk/
 └─ configs/
@@ -698,10 +708,10 @@ Please ensure you are in the <code>\dash-sdk</code> directory before running. Fo
     └─ ...
 </code></pre></div>
 <p>Look under the <a href="\sdk-config\robot-config">SDK Configuration</a> section to find out more about setting up <code>robot_config.json</code> for the d.ASH server. Then, to run the d.ASH server, execute the following command on your terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">python3</span><span class="mf">.7</span> <span class="o">./</span><span class="n">dash_server</span><span class="o">.</span><span class="n">py</span> <span class="n">robot_config</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight"><pre><span></span><code><span class="n">python3</span><span class="mf">.7</span> <span class="o">./</span><span class="n">dash_server</span><span class="o">.</span><span class="n">py</span> <span class="n">robot_config</span><span class="o">.</span><span class="n">json</span>
 </code></pre></div>
 <hr />
-<h3 id="33-setting-up-dash-service">3.3 <ins>Setting up d.ASH Service</ins></h3>
+<h3 id="43-setting-up-dash-service">4.3 <ins>Setting up d.ASH Service</ins></h3>
 <p>To set up the d.ASH service, you will need to configure the d.ASH service configuration file - <a href="\sdk-config\rest-config"><code>dash_service_config.json</code></a> - located in the folder <code>\dash-sdk\configs</code>. </p>
 <div class="highlight"><pre><span></span><code>dash-sdk/
 └─ configs/
@@ -727,7 +737,7 @@ Ensure that the IP address of the onboard computer is within the same subnet by 
 <div class="highlight"><pre><span></span><code><span class="o">./</span><span class="n">robot_rest</span> <span class="o">&lt;</span><span class="n">PATH_TO_SDK</span><span class="o">&gt;/</span><span class="n">configs</span><span class="o">/</span><span class="n">dash_service_config</span><span class="o">.</span><span class="n">json</span>
 </code></pre></div>
 <p>Now that your d.ASH service is running, you can use our d.ASH Pilot app. To launch the  d.ASH Pilot app, simply search for it in your Windows search bar. Now, login to the system and connect to your robot to start controlling your robot. For more information on the d.ASH Pilot, refer to the <a href="">d.ASH Pilot guide</a>.</p>
-<h3 id="34-setting-up-dash-autonomy">3.4 <ins>Setting up d.ASH Autonomy</ins></h3>
+<h3 id="44-setting-up-dash-autonomy">4.4 <ins>Setting up d.ASH Autonomy</ins></h3>
 <p>To set up the d.ASH autonomy, you will need to configure the d.ASH autonomy configuration file - <a href="/sdk-config/auto-config"><code>auto_config.json</code></a> - located in the folder <code>/dash-sdk/configs/</code>.</p>
 <div class="highlight"><pre><span></span><code>dash-sdk/
 └─ configs/
@@ -735,9 +745,10 @@ Ensure that the IP address of the onboard computer is within the same subnet by 
     └─ ...
 </code></pre></div>
 <p>Look under the <a href="\sdk-config\robot-config">SDK Configuration</a> section to find out more about setting up <code>robot_config.json</code> for the d.ASH autonomy.</p>
-<p>&lt;!-- Then, using apt-get to install  following packages to set up the ROS Driver:
-[TENTATIVE]
-<div class="highlight"><pre><span></span><code>$ sudo apt install ros-melodic-hector-trajectory-server ros-melodic-realsense2-camera ros-melodic-velodyne ros-melodic-joy ros-melodic-octomap ros-melodic-dynamic-edt-3d ros-melodic-tf2 ros-melodic-serial* libgoogle-glog-dev git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
+<!-- Then, using apt-get to install  following packages to set up the ROS Driver:
+[TENTATIVE] -->
+<!-- 
+$ sudo apt install ros-melodic-hector-trajectory-server ros-melodic-realsense2-camera ros-melodic-velodyne ros-melodic-joy ros-melodic-octomap ros-melodic-dynamic-edt-3d ros-melodic-tf2 ros-melodic-serial* libgoogle-glog-dev git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
 $ sudo add-apt-repository ppa:joseluisblancoc/gtsam-develop
 $ sudo apt update
 $ sudo apt install libgtsam-dev
@@ -745,23 +756,21 @@ $ sudo apt-key adv --keyserver keys.gnupg.net --recv-key 6F3EFCDE
 $ sudo apt update
 $ sudo apt install librealsense2*
 $ sudo apt install libudev-dev
-$ sudo apt-get install libsecret-1-dev
-``` --&gt;
+$ sudo apt-get install libsecret-1-dev -->
 
-### 3.6 ^^Testing d.ASH Autonomy Engine^^
-To test the d.ASH autonomy engine, run the executable below to start autonomy driver. Note to replace `&lt;PATH_TO_SDK&gt;` with your current working directory containing the d.ASH SDK:
+<p>To test the d.ASH autonomy engine, run the executable below to start autonomy driver. Note to replace <code>&lt;PATH_TO_SDK&gt;</code> with your current working directory containing the d.ASH SDK:</p>
+<div class="highlight"><pre><span></span><code>./dash_autonomy &lt;PATH_TO_SDK&gt;/config/auto_config.json
 </code></pre></div>
-./dash_autonomy <PATH_TO_SDK>/config/auto_config.json
-<div class="highlight"><pre><span></span><code>To find your current working directory, use `pwd`. For example, if your directory is `/home/dash-sdk`, you would run the following command to test d.ASH autonomy:
+<p>To find your current working directory, use <code>pwd</code>. For example, if your directory is <code>/home/dash-sdk</code>, you would run the following command to test d.ASH autonomy:</p>
+<div class="highlight"><pre><span></span><code>./dash_autonomy /home/dash-sdk/config/auto_config.json
 </code></pre></div>
-./dash_autonomy /home/dash-sdk/config/auto_config.json
-<div class="highlight"><pre><span></span><code>!!! tip &quot;You will need to run d.ASH server before running d.ASH service and d.ASH automony.&quot;
-
-On a seperate terminal, start a simple `roslaunch` test by running the following prompt, replacing `&lt;PATH_TO_SDK&gt;` with your current working directory containing the d.ASH SDK:
+<div class="admonition tip">
+<p class="admonition-title">You will need to run d.ASH server before running d.ASH service and d.ASH automony.</p>
+</div>
+<p>On a seperate terminal, start a simple <code>roslaunch</code> test by running the following prompt, replacing <code>&lt;PATH_TO_SDK&gt;</code> with your current working directory containing the d.ASH SDK:</p>
+<div class="highlight"><pre><span></span><code>cd \launch
+roslaunch &lt;PATH_TO_SDK&gt;\dash_sdk\launch\simple_joy.launch
 </code></pre></div>
-cd \launch
-roslaunch <PATH_TO_SDK>\dash_sdk\launch\simple_joy.launch
-```</p>
 <p>Launch files have been prepared for setup - either with the <a href="\getting-started\config-connect#21-velodyne-driver">Velodyne VLP-16</a> lidar sensor or the <a href="\getting-started\config-connect#22-ouster-driver">Ouster OS1-32</a> lidar sensor. These lauch files can be found in under the <code>\dash-sdk\launch</code> folder. You can also create your own sensor launch files for your tests.</p>
                 
               

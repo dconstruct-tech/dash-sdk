@@ -13,7 +13,7 @@
       
         <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/setup/vpn/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
     
     
@@ -82,8 +82,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-header__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -284,8 +283,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-nav__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     d.ASH SDK
@@ -436,15 +434,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#41-setting-up-vpn-onboard-computer" class="md-nav__link">
-    4.1 Setting Up VPN Onboard Computer
+  <a href="#31-setting-up-vpn-onboard-computer" class="md-nav__link">
+    3.1 Setting Up VPN Onboard Computer
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-setting-up-vpn-remote-client" class="md-nav__link">
-    4.2 Setting Up VPN Remote Client
+  <a href="#32-setting-up-vpn-remote-client" class="md-nav__link">
+    3.2 Setting Up VPN Remote Client
   </a>
   
 </li>
@@ -624,6 +622,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+        2.0 Register Bot Configuration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../sdk-config/robot-config/" class="md-nav__link">
         2.0 Robot Configuration
       </a>
@@ -663,9 +673,9 @@
                 
                 
                 <h1 id="setting-up-dash-vpn">Setting Up d.ASH VPN</h1>
-<p>Two separate login credentials are required for two seperate VPN connectiosn - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN. </p>
+<p>When setting up VPN for d.ASH, two separate login credentials are required for two seperate VPN connections - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN. </p>
 <hr />
-<h3 id="41-setting-up-vpn-onboard-computer">4.1 <ins>Setting Up VPN Onboard Computer</ins></h3>
+<h3 id="31-setting-up-vpn-onboard-computer">3.1 <ins>Setting Up VPN Onboard Computer</ins></h3>
 <p>To start, you will need to install some packages to configure automatic VPN connection on Ubuntu 18.04 LTS by executing the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">openvpn</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">openvpn</span><span class="o">-</span><span class="n">gnome</span> <span class="n">openvpn</span> <span class="n">openvpn</span><span class="o">-</span><span class="n">systemd</span><span class="o">-</span><span class="n">resolved</span> <span class="o">-</span><span class="n">y</span>
 </code></pre></div>
@@ -713,7 +723,7 @@ If successful, you should be able to see the status <code>Initialization Sequenc
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">openvpn</span><span class="o">-</span><span class="n">client</span><span class="nd">@client</span><span class="o">.</span><span class="n">service</span>
 </code></pre></div>
 <hr />
-<h3 id="42-setting-up-vpn-remote-client">4.2 <ins>Setting Up VPN Remote Client</ins></h3>
+<h3 id="32-setting-up-vpn-remote-client">3.2 <ins>Setting Up VPN Remote Client</ins></h3>
 <p>Remember to use a separate login credential from the robot onboard computer credentials as at any point in time, there can only be one active user session.</p>
 <p>Firstly, download <a href="https://openvpn.net/client-connect-vpn-for-windows/">OpenVPN Connect</a>. Once OpenVPN has been launched, click on the tab - <em>'Import from File'</em> tab and drag-and-drop the <code>client.ovpn</code> file located in <code>\dash-sdk\vpn</code>. It is important to note that the <code>client.ovpn</code> file has to be in the same directory as there certification files, namely <code>ca.crt .crt .key</code>:</p>
 <div class="highlight"><pre><span></span><code>dash-sdk/

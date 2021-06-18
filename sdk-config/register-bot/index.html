@@ -11,14 +11,14 @@
         <meta name="author" content="dConstruct Technologies Team">
       
       
-        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/getting-started/localization/">
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/sdk-config/register-bot/">
       
       <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
     
     
       
-        <title>Localization - d.ASH SDK</title>
+        <title>2.0 Register Bot Configuration - d.ASH SDK</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#localization" class="md-skip">
+        <a href="#register-payload-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Localization
+              2.0 Register Bot Configuration
             
           </span>
         </div>
@@ -218,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../config-spot/" class="md-tabs__link">
+      <a href="../../getting-started/config-spot/" class="md-tabs__link">
         Getting Started
       </a>
     </li>
@@ -244,13 +244,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../sdk-config/rest-config/" class="md-tabs__link">
+      <a href="../rest-config/" class="md-tabs__link md-tabs__link--active">
         SDK Configuration
       </a>
     </li>
@@ -451,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config-spot/" class="md-nav__link">
+      <a href="../../getting-started/config-spot/" class="md-nav__link">
         1.0 Configuring Spot
       </a>
     </li>
@@ -463,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config-connect/" class="md-nav__link">
+      <a href="../../getting-started/config-connect/" class="md-nav__link">
         2.0 Configuring Sensors
       </a>
     </li>
@@ -475,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../map-loading/" class="md-nav__link">
+      <a href="../../getting-started/map-loading/" class="md-nav__link">
         3.0 Map Loading
       </a>
     </li>
@@ -536,12 +538,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         SDK Configuration
@@ -559,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk-config/rest-config/" class="md-nav__link">
+      <a href="../rest-config/" class="md-nav__link">
         1.0 Rest Configuration
       </a>
     </li>
@@ -569,11 +573,58 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2.0 Register Bot Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         2.0 Register Bot Configuration
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-config-file" class="md-nav__link">
+    3.1 Config File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-definitions" class="md-nav__link">
+    3.2 Definitions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -583,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk-config/robot-config/" class="md-nav__link">
+      <a href="../robot-config/" class="md-nav__link">
         2.0 Robot Configuration
       </a>
     </li>
@@ -595,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk-config/auto-config/" class="md-nav__link">
+      <a href="../auto-config/" class="md-nav__link">
         3.0 Auto Configuration
       </a>
     </li>
@@ -621,9 +672,21 @@
               
                 
                 
-                <h1 id="localization">Localization</h1>
-<p>When you first start the d.ASH SDK, you need to give an initial estimation of the robot's post on the map. To do so, use the UE client to send the initial post.</p>
-<p>(more info can be found in the UE client guide)</p>
+                <h1 id="register-payload-configuration">Register Payload Configuration</h1>
+<p>This section of the d.ASH SDK documentation provides details about the configuration file for payload registration - <code>register_payload_config</code> - found in the folder <code>\dash-sdk\configs</code>. Information in this section includes variable and definitions to configure payload registration.</p>
+<h3 id="31-config-file">3.1 <ins>Config File</ins></h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;robotName&quot;</span> <span class="p">:</span> <span class="s2">&quot;&lt;ROBOT_NAME&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;robotUserName&quot;</span>  <span class="p">:</span> <span class="s2">&quot;&lt;DC_USERNAME&gt;&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>&nbsp;</p>
+
+<h3 id="32-definitions">3.2 <ins>Definitions</ins></h3>
+<ul>
+<li><strong><code>robotName</code></strong>: Set the name of your robot - this can be any string.</li>
+<li><strong><code>robotUserName</code></strong>: Set the name of your username - this has to match your dConstruct cloud admin username.</li>
+</ul>
                 
               
               
@@ -643,6 +706,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../rest-config/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.0 Rest Configuration" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              1.0 Rest Configuration
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../robot-config/" class="md-footer__link md-footer__link--next" aria-label="Next: 2.0 Robot Configuration" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              2.0 Robot Configuration
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

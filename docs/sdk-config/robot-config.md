@@ -7,7 +7,7 @@ This section of the d.ASH SDK documentation provides details about the configura
 {
     "serverAddress" : "localhost:50051",
     "robotHostname" : "192.168.80.3",
-    "username" : "user5",
+    "username" : "<USERNAME>",
     "camList" : ["RealsenseCam"],
     "payloads" : [],
     "dataStateLogFolder" : "G:/Temp/logs",

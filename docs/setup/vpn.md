@@ -4,7 +4,7 @@ Two separate login credentials are required for two seperate VPN connectiosn - o
 
 ---
 
-### 4.1 ^^Setting Up VPN Onboard Computer^^
+### 3.1 ^^Setting Up VPN Onboard Computer^^
 
 To start, you will need to install some packages to configure automatic VPN connection on Ubuntu 18.04 LTS by executing the following command:
 
@@ -78,7 +78,7 @@ sudo systemctl enable openvpn-client@client.service
 
 ---
 
-### 4.2 ^^Setting Up VPN Remote Client^^
+### 3.2 ^^Setting Up VPN Remote Client^^
 
 Remember to use a separate login credential from the robot onboard computer credentials as at any point in time, there can only be one active user session.
 

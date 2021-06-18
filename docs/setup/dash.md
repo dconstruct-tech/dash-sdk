@@ -3,7 +3,7 @@
 As mentioned previously, the d.ASH consists of three main components - d.ASH server, d.ASH service, and d.ASH autonomy engine. This section of the d.ASH SDK documentation provides details about setting up the d.ASH server. Information in this section includes compiling, and testing.
 
 
-### 3.1 ^^Installing d.ASH Dependencies^^
+### 4.1 ^^Installing d.ASH Dependencies^^
 
 To install the remaining d.ASH dependencies using pip, the following [desktop dependencies](/setup/desktop-dep) must be set up prior:
 
@@ -19,7 +19,7 @@ Please ensure you are in the `\dash-sdk` directory before running. Following the
 
 --- 
 
-### 3.2 ^^Setting up d.ASH Server^^
+### 4.2 ^^Setting up d.ASH Server^^
 
 To set up the d.ASH server, you will need to configure the d.ASH server configuration file - `robot_config.json` - located in the folder `\dash-sdk\configs`. 
 
@@ -38,7 +38,7 @@ $ python3.7 ./dash_server.py robot_config.json
 
 ---
 
-### 3.3 ^^Setting up d.ASH Service^^
+### 4.3 ^^Setting up d.ASH Service^^
 
 To set up the d.ASH service, you will need to configure the d.ASH service configuration file - [`dash_service_config.json`](\sdk-config\rest-config) - located in the folder `\dash-sdk\configs`. 
 
@@ -81,7 +81,7 @@ To test the d.ASH service, you'll need to run the d.ASH service by running the f
 Now that your d.ASH service is running, you can use our d.ASH Pilot app. To launch the  d.ASH Pilot app, simply search for it in your Windows search bar. Now, login to the system and connect to your robot to start controlling your robot. For more information on the d.ASH Pilot, refer to the [d.ASH Pilot guide]().
 
 
-### 3.4 ^^Setting up d.ASH Autonomy^^
+### 4.4 ^^Setting up d.ASH Autonomy^^
 
 To set up the d.ASH autonomy, you will need to configure the d.ASH autonomy configuration file - [`auto_config.json`](/sdk-config/auto-config) - located in the folder `/dash-sdk/configs/`.
 

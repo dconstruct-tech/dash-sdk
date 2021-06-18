@@ -13,7 +13,7 @@ To install the remaining d.ASH dependencies using pip, the following [desktop de
 
 If the above dependencies have been installed, proceed by running the following command to install the rest of the python packages:
 ```
-python3.7 configLibs.py
+python3.7 config_libs.py
 ```
 Please ensure you are in the `\dash-sdk` directory before running. Following the instructions prompted by the terminal to proceed with installation.
 
@@ -33,7 +33,7 @@ dash-sdk/
 Look under the [SDK Configuration](\sdk-config\robot-config) section to find out more about setting up `robot_config.json` for the d.ASH server. Then, to run the d.ASH server, execute the following command on your terminal:
 
 ``` python3
-$ python3.7 ./dash_server.py robot_config.json
+python3.7 ./dash_server.py robot_config.json
 ```
 
 ---
@@ -95,8 +95,8 @@ dash-sdk/
 Look under the [SDK Configuration](\sdk-config\robot-config) section to find out more about setting up `robot_config.json` for the d.ASH autonomy.
 
 <!-- Then, using apt-get to install  following packages to set up the ROS Driver:
-[TENTATIVE]
-```
+[TENTATIVE] -->
+<!-- 
 $ sudo apt install ros-melodic-hector-trajectory-server ros-melodic-realsense2-camera ros-melodic-velodyne ros-melodic-joy ros-melodic-octomap ros-melodic-dynamic-edt-3d ros-melodic-tf2 ros-melodic-serial* libgoogle-glog-dev git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
 $ sudo add-apt-repository ppa:joseluisblancoc/gtsam-develop
 $ sudo apt update
@@ -105,10 +105,9 @@ $ sudo apt-key adv --keyserver keys.gnupg.net --recv-key 6F3EFCDE
 $ sudo apt update
 $ sudo apt install librealsense2*
 $ sudo apt install libudev-dev
-$ sudo apt-get install libsecret-1-dev
-``` -->
+$ sudo apt-get install libsecret-1-dev -->
 
-### 3.6 ^^Testing d.ASH Autonomy Engine^^
+
 To test the d.ASH autonomy engine, run the executable below to start autonomy driver. Note to replace `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
 
 ```

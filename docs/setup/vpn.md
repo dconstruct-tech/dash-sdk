@@ -1,6 +1,6 @@
 # Setting Up d.ASH VPN
 
-Two separate login credentials are required for two seperate VPN connectiosn - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN. 
+When setting up VPN for d.ASH, two separate login credentials are required for two seperate VPN connections - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN. 
 
 ---
 

@@ -14,6 +14,29 @@
 | **[d.ASH Autonomy Engine](https://dconstruct-tech.github.io/dash-sdk/#ros-driver)** | The d.ASH Autonomy Engine is the autonomy backend code that runs on the edge of the robot. It empowers the robot with robust multi-terrain (indoor and outdoor) autonomous navigation capabilities. It handles secure communication between automony engine and the remote autonomy controller. |
 | **[d.ASH Autonomy Controller](https://dconstruct-tech.github.io/dash-sdk/#dash-autonomy-controller)** | The d.ASH autonomy controller is the GUI (graphical user interface) for the d.ASH autonomy engine. It enable users to monitor and have full remote control of autonomy by allowing users to plot waypoints and activate autonomy on a fleet of robots. Stream real-time data via a secure connection between robots and the controller using 4G or 5G. |
 
+## Ready to test!
+There are two mission scripts available for testing. Execute the mission scripts sequentially to control your Spot. There are a total of 5 different types of missions:
+1. Clear Mission
+2. Pause
+3. Capture
+4. End Waypoint
+5. Move to Point
+
+### Clear Mission
+The function `clearmission()` allows users to clear all previous missions in history.
+
+### Pause
+The function `pause(int)` allows users to stop Spot from walking and pause for (int) number of seconds.
+
+### Capture
+The function `capture(int)` allows users to capture an image using their camera ID.
+
+### End Waypoint
+The function `endWayPoint()` allows users to send and follow a series of waypoints defined before `endWaypoint()` is called.
+
+### Move to Point
+The function `moveToPoint(float, float, float)` allows users to move to a specified point `(x, y, z)` using a global planner.
+
 ## License
 This project is licensed under the [BSD 2-Clause License](LICENSE).
 Copyright 2021 dConstruct Technologies Pte Ltd.

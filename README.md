@@ -16,26 +16,14 @@
 
 ## Ready to Test!
 There are two mission scripts available for general-purpose task execution and manipulation. Execute these mission scripts sequentially to control your Spot in any way you like. There are a total of 5 different types of missions:
-1. [Clear Mission](/clear-mission)
-2. Pause
-3. Capture
-4. End Waypoint
-5. Move to Point
 
-#### Clear Mission
-The function `clearmission()` allows users to clear all previous missions in history.
-
-#### Pause
-The function `pause(int)` allows users to stop Spot from walking and pause for (int) number of seconds.
-
-#### Capture
-The function `capture(int)` allows users to capture an image using their camera ID.
-
-#### End Waypoint
-The function `endWayPoint()` allows users to send and follow a series of waypoints defined before `endWaypoint()` is called.
-
-#### Move to Point
-The function `moveToPoint(float, float, float)` allows users to move to a specified point `(x, y, z)` using a global planner.
+| Function | Description |
+| ------- | ------- |
+| `clearmission()` | The function `clearmission()` allows users to clear all previous missions in history.|
+| `pause(int)` | The function `pause(int)` allows users to stop Spot from walking and pause for (int) number of seconds. |
+| `capture(int)` | The function `capture(int)` allows users to capture an image using their camera ID. |
+| `endWayPoint()` | The function `endWayPoint()` allows users to send and follow a series of waypoints defined before `endWaypoint()` is called. |
+| `moveToPoint(float, float, float)` | The function `moveToPoint(float, float, float)` allows users to move to a specified point `(x, y, z)` using a global planner. |
 
 ## License
 This project is licensed under the [BSD 2-Clause License](LICENSE).

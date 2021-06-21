@@ -17,7 +17,6 @@ This section of the d.ASH SDK documentation provides details about the configura
         "py_server" : {
             "cmdStr" : "python ./spotServer.py ./configs/robotDeployConfig.json <!TOKEN!>",
             "cmdPath" : "C:/Users/kestr/Documents/Projects/dc/dash_code/py_server"
-            # user PATH
         }
     }
 }

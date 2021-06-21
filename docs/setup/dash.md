@@ -1,6 +1,6 @@
 # Setting Up d.ASH
 
-As mentioned previously, the d.ASH consists of three main components - d.ASH server, d.ASH service, and d.ASH autonomy engine. This section of the d.ASH SDK documentation provides details about setting up the d.ASH server. Information in this section includes compiling, and testing.
+As mentioned previously, the d.ASH consists of three main components - d.ASH server, d.ASH service, and d.ASH autonomy engine. This section of the d.ASH SDK documentation provides details about setting up the d.ASH components including compiling and testing.
 
 
 ### 4.1 ^^Installing d.ASH Dependencies^^
@@ -21,7 +21,7 @@ Please ensure you are in the `\dash-sdk` directory before running. Following the
 
 ### 4.2 ^^Setting up d.ASH Server^^
 
-To set up the d.ASH server, you will need to configure the d.ASH server configuration file - `robot_config.json` - located in the folder `\dash-sdk\configs`. 
+To set up the d.ASH server, you will need to configure the d.ASH server configuration file - [`robot_config.json`](/sdk-config/robot-config) - located in the folder `\dash-sdk\configs`. 
 
 ```
 dash-sdk/
@@ -30,7 +30,9 @@ dash-sdk/
     └─ ...
 ```
 
-Look under the [SDK Configuration](\sdk-config\robot-config) section to find out more about setting up `robot_config.json` for the d.ASH server. Then, to run the d.ASH server, execute the following command on your terminal:
+Follow the variable definitions for [`robot_config.json`](/sdk-config/robot-config) to set up the file correctly for the d.ASH server.
+
+Once [`robot_config.json`](/sdk-config/robot-config) has been set up, run the d.ASH server by executing the following command on your terminal:
 
 ``` python3
 python3.7 ./dash_server.py robot_config.json
@@ -53,26 +55,29 @@ First, run `runrest` to see available IP address for your rest server:
 ```python
 runrest
 ```
-Pick the index of the IP address you like and append it to the `activeIPIdx` variable:
+Pick the index of the IP address you like and append it to the `activeIPIdx` variable in [`dash_service_config.json`](\sdk-config\rest-config):
 ```
-"activeIPIdx" : 1, # where '1' is the chosen IP address indec
+"activeIPIdx" : 1, # where '1' is the chosen IP address index
 ```
-Then, you will need to set your `preferredIP` address, that is, the IP address for the computer onboard your robot. This IP address will have precedence over `activeIPIdx`. Similarly, replace the default IP address with your preferred IP address:
+Then, you will need to set your `preferredIP` address, that is, the IP address for the computer onboard your robot. This IP address will have precedence over `activeIPIdx`. Similarly, replace the default IP address with your preferred IP address in [`dash_service_config.json`](\sdk-config\rest-config):
 ```
-"preferredIP" : "10.8.0.5",
+"preferredIP" : "10.8.0.5", # where '10.8.0.5' is the preferred IP address
 ```
-Ensure that the IP address of the onboard computer is within the same subnet by the remote client. Lastly, you will need to change the `<PATH_OF_SDK>` of `cmdPath`. 
+
+Ensure that the IP address of the onboard computer is within the same subnet by the remote client. Lastly, you will need to change the `<PATH_OF_SDK>` of `cmdPath` in [`dash_service_config.json`](\sdk-config\rest-config): 
 ```
 "cmdPath" : "<PATH>"
 ```
 
-To do this, use `pwd` to print your current working directory path and replace `<PATH_OF_SDK>`. For example, if your current directory is `/home/dash_sdk/py_server`:
+To do this, use `pwd` to print your current working directory path and replace `<PATH_OF_SDK>` with the path printed. For example, if your current directory is `/home/dash_sdk/py_server`:
 
 ```
 "cmdPath" : "/home/dash_sdk"
 ```
 
-To test the d.ASH service, you'll need to run the d.ASH service by running the following command: 
+---
+
+To test the d.ASH service, you'll need to run the d.ASH server by running the following command: 
 
 ``` python3
 ./robot_rest <PATH_TO_SDK>/configs/dash_service_config.json
@@ -80,10 +85,11 @@ To test the d.ASH service, you'll need to run the d.ASH service by running the f
 
 Now that your d.ASH service is running, you can use our d.ASH Pilot app. To launch the  d.ASH Pilot app, simply search for it in your Windows search bar. Now, login to the system and connect to your robot to start controlling your robot. For more information on the d.ASH Pilot, refer to the [d.ASH Pilot guide]().
 
+---
 
-### 4.4 ^^Setting up d.ASH Autonomy^^
+### 4.4 ^^Setting up d.ASH Autonomy Engine^^
 
-To set up the d.ASH autonomy, you will need to configure the d.ASH autonomy configuration file - [`auto_config.json`](/sdk-config/auto-config) - located in the folder `/dash-sdk/configs/`.
+To set up the d.ASH autonomy engine, you will need to configure the d.ASH autonomy configuration file - [`auto_config.json`](/sdk-config/auto-config) - located in the folder `/dash-sdk/configs/`.
 
 ```
 dash-sdk/
@@ -92,7 +98,9 @@ dash-sdk/
     └─ ...
 ```
 
-Look under the [SDK Configuration](\sdk-config\robot-config) section to find out more about setting up `robot_config.json` for the d.ASH autonomy.
+Follow the variable definitions for [`auto_config.json`](/sdk-config/auto-config) to set up the file correctly for the d.ASH autonomy engine.
+
+---
 
 <!-- Then, using apt-get to install  following packages to set up the ROS Driver:
 [TENTATIVE] -->
@@ -108,7 +116,7 @@ $ sudo apt install libudev-dev
 $ sudo apt-get install libsecret-1-dev -->
 
 
-To test the d.ASH autonomy engine, run the executable below to start autonomy driver. Note to replace `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
+Once [`auto_config.json`](/sdk-config/auto-config) has been set up, test the d.ASH autonomy engine by run the executable below to start autonomy driver. Note to replace `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
 
 ```
 ./dash_autonomy <PATH_TO_SDK>/config/auto_config.json

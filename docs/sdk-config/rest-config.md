@@ -1,4 +1,4 @@
-# Rest Configuration
+# d.ASH Service Configuration
 
 This section of the d.ASH SDK documentation provides details about the configuration file for the rest server - `rest_config.json` - found in the folder `\dash-sdk\configs`.. Information in this section includes variable and definitions to configure the rest server.
 

@@ -611,7 +611,7 @@
   
     <li class="md-nav__item">
       <a href="../../sdk-config/rest-config/" class="md-nav__link">
-        1.0 Rest Configuration
+        1.0 d.ASH Service Configuration
       </a>
     </li>
   
@@ -673,48 +673,45 @@
                 
                 
                 <h1 id="setting-up-dash-vpn">Setting Up d.ASH VPN</h1>
-<p>When setting up VPN for d.ASH, two separate login credentials are required for two seperate VPN connections - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN. </p>
+<p>When setting up VPN for d.ASH, two separate login credentials are required for two seperate VPN connections - one for the robot onboard computer and one for the remote client. This section of the d.ASH SDK documentation provides details about setting up the d.ASH VPN for both your robot and your remote client.</p>
 <hr />
 <h3 id="31-setting-up-vpn-onboard-computer">3.1 <ins>Setting Up VPN Onboard Computer</ins></h3>
 <p>To start, you will need to install some packages to configure automatic VPN connection on Ubuntu 18.04 LTS by executing the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">openvpn</span> <span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">openvpn</span><span class="o">-</span><span class="n">gnome</span> <span class="n">openvpn</span> <span class="n">openvpn</span><span class="o">-</span><span class="n">systemd</span><span class="o">-</span><span class="n">resolved</span> <span class="o">-</span><span class="n">y</span>
 </code></pre></div>
-<p>This will install an <code>openvpn</code> package, which creates a <code>/etc/openvpn/client/</code> directory into which you can place the OpenVPN client configuration file. You will need to configure the VPN configuration file - <code>client.ovpn</code> which can be found in your vpn folder <code>/dash_sdk/vpn</code>. To do so, run the following command:</p>
+<p>This will install an <code>openvpn</code> package, which creates a <code>/etc/openvpn/client/</code> directory into which you can place the OpenVPN client configuration file. You will need to configure the VPN configuration file - <code>client.ovpn</code> which can be found in your vpn folder <code>/dash_sdk/vpn</code>. </p>
 <p><div class="highlight"><pre><span></span><code>dash-sdk/
 └─ vpn/
     └─ client.ovpn
     └─ ca.crt
-    └─ &lt;user&gt;.crt
-    └─ &lt;user&gt;.key
+    └─ &lt;USER&gt;.crt
+    └─ &lt;USER&gt;.key
 </code></pre></div>
-Note that <code>&lt;user&gt;</code> in this instance is replaced by your dConstruct admin username. Now, you will need to copy <code>client.ovpn</code> and your user certifications - <code>ca.crt</code>, <code>&lt;user&gt;.crt</code>, <code>&lt;user&gt;.key</code> - into the new open-vpn directory. In the <code>/dash_sdk</code> directory, execute the following commands:</p>
-<div class="highlight"><pre><span></span><code><span class="n">python3</span><span class="mf">.7</span> <span class="n">configVPN</span><span class="o">.</span><span class="n">py</span>
+Note that <code>&lt;USER&gt;</code> in this instance is replaced by your dConstruct admin username. Now, you will need to copy <code>client.ovpn</code> and your user certifications - <code>ca.crt</code>, <code>&lt;USER&gt;.crt</code>, <code>&lt;USER&gt;.key</code> - into the new open vpn directory. In the <code>/dash_sdk</code> directory, execute the following commands:</p>
+<div class="highlight"><pre><span></span><code><span class="n">python3</span><span class="mf">.7</span> <span class="n">config_vpn</span><span class="o">.</span><span class="n">py</span>
 <span class="n">sudo</span> <span class="n">cp</span> <span class="n">client</span><span class="o">.</span><span class="n">ovpn</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span><span class="o">/</span><span class="n">client</span><span class="o">.</span><span class="n">conf</span> 
-<span class="n">sudo</span> <span class="n">cp</span> <span class="n">ca</span><span class="o">.</span><span class="n">crt</span> <span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;.</span><span class="n">crt</span> <span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;.</span><span class="n">key</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span>
+<span class="n">sudo</span> <span class="n">cp</span> <span class="n">ca</span><span class="o">.</span><span class="n">crt</span> <span class="o">&lt;</span><span class="n">USER</span><span class="o">&gt;.</span><span class="n">crt</span> <span class="o">&lt;</span><span class="n">USER</span><span class="o">&gt;.</span><span class="n">key</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span>
 </code></pre></div>
-<p>For example, if your dConstruct admin username is <code>user123</code>, you would replacing <code>&lt;user&gt;</code> with <code>user123</code>:</p>
+<p>For example, if your dConstruct admin username is <code>user123</code>, you would replacing <code>&lt;USER&gt;</code> with <code>user123</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">cp</span> <span class="n">client</span><span class="o">.</span><span class="n">ovpn</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span><span class="o">/</span><span class="n">client</span><span class="o">.</span><span class="n">conf</span> 
 <span class="n">sudo</span> <span class="n">cp</span> <span class="n">ca</span><span class="o">.</span><span class="n">crt</span> <span class="n">user123</span><span class="o">.</span><span class="n">crt</span> <span class="n">user123</span><span class="o">.</span><span class="n">key</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span>
 </code></pre></div>
-<p>To check that your files have been copied and renamed correctly, <code>cd</code> into the <code>/etc/openvpn/client</code> directory and <code>ls</code> to see your list of files. You should have <code>client.conf</code> and your user certification files, namely <code>ca.crt .crt .</code>:</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">cd</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">openvpn</span><span class="o">/</span><span class="n">client</span>
-<span class="n">ls</span>
-</code></pre></div>
+<p>To check that your files have been copied and renamed correctly, <code>cd</code> into the <code>/etc/openvpn/client</code> directory and <code>ls</code> to see your list of files. You should have <code>client.conf</code> and your user certification files, namely <code>ca.crt &lt;USER&gt;.crt &lt;USER&gt;.key</code>:</p>
 <div class="highlight"><pre><span></span><code>etc/
 └─ openvpn/
     └─ client/
         └─ client.conf
         └─ ca.crt
-        └─ &lt;user&gt;.crt
-        └─ &lt;user&gt;.key
-</code></pre></div></p>
+        └─ &lt;USER&gt;.crt
+        └─ &lt;USER&gt;.key
+</code></pre></div>
 <p>Now, let's test that the VPN service was set up correctly by running the following command:
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">openvpn</span><span class="o">-</span><span class="n">client</span><span class="nd">@client</span><span class="o">.</span><span class="n">service</span>
 </code></pre></div></p>
 <p>If there is no error print, proceed onto the next step. If you come across a failure, ensure that the path in <code>client.conf</code> matches the following format:</p>
 <div class="highlight"><pre><span></span><code><span class="n">cat</span> \<span class="n">etc</span>\<span class="n">openvpn</span>\<span class="n">client</span>\<span class="n">ca</span><span class="o">.</span><span class="n">crt</span>
-<span class="n">cert</span> \<span class="n">etc</span>\<span class="n">openvpn</span>\<span class="n">client</span>\<span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;.</span><span class="n">crt</span>
-<span class="n">key</span> \<span class="n">etc</span>\<span class="n">openvpn</span>\<span class="n">client</span>\<span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;.</span><span class="n">crt</span>
+<span class="n">cert</span> \<span class="n">etc</span>\<span class="n">openvpn</span>\<span class="n">client</span>\<span class="o">&lt;</span><span class="n">USER</span><span class="o">&gt;.</span><span class="n">crt</span>
+<span class="n">key</span> \<span class="n">etc</span>\<span class="n">openvpn</span>\<span class="n">client</span>\<span class="o">&lt;</span><span class="n">USER</span><span class="o">&gt;.</span><span class="n">crt</span>
 </code></pre></div>
 <p>Now, to check your VPN status, enter the following command: 
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">openvpn</span><span class="o">-</span><span class="n">client</span><span class="nd">@client</span><span class="o">.</span><span class="n">service</span>
@@ -725,13 +722,13 @@ If successful, you should be able to see the status <code>Initialization Sequenc
 <hr />
 <h3 id="32-setting-up-vpn-remote-client">3.2 <ins>Setting Up VPN Remote Client</ins></h3>
 <p>Remember to use a separate login credential from the robot onboard computer credentials as at any point in time, there can only be one active user session.</p>
-<p>Firstly, download <a href="https://openvpn.net/client-connect-vpn-for-windows/">OpenVPN Connect</a>. Once OpenVPN has been launched, click on the tab - <em>'Import from File'</em> tab and drag-and-drop the <code>client.ovpn</code> file located in <code>\dash-sdk\vpn</code>. It is important to note that the <code>client.ovpn</code> file has to be in the same directory as there certification files, namely <code>ca.crt .crt .key</code>:</p>
+<p>Firstly, download <a href="https://openvpn.net/client-connect-vpn-for-windows/">OpenVPN Connect</a>. Once OpenVPN has been launched, click on the tab - <em>'Import from File'</em> tab and drag-and-drop the <code>client.ovpn</code> file located in <code>\dash-sdk\vpn</code>. It is important to note that the <code>client.ovpn</code> file has to be in the same directory as there certification files, namely <code>ca.crt &lt;USER&gt;.crt &lt;USER&gt;.key</code>:</p>
 <div class="highlight"><pre><span></span><code>dash-sdk/
 └─ vpn/
     └─ client.ovpn
     └─ ca.crt
-    └─ user.crt
-    └─ user.key
+    └─ &lt;USER&gt;.crt
+    └─ &lt;USER&gt;.key
 </code></pre></div>
                 
               

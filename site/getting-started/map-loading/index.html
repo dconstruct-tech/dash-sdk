@@ -586,7 +586,7 @@
   
     <li class="md-nav__item">
       <a href="../../sdk-config/register-bot/" class="md-nav__link">
-        2.0 Register Bot Configuration
+        2.0 Register Payload Configuration
       </a>
     </li>
   
@@ -637,29 +637,17 @@
                 
                 <h1 id="map-loading">Map Loading</h1>
 <p>This section of the d.ASH SDK documentation provides details about file organisation of autonomy maps for the d.ASH SDK. </p>
-<ol>
-<li>
-<p>To load a new map, upload the autonomy map files in the following location:
-<div class="highlight"><pre><span></span><code>/dash_sdk/.data/maps/&lt;MAP_NAME&gt;
+<p>To load a new map, upload the autonomy map files in the folder <code>maps</code> found in <code>/dash_sdk/.data/maps</code>. Please ensure that the following files are in the folder:</p>
+<div class="highlight"><pre><span></span><code>dash-sdk/
+└─ .data/
+    └─ maps
+        └─ &lt;MAP_NAME&gt;.png       # 2D Autonomy Map
+        └─ &lt;MAP_NAME&gt;.pcd       # 3D Autonomy Map
+        └─ &lt;MAP_NAME&gt;.json      # Global Planner Configuration
 </code></pre></div>
-For example, if your map is <code>outdoor_map.pcd</code>,
-<div class="highlight"><pre><span></span><code>/dash_sdk/.data/maps/outdoor_map
-</code></pre></div></p>
-</li>
-<li>
-<p>Within that folder, ensure the following files are in the folder:</p>
-<ul>
-<li>2D Autonomy Map: <code>&lt;MAP_NAME&gt;.png</code></li>
-<li>3D Autonomy Map: <code>&lt;MAP_NAME&gt;.pcd</code></li>
-<li>Global Planner Configuration: <code>&lt;MAP_NAME&gt;.json</code></li>
-</ul>
-</li>
-<li>
-<p>To activate the new map, ensure the map name in <a href="/sdk-config/auto-config"><code>auto_config.json</code></a> file matches <code>&lt;MAP_NAME&gt;</code>.
+<p>To activate the new map, ensure the map name in <a href="/sdk-config/auto-config"><code>auto_config.json</code></a> file matches <code>&lt;MAP_NAME&gt;</code>. For example: </p>
 <div class="highlight"><pre><span></span><code>&quot;map_name&quot;: &quot;outdoor_map&quot;,
-</code></pre></div></p>
-</li>
-</ol>
+</code></pre></div>
                 
               
               

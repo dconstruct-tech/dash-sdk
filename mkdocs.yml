@@ -98,6 +98,6 @@ nav:
     - 1.0 d.ASH Autonomy Controller: dash-auto/UE-client.md 
   - SDK Configuration:
     - 1.0 d.ASH Service Configuration: sdk-config/rest-config.md
-    - 2.0 Register Bot Configuration: sdk-config/register-bot.md
+    - 2.0 Register Payload Configuration: sdk-config/register-bot.md
     - 2.0 Robot Configuration: sdk-config/robot-config.md
     - 3.0 Auto Configuration: sdk-config/auto-config.md

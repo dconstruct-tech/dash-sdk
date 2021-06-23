@@ -82,3 +82,30 @@ The load scans icon allow users to preview scans from the d.ASH Pack.
 | ![Screenshot](img/load-scan.png#center){ align=left style="width:500px"} | <font size="3">  (1) ^^Vox downsample size pannel^^: Select your down sample size (in metres). A large value means lower quality, but faster loading. <br><br> (2) ^^Point clouds button^^: Pick loaded point clouds to toggle translucency.. |
 | ![Screenshot](img/load-scan-2.png#center){ align=left style="width:500px"} | <font size="3">  Load scans in translucent mode. |
 
+
+Pilot Client
+- rtsp streaming & hls streaming protocol
+- > cameras > device order > decide the order  (Can flip for the correct orientation)
+- Human tracker - enable human tracking
+- Audio: mic input for two way communication
+- Vision modules
+
+
+1) POwer on --> wait till flicker
+
+Autodrive
+spacebar - start/stop
+z - left at the next possible case
+x - forward --> need to go back to forward
+c - right at the next possible case
+
+1) mic --> unmute for two comms
+2) toogle audio --> broadcast speaker
+3) record video --> mp4 format
+4) video recoding
+5) setting/preference --> user config
+6) boradcast video --> start rtsp server or on phone (hsl server)
+
+
+
+

@@ -96,6 +96,7 @@ nav:
     - 3.0 Map Loading: getting-started/map-loading.md
   - Autonomy Guide: 
     - 1.0 d.ASH Autonomy Controller: dash-auto/UE-client.md 
+    - 2.0 d.ASH Autonomy Engine: dash-auto/dash-eng.md 
   - SDK Configuration:
     - 1.0 d.ASH Service Configuration: sdk-config/rest-config.md
     - 2.0 Register Payload Configuration: sdk-config/register-bot.md

@@ -2,7 +2,7 @@
 
 This section of the d.ASH SDK documentation provides details about the configuration file for the robot - `auto_config.json` - found in the folder `\dash-sdk\configs`. Information in this section includes variable and definitions to configure autonomy.
 
-### 3.1 ^^Config File^^
+### 4.1 ^^Config File^^
 
 ``` python
 { 
@@ -79,8 +79,8 @@ This section of the d.ASH SDK documentation provides details about the configura
 ```
 <p>&nbsp;</p>
 
-### 3.2 ^^Definitions^^
-#### 3.2.1 Main 
+### 4.2 ^^Definitions^^
+#### 4.2.1 Main 
 
 - **`py_address`**: The address of the d.ASH server in the formal `<IP>:<PORT>`.
 - **`ue_address`**: The address of the GUI server in the formal `<IP>:<PORT>`.
@@ -98,7 +98,7 @@ This section of the d.ASH SDK documentation provides details about the configura
 - **`odom_topic`**: ROS odometry topic name for subscribing.
 <p>&nbsp;</p>
 
-#### 3.2.2 Controller
+#### 4.2.2 Controller
 
 - **`linear_window`**: Sets DWA (dynamic window approach) size
 
@@ -151,7 +151,7 @@ This section of the d.ASH SDK documentation provides details about the configura
 
 
 
-#### 3.2.3 State Estimator
+#### 4.2.3 State Estimator
 
 - **`initial_x`**: Sets initialization of x-axis for localizaition (in meters). 
 - **`initial_y`**: Sets initialization of y-axis for localizaition (in meters).
@@ -178,7 +178,7 @@ This section of the d.ASH SDK documentation provides details about the configura
 
 
 
-#### 3.2.4 Planner
+#### 4.2.4 Planner
 
 - **`lookAheadIndexv`**: Sets look-ahead index from the nearest waypoint for path to follow. Note that a lower index slows down the movement of the robot. Similarly, a higher index results in the robot not follow path properly.
 - **`enable_self_rotate`**: Enables one round of rotation around the robot itself before performing autonomy. This is to ensure that localisation is working before starting autonomy.

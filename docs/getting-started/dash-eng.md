@@ -1,6 +1,6 @@
 # Interfacing d.ASH Autonomy Engine with ROS
 
-## 2.1 Publications
+## 4.1 Publications
 
 | Topic | Type | Function |
 | ------- | ------- | ------- |
@@ -15,7 +15,7 @@
 | **`/particle_array`** | `geometry_msgs/PoseArray` | Returns localization particle certainty. |
 | **`/tracking_wpt`** | `std_msgs/Float32MultiArray` | Returns nearest waypoints for the robot to follow. |
 
-## 2.2 Subscriptions
+## 4.2 Subscriptions
 
 | Topic | Type | Function |
 | ------- | ------- | ------- |

@@ -19,11 +19,10 @@
 
 | Topic | Type | Function |
 | ------- | ------- | ------- |
-| **`/cmd_vel`** | ??? | Returns manual command velocity. |
-| **`/ext_auto_cmd_vel`** | ??? | Returns autonomous command velocity from external planner. |
-| **`/imu`** | ??? | Returns |
+| **`/cmd_vel`** | `geometry_msgs/Twist` | Returns manual command velocity. |
+| **`/imu`** | `sensor_msgs/Imu` | Returns imu sensor data. |
 | **`/initial_pose`** | `geometry_msgs/PoseWithCovarianceStamped` | Returns initial pose estimate for localization. |
-| **`/joy`** | ??? | Returns joystick message. |
-| **`/move_base_simple/goal`** | ??? | Returns final goal from RVIZ. |
+| **`/joy`** | `sensor_msgs/Joy` | Returns joystick message. |
+| **`/move_base_simple/goal`** | `geometry_msgs/PoseStamped` | Returns final goal from RVIZ. |
 | **`/odom`** | `nav_msgs/Odometry` | Returns odometry reading. |
-| **`/lidar_points`** | ??? | Returns lidar scan.|
+| **`/lidar_points`** | `sensor_msgs/PointCloud2` | Returns lidar scan.|

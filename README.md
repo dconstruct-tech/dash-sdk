@@ -39,4 +39,4 @@ This project is licensed under the [BSD 2-Clause License](LICENSE).
 Copyright 2021 dConstruct Technologies Pte Ltd.
 
 
-<center>©2021 [dConstruct Technologies](https://www.dconstruct.co/). Designed and Engineered in Singapore.</center>
+<div align="center" font size=1>©2021 [dConstruct Technologies](https://www.dconstruct.co/). Designed and Engineered in Singapore.

@@ -701,16 +701,6 @@
 <td>Returns current path being executed.</td>
 </tr>
 <tr>
-<td><strong><code>/current_pose</code></strong></td>
-<td><code>geometry_msgs/Pose</code></td>
-<td>Returns current robot position.</td>
-</tr>
-<tr>
-<td><strong><code>/filtered_z_pc</code></strong></td>
-<td><code>sensor_msgs/PointCloud2</code></td>
-<td>Returns PC filtered along z-direction.</td>
-</tr>
-<tr>
 <td><strong><code>/image</code></strong></td>
 <td><code>sensor_msgs/Image</code></td>
 <td>Returns sensor image.</td>
@@ -726,7 +716,7 @@
 <td>Returns status of localization certainty.</td>
 </tr>
 <tr>
-<td><strong><code>/mcl_pose</code></strong></td>
+<td><strong><code>/mcl_pose_marker</code></strong></td>
 <td><code>visualization_msgs/Marker</code></td>
 <td>Returns current localization position.</td>
 </tr>
@@ -751,29 +741,9 @@
 <td>Returns localization particle certainty.</td>
 </tr>
 <tr>
-<td><strong><code>/pose_marker</code></strong></td>
-<td><code>visualization_msgs/Marker</code></td>
-<td>Returns</td>
-</tr>
-<tr>
-<td><strong><code>/rosout</code></strong></td>
-<td><code>rosgraph_msgs/Log</code></td>
-<td>Returns</td>
-</tr>
-<tr>
-<td><strong><code>/tf</code></strong></td>
-<td><code>tf2_msgs/TFMessage</code></td>
-<td>Returns</td>
-</tr>
-<tr>
 <td><strong><code>/tracking_wpt</code></strong></td>
 <td><code>std_msgs/Float32MultiArray</code></td>
 <td>Returns nearest waypoints for the robot to follow.</td>
-</tr>
-<tr>
-<td><strong><code>/waypoint_cmd</code></strong></td>
-<td><code>geometry_msgs/Twist</code></td>
-<td>Returns</td>
 </tr>
 </tbody>
 </table>
@@ -823,17 +793,7 @@
 <td>Returns odometry reading.</td>
 </tr>
 <tr>
-<td><strong><code>/tf</code></strong></td>
-<td><code>tf2_msgs/TFMessage</code></td>
-<td>Returns</td>
-</tr>
-<tr>
-<td><strong><code>/tf_static</code></strong></td>
-<td>???</td>
-<td>Returns</td>
-</tr>
-<tr>
-<td><strong><code>/velodyne_points</code></strong></td>
+<td><strong><code>/lidar_points</code></strong></td>
 <td>???</td>
 <td>Returns lidar scan.</td>
 </tr>

@@ -38,4 +38,5 @@ For example:
 This project is licensed under the [BSD 2-Clause License](LICENSE).
 Copyright 2021 dConstruct Technologies Pte Ltd.
 
-To find out more about dConstruct Technologies [now](https://www.dconstruct.co/).
+
+<center>©2021 [dConstruct Technologies](https://www.dconstruct.co/). Designed and Engineered in Singapore.</center>

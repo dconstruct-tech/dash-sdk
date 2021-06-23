@@ -31,7 +31,7 @@
 | **`/initial_pose`** | `geometry_msgs/PoseWithCovarianceStamped` | Returns initial pose estimate for localization. |
 | **`/joy`** | ??? | Returns joystick message. |
 | **`/move_base_simple/goal`** | ??? | Returns final goal from RVIZ. |
-| **`/odom`** | `nav_msgs/Odometry` | Returns |
+| **`/odom`** | `nav_msgs/Odometry` | Returns odometry reading. |
 | **`/tf`** | `tf2_msgs/TFMessage` | Returns |
 | **`/tf_static`** | ??? | Returns |
 | **`/velodyne_points`** | ??? | Returns lidar scan.|

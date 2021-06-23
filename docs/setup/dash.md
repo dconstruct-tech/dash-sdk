@@ -42,7 +42,7 @@ python3.7 ./dash_server.py robot_config.json
 
 ### 4.3 ^^Setting up d.ASH Service^^
 
-To set up the d.ASH service, you will need to configure the d.ASH service configuration file - [`dash_service_config.json`](\sdk-config\rest-config) - located in the folder `\dash-sdk\configs`. 
+To set up the d.ASH service, you will need to configure the d.ASH service configuration file - [`dash_service_config.json`](/sdk-config/rest-config) - located in the folder `\dash-sdk\configs`. 
 
 ```
 dash-sdk/

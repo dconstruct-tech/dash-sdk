@@ -1,6 +1,6 @@
 # d.ASH Service Configuration
 
-This section of the d.ASH SDK documentation provides details about the configuration file for the rest server - `rest_config.json` - found in the folder `\dash-sdk\configs`. Information in this section includes variable and definitions to configure the d.ASH service.
+This section of the d.ASH SDK documentation provides details about the configuration file for the rest server - `dash_service_config.json` - found in the folder `\dash-sdk\configs`. Information in this section includes variable and definitions to configure the d.ASH service.
 
 ### 1.1 ^^Config File^^
 
@@ -15,7 +15,7 @@ This section of the d.ASH SDK documentation provides details about the configura
     "preferredIP" : "10.8.0.5", 
     "runCmds" : {
         "py_server" : {
-            "cmdStr" : "python ./spot_server.py ./configs/robot_deploy_config.json <!TOKEN!>",
+            "cmdStr" : "python ./spot_server.py ./configs/dash-service-config.json <!TOKEN!>",
             "cmdPath" : "C:/Users/dc/Documents/Projects/dc/dash_code/py_server"
         }
     }

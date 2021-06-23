@@ -18,7 +18,7 @@
     
     
       
-        <title>3.0 Auto Configuration - d.ASH SDK</title>
+        <title>4.0 Auto Configuration - d.ASH SDK</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.0 Auto Configuration
+              4.0 Auto Configuration
             
           </span>
         </div>
@@ -532,7 +532,7 @@
   
     <li class="md-nav__item">
       <a href="../../dash-auto/dash-eng/" class="md-nav__link">
-        2.0 d.ASH Autonomy Engine
+        2.0 d.ASH with ROS
       </a>
     </li>
   
@@ -600,7 +600,7 @@
   
     <li class="md-nav__item">
       <a href="../robot-config/" class="md-nav__link">
-        2.0 Robot Configuration
+        3.0 Robot Configuration
       </a>
     </li>
   
@@ -621,12 +621,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          3.0 Auto Configuration
+          4.0 Auto Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        3.0 Auto Configuration
+        4.0 Auto Configuration
       </a>
       
         
@@ -644,44 +644,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#31-config-file" class="md-nav__link">
-    3.1 Config File
+  <a href="#41-config-file" class="md-nav__link">
+    4.1 Config File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-definitions" class="md-nav__link">
-    3.2 Definitions
+  <a href="#42-definitions" class="md-nav__link">
+    4.2 Definitions
   </a>
   
-    <nav class="md-nav" aria-label="3.2 Definitions">
+    <nav class="md-nav" aria-label="4.2 Definitions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#321-main" class="md-nav__link">
-    3.2.1 Main
+  <a href="#421-main" class="md-nav__link">
+    4.2.1 Main
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#322-controller" class="md-nav__link">
-    3.2.2 Controller
+  <a href="#422-controller" class="md-nav__link">
+    4.2.2 Controller
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#323-state-estimator" class="md-nav__link">
-    3.2.3 State Estimator
+  <a href="#423-state-estimator" class="md-nav__link">
+    4.2.3 State Estimator
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#324-planner" class="md-nav__link">
-    3.2.4 Planner
+  <a href="#424-planner" class="md-nav__link">
+    4.2.4 Planner
   </a>
   
 </li>
@@ -720,7 +720,7 @@
                 
                 <h1 id="auto-configuration">Auto Configuration</h1>
 <p>This section of the d.ASH SDK documentation provides details about the configuration file for the robot - <code>auto_config.json</code> - found in the folder <code>\dash-sdk\configs</code>. Information in this section includes variable and definitions to configure autonomy.</p>
-<h3 id="31-config-file">3.1 <ins>Config File</ins></h3>
+<h3 id="41-config-file">4.1 <ins>Config File</ins></h3>
 <div class="highlight"><pre><span></span><code><span class="p">{</span> 
     <span class="s2">&quot;py_address&quot;</span>                            <span class="p">:</span> <span class="s2">&quot;0.0.0.0:50051&quot;</span><span class="p">,</span>
     <span class="s2">&quot;ue_address&quot;</span>                            <span class="p">:</span> <span class="s2">&quot;0.0.0.0:50052&quot;</span><span class="p">,</span>
@@ -795,8 +795,8 @@
 </code></pre></div>
 <p>&nbsp;</p>
 
-<h3 id="32-definitions">3.2 <ins>Definitions</ins></h3>
-<h4 id="321-main">3.2.1 Main</h4>
+<h3 id="42-definitions">4.2 <ins>Definitions</ins></h3>
+<h4 id="421-main">4.2.1 Main</h4>
 <ul>
 <li><strong><code>py_address</code></strong>: The address of the d.ASH server in the formal <code>&lt;IP&gt;:&lt;PORT&gt;</code>.</li>
 <li><strong><code>ue_address</code></strong>: The address of the GUI server in the formal <code>&lt;IP&gt;:&lt;PORT&gt;</code>.</li>
@@ -819,7 +819,7 @@
 </ul>
 <p>&nbsp;</p>
 
-<h4 id="322-controller">3.2.2 Controller</h4>
+<h4 id="422-controller">4.2.2 Controller</h4>
 <ul>
 <li><strong><code>linear_window</code></strong>: Sets DWA (dynamic window approach) size</li>
 </ul>
@@ -894,7 +894,7 @@
 </ul>
 <p>&nbsp;</p>
 
-<h4 id="323-state-estimator">3.2.3 State Estimator</h4>
+<h4 id="423-state-estimator">4.2.3 State Estimator</h4>
 <ul>
 <li><strong><code>initial_x</code></strong>: Sets initialization of x-axis for localizaition (in meters). </li>
 <li><strong><code>initial_y</code></strong>: Sets initialization of y-axis for localizaition (in meters).</li>
@@ -926,7 +926,7 @@
 </ul>
 <p>&nbsp;</p>
 
-<h4 id="324-planner">3.2.4 Planner</h4>
+<h4 id="424-planner">4.2.4 Planner</h4>
 <ul>
 <li><strong><code>lookAheadIndexv</code></strong>: Sets look-ahead index from the nearest waypoint for path to follow. Note that a lower index slows down the movement of the robot. Similarly, a higher index results in the robot not follow path properly.</li>
 <li><strong><code>enable_self_rotate</code></strong>: Enables one round of rotation around the robot itself before performing autonomy. This is to ensure that localisation is working before starting autonomy.</li>
@@ -966,7 +966,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../robot-config/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.0 Robot Configuration" rel="prev">
+        <a href="../robot-config/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3.0 Robot Configuration" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -975,7 +975,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              2.0 Robot Configuration
+              3.0 Robot Configuration
             </div>
           </div>
         </a>

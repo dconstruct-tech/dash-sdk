@@ -1,46 +1,48 @@
-# Nisi ducentem dictaque truncoque partim meruisse tempora
+# DC Pilot
 
-## Decimae perosus securus bracchia arbore sanguine incaluisse
+The dC pilot is 
 
-Lorem markdownum flamina. Credas nec freto, quas ore paternum numina; gaudia
-quater cubito genus invideatis portus venit meorum fatifero. Refert quem parat
-freta adorat erigitur et regna instabilis mansit loqui, ira illa has arcus
-domitamque, aut. Sua a forte saepe vince numerusque **in haec movet** forma.
+* monitoring
 
-- Vertice totumque salutantum haec tua caede vitare
-- Avertit vimque genitore repertum
-- Quae o Ulixem ingratus
-- Aeriaeque Troades Tyrrhenaque enim
-- Cernis indicio est totum lammina non
-- Tanto est tertius nisi coimus
+Pilot Client
+- rtsp streaming & hls streaming protocol
+s
+- Audio: mic input for two way communication
+- Vision modules
 
-## Dilexit illi sparso summis
 
-Eadem temptanti **manus**? Plantis et ulla palmis validisne lucosque. Illa ora
-excelsa frustra [demite](http://percusso-dubitabile.io/caecamque) carmina
-Perseus. Acervos deseret eram, sed in tabo nec non Romanam seque stabat!
+1) POwer on --> wait till flicker
 
-## Superum cum terque precibus umeros Actaeonis tumulum
+Autodrive
+spacebar - start/stop
+z - left at the next possible case
+x - forward --> need to go back to forward
+c - right at the next possible case
 
-Mente perque venire tectoque ut ire ales quae! Saltatibus zona, in levi fraxinus
-virgaque, herbae! Caliturasque fuit, sed pollice atria: rear!
+### 1.1 ^^Control Pannel^^
 
-> Haec ad *induruit gemit quaeque* palmae crescere irata? Sors est Interea
-> inmunis famulas; ad *nocentius* inponi cum.
+| Control Pannel |
+| ------- | 
+| ![Screenshot](img/panel.png#center){ align=left style="width:700px"}| 
+| <font size="3"> (1)  &nbsp; Unmute the microphone to allow dual-communication between the pilot client and the robot.
+| <font size="3"> (2)  &nbsp; Toggle between audio to broadcast speakers. |
+| <font size="3"> (3)  &nbsp; Record videos in mp4 format.
+| <font size="3"> (4)  &nbsp; Upload/download video recordings.
+| <font size="3"> (5)  &nbsp; Configure settings for your preference ie. night mode.
+| <font size="3"> (6)  &nbsp; Broadcast live video streaming using eith a RTSP server or an HSL server. |
 
-## Una taedia
+---
 
-Nomine avia tempora sub, iram precor Apollinis refers: o. [Nutat cura
-ponit](http://valles-umquam.io/vestra-implet), in, nepotibus se intumui, illa
-fertur hoste; Mensis suo. Labor quam ignis, Calydonius **quae**.
+### 1.2 ^^Basic Control^^
 
-- Audaci Solem
-- Lacus et miratur sibi latratu
-- Iuncisque certe
-- Sinum paternos in aquas blandis dea illa
-- Sunt paratus
+| Component | Description |
+| ------- | ------- |
+| ![Screenshot](img/basic-control.png#center){ align=left style="width:200px"} | <font size="3"> (1) &nbsp; Monitor Spot's alignment with respect to Spot's horizontal bearings. <br><br> (2) &nbsp; Adjust cruise control speed. <br><br> (3)  &nbsp; Activate auto-drive for Spot to switch to autonomous navigation. |
 
-Domus considerat sternis, est sinit renascitur natis solitoque nescit sustulit
-ulciscere. Magnum fuit futuri et rapit quam deceptus solvit submota, et has. Nec
-nunc *inque*, humi petis magna, velletque o equarum genetrix evanuit medio est
-in, fluctus.
+---
+
+### 1.3 ^^Cameras^^
+
+| Component | Description |
+| ------- | ------- |
+| ![Screenshot](img/cameras.png#center){ align=left style="width:550px"} | <font size="3"> (1) &nbsp; Select from a list of cameras onboard Spot, which are automatically detected by the pilot client.  <br><br> (2) &nbsp; Adjust the order of cameras for a wider view scope. Ticking the flipped settings will adjust the camera orientation. <br><br> (3)  &nbsp; Activate human tracking for people detection and labelling. |

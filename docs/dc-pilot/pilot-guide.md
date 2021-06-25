@@ -2,7 +2,15 @@
 
 The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompasses interactive visual components for users to control Spot both manually, and autonomously. Monitor your surroundings via your robot's onboard cameras, enable two way communication, or even broadcast live streamings in real time. This section of the d.ASH SDK documentation provides details about using the dC pilot client.
 
-### 1.1 ^^Control Pannel^^
+### 1.1 ^^Main Screen^^
+
+| Main Screen of the dC Pilot Client |
+| ------- | 
+| ![Screenshot](img/main-screen.png#center){ align=left style="width:800px"} | 
+
+---
+
+### 1.2 ^^Control Pannel^^
 
 | Control Pannel |
 | ------- | 
@@ -16,7 +24,7 @@ The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompass
 
 ---
 
-### 1.2 ^^Basic Control^^
+### 1.3 ^^Basic Control^^
 
 | Component | Description |
 | ------- | ------- |
@@ -24,7 +32,7 @@ The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompass
 
 ---
 
-### 1.3 ^^Cameras^^
+### 1.4 ^^Cameras^^
 
 | Component | Description |
 | ------- | ------- |

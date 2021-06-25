@@ -1,23 +1,6 @@
 # DC Pilot
 
-The dC pilot is 
-
-* monitoring
-
-Pilot Client
-- rtsp streaming & hls streaming protocol
-s
-- Audio: mic input for two way communication
-- Vision modules
-
-
-1) POwer on --> wait till flicker
-
-Autodrive
-spacebar - start/stop
-z - left at the next possible case
-x - forward --> need to go back to forward
-c - right at the next possible case
+The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompasses interactive visual components for users to control Spot both manually, and autonomously. Monitor your surroundings via your robot's onboard cameras, enable two way communication, or even broadcast live streamings in real time. This section of the d.ASH SDK documentation provides details about using the dC pilot client.
 
 ### 1.1 ^^Control Pannel^^
 
@@ -37,7 +20,7 @@ c - right at the next possible case
 
 | Component | Description |
 | ------- | ------- |
-| ![Screenshot](img/basic-control.png#center){ align=left style="width:200px"} | <font size="3"> (1) &nbsp; Monitor Spot's alignment with respect to Spot's horizontal bearings. <br><br> (2) &nbsp; Adjust cruise control speed. <br><br> (3)  &nbsp; Activate auto-drive for Spot to switch to autonomous navigation. |
+| ![Screenshot](img/basic-control.png#center){ align=left style="width:200px"} | <font size="3"> (1) &nbsp; Monitor Spot's alignment with respect to Spot's horizontal bearings. <br><br> (2) &nbsp; Adjust cruise control speed. <br><br> (3)  &nbsp; Activate auto-drive for Spot to switch to autonomous navigation. <br> -  &nbsp; Use the `spacebar` key to start/stop your Spot. <br>  -  &nbsp; Use the `z` key for Spot to take the next few possible left turns. <br>  -  &nbsp; Use the `x` key for Spot to return to forward position after turning left or right. <br>  -  &nbsp; Use the `c` key for Spot to take the next few possible right turns.
 
 ---
 
@@ -45,4 +28,4 @@ c - right at the next possible case
 
 | Component | Description |
 | ------- | ------- |
-| ![Screenshot](img/cameras.png#center){ align=left style="width:550px"} | <font size="3"> (1) &nbsp; Select from a list of cameras onboard Spot, which are automatically detected by the pilot client.  <br><br> (2) &nbsp; Adjust the order of cameras for a wider view scope. Ticking the flipped settings will adjust the camera orientation. <br><br> (3)  &nbsp; Activate human tracking for people detection and labelling. |
+| ![Screenshot](img/cameras.png#center){ align=left style="width:600px"} | <font size="3"> (1) &nbsp; Select from a list of cameras onboard Spot, which are automatically detected by the pilot client.  <br><br> (2) &nbsp; Adjust the order of cameras for a wider view scope. Ticking the flipped settings will adjust the camera orientation. <br><br> (3)  &nbsp; Activate human tracking for people detection and labelling. |

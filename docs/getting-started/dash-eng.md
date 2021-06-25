@@ -1,5 +1,7 @@
 # Interfacing d.ASH Autonomy Engine with ROS
 
+This section of the d.ASH SDK documentation provides details about using ROS with the d.ASH autonomy engine. Described below are ROS topics, along with their type and functionality.
+
 ## 4.1 Publications
 
 | Topic | Type | Function |

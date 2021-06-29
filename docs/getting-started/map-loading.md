@@ -14,7 +14,7 @@ dash-sdk/
 ```
 
 
-To activate the new map, ensure the map name in [`auto_config.json`](/sdk-config/auto-config) file matches `<MAP_NAME>`. For example: 
+To activate the new map, ensure the map name in [`auto_config.json`](\sdk-config\auto-config) file matches `<MAP_NAME>`. For example: 
 
 ```
 "map_name": "outdoor_map",

@@ -128,7 +128,7 @@ To find your current working directory, use `pwd`. For example, if your director
 ./dash_autonomy /home/dash-sdk/config/auto_config.json
 ```
 
-!!! tip "You will need to run d.ASH server before running d.ASH service and d.ASH automony."
+!!! tip "You will need to run d.ASH service first before running the d.ASH server and the d.ASH autonomy engine."
 
 On a seperate terminal, start a simple `roslaunch` test by running the following prompt, replacing `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
 

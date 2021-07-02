@@ -1,6 +1,6 @@
 # dConstruct d.ASH SDK
 
-The [dConstruct d.ASH SDK](https://www.dconstruct.co/dash-sdk) is a cross-platform library for autonomous robot navigation. Use the d.ASH SDK to develop applications for your own [Spot](https://www.bostondynamics.com/spot) from Boston Dynamics or any other robot you wish. This section of the d.ASH SDK documentation provides details about the components of the SDK.
+The [dConstruct d.ASH SDK](https://www.dconstruct.co/dash-sdk-features) is a cross-platform library for autonomous robot navigation. Use the d.ASH SDK to develop applications for your own [Spot](https://www.bostondynamics.com/spot) from Boston Dynamics or any other robot you wish. This section of the d.ASH SDK documentation provides details about the components of the SDK.
 
 ![Screenshot](img/diagram.png){: .center style="width:550px" }
 

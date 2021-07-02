@@ -10,9 +10,9 @@
 ## What’s included in the SDK:
 | What | Description |
 | ------- | ------- |
-| **[d.ASH Server](https://dconstruct-tech.github.io/dash-sdk/#dash-server)** | The d.ASH server acts as the main server responsible for sending control commands to the robot. At the same time, the d.ASH server also broadcasts secured data to any given remote systems.|
-| **[d.ASH Autonomy Engine](https://dconstruct-tech.github.io/dash-sdk/#ros-driver)** | The d.ASH Autonomy Engine is the autonomy backend code that runs on the edge of the robot. It empowers the robot with robust multi-terrain (indoor and outdoor) autonomous navigation capabilities. It handles secure communication between automony engine and the remote autonomy controller. |
-| **[d.ASH Autonomy Controller](https://dconstruct-tech.github.io/dash-sdk/#dash-autonomy-controller)** | The d.ASH autonomy controller is the GUI (graphical user interface) for the d.ASH autonomy engine. It enable users to monitor and have full remote control of autonomy by allowing users to plot waypoints and activate autonomy on a fleet of robots. Stream real-time data via a secure connection between robots and the controller using 4G or 5G. |
+| **d.ASH Server** | The d.ASH server acts as the main server responsible for sending control commands to the robot. At the same time, the d.ASH server also broadcasts secured data to any given remote systems.|
+| **d.ASH Autonomy Engine** | The d.ASH Autonomy Engine is the autonomy backend code that runs on the edge of the robot. It empowers the robot with robust multi-terrain (indoor and outdoor) autonomous navigation capabilities. It handles secure communication between automony engine and the remote autonomy controller. |
+| **d.ASH Autonomy Controller** | The d.ASH autonomy controller is the GUI (graphical user interface) for the d.ASH autonomy engine. It enable users to monitor and have full remote control of autonomy by allowing users to plot waypoints and activate autonomy on a fleet of robots. Stream real-time data via a secure connection between robots and the controller using 4G or 5G. |
 
 ## Ready to Test!
 There are two mission scripts available for general-purpose task execution and manipulation which can be found under the folder [`\missions`](https://github.com/dconstruct-tech/dash-sdk/tree/master/missions). Execute these mission scripts - `short_test.mission` and `office_test.mission` - sequentially to control your Spot in any way you like. If you'd like to write your own missions, there are a total of 5 different types of missions:

@@ -137,4 +137,4 @@ cd \launch
 roslaunch <PATH_TO_SDK>\dash_sdk\launch\simple_joy.launch
 ```
 
-Launch files have been prepared for setup - either with the [Velodyne VLP-16](\getting-started\config-connect\#21-velodyne-driver) lidar sensor or the [Ouster OS1-32](\getting-started\config-connect\#22-ouster-driver) lidar sensor. These lauch files can be found in under the `\dash-sdk\launch` folder. You can also create your own sensor launch files for your tests.
+Launch files have been prepared for setup - either with the [Velodyne VLP-16](/dash-sdk/getting-started/config-connect/#21-velodyne-driver) lidar sensor or the [Ouster OS1-32](/dash-sdk/getting-started/config-connect/#22-ouster-driver) lidar sensor. These lauch files can be found in under the `\dash-sdk\launch` folder. You can also create your own sensor launch files for your tests.

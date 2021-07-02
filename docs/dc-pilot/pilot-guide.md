@@ -9,7 +9,7 @@ The pilot client allows you to operate your robots safely and precisely, from an
 
 | d.ASH Autonomy Controller | Description |
 | ------- | ------- |
-| ![Screenshot](img/map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-auto/UE-client) for remote autonomous operations. You'll be able to generate high quality real time 3D maps or launch point and click waypoint based missions. |
+| ![Screenshot](img/map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-sdk/dash-auto/UE-client) for remote autonomous operations. You'll be able to generate high quality real time 3D maps or launch point and click waypoint based missions. |
 
 
 The vision auto-drive is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows you to then plot and navigate complex, unstructured environments using just cameras. Some requirements before starting the d.C Pilot are: 

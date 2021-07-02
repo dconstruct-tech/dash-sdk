@@ -1,6 +1,6 @@
 # Robot Configuration
 
-This section of the d.ASH SDK documentation provides details about the configuration file for the robot - `robot_config.json` - found in the folder `\dash-sdk\configs`. Information in this section includes variable and definitions used to configure the [d.ASH server](../index.md#dash-server).
+This section of the d.ASH SDK documentation provides details about the configuration file for the robot - `robot_config.json` - found in the folder `\dash-sdk\configs`. Information in this section includes variable and definitions used to configure the d.ASH server.
 
 ### 2.1 ^^Config File^^
 ``` json

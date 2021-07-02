@@ -5,7 +5,7 @@ As mentioned previously, the d.ASH consists of three main components - d.ASH ser
 
 ### 4.1 ^^Installing d.ASH Dependencies^^
 
-To install the remaining d.ASH dependencies using pip, the following [desktop dependencies](/setup/desktop-dep) must be set up prior:
+To install the remaining d.ASH dependencies using pip, the following [desktop dependencies](/dash-sdk/setup/desktop-dep) must be set up prior:
 
 - [ ] [Intel RealSense SDK 2.0](https://github.com/IntelRealSense/librealsense/releases/tag/v2.45.0)
 - [ ] [ROS Melodic on Ubuntu 18.04](/desktop-dep/#12-ros-installation)
@@ -21,7 +21,7 @@ Please ensure you are in the `\dash-sdk` directory before running. Following the
 
 ### 4.2 ^^Setting up d.ASH Server^^
 
-To set up the d.ASH server, you will need to configure the d.ASH server configuration file - [`robot_config.json`](/sdk-config/robot-config) - located in the folder `\dash-sdk\configs`. 
+To set up the d.ASH server, you will need to configure the d.ASH server configuration file - [`robot_config.json`](/dash-sdk/sdk-config/robot-config) - located in the folder `\dash-sdk\configs`. 
 
 ```
 dash-sdk/
@@ -30,9 +30,9 @@ dash-sdk/
     └─ ...
 ```
 
-Follow the variable definitions for [`robot_config.json`](/sdk-config/robot-config) to set up the file correctly for the d.ASH server.
+Follow the variable definitions for [`robot_config.json`](/dash-sdk/sdk-config/robot-config) to set up the file correctly for the d.ASH server.
 
-Once [`robot_config.json`](/sdk-config/robot-config) has been set up, run the d.ASH server by executing the following command on your terminal:
+Once [`robot_config.json`](/dash-sdk/sdk-config/robot-config) has been set up, run the d.ASH server by executing the following command on your terminal:
 
 ``` python3
 python3.7 ./dash_server.py robot_config.json
@@ -42,7 +42,7 @@ python3.7 ./dash_server.py robot_config.json
 
 ### 4.3 ^^Setting up d.ASH Service^^
 
-To set up the d.ASH service, you will need to configure the d.ASH service configuration file - [`dash_service_config.json`](/sdk-config/rest-config) - located in the folder `\dash-sdk\configs`. 
+To set up the d.ASH service, you will need to configure the d.ASH service configuration file - [`dash_service_config.json`](/dash-sdk/sdk-config/rest-config) - located in the folder `\dash-sdk\configs`. 
 
 ```
 dash-sdk/
@@ -55,16 +55,16 @@ First, run `runrest` to see available IP address for your rest server:
 ```python
 runrest
 ```
-Pick the index of the IP address you like and append it to the `activeIPIdx` variable in [`dash_service_config.json`](\sdk-config\rest-config):
+Pick the index of the IP address you like and append it to the `activeIPIdx` variable in [`dash_service_config.json`](/dash-sdk/sdk-config/rest-config):
 ```
 "activeIPIdx" : 1, # where '1' is the chosen IP address index
 ```
-Then, you will need to set your `preferredIP` address, that is, the IP address for the computer onboard your robot. This IP address will have precedence over `activeIPIdx`. Similarly, replace the default IP address with your preferred IP address in [`dash_service_config.json`](\sdk-config\rest-config):
+Then, you will need to set your `preferredIP` address, that is, the IP address for the computer onboard your robot. This IP address will have precedence over `activeIPIdx`. Similarly, replace the default IP address with your preferred IP address in [`dash_service_config.json`](/dash-sdk/sdk-config/rest-config):
 ```
 "preferredIP" : "10.8.0.5", # where '10.8.0.5' is the preferred IP address
 ```
 
-Ensure that the IP address of the onboard computer is within the same subnet by the remote client. Lastly, you will need to change the `<PATH_OF_SDK>` of `cmdPath` in [`dash_service_config.json`](\sdk-config\rest-config): 
+Ensure that the IP address of the onboard computer is within the same subnet by the remote client. Lastly, you will need to change the `<PATH_OF_SDK>` of `cmdPath` in [`dash_service_config.json`](/dash-sdk/sdk-config/rest-config): 
 ```
 "cmdPath" : "<PATH>"
 ```
@@ -83,13 +83,13 @@ To test the d.ASH service, you'll need to run the d.ASH server by running the fo
 ./robot_rest <PATH_TO_SDK>/configs/dash_service_config.json
 ```
 
-Now that your d.ASH service is running, you can use our d.ASH Pilot app. To launch the  d.ASH Pilot app, simply search for it in your Windows search bar. Now, login to the system and connect to your robot to start controlling your robot. For more information on the d.ASH Pilot, refer to the [d.ASH Pilot guide]().
+Now that your d.ASH service is running, you can use our d.ASH Pilot app. To launch the  d.ASH Pilot app, simply search for it in your Windows search bar. Now, login to the system and connect to your robot to start controlling your robot. For more information on the d.ASH Pilot, refer to the [d.ASH Pilot guide](/dash-sdk/dc-pilot/pilot-guide).
 
 ---
 
 ### 4.4 ^^Setting up d.ASH Autonomy Engine^^
 
-To set up the d.ASH autonomy engine, you will need to configure the d.ASH autonomy configuration file - [`auto_config.json`](/sdk-config/auto-config) - located in the folder `/dash-sdk/configs/`.
+To set up the d.ASH autonomy engine, you will need to configure the d.ASH autonomy configuration file - [`auto_config.json`](/dash-sdk/sdk-config/auto-config) - located in the folder `/dash-sdk/configs/`.
 
 ```
 dash-sdk/
@@ -98,7 +98,7 @@ dash-sdk/
     └─ ...
 ```
 
-Follow the variable definitions for [`auto_config.json`](/sdk-config/auto-config) to set up the file correctly for the d.ASH autonomy engine.
+Follow the variable definitions for [`auto_config.json`](/dash-sdk/sdk-config/auto-config) to set up the file correctly for the d.ASH autonomy engine.
 
 ---
 
@@ -116,7 +116,7 @@ $ sudo apt install libudev-dev
 $ sudo apt-get install libsecret-1-dev -->
 
 
-Once [`auto_config.json`](/sdk-config/auto-config) has been set up, test the d.ASH autonomy engine by run the executable below to start autonomy driver. Note to replace `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
+Once [`auto_config.json`](/dash-sdk/sdk-config/auto-config) has been set up, test the d.ASH autonomy engine by run the executable below to start autonomy driver. Note to replace `<PATH_TO_SDK>` with your current working directory containing the d.ASH SDK:
 
 ```
 ./dash_autonomy <PATH_TO_SDK>/config/auto_config.json

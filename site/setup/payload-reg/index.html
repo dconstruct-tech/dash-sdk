@@ -766,11 +766,11 @@
 </code></pre></div></p>
 <div class="admonition tip">
 <p class="admonition-title">Username in Robot Configuration</p>
-<p>Please ensure that the username for the d.ASH server is the same as the one defined in the robot configuration file - <a href="/sdk-config/robot-config"><code>robot_config.json</code></a>. That is, you would replace <code>&lt;USERNAME&gt;</code> with your chosen username in <code>"username" : "&lt;USERNAME&gt;"</code>.</p>
+<p>Please ensure that the username for the d.ASH server is the same as the one defined in the robot configuration file - <a href="/dash-sdk/sdk-config/robot-config"><code>robot_config.json</code></a>. That is, you would replace <code>&lt;USERNAME&gt;</code> with your chosen username in <code>"username" : "&lt;USERNAME&gt;"</code>.</p>
 </div>
 <hr />
 <h3 id="22-robot-registration">2.2 <ins>Robot Registration</ins></h3>
-<p>To register the payload computer with d.ASH's backend system, you will need to run the file <code>register_payload</code>. However, you will first need to configure the <a href="/sdk-config/register-bot"><code>register_payload_config.json</code></a> found in the <code>\dash-sdk\configs</code> folder of the SDK. Set <code>&lt;ROBOT_NAME&gt;</code> to any name you like, and set <code>&lt;DC_USERNAME&gt;</code> to your dConstruct cloud admin username. </p>
+<p>To register the payload computer with d.ASH's backend system, you will need to run the file <code>register_payload</code>. However, you will first need to configure the <a href="/dash-sdk/sdk-config/register-bot"><code>register_payload_config.json</code></a> found in the <code>\dash-sdk\configs</code> folder of the SDK. Set <code>&lt;ROBOT_NAME&gt;</code> to any name you like, and set <code>&lt;DC_USERNAME&gt;</code> to your dConstruct cloud admin username. </p>
 <p>For example, if your robot name is <code>robot1</code> and your cloud admin user name is <code>user123</code>, your <code>register_payload_config.json</code> would look like this:</p>
 <div class="highlight"><pre><span></span><code>{
     RobotName: robot1,

@@ -25,13 +25,13 @@ For example, if your username is `user123` and your password is `pw123`, your co
 ```
 
 !!! tip "Username in Robot Configuration"
-    Please ensure that the username for the d.ASH server is the same as the one defined in the robot configuration file - [`robot_config.json`](/sdk-config/robot-config). That is, you would replace `<USERNAME>` with your chosen username in `"username" : "<USERNAME>"`.
+    Please ensure that the username for the d.ASH server is the same as the one defined in the robot configuration file - [`robot_config.json`](/dash-sdk/sdk-config/robot-config). That is, you would replace `<USERNAME>` with your chosen username in `"username" : "<USERNAME>"`.
 
 --- 
 
 ### 2.2 ^^Robot Registration^^
 
-To register the payload computer with d.ASH's backend system, you will need to run the file `register_payload`. However, you will first need to configure the [`register_payload_config.json`](/sdk-config/register-bot) found in the `\dash-sdk\configs` folder of the SDK. Set `<ROBOT_NAME>` to any name you like, and set `<DC_USERNAME>` to your dConstruct cloud admin username. 
+To register the payload computer with d.ASH's backend system, you will need to run the file `register_payload`. However, you will first need to configure the [`register_payload_config.json`](/dash-sdk/sdk-config/register-bot) found in the `\dash-sdk\configs` folder of the SDK. Set `<ROBOT_NAME>` to any name you like, and set `<DC_USERNAME>` to your dConstruct cloud admin username. 
 
 For example, if your robot name is `robot1` and your cloud admin user name is `user123`, your `register_payload_config.json` would look like this:
 

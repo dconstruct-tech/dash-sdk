@@ -2,14 +2,17 @@
 
 As mentioned previously, the d.ASH autonomy controller is a GUI (graphical user interface) for the d.ASH SDK. It allows users to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning. This section of the d.ASH SDK documentation provides details about setting up the d.ASH autonomy controller, including information on its respective components.
 
+| d.ASH Autonomy Controller | Description |
+| ------- | ------- |
+| ![Screenshot](img/map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-sdk/dash-auto/UE-client) for remote autonomous operations. You'll be able to generate high quality real time 3D maps or launch point and click waypoint based missions. |
+
 ---
 ### 1.1 ^^Main Components^^
 
-<!-- ![Screenshot](img/main.png){: style="width:400px"} -->
 
 | Component | Description |
 | ------- | ------- |
-| ![Placeholder](img/main.png){ align=left style="width:500px"} | <br> <font size="3"> (1) ^^Main toolbar^^: Used to open other menus.  <br><br> (2) ^^Slider^^: Used to move floor grid up and down. <br><br> 3) ^^Access mode^^: Used switch to mouse/keyboard mode. <br> (3) (a) ^^Navigation^^: The default mode uses the keys `WASD` to move camera and right click the mouse to zoom/tilt the camera. <br> (3) (b) ^^Waypoint creation^^: Used for adding waypoints to routes. <br><br> (4) ^^Floor grid^^ |
+| ![Placeholder](img/main.png){ .center style="width:500px"} | <br> <font size="3"> (1) ^^Main toolbar^^: Used to open other menus.  <br><br> (2) ^^Slider^^: Used to move floor grid up and down. <br><br> 3) ^^Access mode^^: Used switch to mouse/keyboard mode. <br> (3) (a) ^^Navigation^^: The default mode uses the keys `WASD` to move camera and right click the mouse to zoom/tilt the camera. <br> (3) (b) ^^Waypoint creation^^: Used for adding waypoints to routes. <br><br> (4) ^^Floor grid^^ |
 
 ---
 
@@ -17,7 +20,7 @@ As mentioned previously, the d.ASH autonomy controller is a GUI (graphical user 
 
 | Component | Description |
 | ------- | ------- |
-| ![Screenshot](img/login.png#center){ align=left style="width:500px"}| <br> <font size="3"> The login icon allow dConstruct users to log into the d.ASH autonomy controller using their cloud admin credentials. |
+| ![Screenshot](img/login.png#center){ .center style="width:500px"}| <br> <font size="3"> The login icon allow dConstruct users to log into the d.ASH autonomy controller using their cloud admin credentials. |
 
 ---
 
@@ -27,7 +30,7 @@ The robot connection icon allow users to connect/disconnect their respective rob
 
 | Component | Description |
 | ------- | ------- |
-| ![Screenshot](img/robot-connect.png#center){ align=left style="width:500px"}| <font size="3"> (1) ^^Online pannel^^: Select from a list of robots that are online and ready to be used to connect to.  <br><br> (2) ^^Connected pannel^^: Select from a list of robots that you have connected to in the client to manipulate. <br><br> (3) ^^Add button^^: Press to connect to the robot selected in the online list to add the robot to the connected list. <br><br> (4) ^^Minus button^^: Press to disconnect from a robot in the connected list. |
+| ![Screenshot](img/robot-connect.png){ align=left style="width:500px"}| <font size="3"> (1) ^^Online pannel^^: Select from a list of robots that are online and ready to be used to connect to.  <br><br> (2) ^^Connected pannel^^: Select from a list of robots that you have connected to in the client to manipulate. <br><br> (3) ^^Add button^^: Press to connect to the robot selected in the online list to add the robot to the connected list. <br><br> (4) ^^Minus button^^: Press to disconnect from a robot in the connected list. |
 | ![Screenshot](img/init.png#center){ align=left style="width:500px"}| <br> <font size="3"> When users first start the d.ASH SDK, they need to give an initial estimation of the robot's post on the map by configuring its `init pose`. <br><br> It tells the robot where its rough initial position is. To initialize `init pose`, draw the orange arrow by left clicking and drag the mouse on the floor grid.|
 
 ---

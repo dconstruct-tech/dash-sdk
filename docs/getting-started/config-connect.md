@@ -16,7 +16,7 @@ You'll need to configure a static IP address for your computer to use an address
 Now, let's test your lidar sensors. To test the Velodyne VLP-16 lidar sensor, run the following command:
 ```
 cd dash_sdk/launch
-roslaunch autonomy_velodine.launch
+roslaunch autonomy_velodyne.launch
 ```
 Finally, to check if the ROS messages are published correctly, in another terminal, run the following command:
 ```

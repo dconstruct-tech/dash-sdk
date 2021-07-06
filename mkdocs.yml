@@ -26,19 +26,20 @@ theme:
   font:
     text: Barlow
     code: Roboto Mono
-  logo: 'img/logo.png'
+  logo: 'img/logo-white.png'
   favicon: 'img/logo.png'
 
   features:
-    # - navigation.instant
+    - navigation.instant
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - toc.integrate
+    - navigation.expand
   palette:
     - scheme: default
-      primary: red
+      primary: black
       accent: red
       toggle:
       icon: material/toggle-switch-off-outline

@@ -1,3 +1,5 @@
+![Screenshot](BD-logo.png){ .center style="width:500px"}
+
 # Configuring Spot
 
 This section of the d.ASH SDK documentation provides details about setting up Spot with the d.ASH SDK. To configure Spot, you will need to set up on the robot itself and on your personal computer. For further enquiries of setting up Spot, follow [Boston Dynamics Documentation](https://www.bostondynamics.com/sites/default/files/inline-files/spot-system-administration.pdf).

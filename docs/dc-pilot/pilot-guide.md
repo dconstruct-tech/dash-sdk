@@ -7,10 +7,6 @@ The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompass
 
 The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance BVLOS (Beyond Vision Line of Sight) system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection.
 
-| d.ASH Autonomy Controller | Description |
-| ------- | ------- |
-| ![Screenshot](img/map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-sdk/dash-auto/UE-client) for remote autonomous operations. You'll be able to generate high quality real time 3D maps or launch point and click waypoint based missions. |
-
 
 The vision auto-drive is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows you to then plot and navigate complex, unstructured environments using just cameras. Some requirements before starting the d.C Pilot are: 
 

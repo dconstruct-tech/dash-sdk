@@ -21,10 +21,10 @@ This section of the d.ASH SDK documentation provides details about using ROS wit
 
 | Topic | Type | Function |
 | ------- | ------- | ------- |
-| **`/cmd_vel`** | `geometry_msgs/Twist` | Returns manual command velocity. |
-| **`/imu`** | `sensor_msgs/Imu` | Returns imu sensor data. |
-| **`/initial_pose`** | `geometry_msgs/PoseWithCovarianceStamped` | Returns initial pose estimate for localization. |
-| **`/joy`** | `sensor_msgs/Joy` | Returns joystick message. |
-| **`/move_base_simple/goal`** | `geometry_msgs/PoseStamped` | Returns final goal from RVIZ. |
-| **`/odom`** | `nav_msgs/Odometry` | Returns odometry reading. |
-| **`/lidar_points`** | `sensor_msgs/PointCloud2` | Returns lidar scan.|
+| **`/cmd_vel`** | `geometry_msgs/Twist` | Accepts manual command velocity. |
+| **`/imu`** | `sensor_msgs/Imu` | Accepts imu sensor data. |
+| **`/initial_pose`** | `geometry_msgs/PoseWithCovarianceStamped` | Accepts initial pose estimate for localization. |
+| **`/joy`** | `sensor_msgs/Joy` | Accepts joystick message. |
+| **`/move_base_simple/goal`** | `geometry_msgs/PoseStamped` | Accepts final goal from RVIZ. |
+| **`/odom`** | `nav_msgs/Odometry` | Accepts odometry reading. |
+| **`/lidar_points`** | `sensor_msgs/PointCloud2` | Accepts lidar scan.|

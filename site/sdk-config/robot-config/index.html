@@ -690,30 +690,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#21-config-file" class="md-nav__link">
-    2.1 Config File
+  <a href="#31-config-file" class="md-nav__link">
+    3.1 Config File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-definitions" class="md-nav__link">
-    2.2 Definitions
+  <a href="#32-definitions" class="md-nav__link">
+    3.2 Definitions
   </a>
   
-    <nav class="md-nav" aria-label="2.2 Definitions">
+    <nav class="md-nav" aria-label="3.2 Definitions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#221-main" class="md-nav__link">
-    2.2.1 Main
+  <a href="#321-main" class="md-nav__link">
+    3.2.1 Main
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#222-intel-realsense-configuration" class="md-nav__link">
-    2.2.2 Intel RealSense Configuration
+  <a href="#322-intel-realsense-configuration" class="md-nav__link">
+    3.2.2 Intel RealSense Configuration
   </a>
   
 </li>
@@ -764,30 +764,30 @@
                 
                 <h1 id="robot-configuration">Robot Configuration</h1>
 <p>This section of the d.ASH SDK documentation provides details about the configuration file for the robot - <code>robot_config.json</code> - found in the folder <code>\dash-sdk\configs</code>. Information in this section includes variable and definitions used to configure the d.ASH server.</p>
-<h3 id="21-config-file">2.1 <ins>Config File</ins></h3>
+<h3 id="31-config-file">3.1 <ins>Config File</ins></h3>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;serverAddress&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:50051&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;robotHostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;192.168.80.3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;server_address&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:50051&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;robot_hostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;192.168.80.3&quot;</span><span class="p">,</span>
     <span class="nt">&quot;username&quot;</span> <span class="p">:</span> <span class="s2">&quot;&lt;USERNAME&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;camList&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;RealsenseCam&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;cam_list&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;RealsenseCam&quot;</span><span class="p">],</span>
     <span class="nt">&quot;payloads&quot;</span> <span class="p">:</span> <span class="p">[],</span>
-    <span class="nt">&quot;dataStateLogFolder&quot;</span> <span class="p">:</span> <span class="s2">&quot;G:/Temp/logs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data_state_log_folder&quot;</span> <span class="p">:</span> <span class="s2">&quot;G:/Temp/logs&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ssl&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;fastServer&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;fastServerHostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:7777&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;secureDefaultToken&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;testMode&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;withAudio&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;realSenseConfig&quot;</span> <span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;fast_server&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;fast_server_hostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:7777&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;secure_default_token&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;test_mode&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;with_audio&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;real_sense_config&quot;</span> <span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;test&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;testFilenames&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;../../test_videos/nus_left.mp4&quot;</span><span class="p">,</span> <span class="s2">&quot;../../test_videos/nus_center.mp4&quot;</span><span class="p">,</span><span class="s2">&quot;../../test_videos/nus_right.mp4&quot;</span><span class="p">],</span>
-        <span class="nt">&quot;flipOptions&quot;</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;test_filenames&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;../../test_videos/nus_left.mp4&quot;</span><span class="p">,</span> <span class="s2">&quot;../../test_videos/nus_center.mp4&quot;</span><span class="p">,</span><span class="s2">&quot;../../test_videos/nus_right.mp4&quot;</span><span class="p">],</span>
+        <span class="nt">&quot;flip_options&quot;</span> <span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;0&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
             <span class="nt">&quot;1&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
         <span class="nt">&quot;2&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
         <span class="p">},</span>
-        <span class="nt">&quot;baseWidth&quot;</span> <span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
-        <span class="nt">&quot;baseHeight&quot;</span> <span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+        <span class="nt">&quot;base_width&quot;</span> <span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+        <span class="nt">&quot;base_height&quot;</span> <span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
         <span class="nt">&quot;codec&quot;</span> <span class="p">:</span> <span class="s2">&quot;video&quot;</span><span class="p">,</span>
         <span class="nt">&quot;width&quot;</span> <span class="p">:</span> <span class="mi">320</span><span class="p">,</span>
         <span class="nt">&quot;height&quot;</span> <span class="p">:</span> <span class="mi">240</span><span class="p">,</span>
@@ -795,54 +795,103 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>&nbsp;</p>
-
-<h3 id="22-definitions">2.2 <ins>Definitions</ins></h3>
-<h4 id="221-main">2.2.1 Main</h4>
-<ul>
-<li><strong><code>serverAddress</code></strong> : Sets address of the spotServer in <code>&lt;HOSTNAME&gt;:&lt;PORT&gt;</code> format.</li>
-<li><strong><code>robotHostname</code></strong> : Sets hostname of the Spot to connect to robot's IP.</li>
-<li><strong><code>username</code></strong> : Sets username for d.ASH server credentials.</li>
-<li><strong><code>camList</code></strong> : Sets a list of cameras active for the current session.</li>
-</ul>
 <hr />
-<ul>
-<li><strong><code>payloads</code></strong> : Optional payloads list.</li>
-<li><strong><code>dataStateLogFolder</code></strong> : Sets folder to write out the recorded msgpack data of the robot.</li>
-<li><strong><code>ssl</code></strong> : Enables secure SSL messaging and encryption.</li>
-<li><strong><code>testMode</code></strong> : Enables the Spot server to enter into test mode.</li>
-<li><strong><code>withAudio</code></strong> : Enables audio streaming playback.</li>
-</ul>
+<h3 id="32-definitions">3.2 <ins>Definitions</ins></h3>
+<h4 id="321-main">3.2.1 Main</h4>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>server_address</code></strong></td>
+<td>Sets address of the d.ASH server in <code>&lt;HOSTNAME&gt;:&lt;PORT&gt;</code> format.</td>
+</tr>
+<tr>
+<td><strong><code>robot_hostname</code></strong></td>
+<td>Sets hostname of the Spot to connect to robot's IP.</td>
+</tr>
+<tr>
+<td><strong><code>username</code></strong></td>
+<td>Sets username for d.ASH server credentials.</td>
+</tr>
+<tr>
+<td><strong><code>cam_list</code></strong></td>
+<td>Sets a list of cameras active for the current session.</td>
+</tr>
+<tr>
+<td><strong><code>payloads</code></strong></td>
+<td>Optional payloads list.</td>
+</tr>
+<tr>
+<td><strong><code>data_state_log_folder</code></strong></td>
+<td>Sets folder to write out the recorded msgpack data of the robot.</td>
+</tr>
+<tr>
+<td><strong><code>ssl</code></strong></td>
+<td>Enables secure SSL messaging and encryption.</td>
+</tr>
+<tr>
+<td><strong><code>test_mode</code></strong></td>
+<td>Enables the d.ASH server to enter into test mode.</td>
+</tr>
+<tr>
+<td><strong><code>with_audio</code></strong></td>
+<td>Enables audio streaming playback.</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h4 id="222-intel-realsense-configuration">2.2.2 Intel RealSense Configuration</h4>
-<ul>
-<li><strong><code>test</code></strong>: Enables simulation of camera streaming via provided custom mp4 video files specified as a list in <code>testFilenames</code>.</li>
-<li><strong><code>testFilenames</code></strong>: List of test files.</li>
-<li><strong><code>flipOptions</code></strong>: Specify how each camera flips long the x-axis and y-axis following the format <code>{"index" : [x-flip, y-flip]}</code></li>
-</ul>
-<hr />
-<ul>
-<li><strong><code>baseWidth</code></strong>: Sets processing width of the camera stream. </li>
-<li><strong><code>baseHeight</code></strong>: Sets the processing height of the camera stream. </li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Video will be processed at this base resolution before being resized via <code>width</code> and <code>height</code>. Use these variables to change the actual processed resolution for power/efficiency considerations of the RealSense devices.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note that a minimum <code>baseWidth</code> of 640 and a minimum <code>baseHeight</code> of 360 is required.</p>
-</div>
-<ul>
-<li><strong><code>codec</code></strong>: Sets jpg/video options, with jpg being regular jpeg encoding and video using VP9 encoding. </li>
-<li><strong><code>width</code></strong>: Adjusts the final returned/resized width dimensions of the input camera stream</li>
-<li><strong><code>height</code></strong>: Adjusts the final returned/resized height dimensions of the input camera stream</li>
-</ul>
-<hr />
-<ul>
-<li><strong><code>bitrate</code></strong>:  This is the quality of the video encoding [only applies to video streaming]</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note for HD Streaming, RealSense requires a high bitrate of 3600000.</p>
-</div>
+<h4 id="322-intel-realsense-configuration">3.2.2 Intel RealSense Configuration</h4>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>test</code></strong></td>
+<td>Enables simulation of camera streaming via provided custom mp4 video files specified as a list in <code>test_filenames</code>.</td>
+</tr>
+<tr>
+<td><strong><code>test_filenames</code></strong></td>
+<td>List of test files.</td>
+</tr>
+<tr>
+<td><strong><code>flip_options</code></strong></td>
+<td>Specify how each camera flips long the x-axis and y-axis following the format <code>{"index" : [x-flip, y-flip]}</code>.</td>
+</tr>
+<tr>
+<td><strong><code>baseWidth</code></strong></td>
+<td>Sets processing width of the camera stream. Note that a minimum <code>baseWidth</code> of 640 is required.</td>
+</tr>
+<tr>
+<td><strong><code>baseHeight</code></strong></td>
+<td>Sets the processing height of the camera stream. Note that a  minimum <code>baseHeight</code> of 360 is required.</td>
+</tr>
+<tr>
+<td><strong><code>codec</code></strong></td>
+<td>Sets jpg/video options, with jpg being regular jpeg encoding and video using VP9 encoding.</td>
+</tr>
+<tr>
+<td><strong><code>width</code></strong></td>
+<td>Adjusts the final returned/resized width dimensions of the input camera stream. Video will be processed at this base resolution before being resized via <code>width</code> and <code>height</code>. Use these variables to change the actual processed resolution for power/efficiency considerations of the RealSense devices.</td>
+</tr>
+<tr>
+<td><strong><code>height</code></strong></td>
+<td>Adjusts the final returned/resized height dimensions of the input camera stream. Video will be processed at this base resolution before being resized via <code>width</code> and <code>height</code>. Use these variables to change the actual processed resolution for power/efficiency considerations of the RealSense devices.</td>
+</tr>
+<tr>
+<td><strong><code>bitrate</code></strong></td>
+<td>This is the quality of the video encoding. Note for HD Streaming, RealSense requires a high bitrate of 3600000.</td>
+</tr>
+</tbody>
+</table>
                 
               
               

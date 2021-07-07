@@ -77,117 +77,96 @@ This section of the d.ASH SDK documentation provides details about the configura
     }
 }
 ```
-<p>&nbsp;</p>
+
+---
 
 ### 4.2 ^^Definitions^^
 #### 4.2.1 Main 
 
-- **`py_address`**: The address of the d.ASH server in the formal `<IP>:<PORT>`.
-- **`ue_address`**: The address of the GUI server in the formal `<IP>:<PORT>`.
+| Variable | Definition |
+| ------ | ------ |
+| **`py_address`** | The address of the d.ASH server in the formal `<IP>:<PORT>`. |
+| **`ue_address`** | The address of the GUI server in the formal `<IP>:<PORT>`. |
+| **`ssl`** | Enables secure SSL messaging and encryption. |
+| **`motion_planner`** | Enables autonomy motion planning. |
+| **`localization`** |  Enables robot localisation, returning users position and orientation in relation to map. |
+| **`sim_mode`** | Enables Spot odometry retrieval. |
+| **`send_data_gui`** | Enables ability to send data to GUI server for visualisation. |
+| **`camera`** | Camera active for the current session to retrieve data ie. *RealsenseCam, TestCam*. |
+| **`retrieveImg`** | Enables image retrieval. |
+| **`map_name`** | Map name used for autonomy (as mentioned in [File Organisation](/dash-sdk/getting-started/map-loading)). |
+| **`pc_topic`** | ROS point cloud topic name for subscribing |
+| **`odom_topic`** | ROS odometry topic name for subscribing. |
+ 
 ---
-- **`ssl`**: Enables secure SSL messaging and encryption.
-- **`motion_planner`**: Enables autonomy motion planning.
-- **`localization`**:  Enables robot localisation, returning users position and orientation in relation to map.
-- **`sim_mode`**: Enables Spot odometry retrieval.
-- **`send_data_gui`**: Enables ability to send data to GUI server for visualisation.
----
-- **`camera`**: Camera active for the current session to retrieve data ie. *RealsenseCam, TestCam*.
-- **`retrieveImg`**: Enables image retrieval.
-- **`map_name`**: Map name used for autonomy (as mentioned in [File Organisation](/setup/file-org)).
-- **`pc_topic`**: ROS point cloud topic name for subscribing.
-- **`odom_topic`**: ROS odometry topic name for subscribing.
-<p>&nbsp;</p>
 
 #### 4.2.2 Controller
 
-- **`linear_window`**: Sets DWA (dynamic window approach) size
+!!! tip "For the following parameters, ensure the value is within limits of the robot as per its documentation."
+
+| Variable | Definition |
+| ------- | ------ |
+| **`linear_window`** | Sets DWA (dynamic window approach) size. |
+| **`linear_min_v`** | Sets minimum linear velocity for autonomy. | 
+| **`linear_max_v`** | Sets maximum linear velocity for autonomy. |
+| **`angular_max_w`** | Sets maximum angular velocity for autonomy. |
+| **`linear_max_a`** | Sets maximum linear acceleration for autonomy. |
+| **`angular_max_a`** | Sets maximum angular acceleration for autonomy. |
+| **`robot_width`** | Reflects width of robot. |
+| **`robot_length`** | Reflects the length of robot. |
+| **`obstacle_cost_gains`** | Sets weight for an obstacle course based on the weighted sum of the map. |
+| **`speed_cost_gains`** | Sets weight for speed cost. |
+| **`goal_cost_gains`** |  Sets weight for goal cost. |
+| **`angular_speed_cost_scaling_factor`** | Sets weight for angular velocity. Note that a higher value of the variable discourages the robot from turning. |
+| **`linear_num_window_steps`** | Sets number of linear velocity values to consider. Note that a higher value of the variable slows down the computations. |
+| **`angular_num_window_steps`** | Sets number of angular velocity values to consider. Note that a higher value of the variable slows down the computations. |
+| **`prediction_window`** | Sets prediction horizion (in seconds). Note that a higher value of the variable slows down the computations. |
+| **`costmap_size`** | Sets local costmap size (in meters). |
+| **`costmap_scale`** | Sets scale to convert map from meter to pixels. |
+| **`max_pc_height`** | Sets maximum point cloud height to be considered as an obstacle. |
+| **`min_pc_height`** | Sets minimum point cloud height to be considered as an obstacle. Note that the point cloud height is measured from the center of the lidar. If the ground is detected, it will be considered as an obstacle. Therefore, set the minimum value to be above the ground. |
+| **`x_filter`** | Sets vector of size 2 consisting the minimum and maximum x-value of point cloud to be removed. Do not remove too much from the point cloud filter as obstacles around the robot might not be considered. |
+| **`y_filter`** | Sets vector of size 2 consisting the minimum and maximum y-value of point cloud to be removed. Do not remove too much from the point cloud filter as obstacles around the robot might not be considered. |
+| **`costmap_obs_inflation`** | Sets inflation radius of obstacles to be considered in planning. Note that a higher value of the variable results in more conservative planning. |
+| **`occ_obs_deadzone`** |Sets minimum distances from obstacles and robots for autonomy. |
+| **`dt`** | Sets timestep. Note that a higher timestamp slows down the computation. |
+| **`visualise`** | Enables visualisation of costmap. This is used only for debugging. |
 
 ---
-!!! tip "For the following parameters, ensure the value is within limits of the robot."
-
-- **`linear_min_v`**: Sets minimum linear velocity for autonomy. 
-- **`linear_max_v`**: Sets maximum linear velocity for autonomy.
-- **`angular_max_w`**: Sets maximum angular velocity for autonomy.
-- **`linear_max_a`**: Sets maximum linear acceleration for autonomy. 
-- **`angular_max_a`**: Sets maximum angular acceleration for autonomy. 
----
-!!! tip "For the following parameters, ensure the vlaues are align with the robot as per its documentation."
-
-- **`robot_width`**: Reflects width of robot. 
-- **`robot_length`**: Reflects the length of robot.
----
-- **`obstacle_cost_gains`**: Sets weight for an obstacle course based on the weighted sum of the map.
-- **`speed_cost_gains`**: Sets weight for speed cost.
-- **`goal_cost_gains`**:  Sets weight for goal cost.
-- **`angular_speed_cost_scaling_factor`**: Sets weight for angular velocity. Note that a higher value of the variable discourages the robot from turning.
----
-!!! note "Note that a higher value of the variable slows down the computations."
-
-- **`linear_num_window_steps`**: Sets number of linear velocity values to consider. 
-- **`angular_num_window_steps`**: Sets number of angular velocity values to consider. 
-- **`prediction_window`**: Sets prediction horizion (in seconds). 
----
-- **`costmap_size`**: Sets local costmap size (in meters).
-- **`costmap_scale`**: Sets scale to convert map from meter to pixels.
----
-!!! note "Note that the point cloud height is measured from the center of the lidar. If the ground is detected, it will be considered as an obstacle. Therefore, set the minimum value to be above the ground."
-
-- **`max_pc_height`**: Sets maximum point cloud height to be considered as an obstacle.
-- **`min_pc_height`**: Sets minimum point cloud height to be considered as an obstacle.
----
-!!! tip "Do not remove too much from the point cloud filter as obstacles around the robot might not be considered."
-
-- **`x_filter`**: Sets vector of size 2 consisting the minimum and maximum x-value of point cloud to be removed. 
-- **`y_filter`**: Sets vector of size 2 consisting the minimum and maximum y-value of point cloud to be removed. 
----
-!!! note "Note that a higher value of the variable results in more conservative planning."
-
-- **`costmap_obs_inflation`**: Sets inflation radius of obstacles to be considered in planning. 
-- **`occ_obs_deadzone`**: Sets minimum distances from obstacles and robots for autonomy.
----
-- **`dt`**: Sets timestep. Note that a higher timestamp slows down the computation.
-- **`visualise`**: Enables visualisation of costmap. This is used only for debugging.
-<p>&nbsp;</p>
-
-
 
 #### 4.2.3 State Estimator
+| Variable | Definition |
+| ------- | ------ |
+| **`initial_x`** | Sets initialization of x-axis for localizaition (in meters). | 
+| **`initial_y`** | Sets initialization of y-axis for localizaition (in meters). |
+| **`initial_z`** | Sets initialization of z-axis for localizaition (in meters). |
+| **`initial_w`** | Sets initialization of orientation for localizaition. |
+| **`kImuTopic`** | ROS IMU (Inertial Measurement Unit) topic name for subscribing. |
+| **`kPoseTopic`** | Enables localization result. |
+| **`ktfUpdate`** | Sets ROS tf publishing frequency. |
+| **`kStatusUpdate`** | Sets localisation status of publishing frequency. |
+| **`kLoggingUpdate`** | Sets data logging period. |
+| **`kposeDiffmax`** | Sets the maximum distance between two consecutive pose estimation. |
+| **`KUse_imu_ori`** | Enables IMU (Inertial Measurement Unit) or odom orientation for odometry estimation. If this variable is set to true, ensure `kImuTopic` is available. |
+| **`kBadCovThres`** | Sets localization quality. |
+| **`kGoodCovThres`** | Sets localization quality. |
+| **`kCovBadMax`** | Sets localization quality. |
+| **`kCovGoodtMax`** | Sets localization quality. |
+| **`kFilter_z`** | Enables pass through filter application for localization. |
+| **`klimit_min`** | Sets minimum range of pass through filter. |
+| **`klimit_max`** | Sets maximum range of pass through filter. |
 
-- **`initial_x`**: Sets initialization of x-axis for localizaition (in meters). 
-- **`initial_y`**: Sets initialization of y-axis for localizaition (in meters).
-- **`initial_z`**: Sets initialization of z-axis for localizaition (in meters).
-- **`initial_w`**: Sets initialization of orientation for localizaition. 
 ---
-- **`kImuTopic`**: ROS IMU (Inertial Measurement Unit) topic name for subscribing.
-- **`kPoseTopic`**: Enables localization result.
-- **`ktfUpdate`**: Sets ROS tf publishing frequency.
-- **`kStatusUpdate`**: Sets localisation status of publishing frequency.
-- **`kLoggingUpdate`**: Sets data logging period.
-- **`kposeDiffmax`**: Sets the maximum distance between two consecutive pose estimation.  
-- **`KUse_imu_ori`**: Enables IMU (Inertial Measurement Unit) or odom orientation for odometry estimation. If this variable is set to true, ensure `kImuTopic` is available.
----
-- **`kBadCovThres`**: Sets localization quality.
-- **`kGoodCovThres`**: Sets localization quality.
-- **`kCovBadMax`**: Sets localization quality.
-- **`kCovGoodtMax`**: Sets localization quality.
----
-- **`kFilter_z`**: Enables pass through filter application for localization.
-- **`klimit_min`**: Sets minimum range of pass through filter.
-- **`klimit_max`**: Sets maximum range of pass through filter.
-<p>&nbsp;</p>
-
-
 
 #### 4.2.4 Planner
 
-- **`lookAheadIndexv`**: Sets look-ahead index from the nearest waypoint for path to follow. Note that a lower index slows down the movement of the robot. Similarly, a higher index results in the robot not follow path properly.
-- **`enable_self_rotate`**: Enables one round of rotation around the robot itself before performing autonomy. This is to ensure that localisation is working before starting autonomy.
-- **`self_rotation_speed`**: Sets angular velocity of robot to turn around itself before performing autonomy (in radiants/second).
-- **`self_rotation_speed_final`**: Sets angular velocity of robot to turn around itself after performing autonomy (in radiants/second). This ensures that the final orientation of robot aligns with its goal.
----
-!!! note "Note that a smaller threshold discourages the robot from determing if it has reached its goal."
+| Variable | Definition |
+| ------- | ------ |
+| **`lookAheadIndexv`** | Sets look-ahead index from the nearest waypoint for path to follow. Note that a lower index slows down the movement of the robot. Similarly, a higher index results in the robot not follow path properly. |
+| **`enable_self_rotate`** | Enables one round of rotation around the robot itself before performing autonomy. This is to ensure that localisation is working before starting autonomy. |
+| **`self_rotation_speed`** | Sets angular velocity of robot to turn around itself before performing autonomy (in radiants/second). |
+| **`self_rotation_speed_final`** | Sets angular velocity of robot to turn around itself after performing autonomy (in radiants/second). This ensures that the final orientation of robot aligns with its goal. |
+| **`dis_threshold`** | Sets maximum euclidean distance from the robot to the final goal for destination to be considered having reached its goal. Note that a smaller threshold discourages the robot from determing if it has reached its goal. |
+| **`theta_threshold`** | Sets maximum orientation distance from the robot to the final goal for destination to be considered having reached its goal. Note that a smaller threshold discourages the robot from determing if it has reached its goal. |
+| **`cmd_Smoothing`** | Enables smoothing control commands. |
 
-- **`dis_threshold`**: Sets maximum euclidean distance from the robot to the final goal for destination to be considered having reached its goal.
-- **`theta_threshold`**: Sets maximum orientation distance from the robot to the final goal for destination to be considered having reached its goal. 
-- **`cmd_Smoothing`**: Enables smoothing control commands.
----

@@ -10,7 +10,7 @@
         <meta name="author" content="dConstruct Technologies Team">
       
       
-        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-auto/UE-client/">
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-auto/autonomy-client/">
       
       <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
@@ -674,71 +674,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#11-main-components" class="md-nav__link">
-    1.1 Main Components
+  <a href="#camera-controls" class="md-nav__link">
+    Camera Controls
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-login" class="md-nav__link">
-    1.2 Login
+  <a href="#general-workflow" class="md-nav__link">
+    General Workflow
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-robot-connection" class="md-nav__link">
-    1.3 Robot Connection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-routes" class="md-nav__link">
-    1.4 Routes
-  </a>
-  
-    <nav class="md-nav" aria-label="1.4 Routes">
+    <nav class="md-nav" aria-label="General Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#141-route-controls" class="md-nav__link">
-    1.4.1 Route Controls
+  <a href="#10-load-point-cloud-map" class="md-nav__link">
+    1.0 Load Point Cloud Map
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#142-setting-up-routes" class="md-nav__link">
-    1.4.2 Setting Up Routes
+  <a href="#11-robot-fleet-manager" class="md-nav__link">
+    1.1 Robot Fleet Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-general-settings" class="md-nav__link">
+    1.2 General Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-routes-waypoints" class="md-nav__link">
+    1.3 Routes + Waypoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-settings-the-initial-robot-pose" class="md-nav__link">
+    1.4 Settings the Initial Robot Pose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-mission-routesmanagement" class="md-nav__link">
+    1.5 Mission Routes/Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-robot-camera-streaming" class="md-nav__link">
+    1.6 Robot Camera Streaming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-robot-remote-pilotingteleops" class="md-nav__link">
+    1.7 Robot Remote Piloting/TeleOps
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-map-settings" class="md-nav__link">
-    1.5 Map Settings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#16-layer-visibility" class="md-nav__link">
-    1.6 Layer Visibility
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17-load-scans" class="md-nav__link">
-    1.7 Load Scans
-  </a>
   
 </li>
       
@@ -873,163 +880,92 @@
 <tbody>
 <tr>
 <td><img align="left" alt="Screenshot" src="../img/map.jpg" style="width:3000px" /></td>
-<td><font size="3"> Pair d.C Pilot with <a href="/dash-sdk/dash-auto/UE-client">d.ASH Autonomy Controller</a> for remote autonomous operations. You'll be able to generate high quality real time 3D maps or launch point and click waypoint based missions.</td>
+<td><font size="3"> Pair d.C Pilot with <a href="/dash-sdk/dash-auto/autonomy-client">d.ASH Autonomy Controller</a> for remote autonomous operations. This app allows you to control multiple robots and author + run autonomous waypoint missions configured with different payloads.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="camera-controls">Camera Controls</h2>
+<p>You can pan/zoom/fly around the 3D Map Visualization World via the following controls:</p>
+<ul>
+<li><strong>Tilt/Camera LookAt:</strong> Hold down the <strong>Left Mouse</strong> Button and drag</li>
+<li><strong>Zoom:</strong> Use the mouse scroll wheel to zoom in/zoom out</li>
+<li><strong>Move Around:</strong> Use the <strong>WASD</strong> keys to pan/move around the world</li>
+</ul>
+<h2 id="general-workflow">General Workflow</h2>
+<p>The general workflow to operate and run an autonomous waypoint mission is as follows:</p>
+<ol>
+<li>Login to the Autonomy Controller</li>
+<li>Load the point cloud map of your deployment location generated with <strong>d.ASH Pack</strong> into the app</li>
+<li>Create a new mission Route and plot the waypoints</li>
+<li>Connect to your desired robot in your robot fleet</li>
+<li>Set the robot's initial starting pose on the 3D map</li>
+<li>Start the robot with the route for your new mission</li>
+</ol>
 <hr />
-<h3 id="11-main-components">1.1 <ins>Main Components</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Placeholder" class="center" src="../img/main.png" style="width:500px" /></td>
-<td><br> <font size="3"> (1) <ins>Main toolbar</ins>: Used to open other menus.  <br><br> (2) <ins>Slider</ins>: Used to move floor grid up and down. <br><br> 3) <ins>Access mode</ins>: Used switch to mouse/keyboard mode. <br> (3) (a) <ins>Navigation</ins>: The default mode uses the keys <code>WASD</code> to move camera and right click the mouse to zoom/tilt the camera. <br> (3) (b) <ins>Waypoint creation</ins>: Used for adding waypoints to routes. <br><br> (4) <ins>Floor grid</ins></td>
-</tr>
-</tbody>
-</table>
+<h3 id="10-load-point-cloud-map">1.0 <ins>Load Point Cloud Map</ins></h3>
+<p><img alt="Screenshot" class="center" src="../img/pointcloud-load.jpg" style="width:300px" /> </p>
+<p>Click on the <strong>Point Cloud</strong> icon to open up the point cloud loading window. Then click on <strong>Load Point Cloud</strong>. A file dialog will pop up to allow you to load your desired point cloud from disk. <strong><em>Make sure the same point cloud map is also configured on the robot(s).</em></strong></p>
 <hr />
-<h3 id="12-login">1.2 <ins>Login</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Screenshot" class="center" src="../img/login.png#center" style="width:500px" /></td>
-<td><br> <font size="3"> The login icon allow dConstruct users to log into the d.ASH autonomy controller using their cloud admin credentials.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="11-robot-fleet-manager">1.1 <ins>Robot Fleet Manager</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/robot-manager.jpg" style="width:800px" /></p>
+<p>The lower expandable panel opens up the <strong>Robot Fleet Manager</strong>. This displays the list of robots currently registered and also alive under your user account. You connect your desired robot by locating your robot in the icon list and then clicking on the <strong>connect</strong> icon. When the robot is connected, the following display appears:
+<img alt="Placeholder" class="center" src="../img/robot-running.jpg" style="width:800px" /></p>
+<p>You are now able to inspect various properties of the robot ( battery status, LIDAR color etc. ) as well as start launching autonomous waypoint missions for this connected robot.</p>
 <hr />
-<h3 id="13-robot-connection">1.3 <ins>Robot Connection</ins></h3>
-<p>The robot connection icon allow users to connect/disconnect their respective robots to the d.ASH autonomy controller. </p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/robot-connect.png" style="width:500px" /></td>
-<td><font size="3"> (1) <ins>Online pannel</ins>: Select from a list of robots that are online and ready to be used to connect to.  <br><br> (2) <ins>Connected pannel</ins>: Select from a list of robots that you have connected to in the client to manipulate. <br><br> (3) <ins>Add button</ins>: Press to connect to the robot selected in the online list to add the robot to the connected list. <br><br> (4) <ins>Minus button</ins>: Press to disconnect from a robot in the connected list.</td>
-</tr>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/init.png#center" style="width:500px" /></td>
-<td><br> <font size="3"> When users first start the d.ASH SDK, they need to give an initial estimation of the robot's post on the map by configuring its <code>init pose</code>. <br><br> It tells the robot where its rough initial position is. To initialize <code>init pose</code>, draw the orange arrow by left clicking and drag the mouse on the floor grid.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="12-general-settings">1.2 <ins>General Settings</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/settings.jpg" style="width:200px" /></p>
+<p>The <strong>General Settings</strong> expandable panel from the left side of the screen. In here you can configure various options to streamline robot operations.</p>
+<ul>
+<li><strong>General:</strong> This allows the customization of route/waypoint + map display settings</li>
+<li><strong>Robot Viz:</strong> Visualization settings pertaining to the robots operated in the app</li>
+<li><strong>Map Viz:</strong> Visualization settings for the 3D map display. In particular, use the <strong>Floor</strong> and <strong>Ceiling</strong> sliders to adjust how much of the 3D map height-wise </li>
+</ul>
 <hr />
-<h3 id="14-routes">1.4 <ins>Routes</ins></h3>
-<p>The routes icon allow users to set routes for the robot to follow using waypoints. Add/remove waypoints to build your own custom routes.</p>
-<h4 id="141-route-controls">1.4.1 Route Controls</h4>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/routes.png#center" style="width:350px" /></td>
-<td><font size="3"> (1) <ins>Route name pannel</ins>: Enter route name to add. <br><br> (2) <ins>Add button</ins>: Click to add route of given name. <br><br> (3) <ins>Route selection pannel</ins>: Click to select a route. <br><br> (4) <ins>Minus button</ins>: Press to disconnect from a robot in the connected list. <br><br> (5) <ins>Waypoint button</ins>: Click to add waypoints to selected route. <br><br> (6) <ins>Load/save button</ins>: Load/save all routes. <br><br> (7) <ins>Segment pannel</ins>: Use keypad &plusmn; to increment/decrement segment number.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h4 id="142-setting-up-routes">1.4.2 Setting Up Routes</h4>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/waypoint-1.png#center" style="width:800px" /></td>
-<td><font size="3"> To make a selected robot follow a selected route, add waypoints by clicking on the grid. Use <code>WASD</code> and right-click on the mouse to manipulate the view.</td>
-</tr>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/waypoint-2.png#center" style="width:500px" /> <br> <img alt="Screenshot" src="../img/waypoint-3.png#center" style="width:500px" /></td>
-<td><font size="3"> Once the waypoints have been set, exit waypoint mode by middle clicking the mouse. On the other hand, to remove a waypoint, click on the waypoint (selected waypoint change to the color orange), and press the <code>delete</code> ket to remove.</td>
-</tr>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/waypoint-4.png#center" style="width:500px" /></td>
-<td><font size="3"> You can also adjust the elevation of the grid by pressing the key <code>ctrl</code> and the mouse scroll moving the floor grid in waypoint mode. A waypoint is created when you click on grid, so, to create elevated waypoints, move grid up/down and then click.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="15-map-settings">1.5 <ins>Map Settings</ins></h3>
-<p>The map settings icon allow users to adjust highpass, lowpass, UV Scale, and UV offset settings to customise the visuals of your map.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/map.png#center" style="width:500px" /></td>
-<td><font size="3">  <ins>Low pass slider</ins>: Voxels below this value is visible. Voxels in maps have elevation, and by lowering the low pass, voxels above the low pass will be cropped.</td>
-</tr>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/map-2.png#center" style="width:500px" /></td>
-<td><font size="3"> Notice that the ceiling voxels have now been cropped by reducing the low pass.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="16-layer-visibility">1.6 <ins>Layer Visibility</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/layer.png#center" style="width:500px" /></td>
-<td><font size="3">  The layer visibility icon allow users to toggle the visibility of various items on the map.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="17-load-scans">1.7 <ins>Load Scans</ins></h3>
-<p>The load scans icon allow users to preview scans from the d.ASH Pack.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/load-scan.png#center" style="width:500px" /></td>
-<td><font size="3">  (1) <ins>Vox downsample size pannel</ins>: Select your down sample size (in metres). A large value means lower quality, but faster loading. <br><br> (2) <ins>Point clouds button</ins>: Pick loaded point clouds to toggle translucency..</td>
-</tr>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/load-scan-2.png#center" style="width:500px" /></td>
-<td><font size="3">  Load scans in translucent mode.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="13-routes-waypoints">1.3 <ins>Routes + Waypoints</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/routes.jpg" style="width:150px" /></p>
+<p>This subpanel can be accessed by expanding the panel on the right side of the screen. It allows you to manage the various mission routes available for your robots. To create a new route, you do the following:</p>
+<ol>
+<li>Enter a new <strong>Route Name</strong> in the textbox provided</li>
+<li>Click the <strong>+</strong> button to add a new route</li>
+<li>Select the newly route by clicking on it</li>
+<li>Now go into the main 3D Map display to start plotting your waypoints for the route.</li>
+</ol>
+<p>You can <strong>Append/Splice/Modify</strong> a route via the subpanel below:
+<img alt="Placeholder" class="center" src="../img/route-mod.jpg" style="width:120px" /></p>
+<p>With the desired waypoint plotting option selected, you can go ahead and plot the waypoint directly with the mouse:</p>
+<p><img alt="Placeholder" class="center" src="../img/route-plot.jpg" style="width:300px" /></p>
+<p>Tap the <strong>ESC</strong> key to exit the waypoint plotting operation. If you need to delete a waypoint, you can select it via a mouse click on the 3D Map, then press the <strong>Delete</strong> key.</p>
+<h3 id="14-settings-the-initial-robot-pose">1.4 <ins>Settings the Initial Robot Pose</ins></h3>
+<p>When you activate a new robot into the app, the first required step is to tell the system where the robot is and where it is facing in relation to the 3D map. This step is defined as setting the <strong>Initial Pose</strong> of the robot. You set the <strong>Initial Pose</strong> via the following steps:</p>
+<ol>
+<li>
+<p>Click on the <strong>Initial Pose</strong> arrow button on the lower expandable panel to start the <strong>Initial Pose</strong> operation:
+<img alt="Placeholder" class="center" src="../img/intial-pose1.jpg" style="width:300px" /></p>
+</li>
+<li>
+<p>Go to the 3D map, hold down your mouse on the part of the map where the robot is. Drag a direction and release to set the pose of the robot
+<img alt="Placeholder" class="center" src="../img/intial-pose2.jpg" style="width:300px" /></p>
+</li>
+<li>
+<p>If the pose was set incorrectly, you can repeat steps 1 and 2 until the <strong><em>LIDAR scans of the robot matches that of the 3D map.</em></strong> This is when you know the <strong>Initial Pose</strong> is setup correctly.</p>
+</li>
+</ol>
+<p><strong>Take Note:</strong> It is <strong><em>very important</em></strong> the <strong>Initial Pose</strong> of the robot is setup correctly before starting any <strong>Waypoint Autonomy Mission</strong>! Incorrect initial poses will result in the robot unable to localize correctly leading to mission failure.</p>
+<h3 id="15-mission-routesmanagement">1.5 <ins>Mission Routes/Management</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/missions-dock.jpg" style="width:800px" /></p>
+<p>This expandable panel located at the top part of the screen allows you to start new waypoint missions as well as manage existing missions. To start a new mission:</p>
+<ol>
+<li>Enter a new mission name in the textbox, then press the <strong>+</strong> button to add a new mission</li>
+<li>Select the new mission and press the <strong>Run</strong> button to start it</li>
+<li>You should now see your robot move in the 3D map viewer along the mission route</li>
+</ol>
+<h3 id="16-robot-camera-streaming">1.6 <ins>Robot Camera Streaming</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/camera-stream0.jpg" style="width:300px" /></p>
+<p>You can activate any available cameras on the robot via the <strong>Camera Stream</strong> button circled red above. When pressed, a new <strong>Camera Stream</strong> window pops up:</p>
+<p><img alt="Placeholder" class="center" src="../img/camera-stream1.jpg" style="width:300px" /></p>
+<p>Select the robot which you will want to stream the camera from via the top drop down box. Then use the lower drop down box to select which of the available robot cameras to stream from.</p>
+<h3 id="17-robot-remote-pilotingteleops">1.7 <ins>Robot Remote Piloting/TeleOps</ins></h3>
+<p>The app also allows basic remote manual piloting of your robots. Just like the <strong>Pilot Client</strong>, plug in a regular joystick into your system to begin manually piloting your robots. You will have to activate the robot for manual control via the manual control button located in the lower expandable panel before piloting is enabled.</p>
 
               
             </article>

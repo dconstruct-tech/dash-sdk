@@ -99,7 +99,7 @@ nav:
   - DC Pilot Guide: 
     - 1.0 d.ASH Pilot Client: dc-pilot/pilot-guide.md
   - Autonomy Guide: 
-    - 1.0 d.ASH Autonomy Controller: dash-auto/UE-client.md 
+    - 1.0 d.ASH Autonomy Controller: dash-auto/autonomy-client.md 
   - SDK Configuration:
     - 1.0 d.ASH Service Configuration: sdk-config/rest-config.md
     - 2.0 Register Payload Configuration: sdk-config/register-bot.md

@@ -4,7 +4,7 @@ As mentioned previously, the d.ASH autonomy controller is a GUI (graphical user 
 
 | d.ASH Autonomy Controller | Description |
 | ------- | ------- |
-| ![Screenshot](img/map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-sdk/dash-auto/autonomy-client) for remote autonomous operations. This app allows you to control multiple robots and author + run autonomous waypoint missions configured with different payloads.
+| ![Screenshot](img/main-map.jpg){ align=left style="width:3000px"} | <font size="3"> Pair d.C Pilot with [d.ASH Autonomy Controller](/dash-sdk/dash-auto/autonomy-client) for remote autonomous operations. This app allows you to control multiple robots and author + run autonomous waypoint missions configured with different payloads.
 
 ## Camera Controls
 You can pan/zoom/fly around the 3D Map Visualization World via the following controls:

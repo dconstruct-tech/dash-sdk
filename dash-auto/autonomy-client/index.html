@@ -10,14 +10,14 @@
         <meta name="author" content="dConstruct Technologies Team">
       
       
-        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/sdk-config/robot-config/">
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-auto/autonomy-client/">
       
       <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>3.0 Robot Configuration - d.ASH SDK</title>
+        <title>1.0 d.ASH Autonomy Controller - d.ASH SDK</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#robot-configuration" class="md-skip">
+        <a href="#dash-autonomy-controller" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.0 Robot Configuration
+              1.0 d.ASH Autonomy Controller
             
           </span>
         </div>
@@ -246,13 +246,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../dash-auto/autonomy-client/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Autonomy Guide
       </a>
     </li>
@@ -262,15 +264,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../rest-config/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../sdk-config/rest-config/" class="md-tabs__link">
         SDK Configuration
       </a>
     </li>
@@ -610,12 +610,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -636,11 +638,121 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../dash-auto/autonomy-client/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1.0 d.ASH Autonomy Controller
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         1.0 d.ASH Autonomy Controller
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#camera-controls" class="md-nav__link">
+    Camera Controls
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-workflow" class="md-nav__link">
+    General Workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="General Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-load-point-cloud-map" class="md-nav__link">
+    1.0 Load Point Cloud Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-robot-fleet-manager" class="md-nav__link">
+    1.1 Robot Fleet Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-general-settings" class="md-nav__link">
+    1.2 General Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-routes-waypoints" class="md-nav__link">
+    1.3 Routes + Waypoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-settings-the-initial-robot-pose" class="md-nav__link">
+    1.4 Settings the Initial Robot Pose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-mission-routesmanagement" class="md-nav__link">
+    1.5 Mission Routes/Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-robot-camera-streaming" class="md-nav__link">
+    1.6 Robot Camera Streaming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-robot-remote-pilotingteleops" class="md-nav__link">
+    1.7 Robot Remote Piloting/TeleOps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -658,14 +770,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -688,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-config/" class="md-nav__link">
+      <a href="../../sdk-config/rest-config/" class="md-nav__link">
         1.0 d.ASH Service Configuration
       </a>
     </li>
@@ -702,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../register-bot/" class="md-nav__link">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
         2.0 Register Payload Configuration
       </a>
     </li>
@@ -714,79 +824,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          3.0 Robot Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../sdk-config/robot-config/" class="md-nav__link">
         3.0 Robot Configuration
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#31-config-file" class="md-nav__link">
-    3.1 Config File
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#32-definitions" class="md-nav__link">
-    3.2 Definitions
-  </a>
-  
-    <nav class="md-nav" aria-label="3.2 Definitions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#321-main" class="md-nav__link">
-    3.2.1 Main
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#322-intel-realsense-configuration" class="md-nav__link">
-    3.2.2 Intel RealSense Configuration
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -798,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../auto-config/" class="md-nav__link">
+      <a href="../../sdk-config/auto-config/" class="md-nav__link">
         4.0 Auto Configuration
       </a>
     </li>
@@ -826,136 +868,104 @@
                 
 
 
-<h1 id="robot-configuration">Robot Configuration</h1>
-<p>This section of the d.ASH SDK documentation provides details about the configuration file for the robot - <code>robot_config.json</code> - found in the folder <code>\dash-sdk\configs</code>. Information in this section includes variable and definitions used to configure the d.ASH server.</p>
-<h3 id="31-config-file">3.1 <ins>Config File</ins></h3>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;server_address&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:50051&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;robot_hostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;192.168.80.3&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;username&quot;</span> <span class="p">:</span> <span class="s2">&quot;&lt;USERNAME&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;cam_list&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;RealsenseCam&quot;</span><span class="p">],</span>
-    <span class="nt">&quot;payloads&quot;</span> <span class="p">:</span> <span class="p">[],</span>
-    <span class="nt">&quot;data_state_log_folder&quot;</span> <span class="p">:</span> <span class="s2">&quot;G:/Temp/logs&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;ssl&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;fast_server&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;fast_server_hostname&quot;</span> <span class="p">:</span> <span class="s2">&quot;localhost:7777&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;secure_default_token&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;test_mode&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;with_audio&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;real_sense_config&quot;</span> <span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;test&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;test_filenames&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;../../test_videos/nus_left.mp4&quot;</span><span class="p">,</span> <span class="s2">&quot;../../test_videos/nus_center.mp4&quot;</span><span class="p">,</span><span class="s2">&quot;../../test_videos/nus_right.mp4&quot;</span><span class="p">],</span>
-        <span class="nt">&quot;flip_options&quot;</span> <span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;0&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
-            <span class="nt">&quot;1&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
-        <span class="nt">&quot;2&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;base_width&quot;</span> <span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
-        <span class="nt">&quot;base_height&quot;</span> <span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
-        <span class="nt">&quot;codec&quot;</span> <span class="p">:</span> <span class="s2">&quot;video&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;width&quot;</span> <span class="p">:</span> <span class="mi">320</span><span class="p">,</span>
-        <span class="nt">&quot;height&quot;</span> <span class="p">:</span> <span class="mi">240</span><span class="p">,</span>
-        <span class="nt">&quot;bitrate&quot;</span> <span class="p">:</span> <span class="mi">3600000</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="32-definitions">3.2 <ins>Definitions</ins></h3>
-<h4 id="321-main">3.2.1 Main</h4>
+<h1 id="dash-autonomy-controller">d.ASH Autonomy Controller</h1>
+<p>As mentioned previously, the d.ASH autonomy controller is a GUI (graphical user interface) for the d.ASH SDK. It allows users to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning. This section of the d.ASH SDK documentation provides details about setting up the d.ASH autonomy controller, including information on its respective components.</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Definition</th>
+<th>d.ASH Autonomy Controller</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><code>server_address</code></strong></td>
-<td>Sets address of the d.ASH server in <code>&lt;HOSTNAME&gt;:&lt;PORT&gt;</code> format.</td>
-</tr>
-<tr>
-<td><strong><code>robot_hostname</code></strong></td>
-<td>Sets hostname of the Spot to connect to robot's IP.</td>
-</tr>
-<tr>
-<td><strong><code>username</code></strong></td>
-<td>Sets username for d.ASH server credentials.</td>
-</tr>
-<tr>
-<td><strong><code>cam_list</code></strong></td>
-<td>Sets a list of cameras active for the current session.</td>
-</tr>
-<tr>
-<td><strong><code>payloads</code></strong></td>
-<td>Optional payloads list.</td>
-</tr>
-<tr>
-<td><strong><code>data_state_log_folder</code></strong></td>
-<td>Sets folder to write out the recorded msgpack data of the robot.</td>
-</tr>
-<tr>
-<td><strong><code>ssl</code></strong></td>
-<td>Enables secure SSL messaging and encryption.</td>
-</tr>
-<tr>
-<td><strong><code>test_mode</code></strong></td>
-<td>Enables the d.ASH server to enter into test mode.</td>
-</tr>
-<tr>
-<td><strong><code>with_audio</code></strong></td>
-<td>Enables audio streaming playback.</td>
+<td><img align="left" alt="Screenshot" src="../img/map.jpg" style="width:3000px" /></td>
+<td><font size="3"> Pair d.C Pilot with <a href="/dash-sdk/dash-auto/autonomy-client">d.ASH Autonomy Controller</a> for remote autonomous operations. This app allows you to control multiple robots and author + run autonomous waypoint missions configured with different payloads.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="camera-controls">Camera Controls</h2>
+<p>You can pan/zoom/fly around the 3D Map Visualization World via the following controls:</p>
+<ul>
+<li><strong>Tilt/Camera LookAt:</strong> Hold down the <strong>Left Mouse</strong> Button and drag</li>
+<li><strong>Zoom:</strong> Use the mouse scroll wheel to zoom in/zoom out</li>
+<li><strong>Move Around:</strong> Use the <strong>WASD</strong> keys to pan/move around the world</li>
+</ul>
+<h2 id="general-workflow">General Workflow</h2>
+<p>The general workflow to operate and run an autonomous waypoint mission is as follows:</p>
+<ol>
+<li>Login to the Autonomy Controller</li>
+<li>Load the point cloud map of your deployment location generated with <strong>d.ASH Pack</strong> into the app</li>
+<li>Create a new mission Route and plot the waypoints</li>
+<li>Connect to your desired robot in your robot fleet</li>
+<li>Set the robot's initial starting pose on the 3D map</li>
+<li>Start the robot with the route for your new mission</li>
+</ol>
 <hr />
-<h4 id="322-intel-realsense-configuration">3.2.2 Intel RealSense Configuration</h4>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><code>test</code></strong></td>
-<td>Enables simulation of camera streaming via provided custom mp4 video files specified as a list in <code>test_filenames</code>.</td>
-</tr>
-<tr>
-<td><strong><code>test_filenames</code></strong></td>
-<td>List of test files.</td>
-</tr>
-<tr>
-<td><strong><code>flip_options</code></strong></td>
-<td>Specify how each camera flips long the x-axis and y-axis following the format <code>{"index" : [x-flip, y-flip]}</code>.</td>
-</tr>
-<tr>
-<td><strong><code>baseWidth</code></strong></td>
-<td>Sets processing width of the camera stream. Note that a minimum <code>baseWidth</code> of 640 is required.</td>
-</tr>
-<tr>
-<td><strong><code>baseHeight</code></strong></td>
-<td>Sets the processing height of the camera stream. Note that a  minimum <code>baseHeight</code> of 360 is required.</td>
-</tr>
-<tr>
-<td><strong><code>codec</code></strong></td>
-<td>Sets jpg/video options, with jpg being regular jpeg encoding and video using VP9 encoding.</td>
-</tr>
-<tr>
-<td><strong><code>width</code></strong></td>
-<td>Adjusts the final returned/resized width dimensions of the input camera stream. Video will be processed at this base resolution before being resized via <code>width</code> and <code>height</code>. Use these variables to change the actual processed resolution for power/efficiency considerations of the RealSense devices.</td>
-</tr>
-<tr>
-<td><strong><code>height</code></strong></td>
-<td>Adjusts the final returned/resized height dimensions of the input camera stream. Video will be processed at this base resolution before being resized via <code>width</code> and <code>height</code>. Use these variables to change the actual processed resolution for power/efficiency considerations of the RealSense devices.</td>
-</tr>
-<tr>
-<td><strong><code>bitrate</code></strong></td>
-<td>This is the quality of the video encoding. Note for HD Streaming, RealSense requires a high bitrate of 3600000.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="10-load-point-cloud-map">1.0 <ins>Load Point Cloud Map</ins></h3>
+<p><img alt="Screenshot" class="center" src="../img/pointcloud-load.jpg" style="width:300px" /> </p>
+<p>Click on the <strong>Point Cloud</strong> icon to open up the point cloud loading window. Then click on <strong>Load Point Cloud</strong>. A file dialog will pop up to allow you to load your desired point cloud from disk. <strong><em>Make sure the same point cloud map is also configured on the robot(s).</em></strong></p>
+<hr />
+<h3 id="11-robot-fleet-manager">1.1 <ins>Robot Fleet Manager</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/robot-manager.jpg" style="width:800px" /></p>
+<p>The lower expandable panel opens up the <strong>Robot Fleet Manager</strong>. This displays the list of robots currently registered and also alive under your user account. You connect your desired robot by locating your robot in the icon list and then clicking on the <strong>connect</strong> icon. When the robot is connected, the following display appears:
+<img alt="Placeholder" class="center" src="../img/robot-running.jpg" style="width:800px" /></p>
+<p>You are now able to inspect various properties of the robot ( battery status, LIDAR color etc. ) as well as start launching autonomous waypoint missions for this connected robot.</p>
+<hr />
+<h3 id="12-general-settings">1.2 <ins>General Settings</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/settings.jpg" style="width:200px" /></p>
+<p>The <strong>General Settings</strong> expandable panel from the left side of the screen. In here you can configure various options to streamline robot operations.</p>
+<ul>
+<li><strong>General:</strong> This allows the customization of route/waypoint + map display settings</li>
+<li><strong>Robot Viz:</strong> Visualization settings pertaining to the robots operated in the app</li>
+<li><strong>Map Viz:</strong> Visualization settings for the 3D map display. In particular, use the <strong>Floor</strong> and <strong>Ceiling</strong> sliders to adjust how much of the 3D map height-wise </li>
+</ul>
+<hr />
+<h3 id="13-routes-waypoints">1.3 <ins>Routes + Waypoints</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/routes.jpg" style="width:150px" /></p>
+<p>This subpanel can be accessed by expanding the panel on the right side of the screen. It allows you to manage the various mission routes available for your robots. To create a new route, you do the following:</p>
+<ol>
+<li>Enter a new <strong>Route Name</strong> in the textbox provided</li>
+<li>Click the <strong>+</strong> button to add a new route</li>
+<li>Select the newly route by clicking on it</li>
+<li>Now go into the main 3D Map display to start plotting your waypoints for the route.</li>
+</ol>
+<p>You can <strong>Append/Splice/Modify</strong> a route via the subpanel below:
+<img alt="Placeholder" class="center" src="../img/route-mod.jpg" style="width:120px" /></p>
+<p>With the desired waypoint plotting option selected, you can go ahead and plot the waypoint directly with the mouse:</p>
+<p><img alt="Placeholder" class="center" src="../img/route-plot.jpg" style="width:300px" /></p>
+<p>Tap the <strong>ESC</strong> key to exit the waypoint plotting operation. If you need to delete a waypoint, you can select it via a mouse click on the 3D Map, then press the <strong>Delete</strong> key.</p>
+<h3 id="14-settings-the-initial-robot-pose">1.4 <ins>Settings the Initial Robot Pose</ins></h3>
+<p>When you activate a new robot into the app, the first required step is to tell the system where the robot is and where it is facing in relation to the 3D map. This step is defined as setting the <strong>Initial Pose</strong> of the robot. You set the <strong>Initial Pose</strong> via the following steps:</p>
+<ol>
+<li>
+<p>Click on the <strong>Initial Pose</strong> arrow button on the lower expandable panel to start the <strong>Initial Pose</strong> operation:
+<img alt="Placeholder" class="center" src="../img/intial-pose1.jpg" style="width:300px" /></p>
+</li>
+<li>
+<p>Go to the 3D map, hold down your mouse on the part of the map where the robot is. Drag a direction and release to set the pose of the robot
+<img alt="Placeholder" class="center" src="../img/intial-pose2.jpg" style="width:300px" /></p>
+</li>
+<li>
+<p>If the pose was set incorrectly, you can repeat steps 1 and 2 until the <strong><em>LIDAR scans of the robot matches that of the 3D map.</em></strong> This is when you know the <strong>Initial Pose</strong> is setup correctly.</p>
+</li>
+</ol>
+<p><strong>Take Note:</strong> It is <strong><em>very important</em></strong> the <strong>Initial Pose</strong> of the robot is setup correctly before starting any <strong>Waypoint Autonomy Mission</strong>! Incorrect initial poses will result in the robot unable to localize correctly leading to mission failure.</p>
+<h3 id="15-mission-routesmanagement">1.5 <ins>Mission Routes/Management</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/missions-dock.jpg" style="width:800px" /></p>
+<p>This expandable panel located at the top part of the screen allows you to start new waypoint missions as well as manage existing missions. To start a new mission:</p>
+<ol>
+<li>Enter a new mission name in the textbox, then press the <strong>+</strong> button to add a new mission</li>
+<li>Select the new mission and press the <strong>Run</strong> button to start it</li>
+<li>You should now see your robot move in the 3D map viewer along the mission route</li>
+</ol>
+<h3 id="16-robot-camera-streaming">1.6 <ins>Robot Camera Streaming</ins></h3>
+<p><img alt="Placeholder" class="center" src="../img/camera-stream0.jpg" style="width:300px" /></p>
+<p>You can activate any available cameras on the robot via the <strong>Camera Stream</strong> button circled red above. When pressed, a new <strong>Camera Stream</strong> window pops up:</p>
+<p><img alt="Placeholder" class="center" src="../img/camera-stream1.jpg" style="width:300px" /></p>
+<p>Select the robot which you will want to stream the camera from via the top drop down box. Then use the lower drop down box to select which of the available robot cameras to stream from.</p>
+<h3 id="17-robot-remote-pilotingteleops">1.7 <ins>Robot Remote Piloting/TeleOps</ins></h3>
+<p>The app also allows basic remote manual piloting of your robots. Just like the <strong>Pilot Client</strong>, plug in a regular joystick into your system to begin manually piloting your robots. You will have to activate the robot for manual control via the manual control button located in the lower expandable panel before piloting is enabled.</p>
 
               
             </article>
@@ -974,7 +984,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../register-bot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.0 Register Payload Configuration" rel="prev">
+        <a href="../../dc-pilot/pilot-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.0 d.ASH Pilot Client" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -983,20 +993,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              2.0 Register Payload Configuration
+              1.0 d.ASH Pilot Client
             </div>
           </div>
         </a>
       
       
         
-        <a href="../auto-config/" class="md-footer__link md-footer__link--next" aria-label="Next: 4.0 Auto Configuration" rel="next">
+        <a href="../../sdk-config/rest-config/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.0 d.ASH Service Configuration" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              4.0 Auto Configuration
+              1.0 d.ASH Service Configuration
             </div>
           </div>
           <div class="md-footer__button md-icon">

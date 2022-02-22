@@ -239,7 +239,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        DC Pilot Guide
+        dC Pilot Guide
       </a>
     </li>
   
@@ -256,6 +256,22 @@
     <li class="md-tabs__item">
       <a href="../../dash-auto/autonomy-client/" class="md-tabs__link">
         Autonomy Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dash-pack/dash-pack/" class="md-tabs__link">
+        d.ASH Pack Guide
       </a>
     </li>
   
@@ -575,14 +591,14 @@
       
       
         <label class="md-nav__link" for="__nav_4">
-          DC Pilot Guide
+          dC Pilot Guide
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="DC Pilot Guide" data-md-level="1">
+      <nav class="md-nav" aria-label="dC Pilot Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          DC Pilot Guide
+          dC Pilot Guide
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -795,12 +811,60 @@
       
       
         <label class="md-nav__link" for="__nav_6">
+          d.ASH Pack Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="d.ASH Pack Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          d.ASH Pack Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-pack/" class="md-nav__link">
+        1.0 d.ASH Pack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" data-md-state="indeterminate" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
           SDK Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="SDK Configuration" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           SDK Configuration
         </label>
@@ -886,8 +950,11 @@
 <p>The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompasses interactive visual components for you to control your robot both manually and autonomously. Operate your robots safely and precisely, from any location with our reliable and high-performance  BVLOS (Beyond Vision Line of Sight) System with high quality video streams and responsive controls. This section of the d.ASH SDK documentation provides details about using the d.C Pilot Client.</p>
 <hr />
 <h3 id="11-introduction">1.1 Introduction</h3>
-<p>The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance <strong>Remote TeleOps/BVLOS (Beyond Vision Line of Sight)</strong> system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection.</p>
-<p>The <strong>Vision AutoDrive</strong> is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows hands-free Level 2 Autonomy for the navigation of complex, unstructured environments using just cameras alone. Some requirements before starting the d.C Pilot are: </p>
+<p>| <img align="center" alt="Screenshot" src="../img/teleops.jpg" style="width:400px" /> |</p>
+<p>The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance <strong>Remote TeleOps/BVLOS (Beyond Vision Line of Sight)</strong> system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection. You can view a quick introduction of <strong>dc Pilot</strong> <a href="https://youtu.be/3IDTwf2jsXg">here</a></p>
+<p>| <img align="center" alt="Screenshot" src="../img/autodrive-main2.jpg" style="width:400px" /> |</p>
+<p>The <strong>Vision AutoDrive</strong> is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows hands-free Level 2 Autonomy for the navigation of complex, unstructured environments using just cameras alone.  A demonstration of what <strong>Vision AutoDrive</strong> is capable of can be viewed <a href="https://youtu.be/tcDHD-49bo0">here</a></p>
+<p>Some requirements before starting the d.C Pilot are: </p>
 <ol>
 <li>Nvidia CUDA GPU enabled PC ( At least 2 GB of GPU Memory )</li>
 <li>Joystick connected to the PC</li>
@@ -1007,8 +1074,10 @@
 </tbody>
 </table>
 <h3 id="17-autodrive">1.7 <ins>AutoDrive</ins></h3>
+<p>| <img align="center" alt="Screenshot" src="../img/autodrive-main.jpg" style="width:600px" /> | </p>
+<p><strong>AutoDrive</strong> is our state of the art ML/Computer Vision Level 2 Autonomy system for robots. <strong><em>It requires a calibrated 3 camera setup</em></strong> in order to properly function. Please make sure you have the proper setup before continuing. You can watch an overview video of what <strong>AutoDrive</strong> is capable of <a href="https://youtu.be/lj1Q29GCSDw">here</a></p>
 <p>| <img align="center" alt="Screenshot" src="../img/autodrive.png" style="width:200px" /> | </p>
-<p><strong>AutoDrive</strong> is our state of the art ML/Computer Vision Level 2 Autonomy system for robots. <strong><em>It requires a calibrated 3 camera setup</em></strong> in order to properly function. Please make sure you have the proper setup before continuing. The following options/controls are available:</p>
+<p>The following options/controls are available:</p>
 <ul>
 <li><strong>Run Motors:</strong> This starts/stops the <strong>AutoDrive</strong> system</li>
 <li><strong>Avoid Grass:</strong> Checking this ON/OFF will tell the system whether to make the robot avoid/ignore a grassy area during Autonomy</li>

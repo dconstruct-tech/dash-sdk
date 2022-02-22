@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/</loc>
+         <lastmod>2022-02-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/dc-pilot/pilot-guide/</loc>
          <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>

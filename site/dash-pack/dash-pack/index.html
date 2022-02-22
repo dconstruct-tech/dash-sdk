@@ -1,0 +1,1323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="dConstruct Technologies Team">
+      
+      
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-pack/">
+      
+      <link rel="icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
+    
+    
+      
+        <title>1.0 d.ASH Pack - d.ASH SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dash-pack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-header__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            d.ASH SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.0 d.ASH Pack
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../setup/desktop-dep/" class="md-tabs__link">
+        Setup
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/config-spot/" class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dc-pilot/pilot-guide/" class="md-tabs__link">
+        dC Pilot Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dash-auto/autonomy-client/" class="md-tabs__link">
+        Autonomy Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        d.ASH Pack Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sdk-config/rest-config/" class="md-tabs__link">
+        SDK Configuration
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-nav__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/logo-white.png" alt="logo">
+
+    </a>
+    d.ASH SDK
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" data-md-state="indeterminate" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Setup" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/desktop-dep/" class="md-nav__link">
+        1.0 Installing Desktop Dependencies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/payload-reg/" class="md-nav__link">
+        2.0 Payload Registration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/vpn/" class="md-nav__link">
+        3.0 Setting up d.ASH VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/dash/" class="md-nav__link">
+        4.0 Setting up d.ASH
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-spot/" class="md-nav__link">
+        1.0 Configuring Spot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-connect/" class="md-nav__link">
+        2.0 Configuring Sensors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/map-loading/" class="md-nav__link">
+        3.0 Map Loading
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/dash-eng/" class="md-nav__link">
+        4.0 d.ASH with ROS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          dC Pilot Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="dC Pilot Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          dC Pilot Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dc-pilot/pilot-guide/" class="md-nav__link">
+        1.0 d.ASH Pilot Client
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Autonomy Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Autonomy Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Autonomy Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-auto/autonomy-client/" class="md-nav__link">
+        1.0 d.ASH Autonomy Controller
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          d.ASH Pack Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="d.ASH Pack Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          d.ASH Pack Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1.0 d.ASH Pack
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        1.0 d.ASH Pack
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-quick-start" class="md-nav__link">
+    1.0 Quick Start
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-data-collection" class="md-nav__link">
+    1.1 Data Collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-data-processing" class="md-nav__link">
+    1.3 Data Processing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-dash-xplorer" class="md-nav__link">
+    2.0 d.ASH Xplorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements_1" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tutorial" class="md-nav__link">
+    Tutorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-modes" class="md-nav__link">
+    2.1 Modes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-map-editor" class="md-nav__link">
+    2.2 Map Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-surface-reconstruction" class="md-nav__link">
+    2.3 Surface Reconstruction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-map-transformation" class="md-nav__link">
+    2.4 Map Transformation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-2d-map-generator" class="md-nav__link">
+    2.5 2D Map Generator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-dash-pack-manager" class="md-nav__link">
+    2.6 d.ASH Pack Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-dash-pack-control" class="md-nav__link">
+    2.7 d.ASH Pack Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-download-dash-pack-recordings" class="md-nav__link">
+    2.8 Download d.ASH Pack Recordings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-3d-map-generation" class="md-nav__link">
+    2.9 3D Map Generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-configs" class="md-nav__link">
+    Mapping Configs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan-manager-plugin" class="md-nav__link">
+    Scan Manager (Plugin)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips_1" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" data-md-state="indeterminate" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          SDK Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SDK Configuration" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          SDK Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/rest-config/" class="md-nav__link">
+        1.0 d.ASH Service Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+        2.0 Register Payload Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/robot-config/" class="md-nav__link">
+        3.0 Robot Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/auto-config/" class="md-nav__link">
+        4.0 Auto Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="dash-pack">d.ASH Pack</h1>
+<p>| <img align="center" alt="Screenshot" src="../img/device.jpg" style="width:600px" /> | </p>
+<p><strong>d.ASH Pack</strong> is a mobile sensor system that allows users to create 3D Navigation Maps for Robot Autonomy. <strong>d.ASH Pack</strong> can either be worn on the back of the user (just like a backpack) or mounted on a robot. It works with <strong>d.ASH Xplorer</strong> application to generate a 3D pointcloud map. The entire workflow is fully integrated with d.ASH Fleet Management system.</p>
+<p>| <img align="center" alt="Screenshot" src="../img/dpack-img.jpg" style="width:600px" /> | </p>
+<p>You can view a short video overview of how <strong>d.ASH Pack</strong> integrates into your Autonomous Robot Deployment workflow <a href="https://youtu.be/9q2ROiMkSFI">here</a></p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>A Windows 10 / Ubuntu PC with a decent GPU</li>
+<li>d.ASH Pack device</li>
+<li>Internet Connection (Contact us if you prefer the version without any internet connection and Fleet Management integration support). This guide assumes that you have an internet connection throughout the entire workflow.</li>
+</ul>
+<h3 id="10-quick-start">1.0 Quick Start</h3>
+<p>A 3D map is created in two steps: data collection and data processing. </p>
+<p>Data collection requires the d.ASH Pack device. There are 3 different ways to activate the data collection process as listed below. If you do not have access to the Internet connection, please make sure to use Option 1 which allows you to activate the data collection via your phone.</p>
+<p>Data processing requires the d.ASH Xplorer application and Internet connection. The d.ASH Xplorer software is used to process the recorded data, create and edit 3D maps, and upload data to the Fleet Management cloud.</p>
+<h3 id="11-data-collection">1.1 Data Collection</h3>
+<p><strong>Option 1 - Connect d.ASH Pack via Wifi Network (No internet connection required)</strong></p>
+<ol>
+<li>Power up d.ASH Pack</li>
+<li>Connect to d.ASH Pack's Wifi network from your phone or other electronic devices. </li>
+<li>Open your web browser and key in "https://10.0.0.0/dashpack".</li>
+<li>Name your d.ASH Pack recording file and tap start.</li>
+<li>Walk around to cover the area that you would like to map. For better quality, please make sure to walk in loops back to previously visited areas.</li>
+<li>Once you are done, stop recording.</li>
+</ol>
+<p><strong>Option 2 - Connect to https://dc-blah-blah.com/dashpack</strong></p>
+<ol>
+<li>Power up d.ASH Pack</li>
+<li>Open your web browser and key in "https://dc-blah-blah.com/dashpack".</li>
+<li>Login with your d.ASH credentials.</li>
+<li>Name your d.ASH Pack recording file and tap start.</li>
+<li>Walk around to cover the area that you would like to map. For better quality, please make sure to walk in loops back to previously visited areas.</li>
+<li>Once you are done, stop recording.</li>
+</ol>
+<p><strong>Option 3 - Use d.ASH Xplorer</strong></p>
+<ol>
+<li>Power up d.ASH Pack</li>
+<li>Load your d.ASH Xplorer application on your PC</li>
+<li>Login with your d.ASH credentials.</li>
+<li>Click on "d.ASH Pack Manager" tab  at the top.</li>
+<li>Select your d.ASH Pack.</li>
+<li>Click on "d.ASH Pack Recording Control"</li>
+<li>Key in your d.ASH Pack recording file name and click start.</li>
+<li>Walk around to cover the area that you would like to map. For better quality, please make sure to walk in loops back to previously visited areas.</li>
+<li>Once you are done, stop recording.</li>
+</ol>
+<h3 id="13-data-processing">1.3 Data Processing</h3>
+<ol>
+<li>Load up the d.ASH Xplorer Application</li>
+<li>Login and click "d.ASH Pack Manager" tab at the top.</li>
+<li>Your d.ASH Pack device should appear in the list. Select it by clicking on it.</li>
+<li>Select the recording files that you wish to download.</li>
+<li>If you connect an ethernet cable between d.ASH Pack and your PC, you will have options to download the recordings via either an ethernet cable or wirelessly. For fast download speeds, using an Ethernet cable is recommended.</li>
+<li>Change 3D mapping configuration to suite the environment of the recording. For mapping configuration explanations/tips, please refer to Mapping Configs section in Xplorer guide.</li>
+<li>Select the preferred recording file and click "Generate Map" to start the map generation.</li>
+<li>
+<p>While it is running, you will have the following options:
+    <ul>
+        <li><strong>Pause</strong>: Pause the mapping process (Appear if mapping is running)</li>
+        <li><strong>Resume</strong>: Resume the mapping process (Appear if mapping is paused)</li> 
+        <li><strong>Cancel</strong>: Cancel the mapping process</li>
+        <li><strong>Checkpoint</strong>: Export the current 3D map to Map Editor. This is used to backup the mapping progress, if problems arise in the future some good results can be restored.</li> 
+    </ul></p>
+</li>
+<li>
+<p>Once completed, click "Map Editor" to edit the generated map. The name of the new map is the same as the recording file's name.</p>
+</li>
+<li>Follow d.ASH Xplorer guide to edit the map accordingly.</li>
+<li>Once you are satisfied with the 3D map, click "Upload" to upload the map to your d.ASH Fleet Management account in cloud.</li>
+</ol>
+<h3 id="tips">Tips</h3>
+<ol>
+<li><strong>Good Quality 3D Map</strong> : It is recommended to walk in loops back to previously visited areas for map auto-correction. You will notice some automatic corrections being done during the mapping process on d.ASH Xplorer. These corrections are called loop-closure.</li>
+<li><strong>Map Editing</strong>: You can use d.ASH Xplorer map editing function to rotate and translate the maps. Map editing is recommended so that users can deploy their autonomous robot easily. We recommend rotating the map so that the ground plane is aligned with the grid on d.ASH Xplorer.</li>
+<li><strong>Fast Record Downloading</strong>: To achieve high-speed d.ASH Pack recording retrieval, please connect an ethernet between the d.ASH Pack and your PC running d.ASH Xplorer.</li>
+<li><strong>Slow Visualization</strong>: If you encounter a slow/laggy visualization or pointcloud editing, you can downsample the pointcloud. This will increase the FPS of visualization/processing. Once the editing work is done, you can restore the pointcloud density and export or upload the pointcloud.</li>
+<li><strong>Autonomy</strong>: If you are planning to export the pointcloud map without going through our Fleet Management system, we recommend that downsample the pointcloud before you export. This will speed up the map loading process on the robots.</li>
+</ol>
+<h2 id="20-dash-xplorer">2.0 d.ASH Xplorer</h2>
+<p>| <img align="center" alt="Screenshot" src="../img/xplorer-twin.jpg" style="width:600px" /> |</p>
+<p>d.ASH Xplorer is the 3D pointcloud management application, allowing users to create, edit and export 3D maps for robotics autonomy. d.ASH Xplorer is designed to work with d.ASH Pack and equipped with state-of-the-art SLAM technology for 3D map generation. Users can edit the 3D map by rotating, translating, downsampling and cleaning up pointcloud for autonomy. 2D map can also be generated from the 3D pointcloud using the in-built grid map generator. The entire map generation workflow is fully integrated with d.ASH Fleet Management to significantly shorten and streamline the preparation process for autonomous navigation.</p>
+<p>Additionally, d.ASH Xplorer is equipped with other add-ons features such as <strong>AutoMerge</strong> which is our automatic stitching software of dense 3D scans. AutoMerge utilises sensor fusion to perform automatic scan alignment and scale-consistent stitching with little human intervention. AutoMerge system currently supports Leica BLK360.</p>
+<p>Since d.ASH Xplorer is fully integrated with d.ASH Fleet Management system to streamline autonomous robotics deployment, Internet connection is required. Should you required d.ASH Xplorer without Internet connection, please contact us for more details.</p>
+<h2 id="requirements_1">Requirements</h2>
+<ol>
+<li>PC with sufficiently good GPU</li>
+<li>d.ASH Xplorer software</li>
+<li>Internet Connection (Contact us if you are looking for offline version)</li>
+</ol>
+<h3 id="tutorial">Tutorial</h3>
+<p>| <img align="center" alt="Screenshot" src="../img/xplorer-tutorial.jpg" style="width:600px" /> | </p>
+<p>You can watch the video tutorial below to get a quick overview of how to run d.ASH Xplorer above <a href="https://youtu.be/s6JCzOCB8DE">here.</a></p>
+<h3 id="21-modes">2.1 Modes</h3>
+<p>d.ASH Xplorer has 3 main modes for various tasks:</p>
+<ol>
+<li><strong>Map Editor</strong>: Perform 3D pointcloud edit, export and upload</li>
+<li><strong>d.ASH Pack Manager</strong>: Control d.ASH Pack and generate 3D pointcloud map</li>
+<li><strong>Scan Loader</strong>: Download and perform AutoMerge on 3<sup>rd</sup> party 3D scanner.</li>
+</ol>
+<p>These 3 modes form 3 different tabs at the top of d.ASH Xplorer.</p>
+<h3 id="22-map-editor">2.2 Map Editor</h3>
+<p>Map editor is used to manage different pointclouds that you have generated. Users can perform rotation, translation, downsampling and other 3D pointcloud editing features.</p>
+<p>You can use this mode to visualize 3D pointcloud and 3D mesh by using the <strong>load</strong> button. File extension ".pcd" and ".obj" are currently supported. After loading, your 3D objects will appear in the list under <strong>Map Collections</strong>. You can hide or show a pointcloud object by clicking the green eye button.</p>
+<p><strong>Remove</strong> button simply removes the 3D object from the list. However, it does not delete the file from the PC. </p>
+<p><strong>Rename</strong> button renames the selected 3D object name.</p>
+<p><strong>Export</strong> button exports the selected 3D object to a destination of your choice. When clicked, a file dialogue will popup for you to choose the save folder destination. If the 3D object has a mesh, an "obj" file will be exported. On the other hand, if the object has a pointcloud, 3 different files will be saved. They are 3D pointcloud (.pcd), 2D map (.png) and map configuration (.json).</p>
+<p><strong>Upload</strong> button uploads the 3D map to d.ASH Cloud Fleet Management System. If a map with the same name is found in the cloud, a popup warning will ask the user to either overwrite the existing file or cancel the uploading operation. Once uploaded, users can access or download the map from the cloud.</p>
+<h3 id="23-surface-reconstruction">2.3 Surface Reconstruction</h3>
+<p>This section allows users to perform mesh reconstruction from 3D pointcloud. Grid size determines the quality of the scan. Larger grid size helps to smoothen the mesh at an expense of quality. There is an option to perform pointcloud clean up when performing surface reconstruction. However, this option tends to significantly slow down the meshing process.</p>
+<p>When surface reconstruction is running, map removal is disabled. Additionally, users should <em>not</em> perform any map transformation because the end mesh product will not be in sync with the mesh itself.</p>
+<h3 id="24-map-transformation">2.4 Map Transformation</h3>
+<p>This section allows users to perform map editing. Users can perform <strong>translation</strong> and <strong>rotation</strong> by using XYZ and quaternion values respectively. There are options for users to reset the transformations back to the original state. </p>
+<p>In addition, a widget in the center of the screen is designed to facilitate pointcloud transformation. Users can click on the widgets and see live transformation of the 3D object via clicking on the widget. To toggle between translation and rotation mode of the widget, users can choose the right mode under "Widget Mode".</p>
+<p>Users can perform downsampling by changing the <strong>Pointcloud Map Details</strong>. Users can choose between <em>Original</em> and <em>Sparse</em> details, or set their desired voxel grid size.</p>
+<p><strong>Map Cleaner</strong> helps to remove outliers to make the 3D map cleaner.</p>
+<h3 id="25-2d-map-generator">2.5 2D Map Generator</h3>
+<p>This feature creates a 2D map from a 3D map by projecting a section of the 3D map onto an image file from the top view. Users have 3 different configurations: min height, max height and pixel resolution (metre / pixel). To see which region is used for compressions, users can check <em>Show Height-Bounds</em> to display the minimum and maximum height planes. </p>
+<p>Once satisfied, click <strong>Generate</strong> to apply the configurations and view the 2D map. </p>
+<p>Users can choose to <strong>Save 2D Map</strong> separately if needed.</p>
+<p>It is recommended to ensure that the freespace is correctly represented because this information will be used for automatic path-planning and visualization on the website. However, if you do not intent to use d.ASH automatic path-planning, getting a clear 2D map for visualization is sufficient.</p>
+<h3 id="26-dash-pack-manager">2.6 d.ASH Pack Manager</h3>
+<p>This mode allows users to start/stop d.ASH Pack recordings, download d.ASH Pack recordings and generate 3D map through <em>d.ASH Pack Manager</em> window.</p>
+<p>Users can only start/stop d.ASH Pack recordings and download d.ASH Pack recording files when d.ASH Xplorer detects that there are online d.ASH Pack. Otherwise, "No online d.ASH Pack found" will be shown.</p>
+<p>If there is an online d.ASH Pack, the d.ASH Pack name will pop up on the list of online d.ASH Pack. Click on it to select the d.ASH Pack device.</p>
+<h3 id="27-dash-pack-control">2.7 d.ASH Pack Control</h3>
+<p>This section allow users to start/stop d.ASH Pack recordings. </p>
+<ol>
+<li>To start, key in d.ASH Pack recording name and click <strong>Start</strong> button.</li>
+<li>To stop, click <strong>Stop</strong> button.</li>
+</ol>
+<h3 id="28-download-dash-pack-recordings">2.8 Download d.ASH Pack Recordings</h3>
+<p>After clicking on the list of d.ASH Pack, perform the following steps to download the recording:</p>
+<ol>
+<li>Select the desired d.ASH Pack recording file from the recording list.</li>
+<li>If there is an ethernet connection between the PC running d.ASH Xplorer and d.ASH Pack, users will have options to download either wirelessly or via ethernet. It is recommend to download via an ethernet connection for fast downloading speed.</li>
+<li>Click <strong>Download</strong> to start downloading.</li>
+<li>Once it is completed, the downloaded file will appear in the <em>Downloaded d.ASH Pack Recordings</em> list ready for 3D map generation.</li>
+</ol>
+<h3 id="29-3d-map-generation">2.9 3D Map Generation</h3>
+<p>After downloading the d.ASH Pack recording, you can then generate the 3D map for that particular recording.</p>
+<ol>
+<li>Under <strong>Map Configs</strong>, users can choose different settings for the 3D map generation. For details on the configuration, please refer to the next section</li>
+<li>Select d.ASH Pack recording by clicking on the recording name under the <em>Downloaded d.ASH Pack Recordings</em> list.</li>
+<li>Click <strong>Generate Map</strong> to start the 3D map generation. You will see the 3D map being generated progressively on the screen. A green line appearing on the screen represents the path taken during the recording process.</li>
+<li>While the 3D map is being generated, users will have the following options:
+    <ul>
+        <li><strong>Pause</strong>: Pause the mapping process (Appear if mapping is running)</li>
+        <li><strong>Resume</strong>: Resume the mapping process (Appear if mapping is paused)</li> 
+        <li><strong>Cancel</strong>: Cancel the mapping process</li>
+        <li><strong>Checkpoint</strong>: Export the current 3D map to Map Editor. This is used to backup the 3D map in case there are problems later on.</li> 
+    </ul></li>
+<li>When mapping is completed, the completed map will be automatically added to the map list under <em>Map Editor</em> for other purposes such as editing and uploading.</li>
+</ol>
+<h3 id="mapping-configs">Mapping Configs</h3>
+<p>To ensure desirable mapping quality, different settings may be required for different environments and terrains. d.ASH Xplorer is equipped with different preset settings. Users are also allowed to create their own custom settings to suite their requirements. </p>
+<p>Following 3 different presents are embedded in d.ASH Xplorer:</p>
+<ol>
+<li><strong>General</strong>: This preset should work for most environment. We recommend using this preset as the first setting for your mapping.</li>
+<li><strong>Outdoor</strong>: Suitable for an outdoor environment with large open space, </li>
+<li><strong>Narrow Space</strong>: Suitable for environment with narrow corridors or cluttered space.</li>
+</ol>
+<p><strong>Generate Configuration</strong></p>
+<p>On top of the mapping configurations, users have the following options:</p>
+<ol>
+<li><strong>Start/Stop Time(%)</strong>: Users can perform mapping for a part of the d.ASH Pack recording by specifying the start and stop time in percentage (from 0-100%)</li>
+<li><strong>Save Map When Done</strong>: When checked, the 3D map will be automatically saved on the PC under <code>dASH_Xplorer/maps</code> folder. The absolute path to <code>dASH_Xplorer</code> folder depends on the operating system. You can search for the folder using the system native file dialogue.</li>
+</ol>
+<p><strong>Custom Mapping Configurations</strong></p>
+<p>To customise the configurations, please choose <strong>Custom</strong> preset. The following options are avilable:</p>
+<ol>
+<li><strong>Number of Cores</strong>: Uses number of cpu cores for parallel computation. It is recommended to be as high as possible</li>
+<li><strong>Map Corner Voxel Size</strong>: Determines the accuracy of corners alignment. The lower the value, the more accurate the alignments</li>
+<li><strong>Map Surface Voxel Size</strong>: Determines the accuracy of surface alignment. The lower the value, the more accurate the alignments</li>
+<li><strong>Keyframe Nearest Radius</strong>: Radius in meter for scan positions to be considered for loop closure.</li>
+<li><strong>Keyframe Time Difference</strong>: Time difference in seconds for different scan positions to be considered for loop closure</li>
+<li><strong>Keyframe Search Number</strong>: Number of neighbouring scan positions to be merged for loop closure detection.</li>
+<li><strong>Keyframe Similarity Score</strong>: Minimum similarity score between different scans to be considered for loop closure.</li>
+<li><strong>Surrounding Keyframe Search Radius</strong>: Radius in meter for scan positions optimization.</li>
+</ol>
+<h3 id="scan-manager-plugin">Scan Manager (Plugin)</h3>
+<p>This plugin allows users to manage 3<sup>rd</sup>-party 3D scanners. Currently, Leica BLK360 scanner is supported. </p>
+<p>This plugin is used to perform the following:
+1. Download scanMeta file from the robot
+2. Download scan data from the scanner
+3. Perform <strong>AutoMerge</strong> on all scans.</p>
+<p><strong>Download ScanMeta Files</strong></p>
+<p>ScanMeta file (<code>*.scanMeta</code>) holds critical information for each scan point. Each 3D scan activated by d.ASH robotics stack will generate a ScanMeta file. The ScanMeta data can be used to performe AutoMerge for createing digital twin (high accuracy/density 3D pointcloud model). ScanMeta files are grouped by their project names which are set by d.ASH Autonomy Mission.</p>
+<p>To download the ScanMeta files, perform the following:</p>
+<ol>
+<li>Connect your PC running d.ASH Xplorer to the Internet and make sure that the robot is online</li>
+<li>Click on the robot from the <em>Online Robot List</em>.</li>
+<li>Select the desired data folder by clicking <strong>Change</strong>. This folder will be used to store downloaded ScanMeta files. We recommend choosing an empty folder. Otherwise, some ScanMeta files will be overwritten.</li>
+<li>Click on <em>Download Files</em> to expand the window.</li>
+<li>If there are ScanMeta files found on the robot, their project names will be listed under <em>Available Scan Projects</em>. Click on the desired project.</li>
+<li>Click <strong>Download</strong> to download ScanMeta files for the entire project.</li>
+<li>After downloading, all ScanMeta files will be stored in the folder selected in Step 3.</li>
+</ol>
+<p><strong>Download 3D Scan Data From the Scanner</strong></p>
+<p>This step performs downloading of 3D scan data from the 3D scanner by using the downloaded ScanMeta files.</p>
+<ol>
+<li>Connect your PC running d.ASH Xplorer to the 3D scanner.</li>
+<li>Select the desried data folder by clicking <strong>Change</strong> . This folder should have ScanMeta files.</li>
+<li>Click on <em>Download Files</em> to expand the window.</li>
+<li>Under "Download scan data from scanner", click <strong>Download</strong></li>
+<li>There will be a window popup showing all ScanMeta filenames found in the folder selected in Step 2. If 3D scan files and scanMeta files with the same name exist, the filename will have "[Downloaded]" appended at the back of their names. </li>
+<li>Use the check boxes on the left to mark 3D scan data for downloading. Users can use <strong>Select All</strong> or <strong>Unselect All</strong> buttons for file selections. </li>
+<li>Click <strong>Download</strong> to start the 3D scan downloading process.</li>
+<li>Once completed, Click <strong>Close</strong> to close the popup.</li>
+</ol>
+<p><strong>AutoMerge</strong></p>
+<p>This step performs AutoMerge on the 3D Scan data. AutoMerge utilizes sensor fusion techniques to automatically stitch and align multiple 3D scans for scale-consistent digital twin reconstruction. AutoMerge supports both colored and non-colored pointcloud. To perform AutoMerge, perform the following steps:</p>
+<ol>
+<li>Select the desried data folder by clicking <strong>Change</strong> . This folder should have both ScanMeta files and 3D scan data files. </li>
+<li>Click on <em>AutoMerge</em> to expand the window.</li>
+<li><em>AutoMerge Scan File List</em> displays a list of files in the selected folder for AutoMerge. Only filenames with <code>.scanMeta</code> and <code>.pcd</code> are considered for AutoMerge.</li>
+<li>Since AutoMerge relies on the orientation of the 3D scanner to perform stitching, users are encouraged to preview some scans first. This is done by selecting a few scans (greater than two) and click <strong>Preview</strong>.</li>
+<li>After scan previews have loaded, expand <em>Options</em> and change the <strong>Scanner Rotation</strong> so that the selected scans are roughly aligned. These rotations will rotate the 3D scan about their centers. As the scanner rotation being changed, the 3D scan previews will also be rotated accordingly. Users do not have to perfectly align the 3D scans manually. Just a rough estimate is sufficient.</li>
+<li>After configuring the scanner rotation, users can start AutoMerge. Click <strong>AutoMerge</strong> to start the AutoMerge process on the selected files (greater than one). You will see the 3D scans popping up and aligning themselves automatically after some time.</li>
+<li>When AutoMerge has completed, users have the following options:
+    <ul>
+        <li><strong>Export</strong>: Save the AutoMerge results and individual scans with corrected poses. Users can choose to export as <code>.pcd</code> or <code>.xyz</code> file formats.</li>
+        <li><strong>Edit</strong>: Export the AutoMerge results to <strong>Map Editor</strong> for editing.</li> 
+    </ul></li>
+</ol>
+<p><strong>Options</strong></p>
+<p>There are 3 different options available for Scan Manager:</p>
+<ol>
+<li><strong>Scanner Rotation</strong>: Rotation in degrees of the scanner relative to the robot heading. As this value being changed, the 3D scan preview will also be updated in real-time.</li>
+<li><strong>Optimize Visualization</strong>: Check this to optimize rendering. Check this if you notice a laggy visualization. </li>
+<li><strong>Auto save AutoMerge results</strong>: Automatically save AutoMerge results to the data folder once AutoMerge has completed.</li>
+</ol>
+<h2 id="tips_1">Tips</h2>
+<ol>
+<li><strong>Good Mesh Quality</strong>: It is recommended to downsample the pointcloud by using <strong>Pointcloud Map Details</strong> using a grid size of about 0.1-0.2 metre depending on the quality you would like the pointcloud to be. After that, you run <strong>Surface Reconstruction</strong> with a grid size larger than what you used for map details. We recommend using grid size of 0.1-0.2 metre for Pointcloud Map Details and 1.0 metre for Surface Reconstruction.</li>
+</ol>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../dash-auto/autonomy-client/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.0 d.ASH Autonomy Controller" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              1.0 d.ASH Autonomy Controller
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../sdk-config/rest-config/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.0 d.ASH Service Configuration" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              1.0 d.ASH Service Configuration
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "toc.integrate", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      
+    
+  </body>
+</html>

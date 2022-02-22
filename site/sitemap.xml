@@ -2,77 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/dash-auto/autonomy-client/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-pack/</loc>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/dc-pilot/pilot-guide/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/getting-started/config-connect/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/getting-started/config-spot/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/getting-started/dash-eng/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/getting-started/map-loading/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/sdk-config/auto-config/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/sdk-config/register-bot/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/sdk-config/rest-config/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/sdk-config/robot-config/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/setup/dash/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/setup/desktop-dep/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/setup/payload-reg/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/setup/vpn/</loc>
-         <lastmod>2022-02-21</lastmod>
+         <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

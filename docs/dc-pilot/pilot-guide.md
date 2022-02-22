@@ -5,10 +5,15 @@ The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompass
 --- 
 ### 1.1 Introduction
 
-The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance **Remote TeleOps/BVLOS (Beyond Vision Line of Sight)** system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection.
+| ![Screenshot](img/teleops.jpg){ align=center style="width:400px"} |
 
+The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance **Remote TeleOps/BVLOS (Beyond Vision Line of Sight)** system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection. You can view a quick introduction of **dc Pilot** [here](https://youtu.be/3IDTwf2jsXg)
 
-The **Vision AutoDrive** is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows hands-free Level 2 Autonomy for the navigation of complex, unstructured environments using just cameras alone. Some requirements before starting the d.C Pilot are: 
+| ![Screenshot](img/autodrive-main2.jpg){ align=center style="width:400px"} |
+
+The **Vision AutoDrive** is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows hands-free Level 2 Autonomy for the navigation of complex, unstructured environments using just cameras alone.  A demonstration of what **Vision AutoDrive** is capable of can be viewed [here](https://youtu.be/tcDHD-49bo0)
+
+Some requirements before starting the d.C Pilot are: 
 
 1. Nvidia CUDA GPU enabled PC ( At least 2 GB of GPU Memory )
 2. Joystick connected to the PC
@@ -82,9 +87,13 @@ If you encounter situations where you lose connection to the robot ( or encounte
 
 ### 1.7 ^^AutoDrive^^
 
+| ![Screenshot](img/autodrive-main.jpg){ align=center style="width:600px"} | 
+
+**AutoDrive** is our state of the art ML/Computer Vision Level 2 Autonomy system for robots. ***It requires a calibrated 3 camera setup*** in order to properly function. Please make sure you have the proper setup before continuing. You can watch an overview video of what **AutoDrive** is capable of [here](https://youtu.be/lj1Q29GCSDw)
+
 | ![Screenshot](img/autodrive.png){ align=center style="width:200px"} | 
 
-**AutoDrive** is our state of the art ML/Computer Vision Level 2 Autonomy system for robots. ***It requires a calibrated 3 camera setup*** in order to properly function. Please make sure you have the proper setup before continuing. The following options/controls are available:
+ The following options/controls are available:
 
 - **Run Motors:** This starts/stops the **AutoDrive** system
 - **Avoid Grass:** Checking this ON/OFF will tell the system whether to make the robot avoid/ignore a grassy area during Autonomy

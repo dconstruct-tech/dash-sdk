@@ -96,10 +96,12 @@ nav:
     - 2.0 Configuring Sensors: getting-started/config-connect.md
     - 3.0 Map Loading: getting-started/map-loading.md
     - 4.0 d.ASH with ROS: getting-started/dash-eng.md 
-  - DC Pilot Guide: 
+  - dC Pilot Guide: 
     - 1.0 d.ASH Pilot Client: dc-pilot/pilot-guide.md
   - Autonomy Guide: 
     - 1.0 d.ASH Autonomy Controller: dash-auto/autonomy-client.md 
+  - d.ASH Pack Guide: 
+    - 1.0 d.ASH Pack: dash-pack/dash-pack.md 
   - SDK Configuration:
     - 1.0 d.ASH Service Configuration: sdk-config/rest-config.md
     - 2.0 Register Payload Configuration: sdk-config/register-bot.md

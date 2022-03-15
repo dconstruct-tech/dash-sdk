@@ -10,14 +10,14 @@
         <meta name="author" content="dConstruct Technologies Team">
       
       
-        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dc-pilot/pilot-guide/">
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dc-pilot/pilot-sdk/">
       
       <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>1.0 d.ASH Pilot Client - d.ASH SDK</title>
+        <title>2.0 d.ASH Pilot SDK - d.ASH SDK</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dc-pilot-client" class="md-skip">
+        <a href="#dc-pilot-sdk" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.0 d.ASH Pilot Client
+              2.0 d.ASH Pilot SDK
             
           </span>
         </div>
@@ -238,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../pilot-guide/" class="md-tabs__link md-tabs__link--active">
         dC Pilot Guide
       </a>
     </li>
@@ -606,6 +606,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../pilot-guide/" class="md-nav__link">
+        1.0 d.ASH Pilot Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -618,12 +632,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          1.0 d.ASH Pilot Client
+          2.0 d.ASH Pilot SDK
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        1.0 d.ASH Pilot Client
+        2.0 d.ASH Pilot SDK
       </a>
       
         
@@ -642,37 +656,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#11-introduction" class="md-nav__link">
-    1.1 Introduction
+  <a href="#21-discovering-your-robots" class="md-nav__link">
+    2.1 Discovering your robots
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-robot-login" class="md-nav__link">
-    1.2 Robot Login
+  <a href="#22-teleoperations" class="md-nav__link">
+    2.2 Teleoperations
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-main-controls" class="md-nav__link">
-    1.3 Main Controls
-  </a>
-  
-    <nav class="md-nav" aria-label="1.3 Main Controls">
+    <nav class="md-nav" aria-label="2.2 Teleoperations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#robot-power-onoff" class="md-nav__link">
-    Robot Power ON/OFF
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#robot-reconnectionrestart-connectivity-issues" class="md-nav__link">
-    Robot Reconnection/Restart ( Connectivity issues )
+  <a href="#game-loop-ticking-moving-robot-retrieving-images" class="md-nav__link">
+    Game Loop Ticking, Moving Robot, Retrieving images
   </a>
   
 </li>
@@ -682,73 +682,10 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#14-control-panel" class="md-nav__link">
-    1.4 Control Panel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-basic-controls" class="md-nav__link">
-    1.5 Basic Controls
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#16-cameras" class="md-nav__link">
-    1.6 Cameras
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17-autodrive" class="md-nav__link">
-    1.7 AutoDrive
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17-leica-blk360-laser-scanner" class="md-nav__link">
-    1.7 Leica BLK360 Laser Scanner
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#18-leica-rtc360-laser-scanner" class="md-nav__link">
-    1.8 Leica RTC360 Laser Scanner
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#19-boston-dynamics-spot-arm" class="md-nav__link">
-    1.9 Boston Dynamics Spot Arm
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pilot-sdk/" class="md-nav__link">
-        2.0 d.ASH Pilot SDK
-      </a>
     </li>
   
 
@@ -974,170 +911,93 @@
                 
 
 
-<h1 id="dc-pilot-client">dC Pilot Client</h1>
-<p>The dC pilot is a GUI (graphical user interface) for the d.ASH SDK. It encompasses interactive visual components for you to control your robot both manually and autonomously. Operate your robots safely and precisely, from any location with our reliable and high-performance  BVLOS (Beyond Vision Line of Sight) System with high quality video streams and responsive controls. This section of the d.ASH SDK documentation provides details about using the d.C Pilot Client.</p>
-<hr />
-<h3 id="11-introduction">1.1 Introduction</h3>
-<p>| <img align="center" alt="Screenshot" src="../img/teleops.jpg" style="width:400px" /> |</p>
-<p>The pilot client allows you to operate your robots safely and precisely, from any location via its high-performance <strong>Remote TeleOps/BVLOS (Beyond Vision Line of Sight)</strong> system. It is also equipped with high quality video streams and responsive controls for seamless naviation. The system can also be used for fleet management, to discover, monitor and control multiple robots anytime, anywhere with real time video streaming and data collection. You can view a quick introduction of <strong>dc Pilot</strong> <a href="https://youtu.be/3IDTwf2jsXg">here</a></p>
-<p>| <img align="center" alt="Screenshot" src="../img/autodrive-main2.jpg" style="width:400px" /> |</p>
-<p>The <strong>Vision AutoDrive</strong> is another key feature of the d.C Pilot, using machine learning and computer vision to analyze and understand your robot's surroundings. This allows hands-free Level 2 Autonomy for the navigation of complex, unstructured environments using just cameras alone.  A demonstration of what <strong>Vision AutoDrive</strong> is capable of can be viewed <a href="https://youtu.be/tcDHD-49bo0">here</a></p>
-<p>Some requirements before starting the d.C Pilot are: </p>
-<ol>
-<li>Nvidia CUDA GPU enabled PC ( At least 2 GB of GPU Memory )</li>
-<li>Joystick connected to the PC</li>
-<li>1 GB local storage space</li>
-<li>16 GB of CPU Memory</li>
-<li>Intel i5 CPU or equivalent</li>
-<li>Windows 10 64-bit OS or higher</li>
-</ol>
-<h3 id="12-robot-login">1.2 Robot Login</h3>
-<p>When you first load up the pilot client, you will be asked to login via your user account. After authentication, you will be presented with the following screen below:</p>
-<p>| <img align="center" alt="Screenshot" src="../img/robot_select.png" style="width:400px" /> | </p>
-<p>The screen above shows you the robots switched ON and discovered via <strong>dashBoard</strong> ( the Fleet Management System ). Any robot currently registered under your user account and is alive will be displayed. Select the robot you want and click on <strong>Take Control</strong> to proceed to control the robot. If you want to restart the robot ( due to any unforseen previously encountered issues, ), click <strong>Restart</strong> to do so.</p>
-<hr />
-<h3 id="13-main-controls">1.3 <ins>Main Controls</ins></h3>
-<p>| <img align="center" alt="Screenshot" src="../img/main-screen.png" style="width:1000px" /> | </p>
-<h4 id="robot-power-onoff"><ins>Robot Power ON/OFF</ins></h4>
-<p>This is an optional step depending on the type of robot you are running. For most robots the robot is automatically turned ON when you physically attach a battery ( or press the actual Power ON button/switch ). For robots that need to be turned ON via software ( like the <strong>Boston Dynamics Spot</strong> ), you should turn it on by pressing the <strong>Power ON</strong> button before piloting the robot. Similary, you can <strong>Power OFF</strong> the robot if it supports such functionality.</p>
-<table>
-<thead>
-<tr>
-<th>Basic Manual Piloting</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><font size="3"> To <strong>start</strong> the robot from rest, apply pressure on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To <strong>stop</strong> the robot from moving, release your hold on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To move the robot <strong>forwards</strong>, push front on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To move the robot <strong>backwards</strong>, pull back on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To turn the robot to the <strong>left</strong>, tilt left on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To turn the robot to the <strong>right</strong>, tilt right on the joystick.</td>
-</tr>
-<tr>
-<td><font size="3"> To get the robot to <strong>stand</strong> or <strong>sit</strong> ( if the Robot supports it ), click the <code>stand</code> or <code>sit</code> button under the Basic Control panel on the right side of the main screen.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h4 id="robot-reconnectionrestart-connectivity-issues"><ins>Robot Reconnection/Restart ( Connectivity issues )</ins></h4>
-<p>If you encounter situations where you lose connection to the robot ( or encounter unstable video/control streams ), you should consider <strong>Restarting/Reconnecting</strong> with the robot. There are 2 options available:</p>
-<p>| <img align="center" alt="Screenshot" src="../img/actions-menu.png" style="width:200px" /> |</p>
+<h1 id="dc-pilot-sdk">dC Pilot SDK</h1>
+<p>The dC Pilot SDK allows you to develop your own custom robot <strong>Teleoperations</strong> apps easily. You will need:</p>
 <ul>
-<li><strong>Reconnect:</strong> This issues a fast reconnection between the pilot client and the robot. Run this if you suspect there was issue with connectivity between the client and the robot.</li>
-<li><strong>Full Restart:</strong> This will flush + restart the robot system, then reconnect the client to the robot when the robot system is ready. Run this if you need to do a full restart with the robot possibly due to issues other than connectivity.</li>
+<li>C++14 compatible compiler ( VS2022 recommended )</li>
+<li>For AutoDrive: CUDA enabled GPU</li>
+<li>Windows 10</li>
 </ul>
-<h3 id="14-control-panel">1.4 <ins>Control Panel</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Control Panel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/panel.png#center" style="width:700px" /></td>
-</tr>
-<tr>
-<td><font size="3"> (1)  &nbsp; Unmute the microphone to allow dual-communication between the pilot client and the robot.</td>
-</tr>
-<tr>
-<td><font size="3"> (2)  &nbsp; Toggle between audio to broadcast speakers.</td>
-</tr>
-<tr>
-<td><font size="3"> (3)  &nbsp; Record videos in mp4 format.</td>
-</tr>
-<tr>
-<td><font size="3"> (4)  &nbsp; Upload/download video recordings.</td>
-</tr>
-<tr>
-<td><font size="3"> (5)  &nbsp; Configure settings for your preference ie. night mode.</td>
-</tr>
-<tr>
-<td><font size="3"> (6)  &nbsp; Broadcast live video streaming using eith a RTSP server or an HSL server.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="15-basic-controls">1.5 <ins>Basic Controls</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/basic-control.png#center" style="width:200px" /></td>
-<td><font size="3"> (1) &nbsp; Monitor the joystick position with respect to your robot. Control the robot by pushing further on the joystick. <br><br> (2) &nbsp; Adjust the cruise control speed using the slider control or if your joystick has a secondary lever, push the lever to activate. <br><br> (3)  &nbsp; Activate auto-drive for your robot to switch to Smart AI Assisted Cruise Autonomy. <br> -  &nbsp; Use the <code>spacebar</code> shortcut key to activate auto-drive. <br>  -  &nbsp; Use the <code>z</code> shortcut key for your robot to take the next few possible left turns. <br>  -  &nbsp; Use the <code>x</code> shortcut key for your robot to return to forward position after turning left or right. <br>  -  &nbsp; Use the <code>c</code> shortcut key for your robot to take the next few possible right turns.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="16-cameras">1.6 <ins>Cameras</ins></h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img align="left" alt="Screenshot" src="../img/cameras.png#center" style="width:1200px" /></td>
-<td><font size="3"> (1) &nbsp; Select from a list of cameras onboard Spot, which are automatically detected by the pilot client.  <br><br> (2) &nbsp; Adjust the order of cameras for a wider view scope. Ticking the flipped settings will adjust the camera orientation. <br><br> (3) &nbsp; Click on sync to sync up the default camera layout/settings from the robot. You can also manually change the camera order via the Cameras drop-down combo box. <br><br> (4)  &nbsp; Activate human tracking for people detection and labelling.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="17-autodrive">1.7 <ins>AutoDrive</ins></h3>
-<p>| <img align="center" alt="Screenshot" src="../img/autodrive-main.jpg" style="width:600px" /> | </p>
-<p><strong>AutoDrive</strong> is our state of the art ML/Computer Vision Level 2 Autonomy system for robots. <strong><em>It requires a calibrated 3 camera setup</em></strong> in order to properly function. Please make sure you have the proper setup before continuing. You can watch an overview video of what <strong>AutoDrive</strong> is capable of <a href="https://youtu.be/lj1Q29GCSDw">here</a></p>
-<p>| <img align="center" alt="Screenshot" src="../img/autodrive.png" style="width:200px" /> | </p>
-<p>The following options/controls are available:</p>
-<ul>
-<li><strong>Run Motors:</strong> This starts/stops the <strong>AutoDrive</strong> system</li>
-<li><strong>Avoid Grass:</strong> Checking this ON/OFF will tell the system whether to make the robot avoid/ignore a grassy area during Autonomy</li>
-<li><strong>Log Data:</strong> This will record any required data for sending during operation</li>
-</ul>
-<h3 id="17-leica-blk360-laser-scanner">1.7 <ins>Leica BLK360 Laser Scanner</ins></h3>
-<p>| <img align="center" alt="Screenshot" src="../img/BLK360.png" style="width:200px" /> | </p>
-<p>This panel enables you to running scanning with the <strong>Leica BLK360 Laser Scanner</strong>. Please make sure the scanner is properly mounted/connected before proceeding. Run the following steps to start scanning:</p>
-<ol>
-<li>Type in your Job Name in the textbox. This name will be used for the entire set of scans.</li>
-<li>Select your Scan quality via the <strong>Quality</strong> combo box.</li>
-<li>Select whether you want Color ( None, HDR, LDR ) via the <strong>Color</strong> combo box.</li>
-<li>Click <strong>Start</strong> to start the scanning operation.</li>
-</ol>
-<h3 id="18-leica-rtc360-laser-scanner">1.8 <ins>Leica RTC360 Laser Scanner</ins></h3>
-<p>| <img align="center" alt="Screenshot" src="../img/RTC360.png" style="width:200px" /> | </p>
-<p>This panel enables you to running scanning with the <strong>Leica RTC360 Laser Scanner</strong>. Please make sure the scanner is properly mounted/connected before proceeding.  Run the following steps to start scanning:</p>
-<ol>
-<li>Type in your Job Name in the textbox. This name will be used for the entire set of scans.</li>
-<li>Select your Scan quality via the <strong>Quality</strong> combo box.</li>
-<li>Check the options <strong>Imaging</strong>, <strong>Double Scan</strong>, <strong>VIS</strong> for your RTC 360. Please consult your scanner user manual for more information on what those options do.</li>
-<li>Click <strong>Start</strong> to start the scanning operation.</li>
-</ol>
-<h3 id="19-boston-dynamics-spot-arm">1.9 <ins>Boston Dynamics Spot Arm</ins></h3>
-<p>| <img align="center" alt="Screenshot" src="../img/spot-arm.png" style="width:200px" /> | </p>
-<p>This panel enables you to operate the <strong>Boston Dynamics Spot Arm</strong> if your Spot robot has been configured with one. Please take note that your cameras should be set to <strong>Spot's Default Black and White Cameras</strong> in order for this to function. </p>
-<ol>
-<li>Click <strong>Operate</strong> to start the Arm operation</li>
-<li>This will pop up a separate window that shows the black and white cameras on Spot.</li>
-<li>Click on the desired target area to run the arm manipulation operation.</li>
-<li>Click <strong>Run</strong> to start the arm operation.</li>
-</ol>
+<h2 id="21-discovering-your-robots">2.1 Discovering your robots</h2>
+<p>The first step you need to perform is to run the discovery service to find the robot you want registered in your fleet.</p>
+<p>Here are the required includes:
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cxxopts.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;robotDiscovery.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;robotPilot.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;robotNode.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unordered_map&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;algorithm&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;thread&gt;</span><span class="cp"></span>
+</code></pre></div></p>
+<p>Next, start the robot discovery service:
+<div class="highlight"><pre><span></span><code><span class="c1">// Create the robot discovery service</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">rDiscovery</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DashMicroSv</span><span class="o">::</span><span class="n">getRobotDiscovery</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// Login with your credetials</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">rDiscovery</span><span class="o">-&gt;</span><span class="n">loginCloud</span><span class="p">(</span><span class="n">userName</span><span class="p">,</span><span class="w"> </span><span class="n">pwd</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;ERROR! Invalid Login Credentials.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// Start the discovery</span>
+<span class="n">rDiscovery</span><span class="o">-&gt;</span><span class="n">startDiscovery</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></p>
+<p>You can now write a simple function like the one below to find the robot you want:
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">DashMicroSv</span><span class="o">::</span><span class="n">RobotNode</span><span class="o">&gt;</span><span class="w"> </span><span class="n">findRobotWithName</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">DashMicroSv</span><span class="o">::</span><span class="n">RobotDiscovery</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rDiscoveryIn</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">robotName</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">printList</span><span class="p">)</span><span class="w"> </span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">DashMicroSv</span><span class="o">::</span><span class="n">RobotNode</span><span class="o">&gt;</span><span class="w"> </span><span class="n">retBot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">aliveBots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rDiscoveryIn</span><span class="p">.</span><span class="n">getAliveRobots</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">printList</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printRobotList</span><span class="p">(</span><span class="n">aliveBots</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="nl">aBot</span> <span class="p">:</span><span class="w"> </span><span class="n">aliveBots</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">aBot</span><span class="o">-&gt;</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">robotName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">retBot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aBot</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">retBot</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
+<p>So go ahead and retrieve your robot:
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">myRobotNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">findRobotWithName</span><span class="p">(</span><span class="o">*</span><span class="n">rDiscovery</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;myRobot&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></p>
+<p>With your robot found, it is now time to construct the <strong>Pilot</strong> and control it via teleoperation commands.</p>
+<h2 id="22-teleoperations">2.2 Teleoperations</h2>
+<p>Use the robot you found in the previous section to construct your <strong>Pilot</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">myPilot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="p">(</span><span class="o">*</span><span class="n">rDiscovery</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">myRobotNode</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Now connect to the robot</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">myPilot</span><span class="o">-&gt;</span><span class="n">connect</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;ERROR! Unable to connect to robot!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="game-loop-ticking-moving-robot-retrieving-images">Game Loop Ticking, Moving Robot, Retrieving images</h3>
+<p>The recommended implementation to operate the robot is via a simple <strong>Game Loop</strong>. From there you can <strong>tick</strong> and send velocity commands as well as retrieve images from your robot. Some pseudo code of how
+it will look like is presented below:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">cv</span><span class="o">::</span><span class="n">Mat</span><span class="o">&gt;</span><span class="w"> </span><span class="n">camImgs</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Retrieve camera images</span>
+<span class="w">        </span><span class="n">myPilot</span><span class="o">-&gt;</span><span class="n">tick</span><span class="p">(</span><span class="n">camImgs</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">ProcessCamImgs</span><span class="p">(</span><span class="n">camImgs</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Move robot</span>
+<span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">RetrieveJoystick</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">rot</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">myPilot</span><span class="o">-&gt;</span><span class="n">setFreeMoveVel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">rot</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// In MS</span>
+<span class="w">        </span><span class="n">Pause</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>This concludes the simple tutorial/writeup on how to use the Pilot SDK to teleoperate your own robots.</p>
 
               
             </article>
@@ -1156,7 +1016,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../getting-started/dash-eng/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4.0 d.ASH with ROS" rel="prev">
+        <a href="../pilot-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.0 d.ASH Pilot Client" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1165,20 +1025,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              4.0 d.ASH with ROS
+              1.0 d.ASH Pilot Client
             </div>
           </div>
         </a>
       
       
         
-        <a href="../pilot-sdk/" class="md-footer__link md-footer__link--next" aria-label="Next: 2.0 d.ASH Pilot SDK" rel="next">
+        <a href="../../dash-auto/autonomy-client/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.0 d.ASH Autonomy Controller" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              2.0 d.ASH Pilot SDK
+              1.0 d.ASH Autonomy Controller
             </div>
           </div>
           <div class="md-footer__button md-icon">

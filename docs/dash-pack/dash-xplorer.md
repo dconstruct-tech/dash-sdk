@@ -12,6 +12,8 @@ Since d.ASH Xplorer is fully integrated with d.ASH Fleet Management system to st
 2. d.ASH Xplorer software
 3. Internet Connection (Contact us if you are looking for offline version)
 
+**IMPORTANT! When running on Windows 10/11, please ensure you are running your Discrete GPU in High Performance mode. Otherwise some of the functionality will fail. You can enable this by going into GPU Settings, adding d.ASH Xplorer as the app and then forcing High Performance Mode**
+
 ### Tutorial
 | ![Screenshot](img/xplorer-tutorial.jpg){ align=center style="width:600px"} | 
 

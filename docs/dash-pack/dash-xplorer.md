@@ -32,16 +32,16 @@ d.ASH Xplorer has 2 main modes for various tasks:
 
 1. **Map Editor**: Perform 3D point cloud edit, export and upload
 
-| ![Screenshot](img/MapEditor/MapEditor-Overview.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-Overview.JPG){ align=center style="width:600px"} |
 
 2. **d.ASH Pack Manager**: Control d.ASH Pack and generate 3D point cloud map
 
-| ![Screenshot](img/d.ASHPackManager/d.ASHPack-Manager-Overview.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/d.ASHPackManager/d.ASHPack-Manager-Overview.JPG){ align=center style="width:600px"} |
 
 **d.ASH Xplorer Pro** also includes:
 1. **Scan Manager**: Download and perform AutoMerge on 3rd party 3D scanners.
 
-| ![Screenshot](img/ScanManager-Overview.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/ScanManager-Overview.JPG){ align=center style="width:600px"} |
 
 These 3 modes form 3 different tabs at the top of d.ASH Xplorer.
 
@@ -50,31 +50,31 @@ The map editor is used to manage different point clouds that users have generate
 
 You can use this mode to visualize 3D point cloud and 3D mesh by using the **load** button. File extensions ".pcd", ".obj", ".las" and ".e57" are currently supported. We also have our own proprietry file extension ".dcloud" which can be used to load point clouds.
 
-| ![Screenshot](img/MapEditor/MapEditor-PCD-Load.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-PCD-Load.JPG){ align=center style="width:600px"} |
 
 After loading, your 3D objects will appear in the list under **Point Cloud Collections**. You can hide or show a point cloud object by clicking the green eye icon.
 
-| ![Screenshot](img/MapEditor/MapEditor-PCD-Loaded.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-PCD-Loaded.JPG){ align=center style="width:600px"} |
 
 The **remove** button simply removes the 3D object from the list. However, it does not delete the file from the PC. 
 
-| ![Screenshot](img/MapEditor/MapEditor-remove-PCD.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-remove-PCD.JPG){ align=center style="width:600px"} |
 
 The **rename** button renames the selected 3D object name.
 
-| ![Screenshot](img/MapEditor/MapEditor-Rename-PCD.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-Rename-PCD.JPG){ align=center style="width:600px"} |
 
 The **export** button exports the selected 3D object to a destination of your choice. When clicked, a file dialogue will pop up for you to choose the save folder destination. If the 3D object has a mesh, an "obj" file will be exported. On the other hand, if the object has a point cloud, 3 different files will be saved. They are the 3D point cloud (.pcd), 2D map (.png) and map configuration (.json).
 
-| ![Screenshot](img/MapEditor/MapEditor-Export-PCD.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-Export-PCD.JPG){ align=center style="width:600px"} |
 
 The **upload** button uploads the 3D map to d.ASH Cloud Fleet Management System. If a map with the same name is found in the cloud, a warning will pop up and ask the user to either overwrite the existing file or cancel the uploading operation. Once uploaded, users can access or download the map from the cloud.
 
-| ![Screenshot](img/MapEditor/MapEditor-Upload-PCD.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-Upload-PCD.JPG){ align=center style="width:600px"} |
 
 The **HD View** button allows for high resolution views of the full point cloud data including moving and rotating the point cloud in real time at high frame rates while also being in full colour.
 
-| ![Screenshot](img/MapEditor/MapEditor-HDView.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-HDView.JPG){ align=center style="width:600px"} |
 
 ### 2.3 Surface Reconstruction
 This feature allows users to perform mesh reconstruction from 3D point cloud. Grid size determines the quality of the scan. Larger grid sizes help to smoothen the mesh at the expense of quality. There is an option to perform a point cloud clean up when performing surface reconstruction. However, this option tends to significantly slow down the meshing process.
@@ -87,24 +87,24 @@ This feature allows users to perform map editing. Users can perform **translatio
 
 In addition, a widget in the center of the screen is designed to facilitate point cloud transformation. Users can click on the widgets and see live transformation of the 3D object. To toggle between translation and rotation mode of the widget, users can choose the right mode under "Edit Mode".
 
-| ![Screenshot](img/MapEditor/MapEditor-PCD-Transform.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-PCD-Transform.JPG){ align=center style="width:600px"} |
 
 Users can perform downsampling from the same dropdown menu and have the ability to set their desired voxel grid size.
 
-| ![Screenshot](img/MapEditor/MapEditor-PCD-Downsample.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-PCD-Downsample.JPG){ align=center style="width:600px"} |
 
 The **Pointcloud Cleaner** helps to remove outliers to make the 3D map cleaner.
 
-| ![Screenshot](img/MapEditor/MapEditor-PCD-Cleaner.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-PCD-Cleaner.JPG){ align=center style="width:600px"} |
 
 ### 2.5 2D Map Generator
 This feature creates a 2D map from a 3D map by projecting a section of the 3D map to an image file. Users can generate the 2D view from either a *top view perspective* or *side view perspective*. Users have 3 different configuration options: min height, max height and pixel resolution (metre/pixel). To see which region is used for compression, users can check *Show Height-Bounds* to display the minimum and maximum height planes. 
 
-| ![Screenshot](img/MapEditor/MapEditor-2DMapGenerator-Settings.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-2DMapGenerator-Settings.JPG){ align=center style="width:600px"} |
 
 Once satisfied, click **Generate** to apply the configurations and view the 2D map. 
 
-| ![Screenshot](img/MapEditor/MapEditor-2DMapGenerator.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-2DMapGenerator.JPG){ align=center style="width:600px"} |
 
 Users can choose to **Save 2D Map** separately if needed.
 

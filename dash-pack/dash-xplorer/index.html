@@ -1013,47 +1013,47 @@
 <ol>
 <li><strong>Map Editor</strong>: Perform 3D point cloud edit, export and upload</li>
 </ol>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-Overview.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-Overview.JPG" style="width:600px" /> |</p>
 <ol>
 <li><strong>d.ASH Pack Manager</strong>: Control d.ASH Pack and generate 3D point cloud map</li>
 </ol>
-<p>| <img align="center" alt="Screenshot" src="img/d.ASHPackManager/d.ASHPack-Manager-Overview.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-Manager-Overview.JPG" style="width:600px" /> |</p>
 <p><strong>d.ASH Xplorer Pro</strong> also includes:
 1. <strong>Scan Manager</strong>: Download and perform AutoMerge on 3<sup>rd</sup> party 3D scanners.</p>
-<p>| <img align="center" alt="Screenshot" src="img/ScanManager-Overview.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="img/ScanManager-Overview.JPG" style="width:600px" /> |</p>
 <p>These 3 modes form 3 different tabs at the top of d.ASH Xplorer.</p>
 <h3 id="22-map-editor">2.2 Map Editor</h3>
 <p>The map editor is used to manage different point clouds that users have generated. Users can rotate, translate, downsample and preform other 3D point cloud editing features.</p>
 <p>You can use this mode to visualize 3D point cloud and 3D mesh by using the <strong>load</strong> button. File extensions ".pcd", ".obj", ".las" and ".e57" are currently supported. We also have our own proprietry file extension ".dcloud" which can be used to load point clouds.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-PCD-Load.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-PCD-Load.JPG" style="width:600px" /> |</p>
 <p>After loading, your 3D objects will appear in the list under <strong>Point Cloud Collections</strong>. You can hide or show a point cloud object by clicking the green eye icon.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-PCD-Loaded.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-PCD-Loaded.JPG" style="width:600px" /> |</p>
 <p>The <strong>remove</strong> button simply removes the 3D object from the list. However, it does not delete the file from the PC. </p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-remove-PCD.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-remove-PCD.JPG" style="width:600px" /> |</p>
 <p>The <strong>rename</strong> button renames the selected 3D object name.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-Rename-PCD.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-Rename-PCD.JPG" style="width:600px" /> |</p>
 <p>The <strong>export</strong> button exports the selected 3D object to a destination of your choice. When clicked, a file dialogue will pop up for you to choose the save folder destination. If the 3D object has a mesh, an "obj" file will be exported. On the other hand, if the object has a point cloud, 3 different files will be saved. They are the 3D point cloud (.pcd), 2D map (.png) and map configuration (.json).</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-Export-PCD.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-Export-PCD.JPG" style="width:600px" /> |</p>
 <p>The <strong>upload</strong> button uploads the 3D map to d.ASH Cloud Fleet Management System. If a map with the same name is found in the cloud, a warning will pop up and ask the user to either overwrite the existing file or cancel the uploading operation. Once uploaded, users can access or download the map from the cloud.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-Upload-PCD.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-Upload-PCD.JPG" style="width:600px" /> |</p>
 <p>The <strong>HD View</strong> button allows for high resolution views of the full point cloud data including moving and rotating the point cloud in real time at high frame rates while also being in full colour.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-HDView.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-HDView.JPG" style="width:600px" /> |</p>
 <h3 id="23-surface-reconstruction">2.3 Surface Reconstruction</h3>
 <p>This feature allows users to perform mesh reconstruction from 3D point cloud. Grid size determines the quality of the scan. Larger grid sizes help to smoothen the mesh at the expense of quality. There is an option to perform a point cloud clean up when performing surface reconstruction. However, this option tends to significantly slow down the meshing process.</p>
 <p>When surface reconstruction is running, map removal is disabled. Additionally, <span style="color:red">users should <em>not</em> perform any map transformation </span>because the end mesh product will not be in sync with the mesh itself.</p>
 <h3 id="24-map-transformation">2.4 Map Transformation</h3>
 <p>This feature allows users to perform map editing. Users can perform <strong>translation</strong> and <strong>rotation</strong> by using XYZ and quaternion values respectively. There are options for users to reset the transformations back to the original state. </p>
 <p>In addition, a widget in the center of the screen is designed to facilitate point cloud transformation. Users can click on the widgets and see live transformation of the 3D object. To toggle between translation and rotation mode of the widget, users can choose the right mode under "Edit Mode".</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-PCD-Transform.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-PCD-Transform.JPG" style="width:600px" /> |</p>
 <p>Users can perform downsampling from the same dropdown menu and have the ability to set their desired voxel grid size.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-PCD-Downsample.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-PCD-Downsample.JPG" style="width:600px" /> |</p>
 <p>The <strong>Pointcloud Cleaner</strong> helps to remove outliers to make the 3D map cleaner.</p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-PCD-Cleaner.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-PCD-Cleaner.JPG" style="width:600px" /> |</p>
 <h3 id="25-2d-map-generator">2.5 2D Map Generator</h3>
 <p>This feature creates a 2D map from a 3D map by projecting a section of the 3D map to an image file. Users can generate the 2D view from either a <em>top view perspective</em> or <em>side view perspective</em>. Users have 3 different configuration options: min height, max height and pixel resolution (metre/pixel). To see which region is used for compression, users can check <em>Show Height-Bounds</em> to display the minimum and maximum height planes. </p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-2DMapGenerator-Settings.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-2DMapGenerator-Settings.JPG" style="width:600px" /> |</p>
 <p>Once satisfied, click <strong>Generate</strong> to apply the configurations and view the 2D map. </p>
-<p>| <img align="center" alt="Screenshot" src="img/MapEditor/MapEditor-2DMapGenerator.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/MapEditor/MapEditor-2DMapGenerator.JPG" style="width:600px" /> |</p>
 <p>Users can choose to <strong>Save 2D Map</strong> separately if needed.</p>
 <p>It is recommended to ensure that the freespace is correctly represented because this information will be used for automatic path-planning and visualization on the website. However, if you do not intent to use d.ASH automatic path-planning, getting a clear 2D map for visualization is sufficient.</p>
 <h3 id="26-dash-pack-manager">2.6 d.ASH Pack Manager</h3>

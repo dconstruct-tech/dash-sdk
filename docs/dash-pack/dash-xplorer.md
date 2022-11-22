@@ -41,7 +41,7 @@ d.ASH Xplorer has 2 main modes for various tasks:
 **d.ASH Xplorer Pro** also includes:
 1. **Scan Manager**: Download and perform AutoMerge on 3rd party 3D scanners.
 
-| ![Screenshot](img/ScanManager-Overview.JPG){ align=center style="width:600px"} |
+| ![Screenshot](img/ScanManager/ScanManager-Overview.JPG){ align=center style="width:600px"} |
 
 These 3 modes form 3 different tabs at the top of d.ASH Xplorer.
 

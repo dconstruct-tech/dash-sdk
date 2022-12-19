@@ -1,5 +1,3 @@
-<div style="text-align: justify">
-
 # d.ASH Pack
 
 | ![Screenshot](img/device.jpg){ align=center style="width:600px"} |

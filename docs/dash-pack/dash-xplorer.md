@@ -1,8 +1,3 @@
-<head>
-    <link rel="stylesheet" href="../stylesheets/extra.css">
-</head>
-<div style="text-align: justify">
-
 
 <!-- Quick start guide for how to gen pcds -->
 # d.ASH Xplorer
@@ -164,10 +159,8 @@ The **Point Cloud Cleaner** helps to remove outliers and smoothen the point clou
     <br><i>[Default: Unchecked]</i></li>
 </ul>
 
-<div>
-<button type="button" class="collapsible"><i>Click for an explanation of the advanced settings. Use them at your own discretion.</i></button>
-<div class="content">
-<br>
+The options listed below are for advanced users, please use them at your own discretion.
+
 <i>Statistical Outlier Removal:</i>
 <ul>
     <li><strong>K-Mean (Number of Neighbours)</strong>: For each point, its surrounding points will be used to calculate the standard deviation in distance between points. A higher value means more surrounding points will be considered. <i>[Default: 50]</i></li>
@@ -187,9 +180,6 @@ The **Point Cloud Cleaner** helps to remove outliers and smoothen the point clou
 </ul>
 
 | ![Screenshot](img/MapEditor/MapEditor-PCD-Cleaner-Advanced.JPG){ align=center style="width:600px"} |
-
-</div>
-</div>
 
 ### 2.5 3D Point Cloud Cropper
 
@@ -328,10 +318,7 @@ The **Max Point Cloud Range per Scan (m)** is the distance from the origin where
 
 **Advanced Generation Configurations**
 
-<div>
-<button type="button" class="collapsible"><i>Click for an explanation of the advanced settings. Use them at your own discretion.</i></button>
-<div class="content">
-<br>
+The options listed below are for advanced users, please use them at your own discretion.
 
 1. **Loop Closure Search Radius (m)**: Used for automatic Loop Closure detection. Scan points within this radius are considered for Loop Closure. *[Default: 20.0]*
 2. **Loop Closure Minimum Time Difference (s)**: A certain amount of time must pass before points can be considered for Loop Closure. This is to prevent consecutive poses from being used as Loop Closure candidates. *[Default: 10.000]*
@@ -341,9 +328,6 @@ The **Max Point Cloud Range per Scan (m)** is the distance from the origin where
 6. **Minimum Keyframe Angle Difference (rad.)**: This value controls the minimum angular displacement between each LiDAR scan which is used for mapping. *[Default: 0.10]*
 7. **Fast Mode**: Uses multiple threads to run map generation. This will be faster than using a single thread but may result in a lower quality map, especially in complex areas with little features such as buildings. *[Default: unchecked]*
 8. **Scan Context Loop Closure**: Advanced Loop Closure algorithm. Checking this will result in more scan posititions being considered for loop closure, thus generating a higher quality map. *[Default: unchecked]*
-
-</div>
-</div>
 
 **What is Manual Loop Closure Detection?**
 In the event that 3D Point Cloud Generation is unable to detect loop closures (a pair of scan points with similar locations) at certain areas of a point cloud, you can perform *Manual Loop Closure Detection* to stitch these parts of the point cloud together. *Manual Loop Closure Detection* works by trying to pair every point selected with each other in all permutations possible.
@@ -444,20 +428,3 @@ There are 3 different options available for Scan Manager:
 1. **Scanner Rotation**: Rotation in degrees of the scanner relative to the robot heading. As this value is changed, the 3D scan preview will also be updated in real-time.
 2. **Optimize Visualization**: Check this to optimize rendering. Check this if you notice a laggy visualization.
 3. **Auto save AutoMerge results**: Automatically save AutoMerge results to the data folder once AutoMerge has completed.
-
-</div>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>

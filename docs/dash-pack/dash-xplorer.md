@@ -1,5 +1,3 @@
-
-<!-- Quick start guide for how to gen pcds -->
 # d.ASH Xplorer
 
 | ![Screenshot](img/xplorer-twin.jpg){ align=center style="width:600px"} |
@@ -8,7 +6,7 @@ d.ASH Xplorer is *the* 3D point cloud management application, allowing users to 
 
 Two versions of d.ASH Xplorer are available. **d.ASH Xplorer** and **d.ASH Xplorer Pro**.
 
-d.ASH Xplorer Pro is equipped with other add-on features such as the **Scan Manager** which provides scanning support and automatic stitching of dense 3D point cloud scans. AutoMerge utilises sensor fusion to perform automatic scan alignment and scale-consistent stitching with little human intervention. The AutoMerge system currently supports the Leica BLK360.
+*d.ASH Xplorer Pro* is equipped with other add-on features such as the **Scan Manager** which provides scanning support and automatic stitching of dense 3D point cloud scans. AutoMerge utilises sensor fusion to perform automatic scan alignment and scale-consistent stitching with little human intervention. The AutoMerge system currently supports the Leica BLK360. Other features include uploading of Navigation Maps to the cloud and exporting maps to Revit.
 
 Since d.ASH Xplorer is fully integrated with [d.ASH Fleet Management system](https://www.dconstruct.co/products), an internet connection is required. Should you require d.ASH Xplorer without an internet connection, please [contact us](mailto:hello@dconstruct.ai) for more details.
 
@@ -19,28 +17,42 @@ Since d.ASH Xplorer is fully integrated with [d.ASH Fleet Management system](htt
 3. Internet Connection
 4. Windows 10/11
 
-*We recommend using an Nvidia discrete GPU greater than or equivalent to a GTX 1650 (G5). Some features such as "HD View" are disabled on other GPUs.*
+*We recommend using an Nvidia discrete GPU greater than or equivalent to a GTX 960. Some features such as "HD View" are disabled on other GPUs.*
 
  **<span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure you are running a Discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities would be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span>**
 
 ### Tutorial
 
-| ![Screenshot](img/xplorer-tutorial.JPG){ align=center style="width:600px"} |
+| ![Screenshot](img/xplorer-tutorial.jpg){ align=center style="width:600px"} |
 
 You can watch the video tutorial to get a quick overview of how to run d.ASH Xplorer above [here](https://youtu.be/s6JCzOCB8DE).
 
 **Control Scheme**
+
 d.ASH Xplorer's control scheme is as follows:
 
 - WASD: Navigate around the point cloud
 - LMB/MB1: Drag mouse to pan around the point cloud
 - RMB/MB2: Drag mouse to zoom in and out
 - MMB/MB3: Drag mouse to navigate around the point cloud
-- E Move upwards(positive) in the Y-axis
+- E: Move upwards(positive) in the Y-axis
 - Q: Move downwards(negative) in the Y-axis
 - F: Returns view to origin
 
-### 2.1 Modes
+### 2.1 Quick Start
+
+For a more detailed look at the different features d.ASH Xplorer has to offer, please refer below. This is just a brief overview on how d.ASH Xplorer should be used.
+
+1. Download the .dpack recording from your d.ASH Pack
+2. Click on the *Generate Point Cloud* button
+3. Once the map is generated, configure the *Post-processing Settings* by changing the *Post Processing Options* dropdown to Nav Map
+4. Then click *Post Process*
+5. Navigate to the *Point cloud editor*
+6. Click *Upload Nav Map* [d.ASH Xplorer Pro only]
+
+The generated recording can now be used for robot autonomous navigation with [d.ASH Fleet Management system](https://www.dconstruct.co/products).
+
+### 2.2 Modes
 
 d.ASH Xplorer has 2 main modes for various tasks:
 
@@ -60,7 +72,7 @@ d.ASH Xplorer has 2 main modes for various tasks:
 
 These 3 modes form 3 different tabs at the top of d.ASH Xplorer.
 
-### 2.2 Point Cloud Editor
+### 2.3 Point Cloud Editor
 
 The point cloud editor is used to manage different point clouds that users have generated. Users can rotate, translate, downsample and perform other 3D point cloud editing features.
 
@@ -74,7 +86,7 @@ After loading, your 3D objects will appear in the list under **Point Cloud Colle
 
 The **Remove** button simply removes the 3D object from the list. However, it does not delete the file from the PC.
 
-| ![Screenshot](img/MapEditor/MapEditor-remove-PCD.JPG){ align=center style="width:600px"} |
+| ![Screenshot](img/MapEditor/MapEditor-Remove-PCD.JPG){ align=center style="width:600px"} |
 
 The **Rename** button renames the selected 3D object name.
 
@@ -84,19 +96,9 @@ The **Export Nav Map** button exports not just the selected 3D object, but the 3
 
 | ![Screenshot](img/MapEditor/MapEditor-Export-Nav-Map.JPG){ align=center style="width:600px"} |
 
-<!-- Pro only -->
-The **Upload Nav Map** button uploads the 3D map to the [d.ASH Cloud Fleet Management System](https://www.dconstruct.co/products). If a map with the same name is found in the cloud, a warning will pop up and ask the user to either overwrite the existing file or cancel the uploading operation. Once uploaded, users can access or download the map from the cloud.
-
-| ![Screenshot](img/MapEditor/MapEditor-Upload-PCD.JPG){ align=center style="width:600px"} |
-
 The **Export** button exports the selected 3D object to a destination of your choice. When clicked, a file dialogue will pop up for you to choose the save folder destination.
 
 | ![Screenshot](img/MapEditor/MapEditor-Export-PCD.JPG){ align=center style="width:600px"} |
-
-<!-- Pro only -->
-The **Export to Revit** button exports the selected 3D object for use with Revit.
-
-| ![Screenshot](img/MapEditor/MapEditor-Export-Revit.JPG){ align=center style="width:600px"} |
 
 The **HD View** button allows for high-resolution views of the full point cloud data including moving and rotating the point cloud in real-time at high frame rates while also being in full colour. **An Nvidia discrete gpu with CUDA capabilities is required.**
 
@@ -106,6 +108,16 @@ The **Flip Colour** button flips the colours of points in the point cloud from R
 
 | ![Screenshot](img/MapEditor/MapEditor-Flip-Colour.JPG){ align=center style="width:600px"} |
 
+*The following options are locked to **d.ASH Xplorer Pro***
+
+The **Upload Nav Map** button uploads the 3D map to the [d.ASH Cloud Fleet Management System](https://www.dconstruct.co/products). If a map with the same name is found in the cloud, a warning will pop up and ask the user to either overwrite the existing file or cancel the uploading operation. Once uploaded, users can access or download the map from the cloud.
+
+| ![Screenshot](img/MapEditor/MapEditor-Upload-PCD.JPG){ align=center style="width:600px"} |
+
+The **Export to Revit** button exports the selected 3D object for use with Revit.
+
+| ![Screenshot](img/MapEditor/MapEditor-Export-Revit.JPG){ align=center style="width:600px"} |
+
 The **Multi Point Cloud Processor** allows users to
 - align different point clouds through geometry. This is useful for stitching scans of different parts of an area together.
 - merge the point clouds into a single, final point cloud
@@ -113,23 +125,41 @@ The **Multi Point Cloud Processor** allows users to
 
 To process the point clouds, just select the point clouds you want to process and options to *Align*, *Merge* and *Compare* will appear. A checkbox for the *Swap Alignment Indices* property will appear as well.
 
-*Swap Alignment Indices* means when alignment is done, the target and source points are swapped (e.g. instead of point 1 matching point 2, point 2 matches point 1 ) *[Default: Unchecked]*
+| ![Screenshot](img/MultiCloudProcessor/multi-cloud-processor.png){ align=center style="width:600px"} |
+
+*Swap Alignment Indices* means when alignment is done, the target and source points are swapped (i.e. instead of point A trying to match against point B, point B tries to match against point A) *[Default: Unchecked]*
 
 **Aligning point clouds**
-Point clouds taken/generated of the same locations can be aligned and made to match one another in d.ASH Xplorer. This can aid in comparing and merging of the point clouds. In order to align the point clouds, just click the *Align* button and d.ASH Xplorer will auto align the point clouds for you.
+Point clouds taken/generated can be aligned and made to match one another in d.ASH Xplorer. This can aid in comparing and merging of the point clouds. In order to align the point clouds, just click the *Align* button and d.ASH Xplorer will auto align the point clouds for you.
+
+| ![Screenshot](img/MultiCloudProcessor/align.png){ align=center style="width:600px"} |
 
 **Merging point clouds**
-Point clouds taken/generated of the same locations can be merged into one point cloud in d.ASH Xplorer. *Please ensure the point clouds are aligned first, as merging without aligning can lead to very undesirable results*. To merge the point clouds, just click the *Merge* button.
+Point clouds taken/generated can be merged into one point cloud in d.ASH Xplorer. *Please ensure the point clouds are aligned first, as merging without aligning can lead to very undesirable results*. To merge the point clouds, just click the *Merge* button.
+
+| ![Screenshot](img/MultiCloudProcessor/merge.png){ align=center style="width:600px"} |
 
 **Comparing point clouds**
+Point clouds taken/generated can be compared against one another. *Please ensure the point clouds are aligned first, as comparing without aligning can lead to very undesirable results*. To compare the point clouds, click the *Compare* button.
+
+| ![Screenshot](img/MultiCloudProcessor/compare.png){ align=center style="width:600px"} |
+
+The following comparison settings are shown after clicking *Compare*:
+- Comparison Resolution (m): Points will be grouped into a voxel the size of the value set. This will be used to compare the point clouds voxel by voxel. *[Default: 0.8]*
+- Align Before Comparison: Aligns the point clouds before comparison takes place *[Default: Unchecked]*
+
+| ![Screenshot](img/MultiCloudProcessor/comparison-settings.png){ align=center style="width:600px"} |
+
 Point clouds can be compared with three different measurements which are:
-- points added: Comparing point cloud 1 and 2, what are the points added between the two point clouds
-- points kept: Comparing point cloud 1 aand 2, what are points which are the same/retained between the two point clouds
-- points removed: Comparing point cloud 1 and 2, which points are removed between the two point clouds
+- Points added: Comparing point cloud 1 and 2, what are the points added between the two point clouds. This is visualised in <span style="color:green">green</span> points.
+- Points removed: Comparing point cloud 1 and 2, which points are removed between the two point clouds. This is visualised in <span style="color:red">red</span> points.
+- Points unchanged: Comparing point cloud 1 and 2, what are points which are the same/retained between the two point clouds. This is visualised in <span style="color:blue">blue</span> points.
 
-<!-- Insert image here -->
+You can enable or disable the different views by clicking on the checkboxes.
 
-### 2.3 Point Cloud Transformation
+| ![Screenshot](img/MultiCloudProcessor/comparison.png){ align=center style="width:600px"} |
+
+### 2.4 Point Cloud Transformation
 
 This feature allows users to edit the point cloud. Users can perform **translation** and **rotation** by using XYZ and quaternion values respectively. There are options for users to reset the transformations back to the original state.
 
@@ -141,10 +171,11 @@ Users can perform downsampling from the same dropdown menu and have the ability 
 
 | ![Screenshot](img/MapEditor/MapEditor-PCD-Downsample.JPG){ align=center style="width:600px"} |
 
-### 2.4 Point Cloud Cleaner
+### 2.5 Point Cloud Cleaner
 
 The **Point Cloud Cleaner** helps to remove outliers and smoothen the point cloud to make it cleaner. An explanation of the available options is located below the image.
 
+<!-- Insert image here -->
 | ![Screenshot](img/MapEditor/MapEditor-PCD-Cleaner.JPG){ align=center style="width:600px"} |
 
 *Point cloud Denoiser*
@@ -181,7 +212,7 @@ The options listed below are for advanced users, please use them at your own dis
 
 | ![Screenshot](img/MapEditor/MapEditor-PCD-Cleaner-Advanced.JPG){ align=center style="width:600px"} |
 
-### 2.5 3D Point Cloud Cropper
+### 2.6 3D Point Cloud Cropper
 
 This feature helps users clean up point clouds by cropping them down to a desired section/size. An explanation of the available options are below the image
 
@@ -197,7 +228,7 @@ This feature helps users clean up point clouds by cropping them down to a desire
     <li><strong>Reset Crop</strong>: Resets any crop operations, restoring the original point cloud.</li>
 </ul>
 
-### 2.6 2D Map Generator
+### 2.7 2D Map Generator
 
 This feature creates a 2D map from a 3D point cloud by projecting a section of the 3D point cloud to an image file. Users can generate the 2D view from either a *top view perspective* or *side view perspective*. Users have 3 different configuration options: min height, max height, and pixel resolution (meter/pixel). To see which region is used for compression, users can check *Show Height-Bounds* to display the minimum and maximum height planes.
 
@@ -211,7 +242,7 @@ Users can choose to **Save 2D Map** separately if needed.
 
 It is recommended to ensure that the free space is correctly represented because this information will be used for automatic path-planning and visualization on the website. However, if you do not intend to use d.ASH automatic path-planning, getting a clear 2D map for visualization is sufficient.
 
-### 2.7 d.ASH Pack Manager
+### 2.8 d.ASH Pack Manager
 
 This mode allows users to start/stop d.ASH Pack recordings, download d.ASH Pack recordings and generate 3D point clouds through the *d.ASH Pack Manager* window.
 
@@ -221,7 +252,7 @@ Users can only start/stop d.ASH Pack recordings and download d.ASH Pack recordin
 
 If there is an online d.ASH Pack, the d.ASH Pack name will pop up on the list of online d.ASH Pack. Click on it to select the d.ASH Pack device.
 
-### 2.8 d.ASH Pack Control
+### 2.9 d.ASH Pack Control
 
 This section allow users to start/stop d.ASH Pack recordings.
 
@@ -234,7 +265,7 @@ This section allow users to start/stop d.ASH Pack recordings.
 7. To monitor the recording status, in d.ASH Xplorer, the d.ASH Pack status will reflect **Recording**. On the d.ASH Pack itself, the status light will flash **<span style="color:#fcba03">Yellow</span>**.
 8. To stop, click the **Stop** button. Note that the user can also force stop via pressing the power button, however, only do this as a last resort on the off chance that the stop button isn't functioning.
 
-### 2.9 Download d.ASH Pack Recordings
+### 2.10 Download d.ASH Pack Recordings
 
 After clicking on the list of d.ASH Pack, perform the following steps to download the recording:
 
@@ -253,7 +284,7 @@ After clicking on the list of d.ASH Pack, perform the following steps to downloa
 
 | ![Screenshot](img/d.ASHPackManager/d.ASHPack-Downloaded-Recordings.JPG){ align=center style="width:600px"} |
 
-### 2.10 3D Point Cloud Generation
+### 2.11 3D Point Cloud Generation
 
 After downloading the d.ASH Pack recording, you can then generate the 3D point cloud for that particular recording.
 
@@ -304,17 +335,17 @@ Users have the following options:
 4. **Save Point Cloud When Done**: When checked, the 3D point cloud will be automatically exported to the *Point Cloud Editor* when the generation has completed. *[Default: Unchecked]*
 5. **Auto-Pause**: Point Cloud Generation will be automatically paused when a huge change in position is detected. This is useful for backing up the currently generated data in case of generation failure. *[Default: Unchecked]*
 
-The **Dynamic Point Removal** checkbox allows for removal of unwanted objects from the final point cloud (e.g. pedestrians walking past, cars, pets etc) *[Default: Unchecked]*
-
-<!-- Insert image here -->
-
 The **Max Point Cloud Range per Scan (m)** is the distance from the origin where points will be considered and added to the final, post-processed point cloud. Please increase the value when in wider areas such as when post processing outdoor areas. We recommend a minimum of 30.0 for outside areas. *[Default: 10.0]*
 
-<!-- Insert image here -->
+| ![Screenshot](img/d.ASHPackManager/max-pcd-range.png){ align=center style="width:600px"} |
+
+The **Dynamic Point Removal** checkbox allows for removal of unwanted objects from the final point cloud (e.g. pedestrians walking past, cars, pets etc) *[Default: Unchecked]*
 
 **Use GPU for Inference** is essentially hardware acceleration for *Dynamic Point Removal*. We recommend turning this on. An Nvidia GPU with CUDA is required. *[Default: Unchecked]*
 
 **Set Dilate Kernel Size** The higher/larger this value, the more points surrounding the moving object/object to be removed, will be removed. *[Default: Medium]*
+
+| ![Screenshot](img/d.ASHPackManager/dynamic-point-removal.png){ align=center style="width:600px"} |
 
 **Advanced Generation Configurations**
 
@@ -334,17 +365,35 @@ In the event that 3D Point Cloud Generation is unable to detect loop closures (a
 
 During point cloud generation, if Loop Closures are not detected, pause the generation and perform *Manual Loop Closure Detection* by following the steps below.
 
-1. Select a few pairs of points for *Manual Loop Closure Detection*. Select points that should be linked together. An example of this is shown below.
+Example of a map which requires *Manual Loop Closure Detection*:
 
-<!-- Insert image here -->
+| ![Screenshot](img/d.ASHPackManager/needs-loop-closure.png){ align=center style="width:600px"} |
+
+What the area should be like: 
+
+| ![Screenshot](img/d.ASHPackManager/original-location.png){ align=center style="width:600px"} |
+
+1. Select a few pairs of points for *Manual Loop Closure Detection*. Selected points that should be linked together. An example of this is shown below.
+
+| ![Screenshot](img/d.ASHPackManager/highlighted-keyframes.png){ align=center style="width:600px"} |
 
 2. If you selected the wrong pair of points, highlight the wrong pairs and click the *Remove Keyframes* button
 
-<!-- Insert image here -->
+| ![Screenshot](img/d.ASHPackManager/remove-keyframes.png){ align=center style="width:600px"} |
 
 3. Select all remaining pairs and click *Optimize* and wait for the algorithm to match the points together.
 
-<!-- Insert image here -->
+| ![Screenshot](img/d.ASHPackManager/optimise-loops.png){ align=center style="width:600px"} |
+
+4. If no loop closures are able to be detected, increase the similarity score, then attempt optimisation again.
+
+| ![Screenshot](img/d.ASHPackManager/fail-to-close.png){ align=center style="width:600px"} |
+
+5. If needed, continue with manual loop closure detection on other parts of the point cloud.
+
+*Final loop close
+
+| ![Screenshot](img/d.ASHPackManager/final-loop-closed.png){ align=center style="width:600px"} |
 
 **Manual Loop Closure Detection Settings** 
 - Add Neighbour Keyframes: Also adds keyframes beside the selected keyframe. The number of keyframes added is determined by the *Neighbour Size* value. *[Default: Checked]*

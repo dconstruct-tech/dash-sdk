@@ -933,9 +933,9 @@
 
 
 <h1 id="dash-pack">d.ASH Pack</h1>
-<p>| <img align="center" alt="Screenshot" src="../img/device.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/device.jpg" style="width:600px" /> |</p>
 <p><strong>d.ASH Pack</strong> is a mobile sensor system that allows users to record 3D point cloud data for various applications, including robot autonomous navigation and Digital Twin generation. <strong>d.ASH Pack</strong> can either be worn on the back of the user (just like a backpack) or mounted on a robot. It ships together with <strong>d.ASH Xplorer</strong> application, which is used to generate a 3D point cloud. The entire workflow is fully integrated with <a href="https://www.dconstruct.co/products">d.ASH Fleet Management system</a>.</p>
-<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack.img.jpg" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack.img.jpg" style="width:600px" /> |</p>
 <p>You can view a short video overview of how <strong>d.ASH Pack</strong> integrates into your Autonomous Robot Deployment workflow <a href="https://youtu.be/9q2ROiMkSFI">here</a></p>
 <h2 id="requirements">Requirements</h2>
 <ul>
@@ -952,10 +952,11 @@
 <p>The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the access panel of the d.ASH Pack itself.</p>
 <!-- Insert image here -->
 
-<p>Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (https://192.168.10.1/) into a web browser of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.</p>
-<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-userinterface.jpg" style="width:600px" /> |</p>
+<p>Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (https://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.</p>
+<p>Mobile interface:
+| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-userinterface.jpg" style="width:600px" /> |</p>
 <p><strong>Status LEDs</strong>
-The status LEDs are able to show different colours with each colour representing a different status.
+The status LEDs are able to show different colours with each colour representing a different status. These LEDs are located on the side of the d.ASH Pack itself.
 <strong><span style="color:green">Green LEDs</span></strong> means that the d.ASH Pack has been booted up fully and is ready for recording.
 <strong><span style="color:red">Red LEDs</span></strong> means that something has gone wrong with d.ASH Pack. Use the status reflected in your d.ASH Pack's website to help trouble shoot the error.
 <strong><span style="color:#fcba03">Slow, Flashing Yellow LEDs</span></strong> mean that the d.ASH Pack is currently recording.</p>
@@ -991,7 +992,7 @@ The status LEDs are able to show different colours with each colour representing
 <li>Your d.ASH Pack device should appear in the list. Select it by clicking on it.</li>
 <li>Select the recording files that you wish to download.</li>
 <li>If you connect an Ethernet cable between d.ASH Pack and your PC, you will have options to download the recordings via either an Ethernet cable or wirelessly. For fast download speeds, using an Ethernet cable is recommended.</li>
-<li>Change 3D point cloud generation configurations to suite the environment of the recording. For generation configuration explanations/tips, please refer to Generation Configs section in <a href="https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#210-3d-point-cloud-generation">Xplorer guide</a>.</li>
+<li>Change 3D point cloud generation configurations to suite the environment of the recording. For generation configuration explanations/tips, please refer to Generation Configs section in <a href="https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#211-3d-point-cloud-generation">Xplorer guide</a>.</li>
 <li>Select the preferred recording file and click "Generate Point Cloud" to start the point cloud generation.</li>
 <li>
 <p>While it is running, you will have the following options:
@@ -1013,19 +1014,19 @@ The status LEDs are able to show different colours with each colour representing
 <li>It is recommended to walk in small loops back to previously visited areas for point cloud autocorrection. You will notice some automatic corrections being done during the generation process on d.ASH Xplorer. These corrections are called loop-closures.</li>
 </ol>
 <p>Good example of a well defined loop:</p>
-<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-goodloopclosure.png" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-goodloopclosure.png" style="width:600px" /> |</p>
 <p>Bad example where there is no loop:</p>
-<p>| <img alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-badloopclosure.png" /> { align=center style="width:600px"} |</p>
+<p>| <img alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-badloopclosure.png" /> { align=center style="width:600px"} |</p>
 <ol>
 <li>Where the loops/paths criss-cross should have recognisable static/stationary features (e.g. buildings)</li>
 </ol>
 <p>Good examples of easily recognisable features:</p>
-<p>| <img align="centerstyle" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-stationaryfeature.jfif" /> |</p>
-<p>| <img align="centerstyle" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-stationaryfeature%282%29.jfif" /> |</p>
-<p>| <img align="centerstyle" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-stationaryfeature%283%29.jfif" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-stationaryfeature.jfif" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-stationaryfeature%282%29.jfif" style="width:600px" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-stationaryfeature%283%29.jfif" style="width:600px" /> |</p>
 <p>Bad examples of features (AKA: Dynamic features):</p>
-<p>| <img align="centerstyle" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-badfeature.jfif" /> | </p>
-<p>| <img align="centerstyle" alt="Screenshot" src="../img/d.ASHPackManager/d.ASHPack-badfeature%282%29.jfif" /> |</p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-badfeature.jfif" style="width:600px" /> | </p>
+<p>| <img align="center" alt="Screenshot" src="../img/d.ASHPack/d.ASHPack-badfeature%282%29.jfif" style="width:600px" /> |</p>
 <ol>
 <li>Tighten the d.ASH Pack straps before recording</li>
 <li>Move at a steady pace</li>

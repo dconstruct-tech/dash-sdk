@@ -13,11 +13,12 @@ Since d.ASH Xplorer is fully integrated with [d.ASH Fleet Management system](htt
 ## Minimum System Requirements
 
 1. PC with a CPU equivalent to or greater than an Intel i5 4th Gen or AMD R5 2000 series
-2. 16GB of RAM
-3. Internet Connection
-4. Windows 10/11
+2. Nvidia GTX 960
+3. 16GB of RAM
+4. Internet Connection
+5. Windows 10/11
 
-*We recommend using an Nvidia discrete GPU greater than or equivalent to a GTX 960. Some features such as "HD View" are disabled on other GPUs.*
+*We recommend using an Nvidia discrete GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.*
 
  **<span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure you are running a Discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities would be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span>**
 
@@ -35,9 +36,13 @@ d.ASH Xplorer's control scheme is as follows:
 - LMB/MB1: Drag mouse to pan around the point cloud
 - RMB/MB2: Drag mouse to zoom in and out
 - MMB/MB3: Drag mouse to navigate around the point cloud
-- E: Move upwards(positive) in the Y-axis
-- Q: Move downwards(negative) in the Y-axis
+- Space: Move upwards(positive) in the Y-axis
+- L Ctrl: Move downwards(negative) in the Y-axis
 - F: Returns view to origin
+
+### Credit system
+
+This page is still under construction, check back soon!
 
 ### 2.1 Quick Start
 
@@ -76,7 +81,7 @@ These 3 modes form 3 different tabs at the top of d.ASH Xplorer.
 
 The point cloud editor is used to manage different point clouds that users have generated. Users can rotate, translate, downsample and perform other 3D point cloud editing features.
 
-You can use this mode to visualize the 3D point cloud by using the **Load** button. File extensions ".pcd", ".obj", ".las" and ".e57" are currently supported. We also have our own proprietary file extension ".dcloud" which can be used to load point clouds. *We do not recommend exporting large point clouds (> 1gb in size) in the .pcd format. Please export such files in .las, .e57 or .dcloud instead.*
+You can use this mode to visualize the 3D point cloud by using the **Load** button. File extensions ".pcd", ".obj", ".las" and ".e57" are currently supported. We also have our own proprietary file extension ".dcloud" which can be used to load point clouds. *We do not recommend exporting large point clouds (> 1gb in size) in the .pcd format. Please export such files in .las, .e57 or .dcloud instead. .dcloud files cannot be used for meshing*
 
 | ![Screenshot](img/MapEditor/MapEditor-PCD-Load.JPG){ align=center style="width:600px"} |
 
@@ -188,6 +193,8 @@ The **Point Cloud Cleaner** helps to remove outliers and smoothen the point clou
     <br><i>[Default: 50.0]</i></li>
     <li><strong>Uniform Sampling</strong>: Tries to accentuate surfaces perceived on the point cloud, turn this setting off if shapes are being distorted on the point cloud.
     <br><i>[Default: Unchecked]</i></li>
+    <li><strong>With Smoothing</strong>: Shifting the points slightly to make surfaces more pronounced, turn this setting off if shapes are being distorted on the point cloud.
+    <br><i>[Default: Unchecked]</i></li>
 </ul>
 
 The options listed below are for advanced users, please use them at your own discretion.
@@ -275,7 +282,7 @@ After clicking on the list of d.ASH Pack, perform the following steps to downloa
 
 | ![Screenshot](img/d.ASHPackManager/d.ASHPack-Download-Recordings.JPG){ align=center style="width:600px"}
 
-2. If there is an ethernet connection between the PC running d.ASH Xplorer and d.ASH Pack, users will have options to download either wirelessly or via ethernet. It is recommended to download via ethernet for faster downloading speed.
+2. If there is an ethernet connection between the PC running d.ASH Xplorer and d.ASH Pack, d.ASH Xplorer will use ethernet instead of WiFi to download the recording. It is recommended to download via ethernet for faster downloading speed.
 
 | ![Screenshot](img/d.ASHPackManager/d.ASHPack-Download-Over-Ethernet.JPG){ align=center style="width:600px"}
 
@@ -318,10 +325,17 @@ By clicking on the drop-down menu, the following options to add *post-processing
 - *Colour Nav Map*: autonomous robot navigation with colour.
 - *Sparse Coloured Map*: coloured point cloud with as few points as possible.
 - *Dense Coloured Map*: coloured point cloud with many points.
-  - *downsampling* reduces the number of points in the final point cloud while maintaining the original structure of the point cloud.
-  - *Grid size for downsampling* influences the resolution of the downsampled point cloud
+
+There are several *post processing* settings for coloured point clouds which are:
+
+- *Denoise Quality* refers to the degree of denoising performed on the generated pointcloud. The *Rich* setting would have more points than the *Sharp* setting, the *Raw* setting means no denoising would take place. We recommend using the *Rich* setting for indoor areas. *[Default: Rich]*
+- *Max Point Cloud Range per Scan (m)* is the distance from the origin where points will be considered and added to the final, post-processed point cloud. Please increase the value when in wider areas such as when post processing outdoor areas. We recommend a minimum of 30.0 for outdoor areas. *[Default: 10.0]*
 
 | ![Screenshot](img/d.ASHPackManager/d.ASHPack-PP-Settings.JPG){ align=center style="width:600px"} |
+
+When everything has been configured to your desired settings, click on the "Post Process" button.
+
+<!-- Insert image here -->
 
 ### Point Cloud Generation Configs
 
@@ -334,8 +348,6 @@ Users have the following options:
 3. **Loop-Closure Similarity Score**: The lower this value, the more stringent loop closure will be when finding similar points. Increase this value in 0.10 intervals. *[Default: 0.30]*
 4. **Save Point Cloud When Done**: When checked, the 3D point cloud will be automatically exported to the *Point Cloud Editor* when the generation has completed. *[Default: Unchecked]*
 5. **Auto-Pause**: Point Cloud Generation will be automatically paused when a huge change in position is detected. This is useful for backing up the currently generated data in case of generation failure. *[Default: Unchecked]*
-
-The **Max Point Cloud Range per Scan (m)** is the distance from the origin where points will be considered and added to the final, post-processed point cloud. Please increase the value when in wider areas such as when post processing outdoor areas. We recommend a minimum of 30.0 for outside areas. *[Default: 10.0]*
 
 | ![Screenshot](img/d.ASHPackManager/max-pcd-range.png){ align=center style="width:600px"} |
 
@@ -396,6 +408,7 @@ What the area should be like:
 | ![Screenshot](img/d.ASHPackManager/final-loop-closed.png){ align=center style="width:600px"} |
 
 **Manual Loop Closure Detection Settings** 
+
 - Add Neighbour Keyframes: Also adds keyframes beside the selected keyframe. The number of keyframes added is determined by the *Neighbour Size* value. *[Default: Checked]*
 - Neighbour Size: The number of neighbour keyframes. *[Default: 5]*
 - Similarity Score: The lower this value, the more stringent loop closure will be when finding similar points. Increase this value in 0.10 intervals. *[Default: 0.30]*

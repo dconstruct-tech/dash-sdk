@@ -67,7 +67,7 @@ If you encounter situations where you lose connection to the robot ( or encounte
 | <font size="3"> (3)  &nbsp; Record videos in mp4 format.
 | <font size="3"> (4)  &nbsp; Upload/download video recordings.
 | <font size="3"> (5)  &nbsp; Configure settings for your preference ie. night mode.
-| <font size="3"> (6)  &nbsp; Broadcast live video streaming using eith a RTSP server or an HSL server. |
+| <font size="3"> (6)  &nbsp; Broadcast live video streaming using either a RTSP server or an HSL server. |
 
 ---
 
@@ -103,7 +103,7 @@ If you encounter situations where you lose connection to the robot ( or encounte
 
 | ![Screenshot](img/BLK360.png){ align=center style="width:200px"} | 
 
-This panel enables you to running scanning with the **Leica BLK360 Laser Scanner**. Please make sure the scanner is properly mounted/connected before proceeding. Run the following steps to start scanning:
+This panel enables you to run scanning with the **Leica BLK360 Laser Scanner**. Please make sure the scanner is properly mounted/connected before proceeding. Run the following steps to start scanning:
 
 1. Type in your Job Name in the textbox. This name will be used for the entire set of scans.
 2. Select your Scan quality via the **Quality** combo box.
@@ -114,7 +114,7 @@ This panel enables you to running scanning with the **Leica BLK360 Laser Scanner
 
 | ![Screenshot](img/RTC360.png){ align=center style="width:200px"} | 
 
-This panel enables you to running scanning with the **Leica RTC360 Laser Scanner**. Please make sure the scanner is properly mounted/connected before proceeding.  Run the following steps to start scanning:
+This panel enables you to run scanning with the **Leica RTC360 Laser Scanner**. Please make sure the scanner is properly mounted/connected before proceeding.  Run the following steps to start scanning:
 
 1. Type in your Job Name in the textbox. This name will be used for the entire set of scans.
 2. Select your Scan quality via the **Quality** combo box.
@@ -131,3 +131,17 @@ This panel enables you to operate the **Boston Dynamics Spot Arm** if your Spot 
 2. This will pop up a separate window that shows the black and white cameras on Spot.
 3. Click on the desired target area to run the arm manipulation operation.
 4. Click **Run** to start the arm operation.
+
+### 1.10 ^^RTSP Streaming^^
+This button allows you to start a RTSP stream which can be used to broadcast camera footage from the robot to clients. [FFMPEG](https://ffmpeg.org/about.html) is required for this feature. However, FFMPEG is not packaged with Dash Pilot. If you would like to use RTSP streaming, please [download FFMPEG here](https://ffmpeg.org/download.html) and move ffmpeg.exe to the Dash Pilot Application's data folder. This is typically located in C:\Program Files (x86)\Dash Pilot.
+
+| ![Screenshot](img/ffmpeg-location.jpg){ align=center style="width:200px"} | 
+
+There are several settings for customising the RTSP stream.
+| ![Screenshot](img/rtsp-settings.jpg){ align=center style="width:200px"} |
+
+| Setting | Default Value |
+| ------- | ------- |
+| <font size="3"> RTSP Channel | Please enter only alphabetical letters |
+| <font size="3"> RTSP Server | NIL |
+| <font size="3"> RTSP Cam Index | NIL |

@@ -17,13 +17,17 @@ You can view a short video overview of how **d.ASH Pack** integrates into your A
 
 ### 1.1 Quick Start
 
-A 3D point cloud is created in two steps: data collection and data processing.
+A 3D point cloud is created in two steps: Data Collection and Data Processing.
 
 Data collection requires the d.ASH Pack device. There are 3 different ways to activate the data collection process, as listed below. If you do not have access to an internet connection, please make sure to use Option 1 which allows you to activate the data collection via your phone.
 
 Data processing requires the [d.ASH Xplorer](https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/) application and an internet connection. The d.ASH Xplorer software is used to process the recorded data, create and edit 3D point clouds, and upload data to the Fleet Management cloud.
 
+Please ensure that others do not stand near the LiDAR while recording as this could cause undesirable results. Also take note that the d.ASH Pack should not undergo large (1 story tall), sudden changes in elevation while recording.
+
 **Recording cannot be paused for later continuation**. If you would like to pause momentarily, please restart the recording. Ensure some overlap in area between the two separate recordings. Do note that the results may not be as accurate as one full walkthrough.
+
+*Loop Closure* is the act of walking and intersecting paths which you had walked before, an example of this would be walking in the shape of a figure 8, where you meet in the middle and the paths walked intersect one another. *Loop Closure* is important as it allows for more accuracy during *point cloud generation*. While recording, try to ensure that there is as much *Loop Closure* as possible.
 
 ### 1.2 Connecting to d.ASH Pack
 The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the access panel of the d.ASH Pack itself.
@@ -91,16 +95,19 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 
 ### Tips for Data Collection
 
-1. It is recommended to walk in small loops back to previously visited areas for point cloud autocorrection. You will notice some automatic corrections being done during the generation process on d.ASH Xplorer. These corrections are called loop-closures.
+1. It is recommended to walk in small loops back to previously visited areas for point cloud autocorrection. You will notice some automatic corrections being done during the generation process on d.ASH Xplorer. These corrections are called loop-closures. Walking in the shape of the figure eight is recommended.
 
 Good example of a well defined loop:
 
-| ![Screenshot](img/d.ASHPack/d.ASHPack-goodloopclosure.png){ align=center style="width:600px"} |
+<!-- Emphasize on figure 8 -->
+<!-- Insert image here -->
+<!-- | ![Screenshot](img/d.ASHPack/d.ASHPack-goodloopclosure.png){ align=center style="width:600px"} | -->
 
 
 Bad example where there is no loop:
 
-| ![Screenshot](img/d.ASHPack/d.ASHPack-badloopclosure.png) { align=center style="width:600px"} |
+<!-- Insert image here -->
+<!-- | ![Screenshot](img/d.ASHPack/d.ASHPack-badloopclosure.png) { align=center style="width:600px"} | -->
 
 
 2. Where the loops/paths criss-cross should have recognisable static/stationary features (e.g. buildings)
@@ -122,12 +129,12 @@ Bad examples of features (AKA: Dynamic features):
 
 3. Tighten the d.ASH Pack straps before recording
 4. Move at a steady pace
-5. Ensure LiDAR is above your head and do not block the sensor when recording
+5. Ensure LiDAR is above your head and do not block the sensor when recording (Stand about 5 metres away from person recording)
 6. Do not turn quickly in narrow corridors
 7. Do not record while in a lift
 8. Not recommended to record in narrow stairwells
 9. Put on the d.ASH Pack before starting the scan
-10. For recording with imaging, please tilt the LiDAR by 30°, otherwise a horizontal configuration is recommended
+10. For recording with imaging, please tilt the LiDAR by 30°. Otherwise a horizontal configuration is recommended
 11. If on a vehicle, please dismount and walk through bumpy areas
 12. Attempting to loop close long corridors (>20m) is discouraged
 13. Avoid large empty areas (e.g. fields) when recording as there are a lack of features

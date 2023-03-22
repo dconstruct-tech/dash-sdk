@@ -135,10 +135,10 @@ This panel enables you to operate the **Boston Dynamics Spot Arm** if your Spot 
 ### 1.10 ^^RTSP Streaming^^
 This button allows you to start a RTSP stream which can be used to broadcast camera footage from the robot to clients. [FFMPEG](https://ffmpeg.org/about.html) is required for this feature. However, FFMPEG is not packaged with Dash Pilot. If you would like to use RTSP streaming, please [download FFMPEG here](https://ffmpeg.org/download.html) and move ffmpeg.exe to the Dash Pilot Application's data folder. This is typically located in C:\Program Files (x86)\Dash Pilot.
 
-| ![Screenshot](img/ffmpeg-location.jpg){ align=center style="width:200px"} | 
+| ![Screenshot](img/ffmpeg-location.jpg){ align=center style="width:500px"} | 
 
 There are several settings for customising the RTSP stream.
-| ![Screenshot](img/rtsp-settings.jpg){ align=center style="width:200px"} |
+| ![Screenshot](img/rtsp-settings.jpg){ align=center style="width:500px"} |
 
 | Setting | Default Value |
 | ------- | ------- |

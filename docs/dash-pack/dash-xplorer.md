@@ -479,11 +479,11 @@ Checking the box presents the user with two new options. These are as follows:
 2. Downloading scan data from a scanner
 3. Performing [AutoMerge](#262-automerge) on scans
 
-#### <span style = color:blue> ***Downloading*** **.scanMeta** ***files*** </span>
+#### <span style = color:blue> ***2.6.1.1 Downloading*** **.scanMeta** ***files*** </span>
 
 >***UPDATE WORK IN PROGRESS, PLEASE REFER TO THE CURRENT DOCUMENTATION OF [SCAN MANAGER](#scan-manager-plugin).***
 
-#### <span style = color:blue> ***Generate Point Cloud*** </span>
+#### <span style = color:blue> ***2.6.1.2 Generate Point Cloud*** </span>
 
 >***UPDATE WORK IN PROGRESS, PLEASE REFER TO THE CURRENT DOCUMENTATION OF [SCAN MANAGER](#scan-manager-plugin).***
 

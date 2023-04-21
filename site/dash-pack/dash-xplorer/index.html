@@ -1201,8 +1201,8 @@
 <li>Internet Connection</li>
 <li>Windows 10/11</li>
 </ol>
-<p><em>We recommend using an Nvidia discrete GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.</em></p>
-<p><strong><span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure you are running a Discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities would be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span></strong></p>
+<p><em>We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.</em></p>
+<p><strong><span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure that you are running a discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities may be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span></strong></p>
 <hr />
 <h2 id="22-tutorial"><strong>2.2 Tutorial</strong></h2>
 <p>| <img align="center" alt="Screenshot" src="../img/xplorer-tutorial.jpg" style="width:600px" /> |</p>
@@ -1241,7 +1241,7 @@
 </blockquote>
 <hr />
 <h2 id="24-quick-start"><strong>2.4 Quick Start</strong></h2>
-<p>The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by <em>d.ASH Xplorer</em> are listed in the following sections.</p>
+<p>The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by <em>d.ASH Xplorer</em> are listed in the subsequent sections.</p>
 <ol>
 <li>Login to <em>d.ASH Xplorer</em>
     <img alt="d.ASH Xplorer Login Window" src="../img/UpdatedUI/QuickStart/1-dash-xplorer-login.png" /><blockquote>
@@ -1272,9 +1272,9 @@
 <p>The generated recording can now be used for autonomous navigation with the <a href="https://www.dconstruct.co/products">d.ASH Fleet Management system</a>.</p>
 <hr />
 <h2 id="25-dash-xplorer"><strong>2.5 d.ASH Xplorer</strong></h2>
-<p><em>d.ASH Xplorer</em> provides 2 separate means by to load, process and export point clouds, namely the <strong>Point Cloud Editor</strong> and <strong>d.ASH Pack Manager</strong> pages.</p>
+<p><em>d.ASH Xplorer</em> provides 2 separate means to load, process and export point clouds, namely the <strong>Point Cloud Editor</strong> and <strong>d.ASH Pack Manager</strong> pages.</p>
 <h3 id="251-point-cloud-editor"><strong>2.5.1 Point Cloud Editor</strong></h3>
-<p>The <em>Point Cloud Editor</em> page encompases the main features associated with point cloud manipulation, including the editing of the cloud's rotation, translation and downsampling amond other 3D cloud editing features.</p>
+<p>The <em>Point Cloud Editor</em> page encompases the main features associated with point cloud manipulation, including the editing of the cloud's rotation, translation and downsampling among other 3D cloud editing features.</p>
 <p><img alt="Point Cloud Editor page" src="../img/UpdatedUI/PointCloudEditor/point-cloud-editor-page.png" /></p>
 <p>The functions offered by the <em>Point Cloud Editor</em> (in a left-to-right, top-to-bottom format) are as follows:</p>
 <h4 id="2511-load-file"><span style = color:blue><strong><em>2.5.1.1 Load File</em></strong></span></h4>
@@ -1309,8 +1309,10 @@
 <h4 id="2516-translation-and-rotation"><span style = color:blue> <strong><em>2.5.1.6 Translation and Rotation</em></strong> </span></h4>
 <p><img alt="Translation And Rotation Icon" src="../img/UpdatedUI/PointCloudEditor/icon-translation-and-rotation.png" /></p>
 <p>Allows users to edit the translation and rotation data of the point cloud using the respective XYZ and quaternion values of the point cloud as an object.</p>
-<p>Adjustment of these values is done through one of two methods: 
-- A widget panel within the Toolbar</p>
+<p>Adjustment of these values is done through one of two methods: </p>
+<ul>
+<li>A widget panel within the Toolbar</li>
+</ul>
 <p><img alt="Translation And Rotation Widget" src="../img/UpdatedUI/PointCloudEditor/menu-tandr-widget.png" /></p>
 <ul>
 <li>A gizmo found on or near the point cloud generation in the main workspace</li>
@@ -1336,7 +1338,7 @@
 <p><img alt="Point Cloud Cropper Icon" src="../img/UpdatedUI/PointCloudEditor/icon-point-cloud-cropper.png" /></p>
 <p><img alt="Point Cloud Cropper Widget" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper.png" /></p>
 <p>Allows the user to crop an area within the currently selected point cloud. 
-The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging the textbox.</p>
+The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging on the textbox.</p>
 <p><em>Visualise Cropping Bounds</em> allows for a priview of the area to be cropped, surrounding the cropped area with a white box, <em>Keep points outside bounds</em> which specifies whether the point clouds outside of the specified ranges should be kept after the cropping is complete and <em>Create a Copy</em> creates a separate point cloud for the cropped point cloud instead of overwriting the selected cloud.</p>
 <p><img alt="Visualise Cropping Bounds" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper-demo.png" /></p>
 <p>Lastly, the options for the cropper include:</p>
@@ -1354,7 +1356,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p>The features of the point cloud denoiser include:</p>
 <ul>
 <li><strong>Denoise Quality</strong>: Selector to specify the number of iterations the denoise algorithm will run, wherein the default setting is <em>Rough</em>. In the above image, the quality is set to <em>Refined</em>, respectively indicating that the denoise algorithm will run at an increased quantity, resulting in a more accurate final point cloud output.</li>
-<li><strong>Denoise Aggressiveness</strong>: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of points while the opposite holding true for lower settings.</li>
+<li><strong>Denoise Aggressiveness</strong>: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of more points while the opposite holding true for lower settings.</li>
 <li><strong>Chunk Size (m)</strong>: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising. <blockquote>
 <p><strong><em>NOTE:</em></strong> Setting the chunk size to a high value may result in instabilities and/or crashing. </p>
 </blockquote>
@@ -1373,7 +1375,8 @@ The user can specify the exact area of the selected point cloud to crop through 
 <h4 id="25112-point-cloud-to-mesh"><span style = color:blue> <strong><em>2.5.1.12 Point Cloud to Mesh</em></strong> </span></h4>
 <p><img alt="Point Cloud To Mesh Icon" src="../img/UpdatedUI/PointCloudEditor/icon-pctm.png" /></p>
 <p>Converts and exports the currently selected point cloud into a mesh, exported as either a <em>.PLY</em> or <em>.GLTF</em> format.</p>
-<p>The settings for this feature are as follows:</p>
+<p><img alt="Point Cloud To Mesh Toolbar Menu" src="../img/UpdatedUI/PointCloudEditor/menu-pctm.png" /></p>
+<p>The settings found in the toolbar for this feature are as follows:</p>
 <ul>
 <li><strong>Set Mesh Output Location</strong>: Allows the user to specify the desired output location of the mesh.</li>
 <li><strong>Export Format</strong>: Determines the output file format (<em>.PLY</em> or <em>.GLTF</em>)</li>
@@ -1398,13 +1401,13 @@ The user can specify the exact area of the selected point cloud to crop through 
 <li><strong>Max Height</strong>: The highest point that will be captured in the map generation</li>
 <li><strong>Min Height</strong>: The lowest point that will be captured in the map generation</li>
 <li><strong>Resolution (m./pixel)</strong>: The number of meters per pixel of the 2 dimensional capture of the selected point cloud</li>
-<li><strong>Show Height Bounds</strong>: Visualises using planes the highest and lowest points that will be captured </li>
+<li><strong>Show Height Bounds</strong>: Visualises the highest and lowest points that will be captured using translucent planes </li>
 </ul>
 <p><img alt="2d Map Generator Height Bound Visualisation" src="../img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png" /></p>
 <p>Additionally, the three options that are present at the bottom of the toolbar widget are: <em>Generate</em>, which executes the two-dimensional map generation, <em>Reset Config</em>, which resets the configuration settings to their default values and <em>Exit</em>, which reverts the toolbar widget view to the <em>File Info</em>.</p>
 <h4 id="25114-point-cloud-comparison"><span style = color:blue> <strong><em>2.5.1.14 Point Cloud Comparison</em></strong> </span></h4>
 <p><img alt="Point Cloud Comparison Icon" src="../img/UpdatedUI/PointCloudEditor/icon-point-cloud-comparison.png" /></p>
-<p>Highlights and displays selected point clouds in contrasting, where red is shown to be the points removed from the first selected point cloud relative to the second selected point cloud, while green is the colour of the points added to the first selected point cloud and blue is the colour of the points that remain unchanged between the two point clouds. The settings found within the Toolbar are as follows:</p>
+<p>Highlights and displays selected point clouds in contrasting colours, where red is shown to be the points removed from the first selected point cloud relative to the second selected point cloud, green is the colour of the points added to the first selected point cloud and blue is the colour of the points that remain unchanged between the two point clouds. The settings found within the Toolbar are as follows:</p>
 <p><img alt="Point Cloud Comparison Menu Pre" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-comparison.png" /></p>
 <p><strong>Comparison Resolution</strong>: Determines the accuracy to be considered for the comparison in meters</p>
 <p><strong>Compare</strong>: Executes the comparison</p>
@@ -1494,7 +1497,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p>Lastly, after clicking the check mark in the toolbar will execute the loop closure operation.</p>
 <h4 id="2527-post-processing"><span style = color:blue> <strong><em>2.5.2.7 Post Processing</em></strong> </span></h4>
 <p><img alt="Post Process Point Cloud Icon" src="../img/UpdatedUI/d.ASHPackManager/icon-post-processing.png" /></p>
-<p>After the generation of a point cloud, the user may choose to post process the result in order to refine the result. The <em>Post Process Point Cloud</em> menu enables this by allowing for more granular control over the generated point cloud.</p>
+<p>After the generation of a point cloud, the user may choose to post process the point cloud in order to refine the result. The <em>Post Process Point Cloud</em> menu enables this by allowing for more granular control over the generated point cloud.</p>
 <p>In the following screenshot, the <em>Activate Dynamic Removal</em> box is not checked.</p>
 <p><img alt="Post Processing Menu No Dynamic Removal" src="../img/UpdatedUI/d.ASHPackManager/menu-post-processing-noDynamic.png" /></p>
 <p>The options displayed are as follows:</p>

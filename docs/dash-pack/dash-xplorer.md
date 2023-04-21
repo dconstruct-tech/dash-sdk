@@ -20,9 +20,9 @@ Because *d.ASH Xplorer* is fully integrated with [d.ASH Fleet Management system]
 4. Internet Connection
 5. Windows 10/11
 
-*We recommend using an Nvidia discrete GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.*
+*We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.*
 
- **<span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure you are running a Discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities would be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span>**
+ **<span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure that you are running a discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities may be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span>**
 
 ---
 
@@ -74,7 +74,7 @@ For every export of a point cloud (*.dcloud* file) to an external file, a price 
 ---
 
 ## **2.4 Quick Start**
-The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by *d.ASH Xplorer* are listed in the following sections.
+The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by *d.ASH Xplorer* are listed in the subsequent sections.
 
 1. Login to *d.ASH Xplorer*
 	![d.ASH Xplorer Login Window](img/UpdatedUI/QuickStart/1-dash-xplorer-login.png)
@@ -104,10 +104,10 @@ The generated recording can now be used for autonomous navigation with the [d.AS
 ---
 
 ## **2.5 d.ASH Xplorer**
-*d.ASH Xplorer* provides 2 separate means by to load, process and export point clouds, namely the **Point Cloud Editor** and **d.ASH Pack Manager** pages.
+*d.ASH Xplorer* provides 2 separate means to load, process and export point clouds, namely the **Point Cloud Editor** and **d.ASH Pack Manager** pages.
 
 ### **2.5.1 Point Cloud Editor**
-The *Point Cloud Editor* page encompases the main features associated with point cloud manipulation, including the editing of the cloud's rotation, translation and downsampling amond other 3D cloud editing features.
+The *Point Cloud Editor* page encompases the main features associated with point cloud manipulation, including the editing of the cloud's rotation, translation and downsampling among other 3D cloud editing features.
 
 ![Point Cloud Editor page](img/UpdatedUI/PointCloudEditor/point-cloud-editor-page.png)
 
@@ -157,6 +157,7 @@ Displays the current point cloud at a high resolution by attempting to render al
 Allows users to edit the translation and rotation data of the point cloud using the respective XYZ and quaternion values of the point cloud as an object.
 
 Adjustment of these values is done through one of two methods: 
+
 - A widget panel within the Toolbar
   
   ![Translation And Rotation Widget](img/UpdatedUI/PointCloudEditor/menu-tandr-widget.png)
@@ -194,7 +195,7 @@ The options for the downsampling include:
 ![Point Cloud Cropper Widget](img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper.png)
 
 Allows the user to crop an area within the currently selected point cloud. 
-The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging the textbox.
+The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging on the textbox.
 
 *Visualise Cropping Bounds* allows for a priview of the area to be cropped, surrounding the cropped area with a white box, *Keep points outside bounds* which specifies whether the point clouds outside of the specified ranges should be kept after the cropping is complete and *Create a Copy* creates a separate point cloud for the cropped point cloud instead of overwriting the selected cloud.
 
@@ -219,7 +220,7 @@ The point cloud denoiser aims to remove outlier points and smoothen the selected
 The features of the point cloud denoiser include:
 
 - **Denoise Quality**: Selector to specify the number of iterations the denoise algorithm will run, wherein the default setting is *Rough*. In the above image, the quality is set to *Refined*, respectively indicating that the denoise algorithm will run at an increased quantity, resulting in a more accurate final point cloud output.
-- **Denoise Aggressiveness**: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of points while the opposite holding true for lower settings.
+- **Denoise Aggressiveness**: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of more points while the opposite holding true for lower settings.
 - **Chunk Size (m)**: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising. 
   > ***NOTE:*** Setting the chunk size to a high value may result in instabilities and/or crashing. 
 - **Uniform Sampling**: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted. 
@@ -242,7 +243,9 @@ The only setting for the point cloud merger is for the name of the new point clo
 
 Converts and exports the currently selected point cloud into a mesh, exported as either a *.PLY* or *.GLTF* format.
 
-The settings for this feature are as follows:
+![Point Cloud To Mesh Toolbar Menu](img/UpdatedUI/PointCloudEditor/menu-pctm.png)
+
+The settings found in the toolbar for this feature are as follows:
 
 - **Set Mesh Output Location**: Allows the user to specify the desired output location of the mesh.
 - **Export Format**: Determines the output file format (*.PLY* or *.GLTF*)
@@ -270,7 +273,7 @@ The configuration options for the generator area are as follows:
 - **Max Height**: The highest point that will be captured in the map generation
 - **Min Height**: The lowest point that will be captured in the map generation
 - **Resolution (m./pixel)**: The number of meters per pixel of the 2 dimensional capture of the selected point cloud
-- **Show Height Bounds**: Visualises using planes the highest and lowest points that will be captured 
+- **Show Height Bounds**: Visualises the highest and lowest points that will be captured using translucent planes 
 
 ![2d Map Generator Height Bound Visualisation](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png)
 
@@ -280,7 +283,7 @@ Additionally, the three options that are present at the bottom of the toolbar wi
 
 ![Point Cloud Comparison Icon](img/UpdatedUI/PointCloudEditor/icon-point-cloud-comparison.png)
 
-Highlights and displays selected point clouds in contrasting, where red is shown to be the points removed from the first selected point cloud relative to the second selected point cloud, while green is the colour of the points added to the first selected point cloud and blue is the colour of the points that remain unchanged between the two point clouds. The settings found within the Toolbar are as follows:
+Highlights and displays selected point clouds in contrasting colours, where red is shown to be the points removed from the first selected point cloud relative to the second selected point cloud, green is the colour of the points added to the first selected point cloud and blue is the colour of the points that remain unchanged between the two point clouds. The settings found within the Toolbar are as follows:
 
 ![Point Cloud Comparison Menu Pre](img/UpdatedUI/PointCloudEditor/menu-point-cloud-comparison.png)
 
@@ -421,7 +424,7 @@ Lastly, after clicking the check mark in the toolbar will execute the loop closu
 
 ![Post Process Point Cloud Icon](img/UpdatedUI/d.ASHPackManager/icon-post-processing.png)
 
-After the generation of a point cloud, the user may choose to post process the result in order to refine the result. The *Post Process Point Cloud* menu enables this by allowing for more granular control over the generated point cloud.
+After the generation of a point cloud, the user may choose to post process the point cloud in order to refine the result. The *Post Process Point Cloud* menu enables this by allowing for more granular control over the generated point cloud.
 
 In the following screenshot, the *Activate Dynamic Removal* box is not checked.
 

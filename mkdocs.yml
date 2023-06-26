@@ -101,6 +101,8 @@ nav:
     - 2.0 d.ASH Pilot SDK: dc-pilot/pilot-sdk.md
   - Autonomy Guide: 
     - 1.0 d.ASH Autonomy Controller: dash-auto/autonomy-client.md 
+    - 2.0 d.ASH Nav: dash-auto/autonomy-client-v2.md 
+    - 2.0 d.ASH Nav Scripting API Reference: dash-auto/autonomy-client-v2-api-reference.md 
   - d.ASH Pack Guide: 
     - 1.0 d.ASH Pack: dash-pack/dash-pack.md 
     - 2.0 d.ASH Xplorer: dash-pack/dash-xplorer.md 

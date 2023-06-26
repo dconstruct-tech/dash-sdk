@@ -266,7 +266,7 @@ Lastly, the buttons at the bottom of the toolbar widget are *Start*, which execu
 
 Creates a 2-dimensional map of the point cloud through projecting the specified section of the point cloud to an image file using a top-down perspective.
 
-![2d Map Genereator Toolbar Widget](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator.png)
+![2d Map Generator Toolbar Widget](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator.png)
 
 The configuration options for the generator area are as follows:
 

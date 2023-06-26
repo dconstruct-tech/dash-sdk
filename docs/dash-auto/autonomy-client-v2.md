@@ -148,6 +148,7 @@ This tab contains all actions to do with planning routes.
 
 ### **5.1 Actions**
 Three actions are available for you to use:
+
 - *Autodrive*: Using machine learning and computer vision to analyze and understand your robot's surroundings, hands-free Level 2 Autonomy allows for the navigation of complex, unstructured environments using just cameras alone.
 - *Record Waypoints*: Records and plots waypoints as you manually navigate the robot in real life.
 - *Create Route*: Creates an empty route for you to edit and add waypoints later on.

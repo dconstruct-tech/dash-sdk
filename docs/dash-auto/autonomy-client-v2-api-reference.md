@@ -5,7 +5,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 #### Missions
 
-<details>
+<details markdown="1">
  <summary><code>clearMission()</code> <code>Clears all current missions</code></summary>
 
 ##### Parameters
@@ -16,7 +16,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>setMissionName(string missionName, bool upload)</code> <code>Creates new mission, call before any mission is run</code></summary>
 
 ##### Parameters
@@ -32,7 +32,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 #### Waypoints
 
-<details>
+<details markdown="1">
  <summary><code>endWaypoint()</code> <code>Command issued to end autonomous movement. Must be the last action called if <i>waypoint3D</i> is used</code></summary>
 
 ##### Parameters
@@ -43,7 +43,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>waypoint3D(int seg, float x, float y, float z)</code> <code>Makes robot move to a specific coordinate on a map</code></summary>
 
 ##### Parameters
@@ -57,7 +57,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>capture(int camID)</code> <code>Takes an image for camera specified in <i>camID</i></code></summary>
 
 ##### Parameters
@@ -68,7 +68,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>capturePano(string fileName)</code> <code>Takes a panoramic image and saves it as <i>fileName</i>.jpg</code></summary>
 
 ##### Parameters
@@ -79,7 +79,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>DockingAction(bool isDockOn)</code> <code><b>EXPERIMENTAL | BOSDYN SPOT ONLY | </b>Pauses robot movement and docks robot</code></summary>
 
 ##### Parameters
@@ -90,7 +90,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>AutoDocking(bool isDockOn)</code> <code>Pauses robot movement and docks robot</code></summary>
 
 ##### Parameters
@@ -101,7 +101,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>pause(int dur)</code> <code>Pauses robot movement for <i>dur</i> seconds</code></summary>
 
 ##### Parameters
@@ -112,7 +112,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>scanRTC(string jobName, int res, bool enableImaging, bool enableDoubleScan, bool enableVis)</code> <code>Sets robot to scan using Leica™ RTC360 at a selected waypoint</code></summary>
 
 ##### Parameters
@@ -127,7 +127,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>scanBLK(string jobName, int res, int imgQly)</code> <code>Sets robot to scan using Leica™ BLK360 at a selected waypoint</code></summary>
 
 ##### Parameters
@@ -140,7 +140,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 
 </details>
 
-<details>
+<details markdown="1">
  <summary><code>scanARC(bool isStart)</code> <code>Sets robot to scan using Leica™ BLK ARC at a selected waypoint</code></summary>
 
 ##### Parameters

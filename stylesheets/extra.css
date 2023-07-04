@@ -2,3 +2,9 @@
     display: block;
     margin: 0 auto;
 }
+
+.brochure {
+	display:block;
+	margin: 0 auto;
+	height: 200px;
+}

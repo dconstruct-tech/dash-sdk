@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dconstruct-tech.github.io/dash-sdk/home/workflow/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dconstruct-tech.github.io/dash-sdk/sdk-config/auto-config/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>

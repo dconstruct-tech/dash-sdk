@@ -1,0 +1,1421 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="dConstruct Technologies Team">
+      
+      
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-auto/autonomy-client-v2/">
+      
+      
+        <link rel="prev" href="../autonomy-client/">
+      
+      
+        <link rel="next" href="../autonomy-client-v2-api-reference/">
+      
+      <link rel="icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>2.0 d.ASH Nav - d.ASH SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-dash-nav" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-header__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            d.ASH SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.0 d.ASH Nav
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../setup/desktop-dep/" class="md-tabs__link">
+        Setup
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/config-spot/" class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dc-pilot/pilot-guide/" class="md-tabs__link">
+        dC Pilot Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../autonomy-client/" class="md-tabs__link md-tabs__link--active">
+        Autonomy Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dash-pack/dash-pack/" class="md-tabs__link">
+        d.ASH Pack Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sdk-config/rest-config/" class="md-tabs__link">
+        SDK Configuration
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-nav__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/logo-white.png" alt="logo">
+
+    </a>
+    d.ASH SDK
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/desktop-dep/" class="md-nav__link">
+        1.0 Installing Desktop Dependencies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/payload-reg/" class="md-nav__link">
+        2.0 Payload Registration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/vpn/" class="md-nav__link">
+        3.0 Setting up d.ASH VPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/dash/" class="md-nav__link">
+        4.0 Setting up d.ASH
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-spot/" class="md-nav__link">
+        1.0 Configuring Spot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-connect/" class="md-nav__link">
+        2.0 Configuring Sensors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/map-loading/" class="md-nav__link">
+        3.0 Map Loading
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/dash-eng/" class="md-nav__link">
+        4.0 d.ASH with ROS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          dC Pilot Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          dC Pilot Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dc-pilot/pilot-guide/" class="md-nav__link">
+        1.0 d.ASH Pilot Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dc-pilot/pilot-sdk/" class="md-nav__link">
+        2.0 d.ASH Pilot SDK
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Autonomy Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Autonomy Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autonomy-client/" class="md-nav__link">
+        1.0 d.ASH Autonomy Controller
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2.0 d.ASH Nav
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        2.0 d.ASH Nav
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-minimum-system-requirements" class="md-nav__link">
+    1.1 Minimum System Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-tutorial" class="md-nav__link">
+    1.2 Tutorial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-quick-start" class="md-nav__link">
+    1.3 Quick Start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-login-process" class="md-nav__link">
+    2. Login process
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Login process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-fleet-manager" class="md-nav__link">
+    2.1 Fleet Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-project-management" class="md-nav__link">
+    3. Project management
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Project management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-creating-a-project" class="md-nav__link">
+    3.1 Creating a project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-loading-an-existing-project" class="md-nav__link">
+    3.2 Loading an existing project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-map-browser" class="md-nav__link">
+    3.3 Map Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-main-menu" class="md-nav__link">
+    4. Main Menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41-top-menu" class="md-nav__link">
+    4.1 Top Menu
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Top Menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-project-options" class="md-nav__link">
+    4.1.1 Project Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-map-browser" class="md-nav__link">
+    4.1.2 Map Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-view-port" class="md-nav__link">
+    4.2 View Port
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-side-bar" class="md-nav__link">
+    4.3 Side Bar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-plan-tab" class="md-nav__link">
+    5. Plan Tab
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Plan Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-actions" class="md-nav__link">
+    5.1 Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-waypoint" class="md-nav__link">
+    5.2 Waypoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-schedule" class="md-nav__link">
+    5.3 Schedule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-robots" class="md-nav__link">
+    5.4 Robots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ready-tab" class="md-nav__link">
+    6. Ready Tab
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Ready Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-e-stopresume" class="md-nav__link">
+    6.1 E-Stop/Resume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-list-of-robots" class="md-nav__link">
+    6.2 List of robots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-robot-actions" class="md-nav__link">
+    6.3 Robot Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-assign-route-to-robot" class="md-nav__link">
+    6.4 Assign Route to Robot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-monitor-tab" class="md-nav__link">
+    7. Monitor Tab
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Monitor Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-e-stopresume" class="md-nav__link">
+    7.1 E-Stop/Resume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-live-views" class="md-nav__link">
+    7.2 Live views
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-robot-controls" class="md-nav__link">
+    7.3 Robot Controls
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autonomy-client-v2-api-reference/" class="md-nav__link">
+        2.1 d.ASH Nav Scripting API Reference
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          d.ASH Pack Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          d.ASH Pack Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-pack/" class="md-nav__link">
+        1.0 d.ASH Pack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-xplorer/" class="md-nav__link">
+        2.0 d.ASH Xplorer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          SDK Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          SDK Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/rest-config/" class="md-nav__link">
+        1.0 d.ASH Service Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+        2.0 Register Payload Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/robot-config/" class="md-nav__link">
+        3.0 Robot Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/auto-config/" class="md-nav__link">
+        4.0 Auto Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--
+1. Login process
+    1.1: DL from fleet management
+    1.2: Login with credentials we generate for you
+    1.3: If there's trouble logging in. Email/call dC
+
+2. Project browser
+    2.1: Create new project
+    2.2: Opening existing project
+    2.3: Map browser/open map
+
+3. Main menu
+    3.1: Explain each tab on the top bar (left to right)
+    3.2: Explain main dash nav screen n sliders etc
+    3.3: Explain side bars (top to bottom)
+        3.3.1: Routes container (All routes saved by user, when expanded can see which robo is assigned to it. Can also add or remove robots from selected route)
+        3.3.2: Robot list (Shows all currently connected robots only)
+        3.3.3: Visualisation (Yang Kai's colour blind solver and other visual edits like scale of objects)
+
+4. Plan tab
+    4.1: Actions
+        4.1.1: Explain autodrive
+        4.1.2: How to record waypoint
+        4.1.3: Create route
+    4.2: Waypoint Editing
+        4.2.1: Edit waypoint (add, delete, reposition)
+        4.2.2: Interpolate (Auto waypoint recording)
+        4.2.3: Set scan points (Set selected/all/delete, for BLK etc)
+    4.3: Connect to :b:obots
+
+5. Ready tab
+    5.1: Estop/resume
+    5.2: List of robots (Loads popup)
+        5.2.1: Checklist/health monitor
+        5.2.2: Robot info
+        5.2.3: Control panel/robot settings
+    5.3: Robot actions
+        5.3.1: Localise
+        5.3.2: Follow cam
+        5.3.3: Auto/Manual control
+        5.3.4: Sit/Stand spot only
+    5.4: Assign route to robot
+        5.4.1: Drop down
+        5.4.2: Tag robot
+
+6. Monitor tab
+    6.1: Estop/resume
+    6.2: Live views (Cams can be frm any mix of robots)
+        6.2.1: Mapview (Smol view of robo cams)
+        6.2.2: 4 view (4 cams n no map)
+        6.2.3: Focus (Focus on one cam, no map)
+    6.3: Robo Controls
+        6.3.1: Run route given to robot
+        6.3.2: Autodrive
+        6.3.3: Auto/Manual Sit/Stand
+
+-->
+
+<h1 id="1-dash-nav"><strong>1. d.ASH Nav</strong></h1>
+<p><em>d.ASH Nav</em> is <em>the</em> platform for autonomous control of robots. Being seamlessly integrated in the <a href="https://www.dconstruct.co/products">d.ASH Fleet Management</a> workflow, you can enjoy easy planning and deployment of your robots for various use cases. <em>d.ASH Nav</em> allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.</p>
+<p>Because <em>d.ASH Nav</em> is fully integrated with <a href="https://www.dconstruct.co/products">d.ASH Fleet Management system</a>, an internet connection is required. Should you require <em>d.ASH Nav</em> without an internet connection, please <a href="mailto:hello@dconstruct.ai">contact us</a> for more details.</p>
+<h3 id="11-minimum-system-requirements"><strong>1.1 Minimum System Requirements</strong></h3>
+<ol>
+<li>PC with a CPU equivalent to or greater than an Intel i5 4<sup>th</sup> Gen or AMD R5 1000 series</li>
+<li>Nvidia GTX 960</li>
+<li>8GB of RAM</li>
+<li>Internet Connection</li>
+<li>Windows 10/11</li>
+<li>Gamepad/Joystick (e.g. Logitech F710 Gamepad)</li>
+</ol>
+<p><em>We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features may run slower on other GPUs. A joystick is recommended for manual tele-operation control.</em></p>
+<h3 id="12-tutorial"><strong>1.2 Tutorial</strong></h3>
+<p><strong>Control Scheme</strong></p>
+<p><em>d.ASH Nav</em>'s control scheme is as follows:</p>
+<ul>
+<li>Tilt/Camera: Hold down the <em>Left Mouse</em> Button and drag</li>
+<li>Zoom: Use the mouse scroll wheel to zoom in/zoom out</li>
+<li>Move Around: Use the <em>WASD</em> keys to pan/move around the world</li>
+</ul>
+<h3 id="13-quick-start"><strong>1.3 Quick Start</strong></h3>
+<p>The general workflow to operate and run an autonomous waypoint mission is as follows:</p>
+<ol>
+<li>Login to <em>d.ASH Nav</em></li>
+<li>Create a new project, this allows you to save any routes created for use later on</li>
+<li>Load the map of your choice</li>
+<li>Create a new mission Route and plot the waypoints</li>
+<li>Connect to your desired robot in your robot fleet</li>
+<li>Set the robot's initial starting pose on the 3D map</li>
+<li>Start the robot with the route for your new mission</li>
+</ol>
+<h2 id="2-login-process"><strong>2. Login process</strong></h2>
+<h3 id="21-fleet-manager"><strong>2.1 Fleet Manager</strong></h3>
+<p>First, login to Fleet Manager with your given credentials to download the latest build of <em>d.ASH Nav</em>.
+Next, login to d.ASH Nav.
+If you encounter any difficulties logging in, please <a href="mailto:hello@dconstruct.ai">contact us</a>.</p>
+<h2 id="3-project-management"><strong>3. Project management</strong></h2>
+<p>Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use <em>d.ASH Nav</em> from anywhere in the world!</p>
+<h3 id="31-creating-a-project"><strong>3.1 Creating a project</strong></h3>
+<p>To create a new project, simply click on the "New Project" button. You will then be prompted to enter a project name. After creating your new project, you will be redirected to the <em>Map Browser</em>.  If a project with the same name exists, a prompt will pop up asking you to choose another name for the project.</p>
+<h3 id="32-loading-an-existing-project"><strong>3.2 Loading an existing project</strong></h3>
+<p>To load an existing project, select an existing project saved to the cloud using the file browser on the right hand side of the screen. Alternatively, if you are loading a project saved locally, click on the "Browse" button and navigate to the local location of the project. After creating your new project, you will be redirected to the <em>Map Browser</em>.</p>
+<h3 id="33-map-browser"><strong>3.3 Map Browser</strong></h3>
+<p>After creating/loading an existing a project, you will be taken to the <em>Map Selection Screen</em>. This screen allows you to select the map which relates to your deployment location. After selecting your map, you can begin to deploy your robots. Maps can be sorted by whether they are coloured or not.</p>
+<h2 id="4-main-menu"><strong>4. Main Menu</strong></h2>
+<p>This is the main hub of all things <em>d.ASH Nav</em>. Everything concerning deployment of your robots can be found here.</p>
+<h2 id="41-top-menu"><strong>4.1 Top Menu</strong></h2>
+<p>The top bar contains several crucial pieces of information, such as which part of the deployment process you are currently in and actions that you can perform in each part of deployment. In the <em>Main Menu</em>, options to manage your projects and browse through available maps are available. The arrows indicate the proper flow of how a deployment should be run.</p>
+<h3 id="411-project-options"><strong>4.1.1 Project Options</strong></h3>
+<ul>
+<li><em>New Project</em>: Create a brand new project</li>
+<li><em>Open Project</em>: Load an existing project</li>
+<li><em>Save</em>: Save any changes to the current project</li>
+<li><em>Save as</em>: Save any changes to the current project under a different file/project name</li>
+<li><em>Preferences</em>: Edit <em>d.ASH Nav</em> settings</li>
+</ul>
+<h3 id="412-map-browser"><strong>4.1.2 Map Browser</strong></h3>
+<ul>
+<li><em>Map Browser</em>: Browse through all maps saved to your account</li>
+</ul>
+<h2 id="42-view-port"><strong>4.2 View Port</strong></h2>
+<p>This is a visual representation of the map you have loaded for your project. </p>
+<ul>
+<li><em>View Toggles</em>: A widget in the top left corner of the <em>View Port</em> which allows you to toggle the visiblity of certain objects in the <em>View Port</em>.</li>
+<li><em>Orientation Gizmo</em>: A gizmo in the top right corner of the <em>View Port</em> shows the current orientation of the map, relative to the orientation of the floor.</li>
+<li><em>Height Sliders</em>: Adjust the cut off points for rendering of the loaded map.</li>
+</ul>
+<h2 id="43-side-bar"><strong>4.3 Side Bar</strong></h2>
+<p>The <em>Side Bar</em> contains all information to do with any planned routes, connected robots and <em>View Port</em> visualisation tweaks</p>
+<ul>
+<li><em>Routes</em>: Contains all planned routes in the project with the ability to toggle the preview of the route in the <em>View Port</em>, view all robots assigned to this route, assign new robots to this route and delete existing routes. This also reflects the current mission's route and status.</li>
+<li><em>Robot List</em>: Shows you all currently connected robots and their status.</li>
+<li><em>Visualisation</em>: Allows for you to tweak the colour of elements in the rendered point cloud as well as the scale (size) of the rendered robot and waypoints. This is more useful for those who experience colour blindness. We recommend leaving these settings at their default value.</li>
+</ul>
+<h2 id="5-plan-tab"><strong>5. Plan Tab</strong></h2>
+<p>This tab contains all actions to do with planning routes.</p>
+<h3 id="51-actions"><strong>5.1 Actions</strong></h3>
+<p>Three actions are available for you to use:</p>
+<ul>
+<li><em>Autodrive</em>: Using machine learning and computer vision to analyze and understand your robot's surroundings, hands-free Level 2 Autonomy allows for the navigation of complex, unstructured environments using just cameras alone.</li>
+<li><em>Record Waypoints</em>: Records and plots waypoints as you manually navigate the robot in real life.</li>
+<li><em>Create Route</em>: Creates an empty route for you to edit and add waypoints later on.</li>
+</ul>
+<h3 id="52-waypoint"><strong>5.2 Waypoint</strong></h3>
+<p>This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.</p>
+<ul>
+<li><em>Edit Waypoint</em>: Enters a seperate mode containing actions to edit waypoints in a selected route</li>
+<li><em>Interpolation by distance</em>: Adds additional waypoints between two existing waypoints which are too far apart. This allows for more actions (such as scans) to be excuted along a given path. The default interval is set at 1m.</li>
+<li><em>Set scan points</em>: The robot will stop to perform a scan with 3<sup>rd</sup> party scanners.</li>
+</ul>
+<h3 id="53-schedule"><strong>5.3 Schedule</strong></h3>
+<p>This menu allows you to set a start date and time for your robots to automatically execute pre-planned missions.</p>
+<h3 id="54-robots"><strong>5.4 Robots</strong></h3>
+<p>Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.</p>
+<h2 id="6-ready-tab"><strong>6. Ready Tab</strong></h2>
+<p>This tab contains all actions necessary to deploy your robot</p>
+<h3 id="61-e-stopresume"><strong>6.1 E-Stop/Resume</strong></h3>
+<p>Controls for stopping and resuming a mission/robot movement can be found here.</p>
+<h3 id="62-list-of-robots"><strong>6.2 List of robots</strong></h3>
+<p>Shows a list of all connected robots with several different pieces of information tied to each robot.
+- <em>Health Monitor</em>: The health monitor shows the status of all sensors on the robot.
+- <em>Robot Info</em>: Contains info such as the robot's serial number, date of purchase etc
+- <em>Robot Settings</em>: Adjust the tag settings of a selected robot through colour tags.</p>
+<h3 id="63-robot-actions"><strong>6.3 Robot Actions</strong></h3>
+<ul>
+<li><em>Localise</em>: Give the robot an estimate of where it currently is on the map in order for the robot to fine tune its position.</li>
+<li><em>Follow Cam</em>: Sets the camera of the <em>View Port</em> to follow and track the robot as it moves throughout the map.</li>
+<li><em>Auto/Manual Control</em>: Manually change the operating mode of the selected robot.</li>
+<li><em>Sit/Stand Robot</em>: <strong>SPOT ONLY</strong>. Sit or stand Boston Dynamics Spot Robot.</li>
+</ul>
+<h3 id="64-assign-route-to-robot"><strong>6.4 Assign Route to Robot</strong></h3>
+<ul>
+<li><em>Drop Down</em>: Choose the route to assign.</li>
+<li><em>Tag Robot</em>: Choose the robot to assign the route to (i.e: tagging the robot)</li>
+</ul>
+<h2 id="7-monitor-tab"><strong>7. Monitor Tab</strong></h2>
+<p>This tab contains all actions and information about the mission in progress.</p>
+<h3 id="71-e-stopresume"><strong>7.1 E-Stop/Resume</strong></h3>
+<p>Controls for stopping and resuming a mission/robot movement can be found here.</p>
+<h3 id="72-live-views"><strong>7.2 Live views</strong></h3>
+<p>Views from the cameras on the robots can be found here. To add a view, simply drag and drop a robot from the right side bar into an empty view slot and select which camera to view. There are three templates to follow.</p>
+<ul>
+<li><em>Map View</em>: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.</li>
+<li><em>Four View</em>: This view will completely hide the Point Cloud Map and instead show four slots for different robot camera views.</li>
+<li><em>Focus</em>: This view will completely hide the Point Cloud Map and instead show only one robot camera view.</li>
+</ul>
+<h3 id="73-robot-controls"><strong>7.3 Robot Controls</strong></h3>
+<ul>
+<li><em>Run Route</em>: Issues the command to the selected robot to run its assigned route</li>
+<li><em>Autodrive</em>: <a href="#51-actions">See above</a></li>
+<li><em>Auto/Manual | Sit/Stand</em>: <a href="#63-robot-actions">See above</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "toc.integrate", "navigation.expand"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+    
+  </body>
+</html>

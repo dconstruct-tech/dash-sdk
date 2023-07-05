@@ -68,6 +68,7 @@ markdown_extensions:
     - admonition
     - pymdownx.highlight:
         linenums_style: pymdownx-inline
+    - pymdownx.extra
     - pymdownx.superfences
     - pymdownx.inlinehilite
     - pymdownx.snippets
@@ -86,6 +87,8 @@ extra_css:
 nav:
   - Home: 
     - Introduction: index.md
+    - Our Products: home/products.md
+    - Workflow : home/workflow.md
   - Setup:
     - 1.0 Installing Desktop Dependencies: setup/desktop-dep.md
     - 2.0 Payload Registration: setup/payload-reg.md

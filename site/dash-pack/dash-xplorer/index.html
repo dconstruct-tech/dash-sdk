@@ -1290,10 +1290,10 @@
 - Show/Hide Photo360</p>
 <hr />
 <h2 id="23-credit-system"><strong>2.3 Credit system</strong></h2>
-<p>The credit system defines the costs associated with exporting new file from the <em>d.ASH Xplorer</em> software (more on <a href="#25-dash-xplorer">this</a> later). </p>
-<p>For every export of a point cloud (<em>.dcloud</em> file) to an external file, a price is imposed upon the user's account. The external file can only be exported if <strong>the user has met the credit requirements</strong> and <strong>is connected to the internet</strong>.</p>
+<p>The credit system defines the costs associated with exporting new file from the <em>d.ASH Xplorer</em> software (more on <a href="#25-dash-xplorer">this</a> later).</p>
+<p>For every export of a point cloud (<em>.dcloud</em> file) to an external file, a price is imposed upon the user's account. The external file can <strong>only</strong> be exported if <strong>the user has met the credit requirements</strong> and <strong>is connected to the internet</strong>.</p>
 <blockquote>
-<p><strong>NOTE:</strong> As of April 2023, there is currently no way to top-up credits as a user. Should the need to add credits arise, please <a href="mailto:hello@dconstruct.ai">contact us</a>.</p>
+<p><strong>NOTE:</strong> As of April 2023, there is currently no way to top-up credits as a user. Should you need to add additional credits, please <a href="mailto:hello@dconstruct.ai">contact us</a>.</p>
 </blockquote>
 <hr />
 <h2 id="24-quick-start"><strong>2.4 Quick Start</strong></h2>
@@ -1365,7 +1365,7 @@
 <h4 id="2516-translation-and-rotation"><span style = color:blue> <strong><em>2.5.1.6 Translation and Rotation</em></strong> </span></h4>
 <p><img alt="Translation And Rotation Icon" src="../img/UpdatedUI/PointCloudEditor/icon-translation-and-rotation.png" /></p>
 <p>Allows users to edit the translation and rotation data of the point cloud using the respective XYZ and quaternion values of the point cloud as an object.</p>
-<p>Adjustment of these values is done through one of two methods: </p>
+<p>Adjustment of these values is done through one of two methods:</p>
 <ul>
 <li>A widget panel within the Toolbar</li>
 </ul>
@@ -1393,14 +1393,14 @@
 <h4 id="2519-point-cloud-cropper"><span style = color:blue> <strong><em>2.5.1.9 Point Cloud Cropper</em></strong> </span></h4>
 <p><img alt="Point Cloud Cropper Icon" src="../img/UpdatedUI/PointCloudEditor/icon-point-cloud-cropper.png" /></p>
 <p><img alt="Point Cloud Cropper Widget" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper.png" /></p>
-<p>Allows the user to crop an area within the currently selected point cloud. 
+<p>Allows the user to crop an area within the currently selected point cloud.
 The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging on the textbox.</p>
 <p><em>Visualise Cropping Bounds</em> allows for a priview of the area to be cropped, surrounding the cropped area with a white box, <em>Keep points outside bounds</em> which specifies whether the point clouds outside of the specified ranges should be kept after the cropping is complete and <em>Create a Copy</em> creates a separate point cloud for the cropped point cloud instead of overwriting the selected cloud.</p>
 <p><img alt="Visualise Cropping Bounds" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper-demo.png" /></p>
 <p>Lastly, the options for the cropper include:</p>
 <ul>
 <li><strong>Auto Set Crop Ranges</strong>: Sets the range automatically based on the 3D point cloud</li>
-<li><strong>Crop</strong>: Executes the cropping using the specified crop ranges </li>
+<li><strong>Crop</strong>: Executes the cropping using the specified crop ranges</li>
 <li><strong>Split</strong>: Creates two separate point clouds, an inside which is the area within the specified ranges, and an outside, which is the remainding area after the inside has been generated</li>
 <li><strong>Reset Crop</strong>: Resets the currently selected crop area</li>
 <li><strong>Exit</strong>: Exits the cropping tool and displays the selected point cloud's information in the toolbar</li>
@@ -1413,11 +1413,11 @@ The user can specify the exact area of the selected point cloud to crop through 
 <ul>
 <li><strong>Denoise Quality</strong>: Selector to specify the number of iterations the denoise algorithm will run, wherein the default setting is <em>Rough</em>. In the above image, the quality is set to <em>Refined</em>, respectively indicating that the denoise algorithm will run at an increased quantity, resulting in a more accurate final point cloud output.</li>
 <li><strong>Denoise Aggressiveness</strong>: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of more points while the opposite holding true for lower settings.</li>
-<li><strong>Chunk Size (m)</strong>: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising. <blockquote>
-<p><strong><em>NOTE:</em></strong> Setting the chunk size to a high value may result in instabilities and/or crashing. </p>
+<li><strong>Chunk Size (m)</strong>: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising.<blockquote>
+<p><strong><em>NOTE:</em></strong> Setting the chunk size to a high value may result in instabilities and/or crashing.</p>
 </blockquote>
 </li>
-<li><strong>Uniform Sampling</strong>: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted. </li>
+<li><strong>Uniform Sampling</strong>: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted.</li>
 <li><strong>With Smoothing</strong>: Specifies whether points within the cloud should be shifted in order to make surfaces more pronounced. Disable this option if distortions are observed within the point cloud.</li>
 </ul>
 <h4 id="25111-point-cloud-merger"><span style = color:blue> <strong><em>2.5.1.11 Point Cloud Merger</em></strong> </span></h4>
@@ -1438,7 +1438,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <li><strong>Export Format</strong>: Determines the output file format (<em>.PLY</em> or <em>.GLTF</em>)</li>
 <li><strong>Level of Detail</strong>: Specifies the density of the vertex mesh, with a higher setting resulting in more details but a larger output file size and vice versa</li>
 <li><strong>Clean Up Level</strong>: Specifies the tolerance by which outlier points should be removed, wherein a higher value removes more points.<blockquote>
-<p><strong><em>NOTE:</em></strong> When set to high values, unintended point removal of points may occur, lowering the value lower may remedy this issue</p>
+<p><strong><em>NOTE:</em></strong> When set to high values, unintentional removal of points may occur, lowering the value lower may remedy this issue</p>
 </blockquote>
 </li>
 <li><strong>Smoothing Cycles</strong>: Determines the number of cycles used in the meshing algorithm. Setting a higher value will result in a smoother mesh but may be slower than the alternative.</li>
@@ -1457,7 +1457,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <li><strong>Max Height</strong>: The highest point that will be captured in the map generation</li>
 <li><strong>Min Height</strong>: The lowest point that will be captured in the map generation</li>
 <li><strong>Resolution (m./pixel)</strong>: The number of meters per pixel of the 2 dimensional capture of the selected point cloud</li>
-<li><strong>Show Height Bounds</strong>: Visualises the highest and lowest points that will be captured using translucent planes </li>
+<li><strong>Show Height Bounds</strong>: Visualises the highest and lowest points that will be captured using translucent planes</li>
 </ul>
 <p><img alt="2d Map Generator Height Bound Visualisation" src="../img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png" /></p>
 <p>Additionally, the three options that are present at the bottom of the toolbar widget are: <em>Generate</em>, which executes the two-dimensional map generation, <em>Reset Config</em>, which resets the configuration settings to their default values and <em>Exit</em>, which reverts the toolbar widget view to the <em>File Info</em>.</p>
@@ -1475,7 +1475,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p><img alt="After Comparison" src="../img/UpdatedUI/PointCloudEditor/menu-point-cloud-comparison-afterDemo.png" /></p>
 <p>As seen from the pictures above, the point clouds are compared using red, blue and green (<em>not shown here</em>) colours to represent removed points, unchanged points and added points respectively.</p>
 <blockquote>
-<p><strong><em>NOTE:</em></strong> <em>Point Cloud Comparison</em> is <strong>ONLY</strong> available for use if exactly <strong>TWO</strong> point clouds are selected. </p>
+<p><strong><em>NOTE:</em></strong> <em>Point Cloud Comparison</em> is <strong>ONLY</strong> available for use if exactly <strong>TWO</strong> point clouds are selected.</p>
 </blockquote>
 <h4 id="25115-bim-manager"><span style = color:blue> <strong><em>2.5.1.15 BIM Manager</em></strong> </span></h4>
 <p><img alt="BIM Manager Icon" src="../img/UpdatedUI/PointCloudEditor/icon-bim-manager.png" /></p>
@@ -1484,11 +1484,13 @@ The user can specify the exact area of the selected point cloud to crop through 
 </blockquote>
 <h3 id="252-dashpack-manager"><strong>2.5.2 d.ASHPack Manager</strong></h3>
 <p><em>d.ASHPack Manager</em> mode provides an easy and convenient way to interface with a valid <em>d.ASHPack</em> system, including the downloading and processing of the files found within a <em>d.ASHPack</em>.</p>
-<p>The toolbar found on the workspace has also changed, wherein the mutable buttons (blue buttons) have changed in functionality. The blue buttons now have the following functionality (from left to right):
-- Show Grid
-- Hide Keyframe Poses
-- Hide Constraints
-- Hide Photo360 Poses</p>
+<p>The toolbar found on the workspace has also changed, wherein the mutable buttons (blue buttons) have changed in functionality. The blue buttons now have the following functionality (from left to right):</p>
+<ul>
+<li>Show Grid</li>
+<li>Hide Keyframe Poses</li>
+<li>Hide Constraints</li>
+<li>Hide Photo360 Poses</li>
+</ul>
 <p>The functions offered by the d.ASHPack Manager (in a left-to-right, top-to-bottom format) are as follows:</p>
 <h4 id="2521-connect-to-a-dashpack"><span style = color:blue> <strong><em>2.5.2.1 Connect to a d.ASHPack</em></strong> </span></h4>
 <p><img alt="Connect to a d.ASHPack icon" src="../img/UpdatedUI/d.ASHPackManager/icon-connect-to-a-dashpack.png" /></p>
@@ -1509,13 +1511,13 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p><img alt="d.ASHPack Scan Control Window" src="../img/UpdatedUI/d.ASHPackManager/menu-dashpack-scan-control.png" /></p>
 <p>Shows the user the current status of the connected <em>d.ASHPack</em> with an input field for the desired recording name below the status display. <em>With Imaging</em> allows the recording to capture colour data via the mounted camera beside the LiDAR module on the <em>d.ASHPack</em>.</p>
 <blockquote>
-<p><strong><em>NOTE:</em></strong> Should the <em>Recording Name</em> field be left blank, the recording will be named as the current date and time in the format of <code>yyyy-MM-dd_HH-mm-ss.dpack</code> (E.g. 2023-12-31_23-59-58.dpack).</p>
+<p><strong><em>NOTE:</em></strong> Should the <em>Recording Name</em> field be left blank, the recording will be named as the current date and time in the format of <code>YYYY-MM-dd_HH-mm-ss.dpack</code> (E.g. 2023-12-31_23-59-58.dpack).</p>
 </blockquote>
 <h4 id="2524-download-dashpack-recording"><span style = color:blue> <strong><em>2.5.2.4 Download d.ASHPack Recording</em></strong> </span></h4>
 <p><img alt="Download d.ASHPack Recording icon" src="../img/UpdatedUI/d.ASHPackManager/icon-download-dashpack-recording.png" /></p>
 <p>Opens a window that allows the user to view, search for, download and remove any recording that is saved on the currently connected <em>d.ASHPack</em>'s on-board storage.</p>
 <p><img alt="Download d.ASHPack Recording Window" src="../img/UpdatedUI/d.ASHPackManager/menu-download-dashpack-recording.png" /></p>
-<p>As shown above, the window provides a search bar and refresh button to refresh or search for a desired <em>.dpack</em> file contained within the on-board memory of the currently connected d.ASHPack. To perform an action, first click on the desired <em>.dpack</em> file to select it and then on either the <em>Download</em> or <em>Remove Recording</em> buttons. Clicking <em>Download</em> will prompt the user to specify a download path while clicking <em>Remove Recording</em> will prompt for a confirmation to remove the selected recording. </p>
+<p>As shown above, the window provides a search bar and refresh button to refresh or search for a desired <em>.dpack</em> file contained within the on-board memory of the currently connected d.ASHPack. To perform an action, first click on the desired <em>.dpack</em> file to select it and then on either the <em>Download</em> or <em>Remove Recording</em> buttons. Clicking <em>Download</em> will prompt the user to specify a download path while clicking <em>Remove Recording</em> will prompt for a confirmation to remove the selected recording.</p>
 <h4 id="2525-generate-point-cloud"><span style = color:blue> <strong><em>2.5.2.5 Generate Point Cloud</em></strong> </span></h4>
 <p><img alt="Generate Point Cloud Icon" src="../img/UpdatedUI/d.ASHPackManager/icon-generate-point-cloud.png" /></p>
 <p>When clicked, the user will be prompted to select the <em>.dpack</em> file that they wish to use to generate a point cloud. Afterwhich, a <em>Map Generation</em> window will appear, providing several configuration options.</p>
@@ -1523,9 +1525,9 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p>The main options listed in the <em>Map Generation</em> window are as follows:</p>
 <ul>
 <li><strong>Start/Stop Time (%)</strong>: The percentage of the d.ASHPack scan to generate a point cloud from. (E.g from 10% to 50% of a scan)</li>
-<li><strong>Number of Threads</strong>: Specifies number of threads to be used for the point cloud generation operation. More threads are favoured but may cause a performance decrease in other applications. </li>
+<li><strong>Number of Threads</strong>: Specifies number of threads to be used for the point cloud generation operation. More threads are favoured but may cause a performance decrease in other applications.</li>
 <li><strong>Loop-closure Similarity Score</strong>: Specifies the tolarance for loop closures (ie. lower values equate to stricter the program becomes when finding similar points).</li>
-<li><strong>Auto Pause</strong>: The generation operation will automatically be paused when a significant change in position is detected. This option is used in cases where point cloud generation may fail to allow for the back up of the data that has already been generated. </li>
+<li><strong>Auto Pause</strong>: The generation operation will automatically be paused when a significant change in position is detected. This option is used in cases where point cloud generation may fail to allow for the back up of the data that has already been generated.</li>
 </ul>
 <p>Advanced options are listed as follows:</p>
 <ul>
@@ -1535,7 +1537,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <li><strong>Minimum Keyframe Distance Difference</strong>: Determines the minimum distance between each LiDAR scan to be used for mapping.</li>
 <li><strong>Minimum Keyframe Angle Difference</strong>: Determines the minimum angular displacement between each LiDAR scan to be used to mapping</li>
 <li><strong>Fast Mode</strong>: Specifies whether to use singular or multiple threads for point cloud generation. Pragmatically results in faster generation but may reduce map quality, particularly in complex areas with little features such as that of buildings.</li>
-<li><strong>Scan Context Loop Closure</strong>: Specifies whether to utilise an advanced loop closure algorithm. Results in more scan positions being considered for loop closure which results in a higher quality map but may use more system resources. </li>
+<li><strong>Scan Context Loop Closure</strong>: Specifies whether to utilise an advanced loop closure algorithm. Results in more scan positions being considered for loop closure which results in a higher quality map but may use more system resources.</li>
 </ul>
 <h4 id="2526-manual-loop-closure"><span style = color:blue> <strong><em>2.5.2.6 Manual Loop Closure</em></strong> </span></h4>
 <p><img alt="Manual Loop Closure Icon" src="../img/UpdatedUI/d.ASHPackManager/icon-manual-loop-closure.png" /></p>
@@ -1557,7 +1559,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 <p>In the following screenshot, the <em>Activate Dynamic Removal</em> box is not checked.</p>
 <p><img alt="Post Processing Menu No Dynamic Removal" src="../img/UpdatedUI/d.ASHPackManager/menu-post-processing-noDynamic.png" /></p>
 <p>The options displayed are as follows:</p>
-<p><strong>Post-Processing Options</strong>: </p>
+<p><strong>Post-Processing Options</strong>:</p>
 <p><img alt="Post Processing Options Dropdown" src="../img/UpdatedUI/d.ASHPackManager/menu-post-processing-PostProcessingOptions.png" /></p>
 <ul>
 <li><em>Nav Map</em>: Autonomous Navigation Map meant for waypoint plotting for a compatible robot</li>

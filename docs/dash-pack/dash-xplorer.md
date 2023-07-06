@@ -65,15 +65,16 @@ The buttons in blue are mutable based on the current mode of *d.ASH Xplorer*, fo
 
 ## **2.3 Credit system**
 
-The credit system defines the costs associated with exporting new file from the *d.ASH Xplorer* software (more on [this](#25-dash-xplorer) later). 
+The credit system defines the costs associated with exporting new file from the *d.ASH Xplorer* software (more on [this](#25-dash-xplorer) later).
 
-For every export of a point cloud (*.dcloud* file) to an external file, a price is imposed upon the user's account. The external file can only be exported if **the user has met the credit requirements** and **is connected to the internet**.
+For every export of a point cloud (*.dcloud* file) to an external file, a price is imposed upon the user's account. The external file can **only** be exported if **the user has met the credit requirements** and **is connected to the internet**.
 
-> **NOTE:** As of April 2023, there is currently no way to top-up credits as a user. Should the need to add credits arise, please [contact us](mailto:hello@dconstruct.ai).
+> **NOTE:** As of April 2023, there is currently no way to top-up credits as a user. Should you need to add additional credits, please [contact us](mailto:hello@dconstruct.ai).
 
 ---
 
 ## **2.4 Quick Start**
+
 The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by *d.ASH Xplorer* are listed in the subsequent sections.
 
 1. Login to *d.ASH Xplorer*
@@ -156,7 +157,7 @@ Displays the current point cloud at a high resolution by attempting to render al
 
 Allows users to edit the translation and rotation data of the point cloud using the respective XYZ and quaternion values of the point cloud as an object.
 
-Adjustment of these values is done through one of two methods: 
+Adjustment of these values is done through one of two methods:
 
 - A widget panel within the Toolbar
   
@@ -194,7 +195,7 @@ The options for the downsampling include:
 
 ![Point Cloud Cropper Widget](img/UpdatedUI/PointCloudEditor/menu-point-cloud-cropper.png)
 
-Allows the user to crop an area within the currently selected point cloud. 
+Allows the user to crop an area within the currently selected point cloud.
 The user can specify the exact area of the selected point cloud to crop through the widget panel by either entering the numbers or clicking and dragging on the textbox.
 
 *Visualise Cropping Bounds* allows for a priview of the area to be cropped, surrounding the cropped area with a white box, *Keep points outside bounds* which specifies whether the point clouds outside of the specified ranges should be kept after the cropping is complete and *Create a Copy* creates a separate point cloud for the cropped point cloud instead of overwriting the selected cloud.
@@ -204,7 +205,7 @@ The user can specify the exact area of the selected point cloud to crop through 
 Lastly, the options for the cropper include:
 
 - **Auto Set Crop Ranges**: Sets the range automatically based on the 3D point cloud
-- **Crop**: Executes the cropping using the specified crop ranges 
+- **Crop**: Executes the cropping using the specified crop ranges
 - **Split**: Creates two separate point clouds, an inside which is the area within the specified ranges, and an outside, which is the remainding area after the inside has been generated
 - **Reset Crop**: Resets the currently selected crop area
 - **Exit**: Exits the cropping tool and displays the selected point cloud's information in the toolbar
@@ -221,9 +222,9 @@ The features of the point cloud denoiser include:
 
 - **Denoise Quality**: Selector to specify the number of iterations the denoise algorithm will run, wherein the default setting is *Rough*. In the above image, the quality is set to *Refined*, respectively indicating that the denoise algorithm will run at an increased quantity, resulting in a more accurate final point cloud output.
 - **Denoise Aggressiveness**: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of more points while the opposite holding true for lower settings.
-- **Chunk Size (m)**: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising. 
-  > ***NOTE:*** Setting the chunk size to a high value may result in instabilities and/or crashing. 
-- **Uniform Sampling**: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted. 
+- **Chunk Size (m)**: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising.
+  > ***NOTE:*** Setting the chunk size to a high value may result in instabilities and/or crashing.
+- **Uniform Sampling**: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted.
 - **With Smoothing**: Specifies whether points within the cloud should be shifted in order to make surfaces more pronounced. Disable this option if distortions are observed within the point cloud.
 
 #### <span style = color:blue> ***2.5.1.11 Point Cloud Merger*** </span>
@@ -251,7 +252,7 @@ The settings found in the toolbar for this feature are as follows:
 - **Export Format**: Determines the output file format (*.PLY* or *.GLTF*)
 - **Level of Detail**: Specifies the density of the vertex mesh, with a higher setting resulting in more details but a larger output file size and vice versa
 - **Clean Up Level**: Specifies the tolerance by which outlier points should be removed, wherein a higher value removes more points.
-  > ***NOTE:*** When set to high values, unintended point removal of points may occur, lowering the value lower may remedy this issue
+  > ***NOTE:*** When set to high values, unintentional removal of points may occur, lowering the value lower may remedy this issue
 - **Smoothing Cycles**: Determines the number of cycles used in the meshing algorithm. Setting a higher value will result in a smoother mesh but may be slower than the alternative.
 - **Level of Sub-Details**: Determines the value of details within a local scope. Setting a high value may result in a considerable increase in size as compared to a lower value.
 - **Color Smoothing Quality**: Determines the smoothness of colours that appear on the final mesh where a higher value results in a smoother color but may take a longer time as compared to alternative options.
@@ -273,7 +274,7 @@ The configuration options for the generator area are as follows:
 - **Max Height**: The highest point that will be captured in the map generation
 - **Min Height**: The lowest point that will be captured in the map generation
 - **Resolution (m./pixel)**: The number of meters per pixel of the 2 dimensional capture of the selected point cloud
-- **Show Height Bounds**: Visualises the highest and lowest points that will be captured using translucent planes 
+- **Show Height Bounds**: Visualises the highest and lowest points that will be captured using translucent planes
 
 ![2d Map Generator Height Bound Visualisation](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png)
 
@@ -305,7 +306,7 @@ The results of the comparison are shown below:
 
 As seen from the pictures above, the point clouds are compared using red, blue and green (*not shown here*) colours to represent removed points, unchanged points and added points respectively.
 
-> ***NOTE:*** *Point Cloud Comparison* is **ONLY** available for use if exactly **TWO** point clouds are selected. 
+> ***NOTE:*** *Point Cloud Comparison* is **ONLY** available for use if exactly **TWO** point clouds are selected.
 
 #### <span style = color:blue> ***2.5.1.15 BIM Manager*** </span>
 
@@ -317,6 +318,7 @@ As seen from the pictures above, the point clouds are compared using red, blue a
 *d.ASHPack Manager* mode provides an easy and convenient way to interface with a valid *d.ASHPack* system, including the downloading and processing of the files found within a *d.ASHPack*.
 
 The toolbar found on the workspace has also changed, wherein the mutable buttons (blue buttons) have changed in functionality. The blue buttons now have the following functionality (from left to right):
+
 - Show Grid
 - Hide Keyframe Poses
 - Hide Constraints
@@ -355,7 +357,7 @@ Displays a window to allow the user to start a recording on the currently connec
 ![d.ASHPack Scan Control Window](img/UpdatedUI/d.ASHPackManager/menu-dashpack-scan-control.png)
 
 Shows the user the current status of the connected *d.ASHPack* with an input field for the desired recording name below the status display. *With Imaging* allows the recording to capture colour data via the mounted camera beside the LiDAR module on the *d.ASHPack*.
->***NOTE:*** Should the *Recording Name* field be left blank, the recording will be named as the current date and time in the format of `yyyy-MM-dd_HH-mm-ss.dpack` (E.g. 2023-12-31_23-59-58.dpack).
+>***NOTE:*** Should the *Recording Name* field be left blank, the recording will be named as the current date and time in the format of `YYYY-MM-dd_HH-mm-ss.dpack` (E.g. 2023-12-31_23-59-58.dpack).
 
 #### <span style = color:blue> ***2.5.2.4 Download d.ASHPack Recording*** </span>
 
@@ -365,7 +367,7 @@ Opens a window that allows the user to view, search for, download and remove any
 
 ![Download d.ASHPack Recording Window](img/UpdatedUI/d.ASHPackManager/menu-download-dashpack-recording.png)
 
-As shown above, the window provides a search bar and refresh button to refresh or search for a desired *.dpack* file contained within the on-board memory of the currently connected d.ASHPack. To perform an action, first click on the desired *.dpack* file to select it and then on either the *Download* or *Remove Recording* buttons. Clicking *Download* will prompt the user to specify a download path while clicking *Remove Recording* will prompt for a confirmation to remove the selected recording. 
+As shown above, the window provides a search bar and refresh button to refresh or search for a desired *.dpack* file contained within the on-board memory of the currently connected d.ASHPack. To perform an action, first click on the desired *.dpack* file to select it and then on either the *Download* or *Remove Recording* buttons. Clicking *Download* will prompt the user to specify a download path while clicking *Remove Recording* will prompt for a confirmation to remove the selected recording.
 
 #### <span style = color:blue> ***2.5.2.5 Generate Point Cloud*** </span>
 
@@ -378,9 +380,9 @@ When clicked, the user will be prompted to select the *.dpack* file that they wi
 The main options listed in the *Map Generation* window are as follows:
 
 - **Start/Stop Time (%)**: The percentage of the d.ASHPack scan to generate a point cloud from. (E.g from 10% to 50% of a scan)
-- **Number of Threads**: Specifies number of threads to be used for the point cloud generation operation. More threads are favoured but may cause a performance decrease in other applications. 
+- **Number of Threads**: Specifies number of threads to be used for the point cloud generation operation. More threads are favoured but may cause a performance decrease in other applications.
 - **Loop-closure Similarity Score**: Specifies the tolarance for loop closures (ie. lower values equate to stricter the program becomes when finding similar points).
-- **Auto Pause**: The generation operation will automatically be paused when a significant change in position is detected. This option is used in cases where point cloud generation may fail to allow for the back up of the data that has already been generated. 
+- **Auto Pause**: The generation operation will automatically be paused when a significant change in position is detected. This option is used in cases where point cloud generation may fail to allow for the back up of the data that has already been generated.
 
 Advanced options are listed as follows:
 
@@ -390,7 +392,7 @@ Advanced options are listed as follows:
 - **Minimum Keyframe Distance Difference**: Determines the minimum distance between each LiDAR scan to be used for mapping.
 - **Minimum Keyframe Angle Difference**: Determines the minimum angular displacement between each LiDAR scan to be used to mapping
 - **Fast Mode**: Specifies whether to use singular or multiple threads for point cloud generation. Pragmatically results in faster generation but may reduce map quality, particularly in complex areas with little features such as that of buildings.
-- **Scan Context Loop Closure**: Specifies whether to utilise an advanced loop closure algorithm. Results in more scan positions being considered for loop closure which results in a higher quality map but may use more system resources. 
+- **Scan Context Loop Closure**: Specifies whether to utilise an advanced loop closure algorithm. Results in more scan positions being considered for loop closure which results in a higher quality map but may use more system resources.
 
 #### <span style = color:blue> ***2.5.2.6 Manual Loop Closure*** </span>
 
@@ -432,7 +434,7 @@ In the following screenshot, the *Activate Dynamic Removal* box is not checked.
 
 The options displayed are as follows:
 
-**Post-Processing Options**: 
+**Post-Processing Options**:
 
 ![Post Processing Options Dropdown](img/UpdatedUI/d.ASHPackManager/menu-post-processing-PostProcessingOptions.png)
 

@@ -205,3 +205,14 @@ Views from the cameras on the robots can be found here. To add a view, simply dr
 - *Run Route*: Issues the command to the selected robot to run its assigned route
 - *Autodrive*: [See above](#51-actions)
 - *Auto/Manual | Sit/Stand*: [See above](#63-robot-actions)
+
+## **8. Telegram Configuration**
+d.ASH Nav supports status notifications of the robots in your fleet via Telegram! Add [dconstruct-bot](https://t.me/dconstruct_bot)!
+
+### **8.1 Setup**
+1. Add the Telegram bot to the Telegram chat of your choice
+2. Request for a key from us [here](mailto:hello@dconstruct.ai).
+3. In the Telegram chat of your choice, use the ```/register``` command followed by the key. (e.g. ```/register [insert key here]```)
+
+### **8.2 Remove from chat**
+If you would like to stop receiving notifications, use the ```/delete``` command.

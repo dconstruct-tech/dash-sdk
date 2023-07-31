@@ -22,7 +22,7 @@ Due to the resource intensive nature of d.ASH Xplorer, we recommend the followin
 | CPU | Intel i5 4th Gen / AMD Ryzen 5 2000 series | Intel i7 12th Gen / AMD R7 5000 series |
 | GPU | Nvidia GTX 960 | Nvidia RTX 3060 |
 | Memory | 16 GB | 32 GB |
-| Internet Connection | Wi-Fi | Ethernet |
+| Internet Connection | ✅ | ✅ |
 
 *Some features such as "HD View" are disabled on GPUs prior to Nvidia GTX 960. AMD GPUs are not currently supported*
 

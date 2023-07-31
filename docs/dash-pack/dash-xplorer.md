@@ -228,7 +228,7 @@ The features of the point cloud denoiser include:
 - **Denoise Aggressiveness**: Used to determine how the algorithm should treat infracting points, wherein a higher setting results in the removal and shifting of more points while the opposite holding true for lower settings.
 - **Chunk Size (m)**: Specifies the volume by which the equally sized chunks of the point cloud is split for denoising.
   > ***NOTE:*** Setting the chunk size to a high value may result in instabilities and/or crashing.
-- **Uniform Sampling**: Specifies wheter inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted.
+- **Uniform Sampling**: Specifies whether inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted.
 - **With Smoothing**: Specifies whether points within the cloud should be shifted in order to make surfaces more pronounced. Disable this option if distortions are observed within the point cloud.
 
 #### <span style = color:blue> ***2.5.1.11 Point Cloud Merger*** </span>

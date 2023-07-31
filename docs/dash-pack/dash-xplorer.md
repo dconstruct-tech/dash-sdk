@@ -19,7 +19,7 @@ Due to the resource intensive nature of d.ASH Xplorer, we recommend the followin
 | | Minimum | Recommended |
 | :-----: | :-----: | :-----: |
 | OS | Windows 10 64 bit | Windows 10 64 bit |
-| CPU | Intel i5 4XXX / AMD Ryzen 5 2XXX | Intel i7 12XXX / AMD R7 5XXX |
+| CPU | Intel i5 4th Gen / AMD Ryzen 5 2000 series | Intel i7 12th Gen / AMD R7 5000 series |
 | GPU | Nvidia GTX 960 | Nvidia RTX 3060 |
 | Memory | 16 GB | 32 GB |
 | Internet Connection | Wi-Fi | Ethernet |

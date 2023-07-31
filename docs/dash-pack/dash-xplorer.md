@@ -12,15 +12,19 @@ Because *d.ASH Xplorer* is fully integrated with [d.ASH Fleet Management system]
 
 ---
 
-## **2.1 Minimum System Requirements**
+## **2.1 Recommended System Specifications**
 
-1. PC with a CPU equivalent to or greater than an Intel i5 4th Gen or AMD R5 2000 series
-2. Nvidia GTX 960
-3. 16GB of RAM
-4. Internet Connection
-5. Windows 10/11
+Due to the resource intensive nature of d.ASH Xplorer, we recommend the following specifications for the operating machine:
 
-*We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features such as "HD View" are disabled on other GPUs.*
+| | Minimum | Recommended |
+| :-----: | :-----: | :-----: |
+| OS | Windows 10 64 bit | Windows 10 64 bit |
+| CPU | Intel i5 4XXX / AMD Ryzen 5 2XXX | Intel i7 12XXX / AMD R7 5XXX |
+| GPU | Nvidia GTX 960 | Nvidia RTX 3060 |
+| Memory | 16 GB | 32 GB |
+| Internet Connection | Wi-Fi | Ethernet |
+
+*Some features such as "HD View" are disabled on GPUs prior to Nvidia GTX 960. AMD GPUs are not currently supported*
 
  **<span style="color:red">d.ASH Xplorer is built for Windows 10/11. Therefore, please ensure that you are running a discrete Nvidia GPU in High-Performance mode. Otherwise, some functionalities may be unsupported. You can enable this by going into Windows GPU Settings, and adding d.ASH Xplorer as an app and setting the "Graphics preference" to "High performance".</span>**
 

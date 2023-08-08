@@ -12,7 +12,7 @@ Because *d.ASH Xplorer* is fully integrated with [d.ASH Fleet Management system]
 
 ---
 
-## **2.1 Recommended System Specifications**
+## **2.1 System Requirements**
 
 Due to the resource intensive nature of d.ASH Xplorer, we recommend the following specifications for the operating machine:
 
@@ -22,7 +22,8 @@ Due to the resource intensive nature of d.ASH Xplorer, we recommend the followin
 | CPU | Intel i5 4th Gen / AMD Ryzen 5 2000 series | Intel i7 12th Gen / AMD R7 5000 series |
 | GPU | Nvidia GTX 960 | Nvidia RTX 3060 |
 | Memory | 16 GB | 32 GB |
-| Internet Connection | ✅ | ✅ |
+
+> **NOTE**: An internet connection is required for d.ASH Xplorer
 
 *Some features such as "HD View" are disabled on GPUs prior to Nvidia GTX 960. AMD GPUs are not currently supported*
 

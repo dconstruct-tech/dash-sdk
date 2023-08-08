@@ -1,9 +1,9 @@
 # Our Products
 
-[**Download d.ASH Pack Brochure**](./dashPackBrochure.pdf) {: .header} | [**Download d.ASH-ER Brochure**](./dashERBrochure.pdf) {: .header}
+[**Download d.ASH Pack Brochure**](./dASHPackBrochure.pdf) {: .header} | [**Download d.ASH-ER Brochure**](./d.ASHERBrochure.pdf) {: .header}
 :------: | :------:
-![dashpack brochure image](img/dashPackCover.png) | ![dasher brochure image](img/dashERCover.png)
+![dashpack brochure image](img/d.ASHPackCover.png) | ![dasher brochure image](img/d.ASHERCover.png)
 
-[**Download d.ASH Xplorer Brochure**](./dashXplorerBrochure.pdf) {: .header} | [**Download d.ASH Nav Brochure**](./dashNavBrochure.pdf) {: .header}
+[**Download d.ASH Xplorer Brochure**](./d.ASHXplorerBrochure.pdf) {: .header} | [**Download d.ASH Nav Brochure**](./d.ASHNavBrochure.pdf) {: .header}
 :------: | :------:
-![dashxplorer brochure image](./img/dashXplorerCover.png)|![dashnav brochure image](img/dashNavCover.png)
+![dashxplorer brochure image](./img/d.ASHXplorerCover.png)|![dashnav brochure image](img/d.ASHNavCover.png)

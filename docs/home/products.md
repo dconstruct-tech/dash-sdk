@@ -1,6 +1,6 @@
 # Our Products
 
-[**Download d.ASH Pack Brochure**](./dASHPackBrochure.pdf) {: .header} | [**Download d.ASH-ER Brochure**](./d.ASHERBrochure.pdf) {: .header}
+[**Download d.ASH Pack Brochure**](./d.ASHPackBrochure.pdf) {: .header} | [**Download d.ASH-ER Brochure**](./d.ASHERBrochure.pdf) {: .header}
 :------: | :------:
 ![dashpack brochure image](img/d.ASHPackCover.png) | ![dasher brochure image](img/d.ASHERCover.png)
 

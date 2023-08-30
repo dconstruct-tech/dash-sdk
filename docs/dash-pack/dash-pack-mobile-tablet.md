@@ -1,6 +1,6 @@
 # d.ASH Pack Mobile Tablet
 
-**d.ASH Pack Mobile Tablet** is a brand new visualisation system, allowing you to see where you've mapped on the fly in just two easy steps! The point clouds are generated in full colour and at real time, giving you a preview of what the final generated map would look like. Get our app on android [Here](https://insert-playstore-link).
+**d.ASH Pack Mobile Tablet** is a brand new visualisation system, allowing you to see where you've mapped on the fly in just two easy steps! The point clouds are generated in full colour and at real time, giving you a preview of what the final generated map would look like. Get our app on android [Here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpack).
 
 ## Requirements
 

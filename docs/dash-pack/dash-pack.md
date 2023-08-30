@@ -96,37 +96,7 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 ### Tips for Data Collection
 
 1. It is recommended to walk in small loops back to previously visited areas for point cloud autocorrection. You will notice some automatic corrections being done during the generation process on d.ASH Xplorer. These corrections are called loop-closures. Walking in the shape of the figure eight is recommended.
-
-Good example of a well defined loop:
-
-<!-- Emphasize on figure 8 -->
-<!-- Insert image here -->
-<!-- | ![Screenshot](img/d.ASHPack/d.ASHPack-goodloopclosure.png){ align=center style="width:600px"} | -->
-
-
-Bad example where there is no loop:
-
-<!-- Insert image here -->
-<!-- | ![Screenshot](img/d.ASHPack/d.ASHPack-badloopclosure.png) { align=center style="width:600px"} | -->
-
-
-2. Where the loops/paths criss-cross should have recognisable static/stationary features (e.g. buildings)
-
-Good examples of easily recognisable features:
-
-| ![Screenshot](img/d.ASHPack/d.ASHPack-stationaryfeature.jfif){ align=center style="width:600px"} |
-
-| ![Screenshot](img/d.ASHPack/d.ASHPack-stationaryfeature(2).jfif){ align=center style="width:600px"} |
-
-| ![Screenshot](img/d.ASHPack/d.ASHPack-stationaryfeature(3).jfif){ align=center style="width:600px"} |
-
-Bad examples of features (AKA: Dynamic features):
-
-| ![Screenshot](img/d.ASHPack/d.ASHPack-badfeature.jfif){ align=center style="width:600px"} | 
-
-| ![Screenshot](img/d.ASHPack/d.ASHPack-badfeature(2).jfif){ align=center style="width:600px"} |
-
-
+2. Where the loops/paths criss-cross should have recognisable static/stationary features (e.g. statues)
 3. Tighten the d.ASH Pack straps before recording
 4. Move at a steady pace
 5. Ensure LiDAR is above your head and do not block the sensor when recording (Stand about 5 metres away from person recording)

@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- Android Tablet
+- Android Tablet with support for OpenGL ES 3.0
 - Android Version 13 | Tiramisu | API Level 33
 
 ### 1.1 Quick Start

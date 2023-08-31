@@ -108,6 +108,7 @@ nav:
     - 2.1 d.ASH Nav Scripting API Reference: dash-auto/autonomy-client-v2-api-reference.md 
   - d.ASH Pack Guide: 
     - 1.0 d.ASH Pack: dash-pack/dash-pack.md 
+    - 1.1 d.ASH Go: dash-pack/dash-go.md 
     - 2.0 d.ASH Xplorer: dash-pack/dash-xplorer.md 
   - SDK Configuration:
     - 1.0 d.ASH Service Configuration: sdk-config/rest-config.md

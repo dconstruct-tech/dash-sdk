@@ -77,18 +77,11 @@ After signing into your account, you'll be directed to the main page where you n
 | ------- | 
 | <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">1</div><p style="margin: 0; margin-left: 5px;">Turn ON your robot</p></div><font size="3"><font size="2"> For most robots, they are automatically turned ON when you physically attach a battery and press the Power ON button/switch. For robots that need to be turned ON via software (such as the Boston Dynamics Spot), please follow the specific instructions found in the robot manufacturer's website. |
 | <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">2</div><p style="margin: 0; margin-left: 5px;">Connect to the robot's WiFi network</p></div><font size="3"><font size="2"> Open your mobile device's settings app, click on Connections -> Wi-Fi, and then connect to the network of your robot. After succesful connection, there should be 'Connected without internet' below the Wi-Fi network. If there is no network found, it means your robot has not been turned on properly. |
-| <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">3</div><p style="margin: 0; margin-left: 5px;">Go back into the application, click on this to select model.</p></div><font size="3"><font size="2"> LMFAO I DONT KNOW WHAT TO WRITE HERE |
-| <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">4</div>
+| <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">3</div><p style="margin: 0; margin-left: 5px;">Return to the application. On the left hand side, click on this button to select your robot.</p></div><font size="3"><font size="2"> <img src="img/select-robot.png" style="margin-top: 10px;" /> |
+| <div style="display: flex; align-items: center; margin-right: 10px;"><div style="width: 18px; height: 18px; background-color: #ef4123; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-weight: bold; border: 1px solid #ef4123;">4</div><p style="margin: 0; margin-left: 5px;">Select the robot that you intend to use.</p></div><font size="3"><font size="2">  |
 
 
- 
-| <font size="3"> Go back into the application, click on this to select model.   |
-| <font size="3"> To move the robot **backwards**, pull back on the joystick. |
-| <font size="3"> To turn the robot to the **left**, tilt left on the joystick. | 
-| <font size="3"> To turn the robot to the **right**, tilt right on the joystick. |
-| <font size="3"> To get the robot to **stand** or **sit** ( if the Robot supports it ), click the `stand` or `sit` button under the Basic Control panel on the right side of the main screen. |
-
-### 3.1.2 
+### 3.1.2 Setting up 
 
 <>
 

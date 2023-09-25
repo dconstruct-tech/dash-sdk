@@ -111,15 +111,16 @@ After signing into your account, you'll be directed to the main page where you n
 Your robot and map has now been imported! 
 <img src="img/both-imported-view.jpg" style="margin-top: 10px;" />
 
-### 3.3 Getting Started
-
 Select the menu icon on the top right hand corner to open up the options menu. 
+
+### 4. View, Plan and Ready Tabs 
+
 <img src="img/option-panels.png" style="margin-top: 10px; width: 300px;"/>
 
-### 3.3.1 View Tab
+### 4.1 View Tab
 In this view tab, you will find options to change the view and configurations of the map imported into the application. 
 
-#### 3.3.1.1 Adjusting the map view  
+#### 4.1.1 Adjusting the map view  
 Pinch to zoom in and out <br>
 Swipe to adjust view <br>
 Swipe with two fingers to move around <br>
@@ -127,9 +128,23 @@ Swipe with two fingers to move around <br>
 Select this button on the top left to reset view to default. <br>
 <img src="img/reset-view.png" style="margin-top: 10px;"/>
 
-### 3.3.2 Plan Tab
+#### 4.1.2 Clipping 
+Move the points on the range slider to adjust how much floor/ceiling is shown on the map of your application. <br>
+<img src="img/clipping.png" style="width: 600px; margin-top: 10px;" />
+
+#### 4.1.3 Contours
+Toggle on and off or adjust the contour level to change the amount of detail in data points. <br>
+<img src="img/contour.png" style="width: 600px; margin-top: 10px;"/>
+
+
+#### 4.1.4 Example of a good map visualization
+
+### 4.2 Plan Tab
 This tab is where 
 
-### 3.3.3 Ready Tab
+### 4.3 Ready Tab
 This tab is where 
+
+
+### 5. Case Scenarios
 

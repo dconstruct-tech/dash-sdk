@@ -154,6 +154,9 @@ This tab is where
 
 ### 5. Case Scenarios
 
+### 5.1 Moving your robot
+### 5.2 Automating robot movement 
+
 
 ### 6. Troubleshooting Guide 
 

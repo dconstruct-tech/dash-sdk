@@ -94,12 +94,13 @@ The general workflow to operate and run an autonomous waypoint mission is as fol
 6. Set the robot's initial starting pose on the 3D map
 7. Start the robot with the route for your new mission
 
-## **2. Login process**
+## **2. Download**
+Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH Nav*.
 
-### **2.1 Fleet Manager**
+<!-- ### **2.1 Fleet Manager**
 First, login to Fleet Manager with your given credentials to download the latest build of *d.ASH Nav*.
 Next, login to d.ASH Nav.
-If you encounter any difficulties logging in, please [contact us](mailto:hello@dconstruct.ai).
+If you encounter any difficulties logging in, please [contact us](mailto:hello@dconstruct.ai). -->
 
 ## **3. Project management**
 Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Nav* from anywhere in the world!

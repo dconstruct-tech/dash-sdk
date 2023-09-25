@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/img/dASH-logo.jpg" width="25%" /><br><br></p>
+<p align="center"><img src="docs/img/d.ASH-Black.svg" width="25%" /><br><br></p>
 
 -----------------
 

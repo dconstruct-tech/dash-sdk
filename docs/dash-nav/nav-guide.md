@@ -111,7 +111,10 @@ After signing into your account, you'll be directed to the main page where you n
 Your robot and map has now been imported! 
 <img src="img/both-imported-view.jpg" style="margin-top: 10px;" />
 
-Select the menu icon on the top right hand corner to open up the options menu. 
+Select the menu icon on the top right hand corner to open up the options menu.<br> 
+<img src="img/menu-icon.jpg" style="margin-top: 10px; width: 100px;" />
+
+---
 
 ### 4. View, Plan and Ready Tabs 
 
@@ -139,12 +142,19 @@ Toggle on and off or adjust the contour level to change the amount of detail in 
 
 #### 4.1.4 Example of a good map visualization
 
+
 ### 4.2 Plan Tab
-This tab is where 
+The planning tab is for preparing routes for robot autonomy. 
+
+### 4.2.1 Take control of your robot 
 
 ### 4.3 Ready Tab
 This tab is where 
 
 
 ### 5. Case Scenarios
+
+
+### 6. Troubleshooting Guide 
+
 

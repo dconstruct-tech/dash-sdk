@@ -1,4 +1,4 @@
-# d.ASH Pack
+# **d.ASH Pack**
 
 | ![Screenshot](img/d.ASHPack/device.jpg){ align=center style="width:600px"} |
 
@@ -13,7 +13,7 @@ You can view a short video overview of how **d.ASH Pack** integrates into your A
 - A Windows PC with d.ASH Xplorer
 - d.ASH Pack device
 
-*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
+\*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
 
 ### 1.1 Quick Start
 
@@ -27,14 +27,15 @@ Please ensure that others do not stand near the LiDAR while recording as this co
 
 **Recording cannot be paused for later continuation**. If you would like to pause momentarily, please restart the recording. Ensure some overlap in area between the two separate recordings. Do note that the results may not be as accurate as one full walkthrough.
 
-*Loop Closure* is the act of walking and intersecting paths which you had walked before, an example of this would be walking in the shape of a figure 8, where you meet in the middle and the paths walked intersect one another. *Loop Closure* is important as it allows for more accuracy during *point cloud generation*. While recording, try to ensure that there is as much *Loop Closure* as possible.
+_Loop Closure_ is the act of walking and intersecting paths which you had walked before, an example of this would be walking in the shape of a figure 8, where you meet in the middle and the paths walked intersect one another. _Loop Closure_ is important as it allows for more accuracy during _point cloud generation_. While recording, try to ensure that there is as much _Loop Closure_ as possible.
 
 ### 1.2 Connecting to d.ASH Pack
+
 The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the access panel of the d.ASH Pack itself.
 
 <!-- Insert image here -->
 
-Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (https://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.
+Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (http://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.
 
 Mobile interface:
 | ![Screenshot](img/d.ASHPack/d.ASHPack-userinterface.jpg){ align=center style="width:600px"} |
@@ -51,7 +52,7 @@ The status LEDs are able to show different colours with each colour representing
 
 1. Power up d.ASH Pack
 2. Connect to d.ASH Pack's Wi-Fi network from your phone or other electronic devices.
-3. Open your web browser and key in "https://192.168.10.1/".
+3. Open your web browser and key in "http://192.168.10.1/".
 4. Name your d.ASH Pack recording file and select if you would like imaging (colour) in your scans.
 5. Put on the d.ASH Pack and stand stationary for a short moment (e.g. 1s). Then, press start recording.
 6. Walk around to cover the area that you would like to record. For better quality, please make sure to walk in loops back to previously visited areas.
@@ -82,12 +83,12 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 6. Change 3D point cloud generation configurations to suite the environment of the recording. For generation configuration explanations/tips, please refer to Generation Configs section in [Xplorer guide](https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#211-3d-point-cloud-generation).
 7. Select the preferred recording file and click "Generate Point Cloud" to start the point cloud generation.
 8. While it is running, you will have the following options:
-    <ul>
-        <li><strong>Pause</strong>: Pause the generation process (Appears if generation is running)</li>
-        <li><strong>Resume</strong>: Resume the generation process (Appears if generation is paused)</li>
-        <li><strong>Cancel</strong>: Cancel the generation process</li>
-        <li><strong>Checkpoint</strong>: Export the current 3D point cloud to Point Cloud Editor. This is used to back up the generation progress. If problems arise in the future, some good results can still be restored.</li>
-    </ul>
+<ul>
+    <li><strong>Pause</strong>: Pause the generation process (Appears if generation is running)</li>
+    <li><strong>Resume</strong>: Resume the generation process (Appears if generation is paused)</li>
+    <li><strong>Cancel</strong>: Cancel the generation process</li>
+    <li><strong>Checkpoint</strong>: Export the current 3D point cloud to Point Cloud Editor. This is used to back up the generation progress. If problems arise in the future, some good results can still be restored.</li>
+</ul>
 
 9. Once completed, click "Point Cloud Editor" to edit the generated 3D point cloud. The name of the new point cloud is the same as the recording file's name.
 10. Follow the [d.ASH Xplorer guide](https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#22-point-cloud-editor) to edit the point cloud accordingly.

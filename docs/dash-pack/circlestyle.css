@@ -1,0 +1,19 @@
+.instructions-div {
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px;
+}
+
+.instruction-circle {
+    width: 18px;
+    height: 18px;
+    background-color: #ef4123;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #ef4123;
+}

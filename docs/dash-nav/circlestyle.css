@@ -7,7 +7,7 @@
 .instruction-circle {
     width: 18px;
     height: 18px;
-    background-color: #ef4123;
+    background-color: #ff3300;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -15,5 +15,5 @@
     color: white;
     font-size: 12px;
     font-weight: bold;
-    border: 1px solid #ef4123;
+    border: 1px solid #ff3300;
 }

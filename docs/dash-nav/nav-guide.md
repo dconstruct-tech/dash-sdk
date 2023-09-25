@@ -14,7 +14,9 @@ Now, let's delve into the functionalities that d.ASH Nav offers for seamless rob
 
 1. Application Functions
 2. User Guide for *your Mobile Devices*
-2. User Guide for *your Computers*
+3. User Guide for *your Desktop Devices*
+
+---
 
 ### 1. Application Functionalities
 
@@ -51,6 +53,8 @@ d.ASH Nav determines the real-time location of connected robots within millimetr
 
 The software’s intelligent decision-making capabilities enable robots to make informed choices to avoid obstacles and optimize their routes, mitigating potential risks and enhancing overall safety. This not only protects the robots themselves but also minimizes the risk of accidents or collisions with humans and other objects in the environment.
 
+---
+
 ### 2. d.ASH Nav for Mobile
 This user guide will cover every function in d.ASH Nav Mobile, as well as detailed explanations and necessary steps to take, for operating your robots through your mobile device. 
 
@@ -65,10 +69,18 @@ Android Version 12 | Snow Cone  | API Level 31
 #### Recommended system requirements
 Android Version 13 | Tiramisu  | API Level 33 
 
-### 2.3 Your account
-First, login to Fleet Manager with your given credentials to download the latest build of d.ASH Nav. Next, login to d.ASH Nav. If you encounter any difficulties logging in, please contact us.
+To find a list of compatible Android devices, click [here](https://www.mysmartprice.com/gear/android-12-update-tracker/).
 
-### 2.3.1 Offline mode 
+### 2.3 Your account
+<img src="img/login.jpg" style="width: 400px" />
+
+Login to d.ASH Nav with your given credentials. If you encounter any difficulties logging in, please contact us [here]().
+
+
+
+### 2.3.1 Offline mode
+
+
 ---
 
 ### 3. Welcome to d.ASH Nav!
@@ -105,10 +117,19 @@ Select the menu icon on the top right hand corner to open up the options menu.
 <img src="img/option-panels.png" style="margin-top: 10px; width: 300px;"/>
 
 ### 3.3.1 View Tab
-Balls
+In this view tab, you will find options to change the view and configurations of the map imported into the application. 
+
+#### 3.3.1.1 Adjusting the map view  
+Pinch to zoom in and out <br>
+Swipe to adjust view <br>
+Swipe with two fingers to move around <br>
+
+Select this button on the top left to reset view to default. <br>
+<img src="img/reset-view.png" style="margin-top: 10px;"/>
 
 ### 3.3.2 Plan Tab
+This tab is where 
 
 ### 3.3.3 Ready Tab
-
+This tab is where 
 

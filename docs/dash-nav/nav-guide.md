@@ -159,9 +159,17 @@ To see your robot's camera view, select or toggle the camera options here. This 
 Before we move on to the functionalities in the planning and ready tabs,  we will need to localize our robot. 
 
 Localizing would ensure that our robot knows its exact location in real life and a good localization would ensure that we know where our robot is without actually looking at it in real life. 
-<img src="img/localization.png" style="width: 600px; margin-top: 10px;"/>
 
-Good localization is where the robots visualization (white points) lines up with the map. 
+| Instructions |
+| ------- | 
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">On the right side of the application, press the Localize button.</p></div><fonst size="3"><img src="img/localize-button.png" style="margin-top: 10px; width: 300px;"/><br><font size='2'>Ensure that you are on the ready tab. Here, you can also find your robot status and see information like the battery, localization and stance.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localize the robot based on its actual position in real life from the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust it to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your localizations. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
+
+Some good robot localization examples are shown below.
+
+<img src="img\localization.png" style="width: 600px; margin-top: 10px;"/>
+
+Good localization is where the robots LIDAR visualization (white points) lines up with the map. 
 
 `Make another example image as this image is not clear`
 
@@ -213,6 +221,7 @@ Give your new route a name, use a name that is descriptive.<br>
 </div>
 
 ### 4.3.1.1.3 Generating BLK scan points 
+Here is where we select the points in our map to apply a BLK scan.
 <img src="img/generate-scan-points-slider.jpg" style="width: 300px;" />
 
 `Select points for scan image/gif`<br>

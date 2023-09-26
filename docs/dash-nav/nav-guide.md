@@ -141,21 +141,109 @@ Toggle on and off or adjust the contour level to change the amount of detail in 
 
 
 #### 4.1.4 Example of a good map visualization
+The view tab is entirely used to change the way you see the map on the application and it is up to you on how you want to configure it. Leaving it as default is alright as well. But usually, you should adjust the thumbs such that the floor of the map is visible and the ceiling of the map is hidden but the artifects are still visible. 
 
-### 4.2 Localizing your robot 
-Before we move on from the functionalities in the planning and ready tab,  we will need to localize our robot. 
+### 4.2 Ready Tab
+Inside this tab is where you find the functions to control your 
 
-Localizing would ensure that our robot knows its exact location in real life and 
+### 4.2.1 Live camera streaming 
+To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right. 
+
+<img src="img/cameras.jpg" style="width: 300px;"> 
+
+### 4.2.2 Manually controlling your robot 
+<img src="img/control-mode-toggle.png" style="width: 300px;" />
+
+### 4.2.3 Localizing your robot 
+
+Before we move on to the functionalities in the planning and ready tabs,  we will need to localize our robot. 
+
+Localizing would ensure that our robot knows its exact location in real life and a good localization would ensure that we know where our robot is without actually looking at it in real life. 
+<img src="img/localization.png" style="width: 600px; margin-top: 10px;"/>
+
+Good localization is where the robots visualization (white points) lines up with the map. 
+
+`Make another example image as this image is not clear`
+
+`Explain why its good localization and why its bad`
 
 ### 4.3 Plan Tab
 The planning tab is for preparing routes for robot autonomy. 
 
-### 4.3.1 Adding routes 
+### 4.3.1 Creating your route
+Before starting, ensure that you have our localized your robot to the map. <br>
+At the bottom right corner of your screen, select on the 'App Route' button.
 
-### 4.3.1 Take control of your robot 
+<img src="img/add-route-button.jpg" style="width: 300px;" /><br>
+Give your new route a name, use a name that is descriptive.<br>
+<img src="img/add-new-route.jpg" style="width: 300px; margin-top: 10px;" />
+<img src="img/set-route-view.jpg" style="margin-top: 10px;" />
+<img src="img/set-route-buttons.jpg" style="width: 300px;" />
 
-### 4.4 Ready Tab
-This tab is where 
+### 4.3.1.1 Initialize your BLK scanning configurations 
+
+### 4.3.1.1.1 Lidar Scan Quality
+
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Low : </p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Medium : </p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">High : </p>
+</div>
+
+### 4.3.1.1.2 Image Capture Mode
+
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">None : </p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">LDR : </p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">HDR : </p>
+</div>
+
+### 4.3.1.1.3 Generating BLK scan points 
+`Image `
+`Select points for scan`
+Points that are 
+
+### 4.3.1.2 Setting route by waypoints
+To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 
+
+<img src="img/selected-add-mode.jpg" style="width: 300px;"><br>
+<img src="img/setting-route-by-waypoint.gif" style="width: 400px;">
+
+If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete. <br>
+<img src="img/selected-remove-mode.jpg" style="width: 300px; margin-top: 10px;"><br>
+Finally, select the Done button when you are finished with setting your route. 
+
+### 4.3.1.3 Setting route by controlling your robot
+Add a new route and give it a name. Once you've created a new route, exit by pressing the done button. <br>
+On the bottom right of your map navigation screen, click on this button. <br>
+<img src="img/record-route-button.jpg" style="width: 70px; margin-top: 10px;"> <br>
+<img src="img/record-route-view.jpg" style="width: 300px;" />
+
+
+### 4.3.2 Editing or deleting your routes
+On the right hand side, there will be a list of your routes created. To edit or delete, tap and hold on the route and the edit and delete buttons will show up at the bottom. 
+
+### 4.3.3 Running your routes and autonomous driving
+
+
+
+### 4.4.1 Manually moving your robot
+
+
 
 
 ### 5. Case Scenarios

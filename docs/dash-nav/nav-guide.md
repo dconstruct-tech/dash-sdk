@@ -199,30 +199,29 @@ Give your new route a name, use a name that is descriptive.<br>
 
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">Low : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">Low : LIDAR spins at the slowest rate, which makes the resulting scan the least detailed.</p>
 </div>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">Medium : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">Medium : LIDAR spins at a faster rate, which makes the resulting scan more detailed.</p>
 </div>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">High : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">High : LIDAR spins at its fastest rate, which makes the resulting scan the most detailed.</p>
 </div>
 
 ### 4.3.1.1.2 Image Capture Mode
-
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">None : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
 </div>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">LDR : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">LDR (Low Dynamic Range) : Details in shadows may be lost or details in highlights may be blown out.</p>
 </div>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">HDR : </p>
+    <p style="padding-top: 16px; padding-left: 10px;">HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. </p>
 </div>
 
 ### 4.3.1.1.3 Generating BLK scan points 

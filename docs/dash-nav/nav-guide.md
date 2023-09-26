@@ -213,9 +213,11 @@ Give your new route a name, use a name that is descriptive.<br>
 </div>
 
 ### 4.3.1.1.3 Generating BLK scan points 
-`Image `
-`Select points for scan`
-Points that are 
+<img src="img/generate-scan-points-slider.jpg" style="width: 300px;" />
+
+`Select points for scan image/gif`<br>
+
+Points that are blinking??? indicate the points that robot will scan???
 
 ### 4.3.1.2 Setting route by waypoints
 To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 

@@ -152,7 +152,12 @@ To see your robot's camera view, select or toggle the camera options here. This 
 <img src="img/cameras.jpg" style="width: 300px;"> 
 
 ### 4.2.2 Manually controlling your robot 
-<img src="img/control-mode-toggle.png" style="width: 300px;" />
+To move your robot, switch the control mode at the bottom of the application to manual mode.
+<img src="img/control-mode-toggle.png" style="width: 300px; margin-top: 10px;" />
+
+Use the joysticks to move the robot. The joystick on the left is used to move the robot front and backwards, while the right joystick is used to turn the robot left and right. 
+
+<img src="img/manual-control-mode.jpg" style="width: 400px;"/>
 
 ### 4.2.3 Localizing your robot 
 
@@ -179,7 +184,7 @@ Good localization is where the robots LIDAR visualization (white points) lines u
 The planning tab is for preparing routes for robot autonomy. 
 
 ### 4.3.1 Creating your route
-Before starting, ensure that you have our localized your robot to the map. <br>
+Before starting, ensure that you have our localized your robot to the map. Refer to <a href="#">Section 4.2.3</a> for a guide on robot localization. <br>
 At the bottom right corner of your screen, select on the 'App Route' button.
 
 <img src="img/add-route-button.jpg" style="width: 300px;" /><br>

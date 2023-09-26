@@ -142,13 +142,19 @@ Toggle on and off or adjust the contour level to change the amount of detail in 
 
 #### 4.1.4 Example of a good map visualization
 
+### 4.2 Localizing your robot 
+Before we move on from the functionalities in the planning and ready tab,  we will need to localize our robot. 
 
-### 4.2 Plan Tab
+Localizing would ensure that our robot knows its exact location in real life and 
+
+### 4.3 Plan Tab
 The planning tab is for preparing routes for robot autonomy. 
 
-### 4.2.1 Take control of your robot 
+### 4.3.1 Adding routes 
 
-### 4.3 Ready Tab
+### 4.3.1 Take control of your robot 
+
+### 4.4 Ready Tab
 This tab is where 
 
 

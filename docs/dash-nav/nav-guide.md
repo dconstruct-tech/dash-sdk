@@ -85,7 +85,7 @@ The software’s intelligent decision-making capabilities enable robots to make 
 ---
 
 ### 2. d.ASH Nav for Mobile
-This user guide will cover every function in d.ASH Nav Mobile, as well as detailed explanations and necessary steps to take, for operating your robots through your mobile device. 
+This user guide will cover every function in the d.ASH Nav Mobile App, as well as detailed explanations and necessary steps to take, for operating your robots through your mobile device. 
 
 ### 2.1 Setting up
 This is where you can find the necessary steps to install the application and get started with it. 
@@ -102,11 +102,8 @@ Android Version 13 | Tiramisu  | API Level 33
 To find a list of compatible Android devices, click [here](https://www.mysmartprice.com/gear/android-12-update-tracker/).
 
 ### 2.3 Your account
-<img src="img/login.jpg" style="width: 400px" />
-
-Login to d.ASH Nav with your given credentials. If you encounter any difficulties logging in, please contact us [here]().
-
-
+Login to d.ASH Nav with your given credentials. If you encounter any difficulties logging in, please contact us [here]().<br>
+<img src="img/login.jpg" style="width: 400px; margin-top: 10px;" />
 
 ### 2.3.1 Offline mode
 `I have no idea what this does`
@@ -116,8 +113,7 @@ Login to d.ASH Nav with your given credentials. If you encounter any difficultie
 ### 3. Welcome to d.ASH Nav!
 
 After signing into your account, you'll be directed to the main page where you need to load your robot and map files.
-
-| ![Screenshot](img/dash-nav-home-page.jpg){ align=center style="width:1000px"} | 
+<img src="img/dash-nav-home-page.jpg" style="width: 1000px; margin-top: 10px;">
 
 ### 3.1 Setting up your robot 
 
@@ -211,9 +207,7 @@ The robot needs to localise to ensure that it knows its exact location in the po
 After submitting the initial pose estimate, the robot will try to elucidate its current position on the map. At this point, the robot's position may "jump". Users are to ensure that after afew seconds, the robot remains at the correct position.
 
 Some good robot localisation examples are shown below.
-
-<img src="img\localization.png" style="width: 600px; margin-top: 10px;"/>
-
+<img src="img\localisation.png" style="margin-top: 10px;"/>
 From the comparison above, the localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map and vice versa.
 
 ### 6. Plan Tab
@@ -233,7 +227,7 @@ Give your new route a name. Try to use a name that is descriptive and well label
 #### 6.1.1 Initialize your BLK scanning configurations 
 
 #### Lidar Scan Quality
-<img src="img/lidar-scan-quality-options.jpg" style="width: 300px;" /><br>
+<img src="img/lidar-scan-quality-options.jpg" style="width: 200px;" /><br>
 
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
@@ -249,7 +243,7 @@ Give your new route a name. Try to use a name that is descriptive and well label
 </div>
 
 #### Image Capture Mode
-<img src="img/image-capture-mode-options.jpg" style="width: 300px;"/><br>
+<img src="img/image-capture-mode-options.jpg" style="width: 200px;"/><br>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
     <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
@@ -276,16 +270,16 @@ If you want to delete a waypoint, select the Remove Mode button, and click on th
 <img src="img/selected-remove-mode.jpg" style="width: 300px; margin-top: 10px;"><br>
 Finally, select the Done button when you are finished with setting your route. 
 
-#### 6.1.3 Setting route by controlling your robot
+#### 6.1.3 Setting route via manual control of your robot
 Add a new route and give it a name. Once you've created a new route, exit by pressing the done button. <br>
 On the bottom right of your map navigation screen, click on this button. <br>
 <img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> <br>
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. <br>
-<img src="img/record-route-view.jpg" style="width: 400px; margin-top: 10px" />
+<img src="img/record-route-view.gif" style="width: 400px; margin-top: 10px" />
 
 After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.
 
-Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen. 
+Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen and you will be directed back to the routes page with your new route saved. 
 
 #### 6.1.4 BLK Scanning
 
@@ -293,10 +287,11 @@ Once you are finished with setting your route, press 'Save Recorded Route' at th
 This is where you can generate the points in your route for a BLK scan based on the robot's distance traveled.
 
 To do so, turn this option on before making your route via manual control and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled.
-<img src="img/generate-scan-points-slider.jpg" style="width: 300px; margin-top: 10px;" />
+<img src="img/auto-generate-scan-points.gif" style="margin-top: 10px;" />
 
 #### Manually setting scan points
-
+Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to do a BLK scan. 
+<img src="img/manual-select-scan-points.gif" style="margin-top: 10px;" />
 
 #### 6.2 Editing or deleting your routes
 On the right hand side, there will be a list of your routes created. You can edit or delete these routes by tapping and holding on the route and the rename, copy and delete buttons will show up at the bottom. 
@@ -312,4 +307,4 @@ On the right hand side, there will be a list of your routes created. You can edi
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
 <br>
-Enjoy using d.ASH Nav! If you require any support, please feel free to contact us here. 
+Enjoy using d.ASH Nav! If you require any support, please feel free to contact us <a href="#">here</a>. 

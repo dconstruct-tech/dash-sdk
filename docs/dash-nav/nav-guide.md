@@ -12,35 +12,36 @@ Now, let's delve into the functionalities that d.ASH Nav offers for seamless rob
 
 ### Table of Contents
 
-1. Application Functionalities
+##### 1. Application Functionalities
 
-2. d.ASH Nav for Mobile
+##### 2. d.ASH Nav for Mobile
 * 2.1 Setting up
 * 2.2 Installation guide
 * 2.3 Your account
 * 2.4 Offline mode
 
-3. Welcome to d.ASH Nav!
+##### 3. Welcome to d.ASH Nav!
 * 3.1 Setting up your robot
 * 3.2 Loading in your map file 
 
-4. View Tab
+##### 4. View Tab
 * 4.1 Adjusting map view
-* 4.1.1 Clipping
-* 4.1.2 Contour
+    * 4.1.1 Clipping
+    * 4.1.2 Contour<br><br>
+    
 * 4.2 Good map visualizations
 
-5. Ready Tab
+##### 5. Ready Tab
 * 5.1 Live camera streaming
 * 5.2 Manually controlling your robot
 * 5.3 Localizing your robot
 
-6. Plan Tab 
+##### 6. Plan Tab 
 * 6.1 Creating your route
-* 6.1.1 Initializing your BLK scanning configuration
-* 6.1.2 Setting route via waypoint
-* 6.1.3 Setting route via manual control
-* 6.1.4 BLK scanning
+    * 6.1.1 Initializing your BLK scanning configuration
+    * 6.1.2 Setting route via waypoint
+    * 6.1.3 Setting route via manual control
+    * 6.1.4 BLK scanning<br><br>
 * 6.2 Editing and deleting your routes
 * 6.3 Running your routes 
 

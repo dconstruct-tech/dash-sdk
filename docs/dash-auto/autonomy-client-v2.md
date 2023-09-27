@@ -157,14 +157,17 @@ Three actions are available for you to use:
 ### **5.2 Waypoint**
 This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.
 
-- *Edit Waypoint*: Enters a seperate mode containing actions to edit waypoints in a selected route
+- *Add/Delete Waypoint*: Add or remove a waypoint from a selected route
+- *Reposition Waypoint*: Select a waypoint to shift the waypoint from one position to another. 
 - *Interpolation by distance*: Adds additional waypoints between two existing waypoints which are too far apart. This allows for more actions (such as scans) to be excuted along a given path. The default interval is set at 1m.
-- *Set scan points*: The robot will stop to perform a scan with 3rd party scanners.
+- *Enable/Disable Scan*: Marking a waypoint as a scan point will tell the robot to stop and perform a scan with 3rd party scanners.
+- *Scan All*: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3rd party scanners.
+- *Finish*: Closes the menu.
 
-### **5.3 Schedule**
-This menu allows you to set a start date and time for your robots to automatically execute pre-planned missions.
+<!-- ### **5.3 Schedule**
+This menu allows you to set a start date and time for your robots to automatically execute pre-planned missions. -->
 
-### **5.4 Robots**
+### **5.3 Robots**
 Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.
 
 ## **6. Ready Tab**
@@ -201,6 +204,7 @@ Views from the cameras on the robots can be found here. To add a view, simply dr
 - *Map View*: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.
 - *Four View*: This view will completely hide the Point Cloud Map and instead show four slots for different robot camera views.
 - *Focus*: This view will completely hide the Point Cloud Map and instead show only one robot camera view.
+- *Hide*: Disables all cameras/shows only the Point Cloud Map
 
 ### **7.3 Robot Controls**
 - *Run Route*: Issues the command to the selected robot to run its assigned route

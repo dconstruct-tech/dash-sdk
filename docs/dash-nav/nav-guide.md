@@ -253,6 +253,11 @@ On the right hand side, there will be a list of your routes created. You can edi
 <img src="img/edit-route.gif" style="margin-top: 10px;" />
 
 ### 4.3.3 Running your routes
+| Instructions |
+| ------- | 
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Under the routes section on the right side, select on the route that you would like to run.</p></div><fonst size="3"><br><font size='2'>You can find your routes in the routes section of the plan tab.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localize the robot based on its actual position in real life from the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust it to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your localizations. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
+
 Select on the route you would like to run. 
 
 At the bottom of the application, press on Set Route. <br>

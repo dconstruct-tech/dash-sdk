@@ -13,9 +13,31 @@ Now, let's delve into the functionalities that d.ASH Nav offers for seamless rob
 ### Table of Contents
 
 1. Application Functions
-2. User Guide for *your Mobile Devices*
-3. User Guide for *your Desktop Devices*
+2. d.ASH Nav for Mobile
+* 2.1 Setting up
+* 2.2 Installation guide
+* 2.3 Your account
+* 2.4 Offline mode
 
+3. Welcome to d.ASH Nav!
+* 3.1 Setting up your robot
+* 3.2 Loading in your map file 
+
+4. View, Plan and Ready Tabs
+* 4.1 View Tab
+    * 4.1.1 Adjusting map view
+    * 4.1.2 Clipping
+    * 4.1.3 Contour
+    * 4.1.4 Good map visualizations
+* 4.2 Ready Tab
+    * 4.2.1 Live camera streaming
+    * 4.2.2 Manually controlling your robot
+    * 4.2.3 Localizing your robot
+* 4.3 Plan tab 
+    * 4.3.1 Creating your route
+    * 4.3.1.1 Initializing your BLK scanning configuration
+    * 4.3.
+     
 ---
 
 ### 1. Application Functionalities
@@ -59,6 +81,7 @@ The software’s intelligent decision-making capabilities enable robots to make 
 This user guide will cover every function in d.ASH Nav Mobile, as well as detailed explanations and necessary steps to take, for operating your robots through your mobile device. 
 
 ### 2.1 Setting up
+This is where you can find the necessary steps to install the application and get started with it. 
 
 ### 2.2 Installation guide
 
@@ -79,7 +102,7 @@ Login to d.ASH Nav with your given credentials. If you encounter any difficultie
 
 
 ### 2.3.1 Offline mode
-
+`I have no idea what this does`
 
 ---
 
@@ -126,11 +149,20 @@ Now, we will move onto the view, plan and ready tabs where all your robot operat
 In this view tab, you will find options to change the view and configurations of the map imported into the application. 
 
 #### 4.1.1 Adjusting the map view  
-Pinch to zoom in and out <br>
-Swipe to adjust view <br>
-Swipe with two fingers to move around <br>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Pinch to zoom in or zoom out</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Swipe with one finger to adjust view angle</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Swipe with two fingers to move around</p>
+</div>
 
-Select this button on the top left to reset view to default. <br>
+Select this button on the top left corner to reset view to default. <br>
 <img src="img/reset-view.png" style="margin-top: 10px;"/>
 
 #### 4.1.2 Clipping 
@@ -148,7 +180,7 @@ The view tab is entirely used to change the way you see the map on the applicati
 ### 4.2 Ready Tab
 Inside this tab is where you find the functions to control your 
 
-#### 4.2.1 Live camera streaming 
+#### 4.2.1 Live video streaming 
 To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right. 
 
 <img src="img/cameras.jpg" style="width: 300px;"> 
@@ -193,7 +225,8 @@ Give your new route a name. Try to use a name that is descriptive and well label
 
 #### 4.3.1.1 Initialize your BLK scanning configurations 
 
-#### 4.3.1.1.1 Lidar Scan Quality
+#### Lidar Scan Quality
+<img src="img/lidar-scan-quality-options.jpg" style="width: 300px;" /><br>
 
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
@@ -208,7 +241,8 @@ Give your new route a name. Try to use a name that is descriptive and well label
     <p style="padding-top: 16px; padding-left: 10px;">High : LIDAR spins at its fastest rate, which makes the resulting scan the most detailed.</p>
 </div>
 
-#### 4.3.1.1.2 Image Capture Mode
+#### Image Capture Mode
+<img src="img/image-capture-mode-options.jpg" style="width: 300px;"/><br>
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
     <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
@@ -221,11 +255,6 @@ Give your new route a name. Try to use a name that is descriptive and well label
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
     <p style="padding-top: 16px; padding-left: 10px;">HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. </p>
 </div>
-
-#### 4.3.1.1.3 Generating BLK scan points 
-Here is where you can select which points in your route to do a BLK scan.
-
-<img src="img/generate-scan-points-slider.jpg" style="width: 300px;" />
 
 
 #### 4.3.1.2 Setting route by waypoints
@@ -244,30 +273,36 @@ Finally, select the Done button when you are finished with setting your route.
 Add a new route and give it a name. Once you've created a new route, exit by pressing the done button. <br>
 On the bottom right of your map navigation screen, click on this button. <br>
 <img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> <br>
-<img src="img/record-route-view.jpg" style="width: 400px;" />
+You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. <br>
+<img src="img/record-route-view.jpg" style="width: 400px; margin-top: 10px" />
 
-After moving your robot, you should see a blue-coloured path being formed by the robot. 
+After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.
 
-### 4.3.2 Editing or deleting your routes
+Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen. 
+
+#### 4.3.1.4 BLK Scanning
+
+#### Auto generation of scan points
+This is where you can generate the points in your route for a BLK scan based on the robot's distance traveled.
+
+To do so, turn this option on before making your route via manual control and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled.
+<img src="img/generate-scan-points-slider.jpg" style="width: 300px; margin-top: 10px;" />
+
+#### Manually setting scan points
+
+
+#### 4.3.2 Editing or deleting your routes
 On the right hand side, there will be a list of your routes created. You can edit or delete these routes by tapping and holding on the route and the rename, copy and delete buttons will show up at the bottom. 
 <img src="img/edit-route.gif" style="margin-top: 10px;" />
 
-### 4.3.3 Running your routes
+#### 4.3.3 Running your routes
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Under the routes section on the right side, select on the route that you would like to run.</p></div><fonst size="3"><br><font size='2'>You can find your routes in the routes section of the plan tab.|
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localize the robot based on its actual position in real life from the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust it to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your localizations. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
-
-Select on the route you would like to run. 
-
-At the bottom of the application, press on Set Route. <br>
-<img src="img/run-route-view.png" style="margin-top: 10px;">
-
-Switch to the ready tab.
-
-Switch control mode to auto.
-
-<img src="img/control-mode-auto-toggle.png" style="width: 300px;" />
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><fonst size="3"><font size='2'>You can find your routes in the routes section of the plan tab.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2"><img src="img/run-route-view.png" style="margin-top: 10px;"> |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the ready tab.</p></div><fonst size="3"><font size='2'>|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch control mode to auto.</p></div><fonst size="3"><font size='2'><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;" />|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
 ### 5. Troubleshooting Guide 
 

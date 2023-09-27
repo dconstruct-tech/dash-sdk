@@ -198,20 +198,22 @@ To see your robot's camera view, select or toggle the camera options here. This 
 
 #### 5.3 Localizing your robot 
 
-Before we move on to the functionalities in the planning and ready tabs,  we will need to localize our robot. 
+Before we move on to the functionalities in the planning and ready tabs, we will need an initial pose estimate start the robot's localisation. 
 
-Localizing would ensure that our robot knows its exact location in real life and a good localization would ensure that we know where our robot is without actually looking at it in real life. 
+The robot needs to localise to ensure that it knows its exact location in the point cloud map provided. This is a pre-requisite to run autonomy on the robot.
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">On the right side of the application, press the Localize button.</p></div><fonst size="3"><img src="img/localize-button.png" style="margin-top: 10px; width: 300px;"/><br><font size='2'>Ensure that you are on the ready tab. Here, you can also find your robot status and see information like the battery, localization and stance.|
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localize the robot based on its actual position in real life from the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust it to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your localizations. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">On the top of the right panel of the application, press the Localise button.</p></div><fonst size="3"><img src="img/localize-button.png" style="margin-top: 10px; width: 300px;"/><br><font size='2'>Ensure that you are on the ready tab. Here, you can also find your robot status and see information like the battery, localization and stance.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust the robot's LiDAR's point cloud to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your pose estimate. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
 
-Some good robot localization examples are shown below.
+After submitting the initial pose estimate, the robot will try to elucidate its current position on the map. At this point, the robot's position may "jump". Users are to ensure that after afew seconds, the robot remains at the correct position.
+
+Some good robot localisation examples are shown below.
 
 <img src="img\localization.png" style="width: 600px; margin-top: 10px;"/>
 
-From the comparison above, the robot's LIDAR visualization (white points) is aligned well to the map hence it has good localization. On the other hand, the LIDAR visualization on the right localization does not align with the map. Adjust your robot's position such that the LIDAR visualization aligns well with your map imported. 
+From the comparison above, the localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map and vice versa.
 
 ### 6. Plan Tab
 The planning tab is for preparing routes for robot autonomy. 

@@ -1,0 +1,380 @@
+<!DOCTYPE html><html><head>
+      <title>nav-guide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\chowyi.lee\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.7.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <link href="circlestyle.css" rel="stylesheet">
+<h1 class="crossnote-header" id="dash-nav">d.ASH Nav</h1>
+
+<h3 class="crossnote-header" id="introduction">Introduction</h3>
+
+<p>| <img src="img/dash-nav-first-image.png" alt="Screenshot">{ align=center style="width:400px"} |</p>
+<p>Welcome to the d.ASH Nav application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. For mobile device guide, refer to section 2 in this page. For desktop usage, please turn to section 3.</p>
+<p>Now, let's delve into the functionalities that d.ASH Nav offers for seamless robot operations and the respective steps for each of them!</p>
+<h3 class="crossnote-header" id="table-of-contents">Table of Contents</h3>
+
+<ol>
+<li>
+<p>Application Functionalities</p>
+</li>
+<li>
+<p>d.ASH Nav for Mobile</p>
+</li>
+</ol>
+<ul>
+<li>2.1 Setting up</li>
+<li>2.2 Installation guide</li>
+<li>2.3 Your account</li>
+<li>2.4 Offline mode</li>
+</ul>
+<ol start="3">
+<li>Welcome to d.ASH Nav!</li>
+</ol>
+<ul>
+<li>3.1 Setting up your robot</li>
+<li>3.2 Loading in your map file</li>
+</ul>
+<ol start="4">
+<li>View Tab</li>
+</ol>
+<ul>
+<li>4.1 Adjusting map view</li>
+<li>4.1.1 Clipping</li>
+<li>4.1.2 Contour</li>
+<li>4.2 Good map visualizations</li>
+</ul>
+<ol start="5">
+<li>Ready Tab</li>
+</ol>
+<ul>
+<li>5.1 Live camera streaming</li>
+<li>5.2 Manually controlling your robot</li>
+<li>5.3 Localizing your robot</li>
+</ul>
+<ol start="6">
+<li>Plan Tab</li>
+</ol>
+<ul>
+<li>6.1 Creating your route</li>
+<li>6.1.1 Initializing your BLK scanning configuration</li>
+<li>6.1.2 Setting route via waypoint</li>
+<li>6.1.3 Setting route via manual control</li>
+<li>6.1.4 BLK scanning</li>
+<li>6.2 Editing and deleting your routes</li>
+<li>6.3 Running your routes</li>
+</ul>
+<hr>
+<h3 class="crossnote-header" id="1-application-functionalities">1. Application Functionalities</h3>
+
+<p>d.ASH Nav is the platform for autonomous control of robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.</p>
+<p>Because d.ASH Nav is fully integrated with d.ASH Fleet Management system, an internet connection is required. Should you require d.ASH Nav without an internet connection, please contact us for more details.</p>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Pilot</p>
+</div>
+<p>Our Pilot framework offers high-performance, low-latency, long-range remote operations. It allows you to take manual control of your robots at any time, from any distance, and in any environment.</p>
+<div style="display: flex; align-items: center;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Live Video Streaming</p>
+</div>
+<p>Our ultra-high-speed data streaming enables Pilot to stream live video feeds from robots, facilitating operation in environments with weak network infrastructure. Stay connected with minimal latency, you can take control across the country with d.ASH Nav.</p>
+<div style="display: flex; align-items: center;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Waypoint Autonomy</p>
+</div>
+<p>d.ASH Nav determines the real-time location of connected robots within millimetres. Just drop and add waypoints like markings on a map to automated patrol routes all thanks to d.ASH Nav’s seamless UI.</p>
+<div style="display: flex; align-items: center;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Enhanced Safety and Risk Mitigation</p>
+</div>
+<p>The software’s intelligent decision-making capabilities enable robots to make informed choices to avoid obstacles and optimize their routes, mitigating potential risks and enhancing overall safety. This not only protects the robots themselves but also minimizes the risk of accidents or collisions with humans and other objects in the environment.</p>
+<hr>
+<h3 class="crossnote-header" id="2-dash-nav-for-mobile">2. d.ASH Nav for Mobile</h3>
+
+<p>This user guide will cover every function in d.ASH Nav Mobile, as well as detailed explanations and necessary steps to take, for operating your robots through your mobile device.</p>
+<h3 class="crossnote-header" id="21-setting-up">2.1 Setting up</h3>
+
+<p>This is where you can find the necessary steps to install the application and get started with it.</p>
+<h3 class="crossnote-header" id="22-installation-guide">2.2 Installation guide</h3>
+
+<h4 class="crossnote-header" id="minimum-system-requirements">Minimum system requirements</h4>
+
+<p>Android Tablet with support for OpenGL ES 3.2<br>
+Android Version 12 | Snow Cone  | API Level 31</p>
+<h4 class="crossnote-header" id="recommended-system-requirements">Recommended system requirements</h4>
+
+<p>Android Version 13 | Tiramisu  | API Level 33</p>
+<p>To find a list of compatible Android devices, click <a href="https://www.mysmartprice.com/gear/android-12-update-tracker/">here</a>.</p>
+<h3 class="crossnote-header" id="23-your-account">2.3 Your account</h3>
+
+<img src="img/login.jpg" style="width: 400px">
+<p>Login to d.ASH Nav with your given credentials. If you encounter any difficulties logging in, please contact us <a href="">here</a>.</p>
+<h3 class="crossnote-header" id="231-offline-mode">2.3.1 Offline mode</h3>
+
+<p><code>I have no idea what this does</code></p>
+<hr>
+<h3 class="crossnote-header" id="3-welcome-to-dash-nav">3. Welcome to d.ASH Nav!</h3>
+
+<p>After signing into your account, you'll be directed to the main page where you need to load your robot and map files.</p>
+<p>| <img src="img/dash-nav-home-page.jpg" alt="Screenshot">{ align=center style="width:1000px"} |</p>
+<h3 class="crossnote-header" id="31-setting-up-your-robot">3.1 Setting up your robot</h3>
+
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Turn ON your robot</p></div><font size="3"><font size="2"> For most robots, they are automatically turned ON when you physically attach a battery and press the Power ON button/switch. For robots that need to be turned ON via software (such as the Boston Dynamics Spot), please follow the specific instructions found in the robot manufacturer's website.</font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to the robot's WiFi network</p></div><font size="3"><font size="2"> Open your mobile device's settings app, click on Connections -&gt; Wi-Fi, and then connect to the network of your robot. After succesful connection, there should be 'Connected without internet' below the Wi-Fi network. If there is no network found, it means your robot has not been turned on properly.</font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Return to the application. On the left hand side, click on this button to select your robot.</p></div><font size="3"><font size="2"><img src="img/select-robot.png" style="margin-top: 10px;"></font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the robot that you intend to use.</p></div><font size="3"><font size="2"> If your robot is not found, please refer to our troubleshooting guide in <a href="#">Section 5</a> or contact us.</font></font></td>
+</tr>
+</tbody>
+</table>
+<h3 class="crossnote-header" id="32-loading-in-your-map-file">3.2 Loading in your map file</h3>
+
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Ensure that you have your map file.</p></div><font size="3"><font size="2"> If you do not have one, please refer to our <a src="#" href="">d.ASH Pack guide</a> to create your map.</font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">On the left hand side, click on this button to select your map.</p></div><font size="3"><font size="2"><img src="img/select-map-button.png" style="margin-top: 10px;"></font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Select the map that you intend to use.</p></div><font size="3"><font size="2"><img src="img/select-map-panel.jpg" style="margin-top: 10px;"></font></font></td>
+</tr>
+</tbody>
+</table>
+<p>Your robot and map has now been imported!<br>
+<img src="img/both-imported-view.jpg" style="margin-top: 10px;"></p>
+<p>Select the menu icon on the top right hand corner to open up the options menu.<br><br>
+<img src="img/menu-icon.jpg" style="margin-top: 10px; width: 80px;"></p>
+<p>Now, we will move onto the view, plan and ready tabs where all your robot operations are found.</p>
+<img src="img/option-panels.png" style="margin-top: 10px; width: 300px;">
+<hr>
+<h3 class="crossnote-header" id="4-view-tab">4. View Tab</h3>
+
+<p>In this view tab, you will find options to change the view and configurations of the map imported into the application.</p>
+<h4 class="crossnote-header" id="41-adjusting-the-map-view">4.1 Adjusting the map view</h4>
+
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Pinch to zoom in or zoom out</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Swipe with one finger to adjust view angle</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Swipe with two fingers to move around</p>
+</div>
+<p>Select this button on the top left corner to reset view to default. <br><br>
+<img src="img/reset-view.png" style="margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="411-clipping">4.1.1 Clipping</h4>
+
+<p>Move the points on the range slider to adjust how much floor/ceiling is shown on the map of your application. <br><br>
+<img src="img/clipping.png" style="width: 600px; margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="412-contours">4.1.2 Contours</h4>
+
+<p>Toggle on and off or adjust the contour level to change the amount of detail in data points. <br><br>
+<img src="img/contour.png" style="width: 600px; margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="413-example-of-a-good-map-visualization">4.1.3 Example of a good map visualization</h4>
+
+<p>The view tab is entirely used to change the way you see the map on the application and it is up to you on how you want to configure it. Leaving it as default is alright as well. But usually, you should adjust the thumbs such that the floor of the map is visible and the ceiling of the map is hidden but the artifects are still visible.</p>
+<h3 class="crossnote-header" id="5-ready-tab">5. Ready Tab</h3>
+
+<p>Inside this tab is where you find the functions to control your</p>
+<h4 class="crossnote-header" id="51-live-video-streaming">5.1 Live video streaming</h4>
+
+<p>To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right.</p>
+<img src="img/cameras.jpg" style="width: 300px;"> 
+<h4 class="crossnote-header" id="52-manually-controlling-your-robot">5.2 Manually controlling your robot</h4>
+
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to manual mode.</p></div><fonst size="3"><img src="img/control-mode-toggle.png" style="width: 300px; margin-top: 10px;"><br><font size="2">Ensure that you are on the ready tab.</font></fonst></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Use the joysticks to move the robot. </p></div><font size="3"><img src="img/manual-control-mode.jpg" style="width: 400px; margin-top: 10px;"><font size="2"><br>The joystick on the left is used to move the robot front and backwards, while the right joystick is used to turn the robot left and right.</font></font></td>
+</tr>
+</tbody>
+</table>
+<h4 class="crossnote-header" id="53-localizing-your-robot">5.3 Localizing your robot</h4>
+
+<p>Before we move on to the functionalities in the planning and ready tabs,  we will need to localize our robot.</p>
+<p>Localizing would ensure that our robot knows its exact location in real life and a good localization would ensure that we know where our robot is without actually looking at it in real life.</p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">On the right side of the application, press the Localize button.</p></div><fonst size="3"><img src="img/localize-button.png" style="margin-top: 10px; width: 300px;"><br><font size="2">Ensure that you are on the ready tab. Here, you can also find your robot status and see information like the battery, localization and stance.</font></fonst></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localize the robot based on its actual position in real life from the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust it to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your localizations. <img src="img/localize_rotation.gif" style="margin-top: 10px;"></font></font></td>
+</tr>
+</tbody>
+</table>
+<p>Some good robot localization examples are shown below.</p>
+<img src="img\localization.png" style="width: 600px; margin-top: 10px;">
+<p>From the comparison above, the robot's LIDAR visualization (white points) is aligned well to the map hence it has good localization. On the other hand, the LIDAR visualization on the right localization does not align with the map. Adjust your robot's position such that the LIDAR visualization aligns well with your map imported.</p>
+<h3 class="crossnote-header" id="6-plan-tab">6. Plan Tab</h3>
+
+<p>The planning tab is for preparing routes for robot autonomy.</p>
+<h4 class="crossnote-header" id="61-creating-your-route">6.1 Creating your route</h4>
+
+<p>Before starting, ensure that you have our localized your robot to the map. Refer to <a href="#">Section 4.2.3</a> for a guide on robot localization. <br><br>
+At the bottom right corner of your screen, select on the 'App Route' button.</p>
+<p><img src="img/add-route-button.jpg" style="width: 300px;"><br><br>
+Give your new route a name. Try to use a name that is descriptive and well labelled.<br><br>
+<img src="img/add-new-route.jpg" style="width: 250px; margin-top: 10px;"></p>
+<p>You will then be directed to the route edit view. Here you will be able to add and remove waypoints, change the configurations of BLK scanning, and generate scanning points around the map.<br>
+<img src="img/set-route-view.jpg" style="margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="611-initialize-your-blk-scanning-configurations">6.1.1 Initialize your BLK scanning configurations</h4>
+
+<h4 class="crossnote-header" id="lidar-scan-quality">Lidar Scan Quality</h4>
+
+<p><img src="img/lidar-scan-quality-options.jpg" style="width: 300px;"><br></p>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Low : LIDAR spins at the slowest rate, which makes the resulting scan the least detailed.</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Medium : LIDAR spins at a faster rate, which makes the resulting scan more detailed.</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">High : LIDAR spins at its fastest rate, which makes the resulting scan the most detailed.</p>
+</div>
+<h4 class="crossnote-header" id="image-capture-mode">Image Capture Mode</h4>
+
+<p><img src="img/image-capture-mode-options.jpg" style="width: 300px;"><br></p>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">LDR (Low Dynamic Range) : Details in shadows may be lost or details in highlights may be blown out.</p>
+</div>
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. </p>
+</div>
+<h4 class="crossnote-header" id="612-setting-route-by-waypoints">6.1.2 Setting route by waypoints</h4>
+
+<img src="img/set-route-buttons.jpg.png" style="width: 300px;">
+<p>To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen.</p>
+<p><img src="img/selected-add-mode.jpg" style="width: 300px;"><br><br>
+<img src="img/setting-route-by-waypoint.gif" style="width: 400px;"></p>
+<p>If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete. <br><br>
+<img src="img/selected-remove-mode.jpg" style="width: 300px; margin-top: 10px;"><br><br>
+Finally, select the Done button when you are finished with setting your route.</p>
+<h4 class="crossnote-header" id="613-setting-route-by-controlling-your-robot">6.1.3 Setting route by controlling your robot</h4>
+
+<p>Add a new route and give it a name. Once you've created a new route, exit by pressing the done button. <br><br>
+On the bottom right of your map navigation screen, click on this button. <br><br>
+<img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> <br><br>
+You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. <br><br>
+<img src="img/record-route-view.jpg" style="width: 400px; margin-top: 10px"></p>
+<p>After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.</p>
+<p>Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen.</p>
+<h4 class="crossnote-header" id="614-blk-scanning">6.1.4 BLK Scanning</h4>
+
+<h4 class="crossnote-header" id="auto-generation-of-scan-points">Auto generation of scan points</h4>
+
+<p>This is where you can generate the points in your route for a BLK scan based on the robot's distance traveled.</p>
+<p>To do so, turn this option on before making your route via manual control and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled.<br>
+<img src="img/generate-scan-points-slider.jpg" style="width: 300px; margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="manually-setting-scan-points">Manually setting scan points</h4>
+
+<h4 class="crossnote-header" id="62-editing-or-deleting-your-routes">6.2 Editing or deleting your routes</h4>
+
+<p>On the right hand side, there will be a list of your routes created. You can edit or delete these routes by tapping and holding on the route and the rename, copy and delete buttons will show up at the bottom.<br>
+<img src="img/edit-route.gif" style="margin-top: 10px;"></p>
+<h4 class="crossnote-header" id="63-running-your-routes">6.3 Running your routes</h4>
+
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><fonst size="3"><font size="2">You can find your routes in the routes section of the plan tab.</font></fonst></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2"><img src="img/run-route-view.png" style="margin-top: 10px;"></font></font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the ready tab.</p></div><fonst size="3"><font size="2"></font></fonst></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch control mode to auto.</p></div><fonst size="3"><font size="2"><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;"></font></fonst></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size="2"></font></fonst></td>
+</tr>
+</tbody>
+</table>
+<br>
+Enjoy using d.ASH Nav! If you require any support, please feel free to contact us here. 
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

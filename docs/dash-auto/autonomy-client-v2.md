@@ -1,61 +1,3 @@
-<!--
-1. Login process
-    1.1: DL from fleet management
-    1.2: Login with credentials we generate for you
-    1.3: If there's trouble logging in. Email/call dC
-
-2. Project browser
-    2.1: Create new project
-    2.2: Opening existing project
-    2.3: Map browser/open map
-
-3. Main menu
-    3.1: Explain each tab on the top bar (left to right)
-    3.2: Explain main dash nav screen n sliders etc
-    3.3: Explain side bars (top to bottom)
-        3.3.1: Routes container (All routes saved by user, when expanded can see which robo is assigned to it. Can also add or remove robots from selected route)
-        3.3.2: Robot list (Shows all currently connected robots only)
-        3.3.3: Visualisation (Yang Kai's colour blind solver and other visual edits like scale of objects)
-
-4. Plan tab
-    4.1: Actions
-        4.1.1: Explain autodrive
-        4.1.2: How to record waypoint
-        4.1.3: Create route
-    4.2: Waypoint Editing
-        4.2.1: Edit waypoint (add, delete, reposition)
-        4.2.2: Interpolate (Auto waypoint recording)
-        4.2.3: Set scan points (Set selected/all/delete, for BLK etc)
-    4.3: Connect to :b:obots
-
-5. Ready tab
-    5.1: Estop/resume
-    5.2: List of robots (Loads popup)
-        5.2.1: Checklist/health monitor
-        5.2.2: Robot info
-        5.2.3: Control panel/robot settings
-    5.3: Robot actions
-        5.3.1: Localise
-        5.3.2: Follow cam
-        5.3.3: Auto/Manual control
-        5.3.4: Sit/Stand spot only
-    5.4: Assign route to robot
-        5.4.1: Drop down
-        5.4.2: Tag robot
-
-6. Monitor tab
-    6.1: Estop/resume
-    6.2: Live views (Cams can be frm any mix of robots)
-        6.2.1: Mapview (Smol view of robo cams)
-        6.2.2: 4 view (4 cams n no map)
-        6.2.3: Focus (Focus on one cam, no map)
-    6.3: Robo Controls
-        6.3.1: Run route given to robot
-        6.3.2: Autodrive
-        6.3.3: Auto/Manual Sit/Stand
-
--->
-
 # **1. d.ASH Nav**
 *d.ASH Nav* is *the* platform for autonomous control of robots. Being seamlessly integrated in the [d.ASH Fleet Management](https://www.dconstruct.co/products) workflow, you can enjoy easy planning and deployment of your robots for various use cases. *d.ASH Nav* allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
@@ -96,11 +38,6 @@ The general workflow to operate and run an autonomous waypoint mission is as fol
 
 ## **2. Download**
 Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH Nav*.
-
-<!-- ### **2.1 Fleet Manager**
-First, login to Fleet Manager with your given credentials to download the latest build of *d.ASH Nav*.
-Next, login to d.ASH Nav.
-If you encounter any difficulties logging in, please [contact us](mailto:hello@dconstruct.ai). -->
 
 ## **3. Project management**
 Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Nav* from anywhere in the world!
@@ -163,9 +100,6 @@ This menu contains all available actions for editing waypoints on a route. This 
 - *Enable/Disable Scan*: Marking a waypoint as a scan point will tell the robot to stop and perform a scan with 3rd party scanners.
 - *Scan All*: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3rd party scanners.
 - *Finish*: Closes the menu.
-
-<!-- ### **5.3 Schedule**
-This menu allows you to set a start date and time for your robots to automatically execute pre-planned missions. -->
 
 ### **5.3 Robots**
 Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.

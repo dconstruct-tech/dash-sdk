@@ -1,0 +1,28 @@
+.instructions-div {
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px;
+}
+
+.instruction-circle {
+    width: 18px;
+    height: 18px;
+    background-color: #ff3300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #ff3300;
+}
+
+.table_contents {
+    color: black;
+    text-decoration: none; 
+}
+
+.table_contents:hover {
+    text-decoration: underline;
+}

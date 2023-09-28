@@ -6,8 +6,8 @@ Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](htt
 ### **1.1 Minimum System Requirements**
 
 1. PC with a CPU equivalent to or greater than an Intel i5 4th Gen or AMD R5 1000 series
-2. Nvidia GTX 960
-3. 8GB of RAM
+2. Nvidia GTX 1070
+3. 16GB of RAM
 4. Internet Connection
 5. Windows 10/11
 6. Gamepad/Joystick (e.g. Logitech F710 Gamepad)
@@ -71,8 +71,8 @@ The top bar contains several crucial pieces of information, such as which part o
 This is a visual representation of the map you have loaded for your project. 
 
 - *View Toggles*: A widget in the top left corner of the *View Port* which allows you to toggle the visiblity of certain objects in the *View Port*.
-- *Orientation Gizmo*: A gizmo in the top right corner of the *View Port* shows the current orientation of the map, relative to the orientation of the floor.
 - *Height Sliders*: Adjust the cut off points for rendering of the loaded map.
+<!-- - *Orientation Gizmo*: A gizmo in the top right corner of the *View Port* shows the current orientation of the map, relative to the orientation of the floor. -->
 
 ## **4.3 Side Bar**
 The *Side Bar* contains all information to do with any planned routes, connected robots and *View Port* visualisation tweaks

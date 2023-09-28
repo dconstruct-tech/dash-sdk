@@ -52,7 +52,7 @@ Now, let's delve into the functionalities that d.ASH Nav offers for seamless rob
 
 d.ASH Nav is the platform for autonomous control of robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
-Because d.ASH Nav is fully integrated with d.ASH Fleet Management system, an internet connection is required. Should you require d.ASH Nav without an internet connection, please contact us for more details.
+d.ASH Nav is fully integrated with d.ASH Fleet Management system, an internet connection is required. Should you require d.ASH Nav without an internet connection, please contact us for more details.
 
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">

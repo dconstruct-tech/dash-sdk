@@ -129,12 +129,13 @@ Before installing, ensure that your mobile device meets the minimum system requi
 
 #### Minimum system requirements
 Android Tablet with support for OpenGL ES 3.2
-Android Version 12 | Snow Cone  | API Level 31 
+Operating System: Android Version 13 | Tiramisu  | API Level 33 
+Screen Size: No smaller than 10.5 inches
+Processor: Equivalent to Snapdragon 888 chip on the Samsung Galaxy Tab S8 
 
-To find a list of compatible Android devices, click [here](https://www.mysmartprice.com/gear/android-12-update-tracker/).
+To find a list of compatible Android devices, click [here]().
 
-#### Recommended system requirements
-Android Version 13 | Tiramisu  | API Level 33 
+
 
 <div id="section2_2"></div> 
 ### 2.2 Your account
@@ -159,10 +160,10 @@ After signing into your account, you'll be directed to the main page where you n
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Turn on your robot</p></div><font size="3"><font size="2"> For most robots, they are automatically turned on when you physically attach a battery and press the Power on button/switch. For robots that need to be turned on via software (such as the Boston Dynamics Spot), please follow the specific instructions found in the robot manufacturer's website. |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to the robot's WiFi network</p></div><font size="3"><font size="2"> Open your mobile device's settings app, click on Connections, Wi-Fi, and then connect to the network of your robot. After a successful connection, there should be 'Connected without internet' shown below the Wi-Fi network. If there is no network found, it means your robot has not been turned on properly. |
-| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Return to the application. On the left hand side, click on this button to select your robot.</p></div><font size="3"><font size="2"><img src="img/select-robot.png" style="margin-top: 10px;" /> |
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the robot that you intend to use.</p></div><font size="3"><font size="2"> If your robot is not found, try to hard restart your robot or contact us <a href="#">here</a> for support. |
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Turn on your robot</p></div><font size="3"><font size="2"> Typically, robots are activated automatically by attaching a battery and pressing the Power ON button/switch. However, for robots that require activation through software, like the Boston Dynamics Spot, please refer to the detailed instructions provided on the robot manufacturer's website for specific guidance. |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to the robot's WiFi network</p></div><font size="3"><font size="2"> Open your mobile device's settings app, click on Connections -> Wi-Fi, and then connect to the network of your robot. After a successful connection, you should see 'Connected without internet' below the Wi-Fi network. If no network is found, it indicates that your robot may not have been turned on properly. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Return to the application. On the left hand side, click here to select your robot.</p></div><font size="3"><font size="2"><img src="img/select-robot.png" style="margin-top: 10px;" /> |
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Choose the robot that you intend to use.</p></div><font size="3"><font size="2"> If your robot is not found, try to hard restart your robot or contact us <a href="#">here</a> for support. |
 
 <div id="section3_2"></div>
 ### 3.2 Loading in your map file 
@@ -222,7 +223,7 @@ Toggle on and off or adjust the contour level to change the amount of detail in 
 
 <div id="section4_1_3"></div>
 #### 4.1.3 Example of a bad map visualization
-The view tab is entirely used to change the way you see the map on the application and it is up to you on how you want to configure it. Leaving the configurations unchanged is okay as well. But usually, you should adjust the thumbs such that the ceiling of the map is hidden and the artifects are still visible, unlike as shown in the picture below. 
+The View Tab allows you to customise your map-viewing experience within the application. It provides you with the flexibility to configure the settings according to your preferences. While keeping the default settings is perfectly acceptable, it's recommended to adjust the thumbs in a way that ensures the floor of the map is visible, the ceiling is hidden, and artefacts remain visible for optimal viewing.
 
 <img src="img/bad-visualization.jpg" style="width: 600px; ">
 
@@ -236,7 +237,7 @@ This way, we can better see where our robot is located on the map when we run a 
 
 <div id="section5"></div>
 ### 5. Ready Tab
-The ready tab contains all of the functions needed for the robot's live video streaming, manual controlling, and localization, which is very important for the Plan tab. 
+Within this tab, you will find all the functions for managing the robot's live video streaming, manual controlling, and localization, which is essential for the Plan tab. 
 
 <div id="section5_1"></div>
 #### 5.1 Live video streaming 
@@ -255,18 +256,16 @@ To see your robot's camera view, select or toggle the camera options here. This 
 <div id="section5_3"></div>
 #### 5.3 Localizing your robot 
 
-Before we move on to the functionalities in the planning and ready tabs, we will need an initial pose estimate start the robot's localisation. 
-
-The robot needs to localise to ensure that it knows its exact location in the point cloud map provided. This is a pre-requisite to run autonomy on the robot.
+Before delving into the features in the planning tab, it is essential to establish an initial pose estimate to initiate the robot's localisation. Localisation is a crucial step for the robot to accurately determine its position within the provided point cloud map. This process is a prerequisite for enabling autonomy on the robot.
 
 | Instructions |
 | ------- | 
 | <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">On the top of the right panel of the application, press the Localise button.</p></div><fonst size="3"><img src="img/localize-button.png" style="margin-top: 10px; width: 300px;"/><br><font size='2'>Ensure that you are on the ready tab. Here, you can also find your robot status and see information like the battery, localisation and stance.|
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="3"><font size="2"> Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows to adjust the robot's LiDAR's point cloud to fit the map.<img src="img/localize-demo.gif" style="margin-top: 10px;"> Alternatively, you can use the rotation button to adjust and improve your pose estimate. <img src="img/localize_rotation.gif" style="margin-top: 10px;"/>|
 
-After submitting the initial pose estimate, the robot will try to elucidate its current position on the map. At this point, the robot's position may "jump". Users are to ensure that after afew seconds, the robot remains at the correct position.
+Upon submitting the initial pose estimate, the robot will attempt to determine its current position on the map. During this process, there may be a momentary "jump" in the robot's position. Users are advised to wait for a few seconds to ensure that the robot stabilises and remains at the correct position.
 
-A good robot localisation example is shown below.
+Refer to the examples below for instances of successful robot localisation.
 <img src="img\localisation.png" style="margin-top: 10px;"/>
 The localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map, meaning it has a good initial pose estimate. The localisation on the other two examples are bad as the LiDAR scan does not line up with the map, and the robot is in the wrong position. 
 
@@ -350,6 +349,7 @@ On the bottom right of your map screen, click on this button.
 <img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> 
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. 
 <img src="img/record-route-view.gif" style="width: 400px; margin-top: 10px" />
+`Need to make new image/gif, this one is unclear`
 
 After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.
 
@@ -359,10 +359,11 @@ Once you are finished with setting your route, press 'Save Recorded Route' at th
 #### 6.1.4 BLK Scanning
 
 #### Auto generation of scan points
-This is where you can generate the points in your route for a BLK scan based on the robot's distance traveled.
+In this section, you can automatically generate BLK scanning points in your route based on the distance travelled by the robot.
 
-To do so, turn this option on before making your route via manual control and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled.
+To enable this feature, turn this option on and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled on your route.
 <img src="img/auto-generate-scan-points.gif" style="margin-top: 10px;" />
+The blinking points on your map is where your robot will apply a BLK scan. 
 
 #### Manually setting scan points
 Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to do a BLK scan. 
@@ -370,7 +371,7 @@ Select the Scan Mode button at the bottom of the screen, and press the waypoints
 
 <div id="section6_2"></div>
 #### 6.2 Editing or deleting your routes
-On the right hand side, there will be a list of your routes created. You can edit or delete these routes by tapping and holding on the route and the rename, copy and delete buttons will show up at the bottom. 
+Navigate to the right-hand side, where you'll find a list of the routes you've created. To edit or delete any of these routes, press and hold on the desired route. This action will reveal options such as rename, copy, and delete at the bottom of the screen.
 <img src="img/edit-route.gif" style="margin-top: 10px;" />
 
 <div id="section6_3"></div>

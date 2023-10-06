@@ -54,7 +54,7 @@ This is the list of sections that can be found in our user guide. For quick acce
 * <a class="table_contents" href="#section2_3">2.3 A Quick Start Guide</a>
 
 ##### <a class="table_contents" href="#section3">3. Welcome to d.ASH Nav!
-* <a class="table_contents" href="#section3_1">3.1 Setting up your robot</a>
+* <a class="table_contents" href="#section3_1">3.1 Connecting to your robot</a>
 * <a class="table_contents" href="#section3_2">3.2 Loading in your map file </a>
 
 ##### <a class="table_contents" href="#section4">4. View Tab</a>
@@ -72,17 +72,17 @@ This is the list of sections that can be found in our user guide. For quick acce
 ##### <a class="table_contents" href="#section6">6. Plan Tab </a>
 * <a class="table_contents" href="#section6_1">6.1 Creating your route</a>
     * <a class="table_contents" href="#section6_1_1">6.1.1 Setting route via waypoint</a>
-    * <a class="table_contents" href="#section6_1_2">6.1.2 Setting route via manual control</a>
-    * <a class="table_contents" href="#section6_1_3 ">6.1.3 BLK scanning</a><br>
+    * <a class="table_contents" href="#section6_1_2">6.1.2 Setting route via manual control of your robot</a>
+    * <a class="table_contents" href="#section6_1_3 ">6.1.3 BLK Scanning</a><br>
 
         - <a class="table_contents" href="#section6_1_3_1">6.1.3.1 BLK Scan Configurations (LiDAR Scan Quality/Image Capture Mode)</a>
         * <a class="table_contents" href="#section6_1_3_2">6.1.3.2 Auto generation of BLK scan points</a>
-        * <a class="table_contents" href="#section6_1_3_3">6.1.3.3 Manually selecting BLK scan points</a>
+        * <a class="table_contents" href="#section6_1_3_3">6.1.3.3 Manually setting BLK scan points</a>
         
 * <a class="table_contents" href="#section6_2">6.2 Editing and deleting your routes</a>
 * <a class="table_contents" href="#section6_3">6.3 Running your routes</a>
 
-##### <a class="table_contents" href="#section6">7. Offline Mode </a>
+##### <a class="table_contents" href="#section7">7. Offline Mode </a>
 ---
 
 <div id="section1"></div>
@@ -132,10 +132,10 @@ This comprehensive guide will walk you through setting up the application and pr
 
 <div id="section2_1"></div> 
 
-### 2.1 Installation guide
+### 2.1 Installation Guide
 Before installing, ensure that your mobile device meets the minimum system requirements. 
 
-#### Minimum system requirements
+#### Minimum System Requirements 
 Android Tablet with support for OpenGL ES 3.2
 Operating System: Android Version 13 | Tiramisu  | API Level 33 
 Screen Size: No smaller than 10.5 inches
@@ -143,11 +143,9 @@ Processor: Snapdragon 888 chip on the Samsung Galaxy Tab S8
 
 To find a list of compatible Android devices, click [here]().
 
-
-
 <div id="section2_2"></div> 
 
-### 2.2 Your account
+### 2.2 Your Account
 Login to d.ASH Nav with your given credentials.
 Your login details can be found in the email we have sent you. If you encounter any difficulties logging in, please contact us [here]().
 <img src="img/login.jpg" style="width: 400px; margin-top: 10px;" />
@@ -434,7 +432,7 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2"><img src="img/run-route-view.png" style="margin-top: 10px;"> |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the ready tab.</p></div><fonst size="3"><font size='2'>|
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;" />|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
 #### 7. Offline Mode
 

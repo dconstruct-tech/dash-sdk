@@ -1,88 +1,103 @@
-<link href="circlestyle.css" rel="stylesheet"></link>
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .instructions-div {
+        display: flex; 
+        align-items: center; 
+        margin-right: 10px;
+    }
+
+    .instruction-circle {
+        width: 18px;
+        height: 18px;
+        background-color: #ff3300;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border: 1px solid #ff3300;
+    }
+
+    .table_contents {
+        color: black;
+        text-decoration: none; 
+    }
+
+    .table_contents:hover {
+        text-decoration: underline;
+    }
+</style>
 
 # d.ASH Go
 
-**d.ASH Go** is a brand new visualisation system, allowing you to see where you've mapped on the fly in just two easy steps! The point clouds are generated in real time, giving you a preview of what the final generated map would look like. Get our app on Android [Here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpack).
+### Introduction 
 
-## Requirements
+Welcome to the d.ASH Go application user guide! This comprehensive guide will walk you through the process of installing the application and providing the necessary instructions for your map scanning process. To access the user guide for our application, please refer to <a href="#section2">Section 2</a> in this page. Otherwise, if you would like to scan maps on your web browser, please turn to <a href="#">Section 3</a>.
+<img src="img/d.ASHGo/dash-go.png" style="margin-top: -20px; width: 1200px;">
 
-- Android Tablet with support for OpenGL ES 3.2
-- Android Version 13 | Tiramisu | API Level 33
+### Application Functions 
+d.ASH Go is our visualisation system that allows you to see where you've mapped on the fly in just two easy steps! The point clouds are generated in real time, giving you a preview of what the final generated map would look like. 
 
-## Devices
+Before starting, an internet connection from your d.ASH Pack is required. If you are having trouble connecting to your d.ASH Pack's network, please contact us <a href="">here</a> for more information.
 
-- Minimum required device: Samsung Galaxy S6 Lite
-- Recommended device: Samsung Galaxy S8
+<div style="display: flex; align-items: center; margin-top: -15px;">
+    <img src="img/d.ASHGo/pointer.png" alt="Functionality Icon" height="20">
+    <p style="padding-top: 16px; padding-left: 10px;">Real-time mapping visualisation  </p>
+</div>
+I dont know what to write here!
 
-##
+### d.ASH Go Android Application
 
-### 1.1 Application Setup
+#### Installation Guide
+Before installing, ensure that your mobile device meets the minimum system requirements. 
 
-1. Install the d.ASH Go application on your Android device through the Google Play Store.
+Click <a href="https://play.google.com/store/apps/details?id=ai.dconstruct.dashpack">here</a> to install the d.ASH Go application on your Android device. Alternatively, you can enter the Google Play Store and search for our app. 
 
-<img src = "img\d.ASHGo\play-store.png" style="width:600;margin-left:15; padding-bottom:20px">
 
-2. Once the application has been installed, connect to your d.ASH Pack's Hotspot through the Android settings as shown below. You should be able to see the name of your d.ASH Pack appearing as a connection.
+#### Minimum System Requirements
 
-<img src = "img\d.ASHGo\connect.jpg" style="width:600; margin-left:30; padding-bottom:20px">
+Android Tablet with support for OpenGL ES 3.2
+Operating System: Android Version 13 | Tiramisu  | API Level 33 
+Screen Size: No smaller than 10.5 inches
+Processor: Snapdragon 888 chip on the Samsung Galaxy Tab S8 
 
-Here is an example of what the connection should look like.
+To find a list of compatible Android devices, click [here]().
 
-<img src = "img\d.ASHGo\reference.png" style="width:600; margin-left:30; padding-bottom:20px">
+<img src="img/d.ASHGo/google-play.png" style="width: 600px;">
 
-3. When a connection has been established, the device may prompt for action as internet will not be available on the network, choose **Always Connect** for the device to work properly with dASHPack.
 
-<img src = "img\d.ASHGo\always-connect.png" style="width:400; margin-left:30; padding-bottom:20px">
+#### Quick Start Guide
+The following section provides a step-by-step guide to help you start recording with your d.ASH Pack. Additional features offered by d.ASH Go are listed in the subsequent sections.
 
-4. Ensure that all of the icons at the top left hand corner of the interface are **<span style="color:green">GREEN</span>** in colour.
 
-<img src = "img\d.ASHGo\pack-status.png" style="width:800; margin-left:30; padding-bottom:20px">
+| Instructions |
+| ------- | 
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;"> Open your mobile device's settings app, click on Connections -> Wi-Fi, and then connect to the network of your d.ASH Pack. </p></div><font size="3"><font size="2"> You can find the name and password of the network on your d.ASH Pack's hatch. After a successful connection, there should be a message saying 'Connected without internet' at the bottom of the network. <br> <img src="img/d.ASHGo/dashpack-hatch.png" style="width: 500px;"><br> When a connection has been established, your device may prompt for action as internet will not be available on the network, choose **Always Connect** for the device to work properly with d.ASH Pack.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Open the application, ensure that all icons under d.ASH Pack Status is green in colour.</p></div><font size="3"><font size="2"> All icons must be green and ready to start before starting a new map scan.<br><img src = "img\d.ASHGo\dashpack-status.png" style="width:500px;margin-top: 10px;" /><br> If the Wi-Fi icon is red, please check your network connection and ensure that you are connected to your d.ASH Pack. If you encounter any issues, please feel free to contact us <a href="#">here</a>. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Press start a new scan and check the appropriate checkboxes for the type of scan you wish to perform. Press start. </p></div><font size="3"><font size="2"> You are advised to give your scans descriptive and memorable names. <br><img src = "img\d.ASHGo\scan-settings.jpg" style="width:500px;margin-top: 10px;" /><br> It is recommended to set your d.ASH Pack to have an upright sensor when you want non-coloured scans.<br> On the other hand, having a slanted sensor is recommended for coloured scans. |
+| <div class="instructions-div" id="headers"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Press the start button at the bottom when you are ready to start scanning. </p></div><font size="3"><font size="2"> <strong>Before you start, here are some headers to take note of while scanning your location: </strong><br>1. It is not possible to pause and continue a scan in the app. Scanning must be completed in one continuous session. <br>2. For the best results, avoid taking sharp and suddden turns when turning corners; take slow and gradual ones instead.<br><img src="img/d.ASHGo/correct-turn.png" style="margin-top: 10px;" /><br>3. Move at a steady pace.<br>4. If any of the icons turn red during the scan, you will need to restart from the beginning and make sure that you are connected properly to your d.ASH Pack. If the same issue persists, please contact us for support. <img src="img\d.ASHGo\play-button.png" style="margin-top: 10px;"> Only begin scanning when you are in the desired location. |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Start scanning! </p></div><font size="3"><font size="2">The scan status icon on the top right corner of the application and the LED on your d.ASH Pack will turn yellow. While following the previously mentioned <a href="#headers">headers</a>, walk around your location until you have covered the majority of it and, if possible, return to where you started.<br><img src="img/d.ASHGo/live-scan.gif" /><br>Swipe with one finger to rotate view, swipe with two fingers to move around the map. Pinch in and out to change the zoom.  |
+| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Press and hold on the stop button to finish the map scan. </p></div><font size="3"><font size="2"> Well done! Now, you can preview your scan by selecting on your scan on the home page and pressing open scan at the bottom right. |
 
-5. After all devices have been set up successfully, tap the "Start New Scan" button located in the bottom left hand corner of the screen.
+If there are major misalignments present in your scan, it is recommended to perform the scan once again. If not, you are good to go! 
+Use your map scan for further preprocessing in <a href="">d.ASH Xplorer</a> or upload it into the <a href="#">d.ASH Nav</a> application for use in robot automation.
 
-<img src = "img\d.ASHGo\start-scan.png" style="width:800; margin-left:30; padding-bottom:20px">
+### d.ASH Go Web Application
+Compared to the Android Application, this form of d.ASH Go runs on your web browser and is unable to show any preview of your scans.
 
-6. Enter your desired file name for the new scan before checking the appropriate checkboxes for the type of scan you wish to perform.
+#### Quick Start Guide
+| Instructions |
+| ------- | 
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;"> Open your mobile device's settings app, click on Connections -> Wi-Fi, and then connect to the network of your d.ASH Pack. </p></div><font size="3"><font size="2"> You can find the name and password of the network on your d.ASH Pack's hatch. After a successful connection, there should be a message saying 'Connected without internet' at the bottom of the network. <br> <img src="img/d.ASHGo/dashpack-hatch.png" style="width: 500px;"><br> When a connection has been established, your device may prompt for action as internet will not be available on the network, choose **Always Connect** for the device to work properly with d.ASH Pack.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Go into your web browser and enter 192.168.10.1 </p></div><font size="3"><font size="2"> You can find the name and password of the network on your d.ASH Pack's hatch. After a successful connection, there should be a message saying 'Connected without internet' at the bottom of the network. <br><img src="img/d.ASHGo/ip-search.png" style="width: 400px; margin-top: 10px;" /><br><img src="img/d.ASHGo/dashgo-web.png" style="width: 400px;" /> |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;"> Ensure that the status reads "d.ASH Pack ready to record". Select scan to start your scan. </p></div><font size="3"><font size="2">|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;"> Give your scan a descriptive and memorable name. Check the checkbox depending on whether you want to scan with colour or not. </p></div><font size="3"><img src="img/d.ASHGo/dashgo-scan-configurations.png" style="width: 400px; margin-top: 10px;" /><br><font size="2"> It is recommended to tilt the arm of your d.ASH Pack when you want to scan your location with colour. On the other hand, adjust your d.ASH Pack to have an upright sensor if you would like non-coloured scans. |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;"> Press the scan button at the bottom when you are ready to start scanning. </p></div><font size="3"><font size="2"><strong>Before you start, here are some headers to take note of while scanning your location: </strong><br>1. It is not possible to pause and continue a scan in the app. Scanning must be completed in one continuous session.<br>2. For the best results, avoid taking sharp and suddden turns when turning corners; take slow and gradual ones instead.<br><img src="img/d.ASHGo/correct-turn.png" style="margin-top: 10px;" /><br>3. Move at a steady pace.<br><img src="img/d.ASHGo/recording-started.png" style="width: 300px; margin-top: 10px;" /><br>You will be directed back to the home page.<br><img src="img/d.ASHGo/start-scan-status.png" style="width: 300px; ">  |
+| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;"> Press the stop scan button at the bottom to finish the maps scan. </p></div><font size="3"><img src="img/d.ASHGo/stop-scan-button.png" style="width: 200px; margin-top: 10px;" /><br><img src="img/d.ASHGo/stop-scan-confirmation.png" style="width: 300px;"><font size="2"><br> Well done! Your map scan has now been created. |
 
-<p style="margin-left:3em;"> 6.1. The "With Colour" checkbox indicates that after a scan is performed, it can be rendered with colour to display the details of the environment in which you have scanned.</p>
-
-<p style="margin-left:3em;"> 6.2. The "Upright Sensor" checkbox indicate the current configuration of your d.ASH Pack, where the Upright configuration is recommended for non-coloured scans, while the Slanted configuration is recommended for coloured scans.</p>
-
-<img src = "img\d.ASHGo\scan-settings.jpg" style="width:800; margin-left:30; padding-bottom:20px">
-
-7. Once you have configured the scan name and settings, select the **Start** button. Whenever you're ready, select the **Play** button to begin the scan and start traversing through your desired route.
-
-<img src = "img\d.ASHGo\play-button.png" style="width:800; margin-left:30;">
-<!-- 1. Connect to your d.ASH Pack's Hotspot via the Android settings
-5. Click start recording and start your walk
-6. Enjoy your preview! -->
-
-##
-
-### 1.2 Data Collection
-
-1. While walking through your desired route, ensure that the icons at the top right hand corner of the interface remain **<span style="color:green">GREEN</span>** at all times.
-
-<img src = "img\d.ASHGo\status.png" style="width:800; margin-left:30">
-
-2. During your walk, you should be able to see a recreation of your surroundings in the application.
-
-3. If at any point you encounter an error with the equipment via any of the icons at the top right hand corner of the screen turning **<span style="color:red">RED</span>**, or if the scanning process is halted, refer to the Troubleshooting Guide.
-
-4. Ensure that you **DO NOT** make any sharp turns while walking, if you encounter a sharp corner during your walk, try to make a gradual turn. This minimises the inaccuracies in the data collected during the scan.
-
-5. At the end of your route, press and hold on the Stop button to stop the recording.
-
-6. Once you return to the home page of the application, you should be able to see the completed scan that you have made of your desired route.
-
-##
-
-### 1.3 Scan Inspection
-
-1. Select your desired scan and before selecting the "Open Scan" button located at the bottom right hand corner of the screen to open your desired completed scan.
-
-2. Once opened, you can rotate about the scanned environment through dragging one finger across the screen, and to maneuver around the scene, you can drag two fingers across the screen, which would move the camera against the direction that you drag.
-
-3. If there are major misalignments present in the scan, perform the scan once again. If not, upload the scanned file onto the d.ASH Xplorer application to process the data collected. (Refer to the <a href="https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/)">d.ASH Xplorer Manual</a>)
-
-##
+Open <a href="#">d.ASH Xplorer</a> to the map scan that you have just created. 

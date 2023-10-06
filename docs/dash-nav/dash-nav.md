@@ -75,9 +75,9 @@ This is the list of sections that can be found in our user guide. For quick acce
     * <a class="table_contents" href="#section6_1_2">6.1.2 Setting route via manual control</a>
     * <a class="table_contents" href="#section6_1_3 ">6.1.3 BLK scanning</a><br>
 
-        - <a class="table_contents" href="#section6_1_4_1">6.1.4.1 BLK Scan Configurations (LiDAR Scan Quality/Image Capture Mode)</a>
-        * <a class="table_contents" href="#section6_1_4_2">6.1.4.2 Auto generation of BLK scan points</a>
-        * <a class="table_contents" href="#section6_1_4_3">6.1.4.3 Manually selecting BLK scan points</a>
+        - <a class="table_contents" href="#section6_1_3_1">6.1.3.1 BLK Scan Configurations (LiDAR Scan Quality/Image Capture Mode)</a>
+        * <a class="table_contents" href="#section6_1_3_2">6.1.3.2 Auto generation of BLK scan points</a>
+        * <a class="table_contents" href="#section6_1_3_3">6.1.3.3 Manually selecting BLK scan points</a>
         
 * <a class="table_contents" href="#section6_2">6.2 Editing and deleting your routes</a>
 * <a class="table_contents" href="#section6_3">6.3 Running your routes</a>
@@ -86,6 +86,7 @@ This is the list of sections that can be found in our user guide. For quick acce
 ---
 
 <div id="section1"></div>
+
 ### 1. Application Functionalities
 
 d.ASH Nav is the platform for autonomous control of your robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
@@ -125,10 +126,12 @@ Now, let's explore how to make the most out of d.ASH Nav on your devices.
 ---
 
 <div id="section2"></div> 
+
 ### 2. d.ASH Nav for Android
 This comprehensive guide will walk you through setting up the application and provide detailed insights into every function of the d.ASH Nav Mobile App. Additionally, you'll find step-by-step instructions on how to seamlessly control your robots directly from your mobile device.
 
 <div id="section2_1"></div> 
+
 ### 2.1 Installation guide
 Before installing, ensure that your mobile device meets the minimum system requirements. 
 
@@ -143,6 +146,7 @@ To find a list of compatible Android devices, click [here]().
 
 
 <div id="section2_2"></div> 
+
 ### 2.2 Your account
 Login to d.ASH Nav with your given credentials.
 Your login details can be found in the email we have sent you. If you encounter any difficulties logging in, please contact us [here]().
@@ -150,6 +154,7 @@ Your login details can be found in the email we have sent you. If you encounter 
 
 
 <div id="section2_3"></div>
+
 ### 2.3 Quick Start Guide  
 The following section provides a step-by-step guide to help you record and set your desired route for the robot to follow, as well as apply BLK scans. Additional features offered by d.ASH Nav are listed in the subsequent sections.
 
@@ -169,12 +174,14 @@ The following section provides a step-by-step guide to help you record and set y
 ---
 
 <div id="section3"></div>
+
 ### 3. Welcome to d.ASH Nav Mobile!
 
 After signing into your account, you'll be directed to the main page where you need to load your robot and map files in order to get started.
 <img src="img/dash-nav-home-page.jpg" style="width: 1000px; margin-top: 10px;">
 
 <div id="section3_1"></div>
+
 ### 3.1 Connecting to your robot
 
 | Instructions |
@@ -185,6 +192,7 @@ After signing into your account, you'll be directed to the main page where you n
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Choose the robot that you intend to use.</p></div><font size="3"><font size="2"> If your robot is not found, try to hard restart your robot or contact us <a href="#">here</a> for support. |
 
 <div id="section3_2"></div>
+
 ### 3.2 Loading in your map file 
 
 | Instructions |
@@ -207,10 +215,12 @@ The following sections will go over the functions in the <a href="#section4">Vie
 ---
 
 <div id="section4"></div>
+
 ### 4. View Tab
 The view tab contains options for changing the view and configuring the map that was imported into the application.
 
 <div id="section4_1"></div>
+
 #### 4.1 Adjusting your view of the map
 <div style="display: flex; align-items: center; margin-top: -15px;">
     <img src="img/pointer.png" alt="Functionality Icon" height="20">
@@ -231,6 +241,7 @@ Select this button on the top left corner to reset view to default.
 <img src="img/reset-view.png" style="margin-top: 10px;"/>
 
 <div id="section4_2"></div>
+
 #### 4.2 Map View Configurations
 ##### Clipping 
 Move the points on the range slider to adjust how much floor/ceiling is shown on the map of your application. 
@@ -242,6 +253,7 @@ Toggle on and off or adjust the contour level to adjust contour sensitivity.
 <img src="img/contour.png" style="width: 600px; margin-top: 10px;"/>
 
 <div id="section4_3"></div>
+
 #### 4.3 Example of a bad map visualization
 The View Tab allows you to customise your map-viewing experience within the application. It provides you with the flexibility to configure the settings according to your preferences. While keeping the default settings is perfectly acceptable, it's recommended to adjust the thumbs in a way that ensures the floor of the map is visible, the ceiling is hidden, and artefacts remain visible for optimal viewing.
 
@@ -256,10 +268,12 @@ This way, we can better see where our robot is located on the map when we run a 
 ---
 
 <div id="section5"></div>
+
 ### 5. Ready Tab
 Within this tab, you will find all the functions for managing the robot's live video streaming, manual controlling, and localization, which is essential for the Plan tab. 
 
 <div id="section5_1"></div>
+
 #### 5.1 Live video streaming 
 To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right. 
 
@@ -269,6 +283,7 @@ To see your robot's camera view, select or toggle the camera options here. This 
 You can also enlarge the camera view by pressing the enlarge button on the top left corner and adjust the size to your preference. 
 
 <div id="section5_2"></div>
+
 #### 5.2 Manually controlling your robot 
 
 | Instructions |
@@ -277,6 +292,7 @@ You can also enlarge the camera view by pressing the enlarge button on the top l
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Use the joysticks to move the robot. </p></div><font size="3"><img src="img/manual-control-mode.jpg" style="width: 400px; margin-top: 10px;"/><font size="2"><br>The joystick on the left is used to move the robot front and backwards, while the right joystick is used to turn the robot left and right.|
 
 <div id="section5_3"></div>
+
 #### 5.3 Localizing your robot 
 
 Before delving into the features in the planning tab, it is essential to establish an initial pose estimate to initiate the robot's localisation. Localisation is a crucial step for the robot to accurately determine its position within the provided point cloud map. This process is a prerequisite for enabling autonomy on the robot.
@@ -296,10 +312,12 @@ The localisation of the robot is good when the robot's current LiDAR scan (white
 ---
 
 <div id="section6"></div>
+
 ### 6. Plan Tab
 The plan tab is used for preparing routes for your robots to follow and apply BLK scans.
 
 <div id="section6_1"></div>
+
 #### 6.1 Creating your route
 Before starting, ensure that you have our localised your robot to the map. Refer to <a href="#section5_3">Section 5.3</a> if you require a guide to localise your robot onto the map. <br>
 At the bottom right corner of your screen, select on the 'App Route' button.
@@ -313,6 +331,7 @@ You will then be directed to the route edit view. Here, you will be able to add 
 <img src="img/set-route-view.jpg" style="margin-top: 10px;" />
 
 <div id="section6_1_1"></div>
+
 #### 6.1.1 Setting route by waypoints
 <img src="img/set-route-buttons.jpg.png" style="width: 300px;" />
 
@@ -329,6 +348,7 @@ If you want to delete a waypoint, select the Remove Mode button, and click on th
 Once you are finished with manually plotting your route, select the Done button on the left of the mode buttons. 
 
 <div id="section6_1_2"></div>
+
 #### 6.1.2 Setting route via manual control of your robot
 Add a new route and give it a name. Once you've created a new route, exit back to the routes page by pressing the done button. 
 On the bottom right of your map screen, click on this button.
@@ -344,10 +364,12 @@ Once you are finished with setting your route, press 'Save Recorded Route' at th
 Now, you will be able to make your robot run the route you have created. Refer to <a href="#section6_3">Section 6.3</a>.
 
 <div id="section6_1_3"></div>
+
 #### 6.1.3 BLK Scanning
 Before setting BLK scan points, you can configure your LiDAR configurations depending on your use case. 
 
 <div id="section6_1_3_1"></div>
+
 #### 6.1.3.1 BLK Configurations
 ##### LiDAR Scan Quality
 LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the slowest and high being the fastest. Adjusting the LiDar Scan Quality would affect the amount of generated data points in your point cloud map. 
@@ -383,6 +405,7 @@ LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the s
 
 
 <div id="section6_1_3_2"></div>
+
 #### 6.1.3.2 Auto generation of scan points
 In this section, you can automatically generate BLK scanning points in your route based on the distance travelled by the robot.
 
@@ -391,16 +414,19 @@ To enable this feature, turn this option on and set a distance interval. If your
 The blinking points on your map is where your robot will apply a BLK scan. 
 
 <div id="section6_1_3_3"></div>
+
 #### 6.1.3.3 Manually setting scan points
 Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to do a BLK scan. 
 <img src="img/manual-select-scan-points.gif" style="margin-top: 10px;" />
 
 <div id="section6_2"></div>
+
 #### 6.2 Editing or deleting your routes
 Navigate to the right-hand side, where you'll find a list of the routes you've created. To edit or delete any of these routes, press and hold on the desired route. This action will reveal options such as rename, copy, and delete at the bottom of the screen.
 <img src="img/edit-route.gif" style="margin-top: 10px;" />
 
 <div id="section6_3"></div>
+
 #### 6.3 Running your routes
 | Instructions |
 | ------- | 

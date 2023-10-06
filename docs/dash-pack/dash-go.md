@@ -24,7 +24,11 @@
 
 2. Once the application has been installed, connect to your d.ASH Pack's Hotspot through the Android settings as shown below. You should be able to see the name of your d.ASH Pack appearing as a connection.
 
-<img src = "img\d.ASHGo\android-settings.jpg" style="width:600; margin-left:30; padding-bottom:20px">
+<img src = "img\d.ASHGo\connect.jpg" style="width:600; margin-left:30; padding-bottom:20px">
+
+Here is an example of what the connection should look like.
+
+<img src = "img\d.ASHGo\reference.png" style="width:600; margin-left:30; padding-bottom:20px">
 
 3. When a connection has been established, the device may prompt for action as internet will not be available on the network, choose **Always Connect** for the device to work properly with dASHPack.
 
@@ -64,8 +68,6 @@
 2. During your walk, you should be able to see a recreation of your surroundings in the application.
 
 3. If at any point you encounter an error with the equipment via any of the icons at the top right hand corner of the screen turning **<span style="color:red">RED</span>**, or if the scanning process is halted, refer to the Troubleshooting Guide.
-
-<!-- Make a troubleshooting guide! -->
 
 4. Ensure that you **DO NOT** make any sharp turns while walking, if you encounter a sharp corner during your walk, try to make a gradual turn. This minimises the inaccuracies in the data collected during the scan.
 

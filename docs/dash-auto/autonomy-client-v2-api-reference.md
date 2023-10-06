@@ -222,7 +222,7 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 </details>
 
 <details>
- <summary><code>scanBLK(string jobName, int res, int imgQly)</code> <code>Sets robot to scan using Leica™ BLK360 at a selected waypoint</code></summary>
+ <summary><code>scanBLK(string jobName, int res, int imgQly, bool stream)</code> <code>Sets robot to scan using Leica™ BLK360 at a selected waypoint</code></summary>
 
 <b>Parameters</b>
 
@@ -242,6 +242,10 @@ d.ASH Nav supports custom scripting by the user, allowing the user to edit what 
 <tr>
 <td>imgQly</td>
 <td>Image quality to scan at</td>
+</tr>
+<tr>
+<td>stream</td>
+<td>Enable streaming of files to d.ASH Xplorer</td>
 </tr>
 </table>
 

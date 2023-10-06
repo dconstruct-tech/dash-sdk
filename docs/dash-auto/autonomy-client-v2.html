@@ -1,0 +1,211 @@
+<!DOCTYPE html><html><head>
+      <title>autonomy-client-v2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\chowyi.lee\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.7.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <h1 class="crossnote-header" id="1-dash-nav"><strong>1. d.ASH Nav</strong></h1>
+
+<p><em>d.ASH Nav</em> is <em>the</em> platform for autonomous control of robots. Being seamlessly integrated in the <a href="https://www.dconstruct.co/products">d.ASH Fleet Management</a> workflow, you can enjoy easy planning and deployment of your robots for various use cases. <em>d.ASH Nav</em> allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.</p>
+<p>Because <em>d.ASH Nav</em> is fully integrated with <a href="https://www.dconstruct.co/products">d.ASH Fleet Management system</a>, an internet connection is required. Should you require <em>d.ASH Nav</em> without an internet connection, please <a href="mailto:hello@dconstruct.ai">contact us</a> for more details.</p>
+<h3 class="crossnote-header" id="11-minimum-system-requirements"><strong>1.1 Minimum System Requirements</strong></h3>
+
+<ol>
+<li>PC with a CPU equivalent to or greater than an Intel(R) Core(TM) i5-10210U</li>
+<li>Nvidia GTX 1060</li>
+<li>8GB of RAM</li>
+<li>Internet Connection</li>
+<li>Windows 10/11</li>
+<li>Gamepad/Joystick (e.g. Logitech F710 Gamepad)</li>
+</ol>
+<p><em>We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features may run slower on other GPUs. A joystick is recommended for manual tele-operation control. We also recommend 16GB of RAM for smoother operation</em></p>
+<h3 class="crossnote-header" id="12-tutorial"><strong>1.2 Tutorial</strong></h3>
+
+<p><strong>Control Scheme</strong></p>
+<p><em>d.ASH Nav</em>'s control scheme is as follows:</p>
+<ul>
+<li>Tilt/Camera: Hold down the <em>Right Mouse</em> Button and drag</li>
+<li>Zoom: Use the mouse scroll wheel to zoom in/zoom out</li>
+<li>Move Around: Use the <em>WASD</em> keys to pan/move around the world</li>
+</ul>
+<h3 class="crossnote-header" id="13-quick-start"><strong>1.3 Quick Start</strong></h3>
+
+<p>The general workflow to operate and run an autonomous waypoint mission is as follows:</p>
+<ol>
+<li>Login to <em>d.ASH Nav</em></li>
+<li>Create a new project, this allows you to save any routes created for use later on</li>
+<li>Load the map of your choice</li>
+<li>Create a new mission Route and plot the waypoints</li>
+<li>Connect to your desired robot in your robot fleet</li>
+<li>Set the robot's initial starting pose on the 3D map</li>
+<li>Start the robot with the route for your new mission</li>
+</ol>
+<h2 class="crossnote-header" id="2-download"><strong>2. Download</strong></h2>
+
+<p>Please <a href="mailto:hello@dconstruct.ai">contact us</a> for the link to download <em>d.ASH Nav</em>.</p>
+<h2 class="crossnote-header" id="3-project-management"><strong>3. Project management</strong></h2>
+
+<p>Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use <em>d.ASH Nav</em> from anywhere in the world!</p>
+<h3 class="crossnote-header" id="31-creating-a-project"><strong>3.1 Creating a project</strong></h3>
+
+<p>To create a new project, simply click on the "New Project" button. You will then be prompted to enter a project name. After creating your new project, you will be redirected to the <em>Map Browser</em>.  If a project with the same name exists, a prompt will pop up asking you to choose another name for the project.</p>
+<h3 class="crossnote-header" id="32-loading-an-existing-project"><strong>3.2 Loading an existing project</strong></h3>
+
+<p>To load an existing project, select an existing project saved to the cloud using the file browser on the right hand side of the screen. Alternatively, if you are loading a project saved locally, click on the "Browse" button and navigate to the local location of the project. After creating your new project, you will be redirected to the <em>Map Browser</em>.</p>
+<h3 class="crossnote-header" id="33-map-browser"><strong>3.3 Map Browser</strong></h3>
+
+<p>After creating/loading an existing a project, you will be taken to the <em>Map Selection Screen</em>. This screen allows you to select the map which relates to your deployment location. After selecting your map, you can begin to deploy your robots. Maps can be sorted by whether they are coloured or not.</p>
+<h2 class="crossnote-header" id="4-main-menu"><strong>4. Main Menu</strong></h2>
+
+<p>This is the main hub of all things <em>d.ASH Nav</em>. Everything concerning deployment of your robots can be found here.</p>
+<h2 class="crossnote-header" id="41-top-menu"><strong>4.1 Top Menu</strong></h2>
+
+<p>The top bar contains several crucial pieces of information, such as which part of the deployment process you are currently in and actions that you can perform in each part of deployment. In the <em>Main Menu</em>, options to manage your projects and browse through available maps are available. The arrows indicate the proper flow of how a deployment should be run.</p>
+<h3 class="crossnote-header" id="411-project-options"><strong>4.1.1 Project Options</strong></h3>
+
+<ul>
+<li><img src="img/icons/NewProject_32_Black.png" alt="Screenshot"> <em>New Project</em>: Create a brand new project</li>
+<li><img src="img/icons/OpenProj_32_Black.png" alt="Screenshot"> <em>Open Project</em>: Load an existing project</li>
+<li><img src="img/icons/Save_32_Black.png" alt="Screenshot"> <em>Save</em>: Save any changes to the current project</li>
+<li><img src="img/icons/SaveAs_32_Black.png" alt="Screenshot"> <em>Save as</em>: Save any changes to the current project under a different file/project name</li>
+<li><img src="img/icons/Prefs_32_Black.png" alt="Screenshot"> <em>Preferences</em>: Edit <em>d.ASH Nav</em> settings</li>
+</ul>
+<h3 class="crossnote-header" id="412-map-browser"><strong>4.1.2 Map Browser</strong></h3>
+
+<ul>
+<li><em>Map Browser</em>: Browse through all maps saved to your account</li>
+</ul>
+<h2 class="crossnote-header" id="42-view-port"><strong>4.2 View Port</strong></h2>
+
+<p>This is a visual representation of the map you have loaded for your project.</p>
+<ul>
+<li><em>View Toggles</em>: A widget in the top left corner of the <em>View Port</em> which allows you to toggle the visiblity of certain objects in the <em>View Port</em>.</li>
+<li><em>Height Sliders</em>: Adjust the cut off points for rendering of the loaded map.</li>
+</ul>
+<h2 class="crossnote-header" id="43-side-bar"><strong>4.3 Side Bar</strong></h2>
+
+<p>The <em>Side Bar</em> contains all information to do with any planned routes, connected robots and <em>View Port</em> visualisation tweaks</p>
+<ul>
+<li><em>Routes</em>: Contains all planned routes in the project with the ability to toggle the preview of the route in the <em>View Port</em>, view all robots assigned to this route, assign new robots to this route and delete existing routes. This also reflects the current mission's route and status.</li>
+<li><em>Robot List</em>: Shows you all currently connected robots and their status.</li>
+<li><em>Visualisation</em>: Allows for you to tweak the colour of elements in the rendered point cloud as well as the scale (size) of the rendered robot and waypoints. This is more useful for those who experience colour blindness. We recommend leaving these settings at their default value.</li>
+</ul>
+<h2 class="crossnote-header" id="5-plan-tab"><strong>5. Plan Tab</strong></h2>
+
+<p>This tab contains all actions to do with planning routes.</p>
+<h3 class="crossnote-header" id="51-actions"><strong>5.1 Actions</strong></h3>
+
+<p>Three actions are available for you to use:</p>
+<ul>
+<li><em>Autodrive</em>: Using machine learning and computer vision to analyze and understand your robot's surroundings, hands-free Level 2 Autonomy allows for the navigation of complex, unstructured environments using just cameras alone.</li>
+<li><em>Record Waypoints</em>: Records and plots waypoints as you manually navigate the robot in real life.</li>
+<li><em>Create Route</em>: Creates an empty route for you to edit and add waypoints later on.</li>
+</ul>
+<h3 class="crossnote-header" id="52-waypoint"><strong>5.2 Waypoint</strong></h3>
+
+<p>This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.</p>
+<ul>
+<li><em>Add/Delete Waypoint</em>: Add or remove a waypoint from a selected route</li>
+<li><em>Reposition Waypoint</em>: Select a waypoint to shift the waypoint from one position to another.</li>
+<li><em>Interpolation by distance</em>: Adds additional waypoints between two existing waypoints which are too far apart. This allows for more actions (such as scans) to be excuted along a given path. The default interval is set at 1m.</li>
+<li><em>Enable/Disable Scan</em>: Marking a waypoint as a scan point will tell the robot to stop and perform a scan with 3rd party scanners.</li>
+<li><em>Scan All</em>: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3rd party scanners.</li>
+<li><em>Finish</em>: Closes the menu.</li>
+</ul>
+<h3 class="crossnote-header" id="53-robots"><strong>5.3 Robots</strong></h3>
+
+<p>Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.</p>
+<h2 class="crossnote-header" id="6-ready-tab"><strong>6. Ready Tab</strong></h2>
+
+<p>This tab contains all actions necessary to deploy your robot</p>
+<h3 class="crossnote-header" id="61-e-stopresume"><strong>6.1 E-Stop/Resume</strong></h3>
+
+<p>Controls for stopping and resuming a mission/robot movement can be found here.</p>
+<h3 class="crossnote-header" id="62-list-of-robots"><strong>6.2 List of robots</strong></h3>
+
+<p>Shows a list of all connected robots with several different pieces of information tied to each robot.</p>
+<ul>
+<li><em>Health Monitor</em>: The health monitor shows the status of all sensors on the robot.</li>
+<li><em>Robot Info</em>: Contains info such as the robot's serial number, date of purchase etc</li>
+<li><em>Robot Settings</em>: Adjust the tag settings of a selected robot through colour tags.</li>
+</ul>
+<h3 class="crossnote-header" id="63-robot-actions"><strong>6.3 Robot Actions</strong></h3>
+
+<ul>
+<li><em>Localise</em>: Give the robot an estimate of where it currently is on the map in order for the robot to fine tune its position.</li>
+<li><em>Follow Cam</em>: Sets the camera of the <em>View Port</em> to follow and track the robot as it moves throughout the map.</li>
+<li><em>Auto/Manual Control</em>: Manually change the operating mode of the selected robot.</li>
+<li><em>Sit/Stand Robot</em>: <strong>SPOT ONLY</strong>. Sit or stand Boston Dynamics Spot Robot.</li>
+</ul>
+<h3 class="crossnote-header" id="64-assign-route-to-robot"><strong>6.4 Assign Route to Robot</strong></h3>
+
+<ul>
+<li><em>Drop Down</em>: Choose the route to assign.</li>
+<li><em>Tag Robot</em>: Choose the robot to assign the route to (i.e: tagging the robot)</li>
+</ul>
+<h2 class="crossnote-header" id="7-monitor-tab"><strong>7. Monitor Tab</strong></h2>
+
+<p>This tab contains all actions and information about the mission in progress.</p>
+<h3 class="crossnote-header" id="71-e-stopresume"><strong>7.1 E-Stop/Resume</strong></h3>
+
+<p>Controls for stopping and resuming a mission/robot movement can be found here.</p>
+<h3 class="crossnote-header" id="72-live-views"><strong>7.2 Live views</strong></h3>
+
+<p>Views from the cameras on the robots can be found here. To add a view, simply drag and drop a robot from the right side bar into an empty view slot and select which camera to view. There are three templates to follow.</p>
+<ul>
+<li><em>Map View</em>: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.</li>
+<li><em>Four View</em>: This view will completely hide the Point Cloud Map and instead show four slots for different robot camera views.</li>
+<li><em>Focus</em>: This view will completely hide the Point Cloud Map and instead show only one robot camera view.</li>
+<li><em>Hide</em>: Disables all cameras/shows only the Point Cloud Map</li>
+</ul>
+<h3 class="crossnote-header" id="73-robot-controls"><strong>7.3 Robot Controls</strong></h3>
+
+<ul>
+<li><em>Run Route</em>: Issues the command to the selected robot to run its assigned route</li>
+<li><em>Autodrive</em>: <a href="#51-actions">See above</a></li>
+<li><em>Auto/Manual | Sit/Stand</em>: <a href="#63-robot-actions">See above</a></li>
+</ul>
+<h2 class="crossnote-header" id="8-telegram-configuration"><strong>8. Telegram Configuration</strong></h2>
+
+<p>d.ASH Nav supports status notifications of the robots in your fleet via Telegram! Add <a href="https://t.me/dconstruct_bot">dconstruct-bot</a>!</p>
+<h3 class="crossnote-header" id="81-setup"><strong>8.1 Setup</strong></h3>
+
+<ol>
+<li>Add the Telegram bot to the Telegram chat of your choice</li>
+<li>Request for a key from us <a href="mailto:hello@dconstruct.ai">here</a>.</li>
+<li>In the Telegram chat of your choice, use the <code>/register</code> command followed by the key. (e.g. <code>/register [insert key here]</code>)</li>
+</ol>
+<h3 class="crossnote-header" id="82-remove-from-chat"><strong>8.2 Remove from chat</strong></h3>
+
+<p>If you would like to stop receiving notifications, use the <code>/delete</code> command.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

@@ -33,18 +33,16 @@
     }
 </style>
 
-# d.ASH Nav
+# d.ASH Nav Mobile
 
 ### Introduction
 
 | ![Screenshot](img/dash-nav-first-image.png){ align=center style="width:400px"} |
 
-Welcome to the d.ASH Nav application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. To access the user guide for your Android mobile devices, please refer to <a href="#section2">Section 2</a> in this page. For desktop usage, please turn to <a href="#">Section 3</a>.
-
-Now, let's delve into the functionalities that d.ASH Nav offers for seamless robot operations and the respective steps for each of them!
+Welcome to the d.ASH Nav application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. Now, let's delve into the functionalities that d.ASH Nav offers for seamless robot operations and the respective steps for each of them!
 
 ### Table of Contents
-This is the list of sections that can be found in our user guide. For quick access, simply click on the Section that you would like to see.
+This is the list of sections that can be found in our user guide. For quick access, simply click on the section that you would like to see.
 
 ##### <a class="table_contents" href="#section1">1. Application Functionalities</a>
 
@@ -141,7 +139,7 @@ Operating System: Android Version 13 | Tiramisu  | API Level 33
 Screen Size: No smaller than 10.5 inches
 Processor: Snapdragon 888 chip on the Samsung Galaxy Tab S8 
 
-To find a list of compatible Android devices, click [here]().
+<!-- To find a list of compatible Android devices, click [here](). -->
 
 <div id="section2_2"></div> 
 
@@ -167,6 +165,8 @@ The following section provides a step-by-step guide to help you record and set y
 | <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="3"><font size="2"> Refer to <a href="section6_1_4">Section 6.1.4</a> for a full guide on choosing waypoints to apply BLK scans.|
 | <div class="instructions-div"><div class="instruction-circle">8</div><p style="margin: 0; margin-left: 5px;">In the list of routes, press the route you just created and select set route located at the bottom of the screen. </p></div><font size="3"> |
 | <div class="instructions-div"><div class="instruction-circle">9</div><p style="margin: 0; margin-left: 5px;">Head back to the ready tab and change the control mode at the bottom to auto. </p></div><font size="3"><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;"/><br><font size="2"> Well done! Your robot is now running on your recorded route that you have made.   |
+
+If you do not have access to the internet at your location, you can use <a href="#section7">Offline Mode</a>.
 
 
 ---
@@ -352,10 +352,11 @@ Add a new route and give it a name. Once you've created a new route, exit back t
 On the bottom right of your map screen, click on this button.
 <img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> 
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. 
-<img src="img/record-route-view.gif">
+You are advised to use a smaller recording interval (1 metre or smaller) when making turns. 
+<img src="img/record-route-view.gif" style="margin-top: 10px;">
 
 
-After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.
+After moving your robot, you should see a blue-coloured path being formed by the robot. This is the path your robots will follow when you run the route you are creating.
 
 Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen and you will be directed back to the routes page with your new route saved. 
 
@@ -434,7 +435,34 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;" />|
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
-#### 7. Offline Mode
+<div id="section7"></div>
 
-<br>
-Enjoy using d.ASH Nav! If you require any support, please feel free to contact us <a href="#">here</a>. 
+#### 7. Offline Mode
+If your scanning location does not have internet access, you can connect to your robot's hotspot through your device's Wi-Fi settings and use offline mode to login to your robot to carry out the same tasks as you would in online mode. To use this, you may follow the instructions below. 
+
+
+
+Before using offline mode, ensure that your map has already been downloaded in online mode. This is because there is no internet connection and the app is unable to fetch the maps on your server.  Refer to <a href="#section3_2">Section 3.2</a> for a guide on loading your map into the application. 
+ 
+
+
+| Instructions |
+| ------- | 
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the ready tab and select set local password on the right of the screen.<br> <img src="img/set-local-password.jpg" style="width: 300px; margin-top: 10px;"/><br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br><img src="img/local-password-prompt.jpg" style="width: 300px;"> |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> <img src="img/connected-to-robot-wifi.jpg" style="width: 600px; margin-top: 10px;"><br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support <a href="#">here</a>. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'><img src="img/offline-mode-button.png" style="width: 600px; margin-top: 10px;"><br>|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button to connect to your robot.<br><img src="img/select-robot.png" style="width: 300px;"/><br>Your robot should appear now in the form of its IP address. Select it and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.<img src="img/offline-mode-connect-to-robot.jpg" style="width: 600px; margin-top: 10px;"><br>|
+
+You are now using offline mode. Now, you will be able to access the application's functionalities in locations without internet access.
+
+
+
+
+
+
+
+
+---
+
+That is all for d.ASH Nav!
+If you require any support, please feel free to contact us <a href="#">here</a> if you encounter any difficulties.

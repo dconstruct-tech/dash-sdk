@@ -49,7 +49,7 @@ Welcome to the d.ASH Nav application user guide! Whether you're using a mobile d
 
 d.ASH Nav is the platform for autonomous control of your robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
-An internet connection from your robot is required. Should you require d.ASH Nav without an internet connection, please contact us <a href="#">here</a> for more details.
+An internet connection from your robot is required. Should you require d.ASH Nav without an internet connection, please contact us [here](mailto:hello@dconstruct.co) for more details.
 
 ![Functionality Icon](img/pointer.png){ style="height:20px;" } Pilot
 
@@ -81,12 +81,13 @@ This comprehensive guide will walk you through setting up the application and gi
 ### 2.1 Installation Guide
 Before installing, ensure that your mobile device meets the minimum system requirements. 
 
-#### Minimum System Requirements 
-Android Tablet with support for OpenGL ES 3.2<br>
-Operating System: Android Version 13 | Tiramisu | API Level 33<br>
-CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)<br>
-GPU: Adreno 618<br>
-RAM: 4 GB
+| Minimum System Requirements                             | Recommended System Requirements                           |
+|--------------------------------------------------------|------------------------------------------------------------|
+| Android Tablet with support for OpenGL ES 3.2           | Android Tablet with support for OpenGL ES 3.2             |
+| Operating System: Android Version 13 \| Tiramisu \| API Level 33  | Operating System: Android Version 13 \| Tiramisu \| API Level 33  |
+| CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)             | CPU: Snapdragon 888 Chip on Samsung Galaxy Tab S8        |
+| GPU: Adreno 618                                        | GPU: Adreno 730                                         |
+| RAM: 4 GB                                             | RAM: 8 GB                                              |
 
 <div id="section2_2"></div> 
 
@@ -99,7 +100,7 @@ If you encounter any difficulties with logging in, please contact us.
 <div id="section2_3"></div>
 
 ### 2.3 Quick Start Guide  
-The following section provides a step-by-step guide to help you record and set your desired route for the robot to follow, as well as apply BLK scans. Additional features offered by d.ASH Nav are listed in the subsequent sections.
+The following section provides a step-by-step guide to help you record and set your desired route for the robot to follow, as well as perform BLK scans. Additional features offered by d.ASH Nav are listed in the subsequent sections.
 
 | Instructions |
 | ------- | 
@@ -109,7 +110,7 @@ The following section provides a step-by-step guide to help you record and set y
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the route you just created and press the 'Record Route' button at the bottom right to record your route by manually moving your robot.</p></div><font size="3">![Record Route Button](img/record-route-button.png){ style="width: 1000px; margin-top: 10px;"}<br><font size="2"> Alternatively, you can refer to <a href="#section6_1_2">Section 6.1.2</a> to learn how to record your route by manually plotting waypoints onto the map. |
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Use the joysticks to drive your robot along your preferred route. </p></div><font size="3"><font size="2"> Be sure to change the recording intervals and make use of the 'Add Point' buttons while recording your route. For example, when turning the robot, you can lower down the recording interval to about 1 metre for a better route recording, or use the 'Add Point' button to plot waypoints close to each other in this turn. |
 | <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Once you are satisfied with your route, select 'Save Recorded Route'.   </p></div><font size="3"><font size="2"> Or, if you would like to restart, select discard route at the bottom.  |
-| <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="3"><font size="2"> Refer to <a href="#section6_1_3_2">Section 6.1.3.2</a> for a full guide on choosing waypoints to apply BLK scans.|
+| <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="3"><font size="2"> Refer to <a href="#section6_1_3_2">Section 6.1.3.2</a> for a full guide on choosing waypoints to perform BLK scans.|
 | <div class="instructions-div"><div class="instruction-circle">8</div><p style="margin: 0; margin-left: 5px;">In the list of routes, press the route you just created and select 'Set Route' located at the bottom of the screen. </p></div><font size="3"> |
 | <div class="instructions-div"><div class="instruction-circle">9</div><p style="margin: 0; margin-left: 5px;">Head back to the 'Ready' tab and change the control mode at the bottom to 'Auto'. </p></div><font size="3">![Control Mode Auto Toggle](img/control-mode-auto-toggle.png){ style="width: 300px; margin-top: 10px;" }<br><font size="2"> Well done! Your robot is now running on your recorded route that you have made.   |
 
@@ -208,16 +209,17 @@ Within this tab, you will find all the functions for managing the robot's live v
 
 #### 5.1 Live video streaming 
 To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right. 
-![Camera View GIF](img/camera-view.gif){style="width: 600px; margin-top: 10px;"}
+![Camera View GIF](img/camera-view.gif){style="width: 600px; margin-top: 10px;"}<br>
 You can also enlarge the camera view by pressing the enlarge button on the top left corner and adjusting the size to your preference. 
 
 <div id="section5_2"></div>
 
 #### 5.2 Manually controlling your robot 
+![Manual Control Mode Switch](img/control-mode-switch-page.png){style="width: 800px;"}
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to 'Manual' mode.</p></div><fonst size="3">![Control Mode Toggle](img/control-mode-toggle.png){style="width: 300px; margin-top: 10px;"}<br><font size='2'>Ensure that you are on the ready tab. |
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to 'Manual' mode.</p></div><fonst size="3">![Control Mode Toggle](img/control-mode-toggle.png){style="width: 300px; margin-top: 10px;"}<br><font size='2'>Ensure that you are on the 'Ready' tab. |
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Use the joysticks at the bottom to move your robot. </p></div><font size="3">![Manual Control Mode](img/manual-control-mode.jpg){style="width: 400px; margin-top: 10px;"}<font size="2"><br>The joystick on the left is used to move the robot front and backwards, while the joystick on the right is used to turn the robot left and right. |
 
 <div id="section5_3"></div>
@@ -229,7 +231,7 @@ Before delving into the features in the planning tab, it is essential to establi
 | Instructions |
 | ------- | 
 | <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Inside the options panel of the 'Ready' tab, press the 'Localise' button.</p></div><fonst size="3">![Localize Button](img/localize-button.png){style="margin-top: 10px; width: 300px;"}<br><font size='2'>Here, you can also find your robot status and see information like the battery level, localisation and stance. |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="3"><font size="2"> Use the following buttons to help you achieve a good localisation.<br>![Localize Button Options](img/localize-buttons-options.png){style="width: 400px;margin-top: 10px;"}<br>Set Initial Pose: Press on the point of the map where the robot is located and drag it to the direction it is facing.<br> Rotate Pose: Used to adjust the rotation of the robot's LiDAR scan.<br>Move Pose: Used to move the robot's LiDAR scan around the map.<br><br> To localize your robot, start by selecting the 'Set Initial Pose' button. Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows in 'Move Pose' to adjust the robot's LiDAR point cloud to fit the map as shown in the example below.![Localize Demo GIF](img/localize-demo.gif){style="margin-top: 10px;"}<br>Additionally, you can use 'Rotate Pose' to rotate the LiDAR point cloud to make fitting it to the map easier.<br>![Localize Rotation](img/localize_rotation.gif){style="margin-top: 10px;"}<br> Refer to the examples below for instances of successful robot localisation. ![Localisation Examples](img/localisation.png){style="margin-top: 10px;"}The localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map, meaning it has a good initial pose estimate. The localisation on the other two examples are bad as the LiDAR scan does not line up with the map, and the robot is in the wrong position.  |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="3"><font size="2"> Use the following buttons to help you achieve a good localisation.<br>![Localize Button Options](img/localize-buttons-options.png){style="width: 400px;margin-top: 10px;"}<br>Set Initial Pose: Press on the point of the map where the robot is located and drag it to the direction it is facing.<br> Rotate Pose: Used to adjust the rotation of the robot's LiDAR scan.<br>Move Pose: Used to move the robot's LiDAR scan around the map.<br><br> To localize your robot, start by selecting the 'Set Initial Pose' button. Press on the point of the map where the robot is located and drag it to the direction it is facing. Then, use the directional arrows in 'Move Pose' to adjust the robot's LiDAR point cloud to fit the map as shown in the example below.![Localize Demo GIF](img/localize-demo.gif){style="margin-top: 10px;"}<br>Additionally, you can use 'Rotate Pose' to rotate the LiDAR point cloud to make fitting it to the map easier.<br>![Localize Rotation](img/localize_rotation.gif){style="margin-top: 10px;"}<br> Refer to the examples below for instances of successful robot localisation. You may also refer to the 'Robot Status' section where the localisation result is shown. ![Localisation Examples](img/localisation.png){style="margin-top: 10px;"}The localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map, meaning it has a good initial pose estimate. The localisation on the other two examples are bad as the LiDAR scan does not line up with the map, and the robot is in the wrong position.  |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Bring down the plane of the map.</p></div><font size="3"><font size="2"> Using the slider on the left, adjust the map plane such that the floor of the map is now visible. |
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Once you are done with setting your robot's initial pose estimate, select the 'Done' button.</p></div><font size="3"><font size="2"> On the other hand, if you would like to restart the localisation process, press on the 'Reset Pose' button. |
 
@@ -242,7 +244,7 @@ Redo the localisation process if the LiDAR point cloud no longer aligns with you
 <div id="section6"></div>
 
 ### 6. Plan Tab
-The plan tab is used for preparing routes for your robots to follow and apply BLK scans.
+The plan tab is used for preparing routes for your robots to follow and perform BLK scans.
 
 <div id="section6_1"></div>
 
@@ -373,6 +375,6 @@ You are now using offline mode. Now, you will be able to access the application'
 ---
 
 That is all for d.ASH Nav!
-If you require any support, please feel free to contact us here if you encounter any difficulties.
+If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.co) if you encounter any difficulties.
 
 This document was last updated on: 9 October 2023

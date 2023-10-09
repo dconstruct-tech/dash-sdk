@@ -293,29 +293,29 @@ The plan tab is used for preparing routes for your robots to follow and apply BL
 Before starting, ensure that you have our localised your robot to the map. Refer to <a href="#section5_3">Section 5.3</a> if you require a guide to localise your robot onto the map. <br>
 At the bottom right corner of your screen, select on the 'App Route' button.
 
-![](img/add-route-button.jpg){style="width: 300px;"}
+![Add Route](img/add-route-button.jpg){style="width: 300px;"}
 
 Give your new route a name. Try to use a name that is descriptive and well labelled.
-![](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
+![Add New Route](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
 
 You will then be directed to the route edit view. Here, you will be able to add and remove waypoints, change the configurations of BLK scanning, and generate scanning points around the map.
-![](img/set-route-view.jpg){style="margin-top: 10px;" }
+![Set Route View](img/set-route-view.jpg){style="margin-top: 10px;" }
 
 <div id="section6_1_1"></div>
 
 #### 6.1.1 Setting route by waypoints
-![](img/set-route-buttons.jpg.png){style="width: 300px;" }
+![Set Route Button](img/set-route-buttons.jpg.png){style="width: 300px;" }
 
 To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 
 
-![](img/selected-add-mode.jpg){style="width: 300px;"}
+![Selected Add Mode](img/selected-add-mode.jpg){style="width: 300px;"}
 
 Plot the various points on the map that you want your robot to go. Ensure that the points are next to each other, avoiding any obstacles in the map and hence in real life.
 
-![](img/setting-route-by-waypoint.gif){style="width: 400px;"}
+![Waypoint](img/setting-route-by-waypoint.gif){style="width: 400px;"}
 
 If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete. 
-![](img/selected-remove-mode.png){style="width: 400px; margin-top: 10px;"}
+![Selected Remove Mode](img/selected-remove-mode.png){style="width: 400px; margin-top: 10px;"}
 Once you are finished with manually plotting your route, select the Done button on the left of the mode buttons. 
 
 <div id="section6_1_2"></div>
@@ -323,10 +323,11 @@ Once you are finished with manually plotting your route, select the Done button 
 #### 6.1.2 Setting route via manual control of your robot
 Add a new route and give it a name. Once you've created a new route, exit back to the routes page by pressing the done button. 
 On the bottom right of your map screen, click on this button.
-![](img/record-route-button.jpg){ style="width: 55px; margin-top: 10px;"} 
+![Record Route Button](img/record-route-button.jpg){ style="width: 55px; margin-top: 10px;"} 
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. 
-You are advised to use a smaller recording interval (1 metre or smaller) when making turns. 
-![](img/record-route-view.gif" style="margin-top: 10px;)
+You are advised to use a smaller recording interval (1 metre or smaller) when making turns.
+
+![Record Route View](img/record-route-view.gif"){style="margin-top: 10px;"}
 
 
 After moving your robot, you should see a blue-coloured path being formed by the robot. This is the path your robots will follow when you run the route you are creating.
@@ -366,20 +367,20 @@ LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the s
 In this section, you can automatically generate BLK scanning points in your route based on the distance travelled by the robot.
 
 To enable this feature, turn this option on and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled on your route.
-<img src="img/auto-generate-scan-points.gif" style="margin-top: 10px;" />
+![](img/auto-generate-scan-points.gif){style="margin-top: 10px;" }
 The blinking points on your map is where your robot will apply a BLK scan. 
 
 <div id="section6_1_3_3"></div>
 
 #### 6.1.3.3 Manually setting scan points
 Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to do a BLK scan. 
-<img src="img/manual-select-scan-points.gif" style="margin-top: 10px;" />
+![](img/manual-select-scan-points.gif){style="margin-top: 10px;"}
 
 <div id="section6_2"></div>
 
 #### 6.2 Editing or deleting your routes
 Navigate to the right-hand side, where you'll find a list of the routes you've created. To edit or delete any of these routes, press and hold on the desired route. This action will reveal options such as rename, copy, and delete at the bottom of the screen.
-<img src="img/edit-route.gif" style="margin-top: 10px;" />
+![](img/edit-route.gif){ style="margin-top: 10px;" }
 
 <div id="section6_3"></div>
 
@@ -405,21 +406,16 @@ Before using offline mode, ensure that your map has already been downloaded in o
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the ready tab and select set local password on the right of the screen.<br> <img src="img/set-local-password.jpg" style="width: 300px; margin-top: 10px;"/><br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br><img src="img/local-password-prompt.jpg" style="width: 300px;"> |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> <img src="img/connected-to-robot-wifi.jpg" style="width: 600px; margin-top: 10px;"><br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support <a href="#">here</a>. |
-| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'><img src="img/offline-mode-button.png" style="width: 600px; margin-top: 10px;"><br>|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button to connect to your robot.<br><img src="img/select-robot.png" style="width: 300px;"/><br>Your robot should appear now in the form of its IP address. Select it and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.<img src="img/offline-mode-connect-to-robot.jpg" style="width: 600px; margin-top: 10px;"><br>|
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the ready tab and select set local password on the right of the screen.<br> ![](img/set-local-password.jpg){style="width: 300px; margin-top: 10px;"}<br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br>![](img/local-password-prompt.jpg){style="width: 300px;"} |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> ![](img/connected-to-robot-wifi.jpg){style="width: 600px; margin-top: 10px;"}<br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support <a href="#">here</a>. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'>![](img/offline-mode-button.png){style="width: 600px; margin-top: 10px;"}<br>|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button to connect to your robot.<br>![](img/select-robot.png){style="width: 300px;"}<br>Your robot should appear now in the form of its IP address. Select it and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.![](img/offline-mode-connect-to-robot.jpg){style="width: 600px; margin-top: 10px;"}<br>|
 
 You are now using offline mode. Now, you will be able to access the application's functionalities in locations without internet access.
-
-
-
-
-
-
-
 
 ---
 
 That is all for d.ASH Nav!
 If you require any support, please feel free to contact us <a href="#">here</a> if you encounter any difficulties.
+
+This document was last updated on: 10/09/2023

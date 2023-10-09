@@ -61,11 +61,10 @@ Click <a href="https://play.google.com/store/apps/details?id=ai.dconstruct.dashp
 #### Minimum System Requirements
 
 Android Tablet with support for OpenGL ES 3.2
-Operating System: Android Version 13 | Tiramisu  | API Level 33 
-Screen Size: No smaller than 10.5 inches
-Processor: Snapdragon 888 chip on the Samsung Galaxy Tab S8 
-
-To find a list of compatible Android devices, click [here]().
+Operating System: Android Version 13 | Tiramisu | API Level 33 
+CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)
+GPU: Adreno 618
+RAM: 4 GB
 
 ![](img/d.ASHGo/google-play.png){width="600"}
 
@@ -101,4 +100,4 @@ Compared to the Android Application, this form of d.ASH Go runs on your web brow
 
 Open <a href="#">d.ASH Xplorer</a> to the map scan that you have just created.
 
-This document was last updated on:10/09/2023
+This document was last updated on: 10/09/2023

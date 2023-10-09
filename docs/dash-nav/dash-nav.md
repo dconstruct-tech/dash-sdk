@@ -41,46 +41,9 @@
 
 Welcome to the d.ASH Nav application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. Now, let's delve into the functionalities that d.ASH Nav offers for seamless robot operations and the respective steps for each of them!
 
-### Table of Contents
-This is the list of sections that can be found in our user guide. For quick access, simply click on the section that you would like to see.
-
-##### [1. Application Functionalities](#section1)
-
-##### [2. d.ASH Nav for Android](#section2)
-* [2.1 Installation guide](#section2_1)
-* [2.2 Your account](#section2_2)
-* [2.3 A Quick Start Guide](#section2_3)
-
-##### [3. Welcome to d.ASH Nav!](#section3)
-* [3.1 Connecting to your robot](#section3_1) 
-* [3.2 Loading in your map file](#section3_2)
-
-##### [4. View Tab](#section4) 
-* [4.1 Adjusting map view](#section4_1)
-* [4.2 Map View Configurations](#section4_2)
-* [4.3 Good and bad map visualizations](#section4_3)
-
-##### [5. Ready Tab](#section5)
-* [5.1 Live camera streaming](#section5_1) 
-* [5.2 Manually controlling your robot](#section5_2) 
-* [5.3 Localizing your robot](#section5_3)
-
-##### [6\. Plan Tab](#section6)
-* [6.1 Creating your route](#section6_1) 
-* [6.1.1 Setting route via waypoint](#section6_1_1) 
-* [6.1.2 Setting route via manual control of your robot](#section6_1_2) 
-* [6.1.3 BLK Scanning](#section6_1_3 )
-    - [6.1.3.1 BLK Scan Configurations (LiDAR Scan Quality/Image Capture Mode)](#section6_1_3_1) 
-    - [6.1.3.2 Auto generation of BLK scan points](#section6_1_3_2) 
-    - [6.1.3.3 Manually setting BLK scan points](#section6_1_3_3)
-        
-* [6.2 Editing and deleting your routes](#section6_2) 
-* [6.3 Running your routes](#section6_3)
-
-##### [7\. Offline Mode](#section7)
 ---
 
-<div id="section1"></div>
+<div id="#section1"></div>
 
 ### 1. Application Functionalities
 
@@ -120,9 +83,10 @@ Before installing, ensure that your mobile device meets the minimum system requi
 
 #### Minimum System Requirements 
 Android Tablet with support for OpenGL ES 3.2
-Operating System: Android Version 13 | Tiramisu  | API Level 33 
-Screen Size: No smaller than 10.5 inches
-Processor: Snapdragon 888 chip on the Samsung Galaxy Tab S8 
+Operating System: Android Version 13 | Tiramisu | API Level 33 
+CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)
+GPU: Adreno 618
+RAM: 4 GB
 
 <div id="section2_2"></div> 
 
@@ -290,32 +254,34 @@ The plan tab is used for preparing routes for your robots to follow and apply BL
 <div id="section6_1"></div>
 
 #### 6.1 Creating your route
-Before starting, ensure that you have our localised your robot to the map. Refer to <a href="#section5_3">Section 5.3</a> if you require a guide to localise your robot onto the map. <br>
+Before starting, ensure that you have our localised your robot to the map. Refer to [Section 5.3](#section5_3) if you require a guide to localise your robot onto the map. <br>
 At the bottom right corner of your screen, select on the 'App Route' button.
 
-<img src="img/add-route-button.jpg" style="width: 300px;" />
+![Add Route Button](img/add-route-button.jpg){style="width: 300px;"}
 
 Give your new route a name. Try to use a name that is descriptive and well labelled.
-<img src="img/add-new-route.jpg" style="width: 250px; margin-top: 10px;" />
+![Add New Route](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
 
 You will then be directed to the route edit view. Here, you will be able to add and remove waypoints, change the configurations of BLK scanning, and generate scanning points around the map.
-<img src="img/set-route-view.jpg" style="margin-top: 10px;" />
+![Set Route View](img/set-route-view.jpg){style="margin-top: 10px;"}
 
 <div id="section6_1_1"></div>
 
 #### 6.1.1 Setting route by waypoints
-<img src="img/set-route-buttons.jpg.png" style="width: 300px;" />
+![Set Route Buttons](img/set-route-buttons.png){style="width: 300px;"}
 
 To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 
 
-<img src="img/selected-add-mode.jpg" style="width: 300px;" />
+![Selected Add Mode](img/selected-add-mode.jpg){style="width: 300px;"}
 
 Plot the various points on the map that you want your robot to go. Ensure that the points are next to each other, avoiding any obstacles in the map and hence in real life.
 
-<img src="img/setting-route-by-waypoint.gif" style="width: 400px;">
+![Setting Route By Waypoint GIF](img/setting-route-by-waypoint.gif){style="width: 400px;"}
 
-If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete. 
-<img src="img/selected-remove-mode.png" style="width: 400px; margin-top: 10px;">
+If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete.
+
+![Selected Remove Mode](img/selected-remove-mode.png){style="width: 400px; margin-top: 10px;"}
+
 Once you are finished with manually plotting your route, select the Done button on the left of the mode buttons. 
 
 <div id="section6_1_2"></div>
@@ -323,17 +289,19 @@ Once you are finished with manually plotting your route, select the Done button 
 #### 6.1.2 Setting route via manual control of your robot
 Add a new route and give it a name. Once you've created a new route, exit back to the routes page by pressing the done button. 
 On the bottom right of your map screen, click on this button.
-<img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> 
+
+![Record Route Button](img/record-route-button.jpg){style="width: 55px; margin-top: 10px;"}
+
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. 
 You are advised to use a smaller recording interval (1 metre or smaller) when making turns. 
-<img src="img/record-route-view.gif" style="margin-top: 10px;">
 
+![Record Route View GIF](img/record-route-view.gif){style="margin-top: 10px;"}
 
 After moving your robot, you should see a blue-coloured path being formed by the robot. This is the path your robots will follow when you run the route you are creating.
 
 Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen and you will be directed back to the routes page with your new route saved. 
 
-Now, you will be able to make your robot run the route you have created. Refer to <a href="#section6_3">Section 6.3</a>.
+Now, you will be able to make your robot run the route you have created. Refer to [Section 6.3](#section6_3).
 
 <div id="section6_1_3"></div>
 
@@ -346,34 +314,24 @@ Before setting BLK scan points, you can configure your LiDAR configurations depe
 ##### LiDAR Scan Quality
 LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the slowest and high being the fastest. Adjusting the LiDar Scan Quality would affect the amount of generated data points in your point cloud map. 
 
-<img src="img/lidar-scan-quality-options.jpg" style="width: 200px;" />
-<div style="display: flex; align-items: center; margin-top: -30px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 30px;">Low: Resulting point cloud map after scan will be least detailed but generation speed is much faster. Usually used in situations where the environment that you want to scan is simple and does not require much detail.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -50px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 30px">Medium: Resulting point cloud map after scan will have a satisfactory level of detail for most applications. This setting is suitable for environments that have a moderate level of complexity, where you want a reasonable level of detail without sacrificing scanning efficiency. </p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -20px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 3px;">High: Resulting point cloud map after scan will be very detailed but generation speed is much slower.</p>
-</div>
+![LiDAR Scan Quality Options](img/lidar-scan-quality-options.jpg){style="width: 200px;"}
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } Low: Resulting point cloud map after scan will be least detailed but generation speed is much faster. Usually used in situations where the environment that you want to scan is simple and does not require much detail.
+
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } Medium: Resulting point cloud map after scan will have a satisfactory level of detail for most applications. This setting is suitable for environments that have a moderate level of complexity, where you want a reasonable level of detail without sacrificing scanning efficiency.
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } High: Resulting point cloud map after scan will be very detailed but generation speed is much slower.
 
 ##### Image Capture Mode
-<img src="img/image-capture-mode-options.jpg" style="width: 200px;"/><br>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">LDR (Low Dynamic Range) : Details in shadows may be lost or details in highlights may be blown out.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. </p>
-</div>
+
+![Image Capture Mode Options](img/image-capture-mode-options.jpg){style="width: 200px;"}
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } None: Does not utilize the camera for capturing images.
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } LDR (Low Dynamic Range): Details in shadows may be lost or details in highlights may be blown out.
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } HDR (High Dynamic Range): More detail in both highlights and shadows can be captured. 
 
 
 <div id="section6_1_3_2"></div>
@@ -382,20 +340,21 @@ LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the s
 In this section, you can automatically generate BLK scanning points in your route based on the distance travelled by the robot.
 
 To enable this feature, turn this option on and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan every two metres travelled on your route.
-<img src="img/auto-generate-scan-points.gif" style="margin-top: 10px;" />
-The blinking points on your map is where your robot will apply a BLK scan. 
+
+![Auto Generate Scan Points GIF](img/auto-generate-scan-points.gif){style="margin-top: 10px;"style="margin-top: 10px;"}
+The generated blinking points on the map is where your robot will apply a BLK scan. 
 
 <div id="section6_1_3_3"></div>
 
 #### 6.1.3.3 Manually setting scan points
 Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to do a BLK scan. 
-<img src="img/manual-select-scan-points.gif" style="margin-top: 10px;" />
+![Manual Select Scan Points GIF](img/manual-select-scan-points.gif){style="margin-top: 10px;"}
 
 <div id="section6_2"></div>
 
 #### 6.2 Editing or deleting your routes
 Navigate to the right-hand side, where you'll find a list of the routes you've created. To edit or delete any of these routes, press and hold on the desired route. This action will reveal options such as rename, copy, and delete at the bottom of the screen.
-<img src="img/edit-route.gif" style="margin-top: 10px;" />
+![Edit Route GIF](img/edit-route.gif){style="margin-top: 10px;"}
 
 <div id="section6_3"></div>
 
@@ -403,9 +362,9 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 | Instructions |
 | ------- | 
 | <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><fonst size="3"><font size='2'>You can find your routes in the routes section of the plan tab.|
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2"><img src="img/run-route-view.png" style="margin-top: 10px;"> |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2">![Run Route View](img/run-route-view.png){style="margin-top: 10px; width: 1000px;"}|
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the ready tab.</p></div><fonst size="3"><font size='2'>|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;" />|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'>![Control Mode Auto Toggle](img/control-mode-auto-toggle.png){style="width: 300px; margin-top: 10px;"}|
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
 <div id="section7"></div>
@@ -413,29 +372,20 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 #### 7. Offline Mode
 If your scanning location does not have internet access, you can connect to your robot's hotspot through your device's Wi-Fi settings and use offline mode to login to your robot to carry out the same tasks as you would in online mode. To use this, you may follow the instructions below. 
 
-
-
-Before using offline mode, ensure that your map has already been downloaded in online mode. This is because there is no internet connection and the app is unable to fetch the maps on your server.  Refer to <a href="#section3_2">Section 3.2</a> for a guide on loading your map into the application. 
+Before using offline mode, ensure that your map has already been downloaded in online mode. This is because there is no internet connection and the app is unable to fetch the maps on your server.  Refer to [Section 3.2](#section3_2) for a guide on loading your map into the application. 
  
-
-
 | Instructions |
 | ------- | 
-| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the ready tab and select set local password on the right of the screen.<br> <img src="img/set-local-password.jpg" style="width: 300px; margin-top: 10px;"/><br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br><img src="img/local-password-prompt.jpg" style="width: 300px;"> |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> <img src="img/connected-to-robot-wifi.jpg" style="width: 600px; margin-top: 10px;"><br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support <a href="#">here</a>. |
-| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'><img src="img/offline-mode-button.png" style="width: 600px; margin-top: 10px;"><br>|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button to connect to your robot.<br><img src="img/select-robot.png" style="width: 300px;"/><br>Your robot should appear now in the form of its IP address. Select it and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.<img src="img/offline-mode-connect-to-robot.jpg" style="width: 600px; margin-top: 10px;"><br>|
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the ready tab and select set local password on the right of the screen.<br>![Set Local Password](img/set-local-password.jpg){style="width: 300px; margin-top: 10px;"}<br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br>![Local Password Prompt](img/local-password-prompt.jpg){style="width: 300px;"} |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> ![Connected To Robot WiFi](img/connected-to-robot-wifi.jpg){style="width: 600px; margin-top: 10px;"}<br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'>![Offline Mode Button](img/offline-mode-button.png){style="width: 600px; margin-top: 10px;"}<br>|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button to connect to your robot.<br>![Select Robot](img/select-robot.png){style="width: 300px;"}<br>Your robot should appear now in the form of its IP address. Select it and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.<br>![Offline Mode Connect To Robot](img/offline-mode-connect-to-robot.jpg){style="width: 600px; margin-top: 10px;"}|
 
 You are now using offline mode. Now, you will be able to access the application's functionalities in locations without internet access.
-
-
-
-
-
-
-
 
 ---
 
 That is all for d.ASH Nav!
 If you require any support, please feel free to contact us <a href="#">here</a> if you encounter any difficulties.
+
+This document was last updated on: 9 October 2023

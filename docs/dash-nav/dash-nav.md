@@ -261,6 +261,7 @@ At the bottom right corner of your screen, select on the 'App Route' button.
 
 Give your new route a name. Try to use a name that is descriptive and well labelled.
 ![Add New Route](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
+![Add New Route](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
 
 You will then be directed to the route edit view. Here, you will be able to add and remove waypoints, change the configurations of BLK scanning, and generate scanning points around the map.
 ![Set Route View](img/set-route-view.jpg){style="margin-top: 10px;"}
@@ -272,6 +273,7 @@ You will then be directed to the route edit view. Here, you will be able to add 
 
 To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 
 
+![Selected Add Mode](img/selected-add-mode.jpg){style="width: 300px;"}
 ![Selected Add Mode](img/selected-add-mode.jpg){style="width: 300px;"}
 
 Plot the various points on the map that you want your robot to go. Ensure that the points are next to each other, avoiding any obstacles in the map and hence in real life.

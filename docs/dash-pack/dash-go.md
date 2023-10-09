@@ -100,4 +100,4 @@ Compared to the Android Application, this form of d.ASH Go runs on your web brow
 
 Open <a href="#">d.ASH Xplorer</a> to the map scan that you have just created.
 
-This document was last updated on: 9 October 2023
+This document was last updated on: 10/09/2023

@@ -320,29 +320,29 @@ The plan tab is used for preparing routes for your robots to follow and apply BL
 Before starting, ensure that you have our localised your robot to the map. Refer to <a href="#section5_3">Section 5.3</a> if you require a guide to localise your robot onto the map. <br>
 At the bottom right corner of your screen, select on the 'App Route' button.
 
-<img src="img/add-route-button.jpg" style="width: 300px;" />
+![](img/add-route-button.jpg){style="width: 300px;"}
 
 Give your new route a name. Try to use a name that is descriptive and well labelled.
-<img src="img/add-new-route.jpg" style="width: 250px; margin-top: 10px;" />
+![](img/add-new-route.jpg){style="width: 250px; margin-top: 10px;"}
 
 You will then be directed to the route edit view. Here, you will be able to add and remove waypoints, change the configurations of BLK scanning, and generate scanning points around the map.
-<img src="img/set-route-view.jpg" style="margin-top: 10px;" />
+![](img/set-route-view.jpg){style="margin-top: 10px;" }
 
 <div id="section6_1_1"></div>
 
 #### 6.1.1 Setting route by waypoints
-<img src="img/set-route-buttons.jpg.png" style="width: 300px;" />
+![](img/set-route-buttons.jpg.png){style="width: 300px;" }
 
 To set your route, you can do it by manually making waypoints for the robot to follow. To do this, select the Add Mode button at the bottom of the screen. 
 
-<img src="img/selected-add-mode.jpg" style="width: 300px;" />
+![](img/selected-add-mode.jpg){style="width: 300px;"}
 
 Plot the various points on the map that you want your robot to go. Ensure that the points are next to each other, avoiding any obstacles in the map and hence in real life.
 
-<img src="img/setting-route-by-waypoint.gif" style="width: 400px;">
+![](img/setting-route-by-waypoint.gif){style="width: 400px;"}
 
 If you want to delete a waypoint, select the Remove Mode button, and click on the waypoints that you would like to delete. 
-<img src="img/selected-remove-mode.png" style="width: 400px; margin-top: 10px;">
+![](img/selected-remove-mode.png){style="width: 400px; margin-top: 10px;"}
 Once you are finished with manually plotting your route, select the Done button on the left of the mode buttons. 
 
 <div id="section6_1_2"></div>
@@ -350,9 +350,9 @@ Once you are finished with manually plotting your route, select the Done button 
 #### 6.1.2 Setting route via manual control of your robot
 Add a new route and give it a name. Once you've created a new route, exit back to the routes page by pressing the done button. 
 On the bottom right of your map screen, click on this button.
-<img src="img/record-route-button.jpg" style="width: 55px; margin-top: 10px;"> 
+![](img/record-route-button.jpg){ style="width: 55px; margin-top: 10px;"} 
 You will now have to manually control your robot around the map to create the path. Use the joysticks and 'Add Point' buttons to make your route. 
-<img src="img/record-route-view.gif">
+![](img/record-route-view.gif)
 
 
 After moving your robot, you should see a blue-coloured path being formed by the robot. This path is the route you will set for your robots to follow.
@@ -372,35 +372,19 @@ Before setting BLK scan points, you can configure your LiDAR configurations depe
 ##### LiDAR Scan Quality
 LiDar Scan Quality is the rate of how fast the LiDar spins, with low being the slowest and high being the fastest. Adjusting the LiDar Scan Quality would affect the amount of generated data points in your point cloud map. 
 
-<img src="img/lidar-scan-quality-options.jpg" style="width: 200px;" />
-<div style="display: flex; align-items: center; margin-top: -30px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 30px;">Low: Resulting point cloud map after scan will be least detailed but generation speed is much faster. Usually used in situations where the environment that you want to scan is simple and does not require much detail.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -50px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 30px">Medium: Resulting point cloud map after scan will have a satisfactory level of detail for most applications. This setting is suitable for environments that have a moderate level of complexity, where you want a reasonable level of detail without sacrificing scanning efficiency. </p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -20px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px; margin-top: 3px;">High: Resulting point cloud map after scan will be very detailed but generation speed is much slower.</p>
-</div>
+![](img/lidar-scan-quality-options.jpg){style="width: 200px;"}
+
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } Low: Resulting point cloud map after scan will be least detailed but generation speed is much faster. Usually used in situations where the environment that you want to scan is simple and does not require much detail.
+![Functionality Icon](img/pointer.png){ style="height:20px;" } Medium: Resulting point cloud map after scan will have a satisfactory level of detail for most applications. This setting is suitable for environments that have a moderate level of complexity, where you want a reasonable level of detail without sacrificing scanning efficiency.
+![Functionality Icon](img/pointer.png){ style="height:20px;" } High: Resulting point cloud map after scan will be very detailed but generation speed is much slower.
 
 ##### Image Capture Mode
-<img src="img/image-capture-mode-options.jpg" style="width: 200px;"/><br>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">None : Does not utilize the camera for capturing images.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">LDR (Low Dynamic Range) : Details in shadows may be lost or details in highlights may be blown out.</p>
-</div>
-<div style="display: flex; align-items: center; margin-top: -15px;">
-    <img src="img/pointer.png" alt="Functionality Icon" height="20">
-    <p style="padding-top: 16px; padding-left: 10px;">HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. </p>
-</div>
+![Functionality Icon](img/pointer.png){ style="height:20px;" } None : Does not utilize the camera for capturing images.
 
+![Functionality Icon](img/pointer.png){ style="height:20px;" } LDR (Low Dynamic Range) : Details in shadows may be lost or details in highlights may be blown out.
+
+![Functionality Icon](img/pointer.png){ style="height:20px;" } HDR (High Dynamic Range) : More detail in both highlights and shadows can be captured. 
 
 <div id="section6_1_3_2"></div>
 
@@ -429,9 +413,9 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 | Instructions |
 | ------- | 
 | <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><fonst size="3"><font size='2'>You can find your routes in the routes section of the plan tab.|
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2"><img src="img/run-route-view.png" style="margin-top: 10px;"> |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the Set Route button located at the bottom of the screen.</p></div><font size="3"><font size="2">![](img/run-route-view.png){style="margin-top: 10px;"} |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the ready tab.</p></div><fonst size="3"><font size='2'>|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'><img src="img/control-mode-auto-toggle.png" style="width: 300px; margin-top: 10px;" />|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Switch the control mode to Auto.</p></div><fonst size="3"><font size='2'>![](img/control-mode-auto-toggle.png){ style="width: 300px; margin-top: 10px;"}|
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
 
 #### 7. Offline Mode

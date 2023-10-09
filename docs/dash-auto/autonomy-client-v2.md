@@ -1,61 +1,3 @@
-<!--
-1. Login process
-    1.1: DL from fleet management
-    1.2: Login with credentials we generate for you
-    1.3: If there's trouble logging in. Email/call dC
-
-2. Project browser
-    2.1: Create new project
-    2.2: Opening existing project
-    2.3: Map browser/open map
-
-3. Main menu
-    3.1: Explain each tab on the top bar (left to right)
-    3.2: Explain main dash nav screen n sliders etc
-    3.3: Explain side bars (top to bottom)
-        3.3.1: Routes container (All routes saved by user, when expanded can see which robo is assigned to it. Can also add or remove robots from selected route)
-        3.3.2: Robot list (Shows all currently connected robots only)
-        3.3.3: Visualisation (Yang Kai's colour blind solver and other visual edits like scale of objects)
-
-4. Plan tab
-    4.1: Actions
-        4.1.1: Explain autodrive
-        4.1.2: How to record waypoint
-        4.1.3: Create route
-    4.2: Waypoint Editing
-        4.2.1: Edit waypoint (add, delete, reposition)
-        4.2.2: Interpolate (Auto waypoint recording)
-        4.2.3: Set scan points (Set selected/all/delete, for BLK etc)
-    4.3: Connect to :b:obots
-
-5. Ready tab
-    5.1: Estop/resume
-    5.2: List of robots (Loads popup)
-        5.2.1: Checklist/health monitor
-        5.2.2: Robot info
-        5.2.3: Control panel/robot settings
-    5.3: Robot actions
-        5.3.1: Localise
-        5.3.2: Follow cam
-        5.3.3: Auto/Manual control
-        5.3.4: Sit/Stand spot only
-    5.4: Assign route to robot
-        5.4.1: Drop down
-        5.4.2: Tag robot
-
-6. Monitor tab
-    6.1: Estop/resume
-    6.2: Live views (Cams can be frm any mix of robots)
-        6.2.1: Mapview (Smol view of robo cams)
-        6.2.2: 4 view (4 cams n no map)
-        6.2.3: Focus (Focus on one cam, no map)
-    6.3: Robo Controls
-        6.3.1: Run route given to robot
-        6.3.2: Autodrive
-        6.3.3: Auto/Manual Sit/Stand
-
--->
-
 # **1. d.ASH Nav**
 *d.ASH Nav* is *the* platform for autonomous control of robots. Being seamlessly integrated in the [d.ASH Fleet Management](https://www.dconstruct.co/products) workflow, you can enjoy easy planning and deployment of your robots for various use cases. *d.ASH Nav* allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
@@ -63,14 +5,14 @@ Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](htt
 
 ### **1.1 Minimum System Requirements**
 
-1. PC with a CPU equivalent to or greater than an Intel i5 4th Gen or AMD R5 1000 series
-2. Nvidia GTX 960
+1. PC with a CPU equivalent to or greater than an Intel(R) Core(TM) i5-10210U
+2. Nvidia GTX 1060
 3. 8GB of RAM
 4. Internet Connection
 5. Windows 10/11
 6. Gamepad/Joystick (e.g. Logitech F710 Gamepad)
 
-*We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features may run slower on other GPUs. A joystick is recommended for manual tele-operation control.*
+*We recommend using a discrete Nvidia GPU greater than or equivalent to an RTX 3060. Some features may run slower on other GPUs. A joystick is recommended for manual tele-operation control. We also recommend 16GB of RAM for smoother operation*
 
 ### **1.2 Tutorial**
 
@@ -78,7 +20,7 @@ Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](htt
 
 *d.ASH Nav*'s control scheme is as follows:
 
-- Tilt/Camera: Hold down the *Left Mouse* Button and drag
+- Tilt/Camera: Hold down the *Right Mouse* Button and drag
 - Zoom: Use the mouse scroll wheel to zoom in/zoom out
 - Move Around: Use the *WASD* keys to pan/move around the world
 
@@ -94,12 +36,8 @@ The general workflow to operate and run an autonomous waypoint mission is as fol
 6. Set the robot's initial starting pose on the 3D map
 7. Start the robot with the route for your new mission
 
-## **2. Login process**
-
-### **2.1 Fleet Manager**
-First, login to Fleet Manager with your given credentials to download the latest build of *d.ASH Nav*.
-Next, login to d.ASH Nav.
-If you encounter any difficulties logging in, please [contact us](mailto:hello@dconstruct.ai).
+## **2. Download**
+Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH Nav*.
 
 ## **3. Project management**
 Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Nav* from anywhere in the world!
@@ -120,21 +58,21 @@ This is the main hub of all things *d.ASH Nav*. Everything concerning deployment
 The top bar contains several crucial pieces of information, such as which part of the deployment process you are currently in and actions that you can perform in each part of deployment. In the *Main Menu*, options to manage your projects and browse through available maps are available. The arrows indicate the proper flow of how a deployment should be run.
 
 ### **4.1.1 Project Options**
-- *New Project*: Create a brand new project
-- *Open Project*: Load an existing project
-- *Save*: Save any changes to the current project
-- *Save as*: Save any changes to the current project under a different file/project name
-- *Preferences*: Edit *d.ASH Nav* settings
+- ![Screenshot](img/icons/NewProject_32_Black.png) *New Project*: Create a brand new project
+- ![Screenshot](img/icons/OpenProj_32_Black.png) *Open Project*: Load an existing project
+- ![Screenshot](img/icons/Save_32_Black.png) *Save*: Save any changes to the current project
+- ![Screenshot](img/icons/SaveAs_32_Black.png) *Save as*: Save any changes to the current project under a different file/project name
+- ![Screenshot](img/icons/Prefs_32_Black.png) *Preferences*: Edit *d.ASH Nav* settings
 
 ### **4.1.2 Map Browser**
-- *Map Browser*: Browse through all maps saved to your account
+- ![Screenshot](img/icons/MapBrowser_32_Black.png) *Map Browser*: Browse through all maps saved to your account
 
 ## **4.2 View Port**
 This is a visual representation of the map you have loaded for your project. 
 
 - *View Toggles*: A widget in the top left corner of the *View Port* which allows you to toggle the visiblity of certain objects in the *View Port*.
-- *Orientation Gizmo*: A gizmo in the top right corner of the *View Port* shows the current orientation of the map, relative to the orientation of the floor.
 - *Height Sliders*: Adjust the cut off points for rendering of the loaded map.
+<!-- - *Orientation Gizmo*: A gizmo in the top right corner of the *View Port* shows the current orientation of the map, relative to the orientation of the floor. -->
 
 ## **4.3 Side Bar**
 The *Side Bar* contains all information to do with any planned routes, connected robots and *View Port* visualisation tweaks
@@ -149,21 +87,21 @@ This tab contains all actions to do with planning routes.
 ### **5.1 Actions**
 Three actions are available for you to use:
 
-- *Autodrive*: Using machine learning and computer vision to analyze and understand your robot's surroundings, hands-free Level 2 Autonomy allows for the navigation of complex, unstructured environments using just cameras alone.
-- *Record Waypoints*: Records and plots waypoints as you manually navigate the robot in real life.
-- *Create Route*: Creates an empty route for you to edit and add waypoints later on.
+- ![Screenshot](img/icons/Autodrive_32_Black.png) *Autodrive*: Using machine learning and computer vision to analyze and understand your robot's surroundings, hands-free Level 2 Autonomy allows for the navigation of complex, unstructured environments using just cameras alone.
+- ![Screenshot](img/icons/WPRec_32_Black.png) *Record Waypoints*: Records and plots waypoints as you manually navigate the robot in real life.
+- ![Screenshot](img/icons/AddRoute_32_Black.png) *Create Route*: Creates an empty route for you to edit and add waypoints later on.
 
 ### **5.2 Waypoint**
 This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.
 
-- *Edit Waypoint*: Enters a seperate mode containing actions to edit waypoints in a selected route
+- ![Screenshot](img/icons/WPAdd_32_Black.png) / ![Screenshot](img/icons/WPDel_32_Black.png) *Add/Delete Waypoint*: Add or remove a waypoint from a selected route
+- ![Screenshot](img/icons/WPRepos_32_Black.png) *Reposition Waypoint*: Select a waypoint to shift the waypoint from one position to another. 
 - *Interpolation by distance*: Adds additional waypoints between two existing waypoints which are too far apart. This allows for more actions (such as scans) to be excuted along a given path. The default interval is set at 1m.
-- *Set scan points*: The robot will stop to perform a scan with 3rd party scanners.
+- ![Screenshot](img/icons/ScanEnable_32_Black.png) / ![Screenshot](img/icons/ScanDisable_32_Black.png) *Enable/Disable Scan*: Marking a waypoint as a scan point will tell the robot to stop and perform a scan with 3rd party scanners.
+- ![Screenshot](img/icons/ScanAll_32_Black.png) *Scan All*: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3rd party scanners.
+- ![Screenshot](img/icons/Finish_32_Black.png) *Finish*: Closes the menu.
 
-### **5.3 Schedule**
-This menu allows you to set a start date and time for your robots to automatically execute pre-planned missions.
-
-### **5.4 Robots**
+### **5.3 Robots**
 Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.
 
 ## **6. Ready Tab**
@@ -179,9 +117,9 @@ Shows a list of all connected robots with several different pieces of informatio
 - *Robot Settings*: Adjust the tag settings of a selected robot through colour tags.
 
 ### **6.3 Robot Actions**
-- *Localise*: Give the robot an estimate of where it currently is on the map in order for the robot to fine tune its position.
-- *Follow Cam*: Sets the camera of the *View Port* to follow and track the robot as it moves throughout the map.
-- *Auto/Manual Control*: Manually change the operating mode of the selected robot.
+- ![Screenshot](img/icons/Localise_32_Black.png) *Localise*: Give the robot an estimate of where it currently is on the map in order for the robot to fine tune its position.
+- ![Screenshot](img/icons/Follow_32_Black.png) *Follow Cam*: Sets the camera of the *View Port* to follow and track the robot as it moves throughout the map.
+- ![Screenshot](img/icons/Auto_32_Black.png) / ![Screenshot](img/icons/Manual_32_Black.png) *Auto/Manual Control*: Manually change the operating mode of the selected robot.
 - *Sit/Stand Robot*: **SPOT ONLY**. Sit or stand Boston Dynamics Spot Robot.
 
 ### **6.4 Assign Route to Robot**
@@ -193,18 +131,22 @@ This tab contains all actions and information about the mission in progress.
 
 ### **7.1 E-Stop/Resume**
 Controls for stopping and resuming a mission/robot movement can be found here.
+- ![Screenshot](img/icons/Localise_32_Black.png) *Stop All*: Stops all robots in case of an emergency.
+- ![Screenshot](img/icons/Resume_32_Black.png) *Resume All*: Resumes all robots that are stopped.
 
 ### **7.2 Live views**
 Views from the cameras on the robots can be found here. To add a view, simply drag and drop a robot from the right side bar into an empty view slot and select which camera to view. There are three templates to follow.
 
-- *Map View*: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.
-- *Four View*: This view will completely hide the Point Cloud Map and instead show four slots for different robot camera views.
-- *Focus*: This view will completely hide the Point Cloud Map and instead show only one robot camera view.
+- ![Screenshot](img/icons/MapView_32_Black.png) *Map View*: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.
+- ![Screenshot](img/icons/4View_32_Black.png) *Four View*: This view will completely hide the Point Cloud Map and instead show four slots for different robot camera views.
+- ![Screenshot](img/icons/FullView_32_Black.png) *Focus*: This view will completely hide the Point Cloud Map and instead show only one robot camera view.
+- ![Screenshot](img/icons/Localise_32_Black.png) *Hide*: Disables all cameras/shows only the Point Cloud Map
 
 ### **7.3 Robot Controls**
-- *Run Route*: Issues the command to the selected robot to run its assigned route
-- *Autodrive*: [See above](#51-actions)
-- *Auto/Manual | Sit/Stand*: [See above](#63-robot-actions)
+- ![Screenshot](img/icons/RunRoute_32_Black.png) *Run Route*: Issues the command to the selected robot to run its assigned route
+- ![Screenshot](img/icons/Autodrive_32_Black.png) *Autodrive*: [See above](#51-actions)
+- ![Screenshot](img/icons/Auto_32_Black.png) / ![Screenshot](img/icons/Manual_32_Black.png) *Auto/Manual 
+- *Sit/Stand*: [See above](#63-robot-actions)
 
 ## **8. Telegram Configuration**
 d.ASH Nav supports status notifications of the robots in your fleet via Telegram! Add [dconstruct-bot](https://t.me/dconstruct_bot)!

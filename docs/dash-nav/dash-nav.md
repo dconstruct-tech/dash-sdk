@@ -53,7 +53,7 @@ Welcome to the d.ASH Nav Mobile application user guide! Whether you're using a m
 
 d.ASH Nav is the platform for autonomous control of your robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
-An internet connection from your robot is required. Should you require d.ASH Nav without an internet connection, please contact us [here](mailto:hello@dconstruct.co) for more details.
+An internet connection from your robot is required. Should you require d.ASH Nav without an internet connection, please contact us [here](mailto:hello@dconstruct.group) for more details.
 
 ![Functionality Icon](img/pointer.png){ style="height:20px;" } Pilot
 
@@ -100,7 +100,7 @@ Before installing, ensure that your mobile device meets the minimum system requi
 
 ### 2.2 Your Account
 Login to d.ASH Nav with your given credentials.
-If you encounter any difficulties with logging in, please contact us [here](mailto:hello@dconstruct.co).
+If you encounter any difficulties with logging in, please contact us [here](mailto:hello@dconstruct.group).
 ![Login View](img/login.jpg){ style="width: 400px; margin-top: 10px;" }
 
 
@@ -389,6 +389,6 @@ You are now using offline mode. Now, you will be able to access the application'
 ---
 
 That is all for d.ASH Nav!
-If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.co) if you encounter any difficulties.
+If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.group) if you encounter any difficulties.
 
 This document was last updated on: 10/09/2023

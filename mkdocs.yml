@@ -26,8 +26,8 @@ theme:
   font:
     text: Barlow
     code: Roboto Mono
-  logo: 'img/logo-white.png'
-  favicon: 'img/logo.png'
+  logo: 'img/dC-trademark-white.svg'
+  favicon: 'img/dC-trademark-black.svg'
 
   features:
     - navigation.instant
@@ -83,6 +83,7 @@ markdown_extensions:
 extra_css:
     - 'stylesheets/extra.css'
 
+
 # Page tree
 nav:
   - Home: 
@@ -103,8 +104,9 @@ nav:
     - 1.0 d.ASH Pilot Client: dc-pilot/pilot-guide.md
     - 2.0 d.ASH Pilot SDK: dc-pilot/pilot-sdk.md
   - Autonomy Guide: 
-    - 1.0 d.ASH Nav: dash-auto/autonomy-client-v2.md 
-    - 1.1 d.ASH Nav Scripting API Reference: dash-auto/autonomy-client-v2-api-reference.md 
+    - 1.0 d.ASH Nav Desktop: dash-auto/autonomy-client-v2.md 
+    - 1.1 d.ASH Nav Mobile: dash-nav/dash-nav.md
+    - 2.0 d.ASH Nav Scripting API Reference: dash-auto/autonomy-client-v2-api-reference.md 
   - d.ASH Pack Guide: 
     - 1.0 d.ASH Pack: dash-pack/dash-pack.md 
     - 1.1 d.ASH Go: dash-pack/dash-go.md 

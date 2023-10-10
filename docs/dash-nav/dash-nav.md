@@ -353,7 +353,7 @@ You are now using offline mode. Now, you will be able to access the application'
 
 ---
 
-That is all for d.ASH Nav!
+That is all for d.ASH Nav Mobile!
 If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.group) if you encounter any difficulties.
 
 Last updated: 10/10/2023

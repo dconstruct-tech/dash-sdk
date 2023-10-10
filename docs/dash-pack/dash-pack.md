@@ -1,4 +1,4 @@
-# **d.ASH Pack**
+# d.ASH Pack
 
 | ![Screenshot](img/d.ASHPack/device.jpg){ align=center style="width:600px"} |
 
@@ -37,8 +37,9 @@ The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the ac
 
 Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (http://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.
 
-**Mobile interface:**
-![Screenshot](img/d.ASHGo/dashgo-web.png){ align=center style="width:400px"} 
+**Mobile interface:**<br>
+
+![Screenshot](img/d.ASHGo/dashgo-web.png){ align=center style="width:400px;"} 
 
 **Status LEDs**
 The status LEDs are able to show different colours with each colour representing a different status. These LEDs are located on the side of the d.ASH Pack itself.
@@ -112,3 +113,5 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 11. If on a vehicle, please dismount and walk through bumpy areas
 12. Attempting to loop close long corridors (>20m) is discouraged
 13. Avoid large empty areas (e.g. fields) when recording as there are a lack of features
+
+Last updated: 10/10/2023

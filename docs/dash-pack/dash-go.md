@@ -51,12 +51,9 @@ Before starting, an internet connection from your d.ASH Pack is required. If you
 Joins spatial data on the fly, allowing users to generate long expressions in order to visualize the data of their surrounding environment. This can be used for transferring environmental data to autonomous robots for them to traverse through the environment.
 
 ### d.ASH Go Android Application
+Before installing the application, ensure that your mobile device meets the minimum system requirements. 
 
-#### Installation Guide
-Before installing, ensure that your mobile device meets the minimum system requirements. 
-
-Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpack) to install the d.ASH Go application on your Android device. Alternatively, you can enter the Google Play Store and search for our app. 
-
+#### System Requirements
 
 | Minimum System Requirements                                       | Recommended System Requirements                                   |
 |-------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -65,6 +62,10 @@ Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpac
 | CPU: Qualcomm Snapdragon 720G                                     | CPU: Snapdragon 888 Chip                                          |
 | GPU: Adreno 618                                                   | GPU: Adreno 730                                                   |
 | RAM: 4 GB                                                         | RAM: 8 GB                                                         |
+
+#### Installation Guide
+
+Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpack) to install the d.ASH Go application on your Android device. Alternatively, you can enter the Google Play Store and search for our app. 
 
 ![Google Play App Search](img\google-play.png){style="width: 600px;"}
 

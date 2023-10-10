@@ -13,7 +13,7 @@ You can view a short video overview of how **d.ASH Pack** integrates into your A
 - A Windows PC with d.ASH Xplorer
 - d.ASH Pack device
 
-\*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
+*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
 
 ### 1.1 Quick Start
 

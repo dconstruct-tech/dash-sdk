@@ -66,8 +66,7 @@ CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)
 GPU: Adreno 618
 RAM: 4 GB
 
-![](img/d.ASHGo/google-play.png){width="600"}
-
+![Google Play App Search](img\google-play.png){style="width: 600px;"}
 
 #### Quick Start Guide
 The following section provides a step-by-step guide to help you start recording with your d.ASH Pack. Additional features offered by d.ASH Go are listed in the subsequent sections.

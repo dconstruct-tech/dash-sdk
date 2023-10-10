@@ -31,18 +31,22 @@
     .table_contents:hover {
         text-decoration: underline;
     }
+
+    .instructions-div p {
+        font-size: 18px;
+    }
 </style>
 
 # d.ASH Nav Mobile
 
 ### Introduction
 
-![d.ASH Nav](img/dash-nav-first-image.png){ align=center style="width:900px"} 
+![d.ASH Nav](img/dash-nav-first-image.png){align=center style="width:900px"} 
 
-Welcome to the d.ASH Nav application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. Now, let's delve into the functionalities that d.ASH Nav offers for seamless robot operations and the respective steps for each of them!
+Welcome to the d.ASH Nav Mobile application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. Now, let's delve into the functionalities that d.ASH Nav Mobile offers for seamless robot operations and the respective steps for each of them!
 
 ---
-
+ 
 <div id="#section1"></div>
 
 ### 1. Application Functionalities
@@ -85,15 +89,18 @@ Before installing, ensure that your mobile device meets the minimum system requi
 |--------------------------------------------------------|------------------------------------------------------------|
 | Android Tablet with support for OpenGL ES 3.2           | Android Tablet with support for OpenGL ES 3.2             |
 | Operating System: Android Version 13 \| Tiramisu \| API Level 33  | Operating System: Android Version 13 \| Tiramisu \| API Level 33  |
-| CPU: Qualcomm SM7125 Snapdragon 720G (8 nm)             | CPU: Snapdragon 888 Chip on Samsung Galaxy Tab S8        |
+| CPU: Qualcomm Snapdragon 720G   | CPU: Snapdragon 888 Chip  |
 | GPU: Adreno 618                                        | GPU: Adreno 730                                         |
 | RAM: 4 GB                                             | RAM: 8 GB                                              |
 
+
+<!-- Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashnav) to install the d.ASH Nav application on your Android device. Alternatively, you can enter the Google Play Store and search for our app.  -->
+    
 <div id="section2_2"></div> 
 
 ### 2.2 Your Account
 Login to d.ASH Nav with your given credentials.
-If you encounter any difficulties with logging in, please contact us.
+If you encounter any difficulties with logging in, please contact us [here](mailto:hello@dconstruct.co).
 ![Login View](img/login.jpg){ style="width: 400px; margin-top: 10px;" }
 
 
@@ -104,13 +111,13 @@ The following section provides a step-by-step guide to help you record and set y
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Connect to your robot and load your map into the application. </p></div><font size="3"><font size="2"> Refer to <a href="#section3_1">Section 3.1</a> and <a href="#section3_2">Section 3.2</a> for a guide for your robot and map respectively.|
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise your robot onto the map. </p></div><font size="3"><font size="2"> Refer to <a href="#section5_3">Section 5.3</a> for a guide to giving your robot a good initial pose estimate. |
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Connect to your robot and load your map into the application. </p></div><font size="3"><font size="2"> Refer to [Section 3.1](#section3_1) and [Section 3.2](#section3_2) for a guide for your robot and map respectively.|
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise your robot onto the map. </p></div><font size="3"><font size="2"> Refer to [Section 5.3](#section5.3) for a guide to giving your robot a good initial pose estimate. |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Inside the 'Plan' tab, select 'Add Route' and give your new route a name.</p></div><font size="3">![Add Route Button](img/add-route-button-full.png){ style="width: 1000px; margin-top: 10px;" }<br><font size="2"> Choose a name that is both memorable and descriptive. |
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the route you just created and press the 'Record Route' button at the bottom right to record your route by manually moving your robot.</p></div><font size="3">![Record Route Button](img/record-route-button.png){ style="width: 1000px; margin-top: 10px;"}<br><font size="2"> Alternatively, you can refer to <a href="#section6_1_2">Section 6.1.2</a> to learn how to record your route by manually plotting waypoints onto the map. |
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the route you just created and press the 'Record Route' button at the bottom right to record your route by manually moving your robot.</p></div><font size="3">![Record Route Button](img/record-route-button.png){ style="width: 1000px; margin-top: 10px;"}<br><font size="2"> Alternatively, you can refer to [Section 6.1.2](#section6_1_2) to learn how to record your route by manually plotting waypoints onto the map. |
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Use the joysticks to drive your robot along your preferred route. </p></div><font size="3"><font size="2"> Be sure to change the recording intervals and make use of the 'Add Point' buttons while recording your route. For example, when turning the robot, you can lower down the recording interval to about 1 metre for a better route recording, or use the 'Add Point' button to plot waypoints close to each other in this turn.<br>![Record Route View GIF](img/record-route-view.gif){style="margin-top: 10px;"}|
 | <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Once you are satisfied with your route, select 'Save Recorded Route'.   </p></div><font size="3"><font size="2"> Or, if you would like to restart, select discard route at the bottom.  |
-| <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="3"><font size="2"> Refer to <a href="#section6_1_3_2">Section 6.1.3.2</a> for a full guide on choosing waypoints to perform BLK scans.|
+| <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="3"><font size="2"> Refer to [Section 6.1.3.2](#section6_1_3_2) for a full guide on choosing waypoints to perform BLK scans.|
 | <div class="instructions-div"><div class="instruction-circle">8</div><p style="margin: 0; margin-left: 5px;">In the list of routes, press the route you just created and select 'Set Route' located at the bottom of the screen. </p></div><font size="3">![Set Route Full](img/set-route-full.png){style="width: 1000px; margin-top: 10px;"} |
 | <div class="instructions-div"><div class="instruction-circle">9</div><p style="margin: 0; margin-left: 5px;">Head back to the 'Ready' tab and change the control mode at the bottom to 'Auto'. </p></div><font size="3">![Control Mode Auto Toggle](img/running-route-ready-tab.png){ style="width: 1000px; margin-top: 10px;" }<br><font size="2"> Well done! Your robot is now running on your recorded route that you have made.   |
 
@@ -151,7 +158,7 @@ Your robot and map has now been loaded into d.ASH Nav.
 
 Select the 'Menu' icon on the top right hand corner to open up the options menu, where all functions and configurations are found.<br> 
 
-The following sections will go over the functions in the <a href="#section4">View</a> tab, which is responsible for changing the view of your map, as well as the <a href="#section6">Plan</a> and <a href="#section5">Ready</a> tabs which are responsible for all robot operations. 
+The following sections will go over the functions in the [View](#section4) tab, which is responsible for changing the view of your map, as well as the [Plan](#section6) and [Ready](#section5) tabs which are responsible for all robot operations. 
 
 ![Optional Panels](img/option-panels.png){ style="width: 300px;" } 
 
@@ -219,7 +226,7 @@ You can also enlarge the camera view by pressing the enlarge button on the top l
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to 'Manual' mode.</p></div><fonst size="3"><font size='2'>Ensure that you are on the 'Ready' tab. |
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to 'Manual' mode.</p></div><font size="3"><font size='2'>Ensure that you are on the 'Ready' tab. |
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Use the joysticks at the bottom to move your robot. </p></div><font size="3"><font size="2">The joystick on the left is used to move the robot front and backwards, while the joystick on the right is used to turn the robot left and right. |
 
 <div id="section5_3"></div>
@@ -230,7 +237,7 @@ Before delving into the features in the planning tab, it is essential to establi
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Inside the options panel of the 'Ready' tab, press the 'Localise' button.</p></div><fonst size="3">![Localize Button](img/localize-button.png){style="margin-top: 10px; width: 1000px;"}<br><font size='2'>Here, you can also find your robot status and see information like the battery level, localisation and stance. |
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Inside the options panel of the 'Ready' tab, press the 'Localise' button.</p></div><font size="3">![Localize Button](img/localize-button.png){style="margin-top: 10px; width: 1000px;"}<br><font size='2'>Here, you can also find your robot status and see information like the battery level, localisation and stance. |
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="3"><font size="2"> Use the following buttons to help you achieve a good localisation.<br>![Localize Button Options](img/localize-buttons-options.png){style="width: 400px;margin-top: 10px;"}<br>Set Initial Pose: Press on the point of the map where the robot is located and drag it to the direction it is facing.<br> Rotate Pose: Used to adjust the rotation of the robot's LiDAR scan.<br>Move Pose: Used to move the robot's LiDAR scan around the map.<br> Reset Pose: Resets your current localisation. <br> Done Button: Saves your current localisation.<br><br> To localize your robot, start by selecting the 'Set Initial Pose' button. Press on the point of the map where the robot is located and drag it to the direction it is facing. After which, you will be directed to the 'Move Pose' mode where you can use the directional arrows adjust the robot's LiDAR point cloud to fit the map as shown in the example below.<br> ![Localize Demo GIF](img/localize-demo.gif){style="margin-top: 10px;"}<br>Additionally, you can use 'Rotate Pose' to rotate the LiDAR point cloud to make fitting it to the map easier.<br>![Localize Rotation](img/localize_rotation.gif){style="margin-top: 10px;"}<br> Refer to the examples below for instances of successful robot localisation. You may also refer to the 'Robot Status' section where the localisation result is shown. ![Localisation Examples](img/localisation.png){style="margin-top: 10px;"}The localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map, meaning it has a good initial pose estimate. The localisation on the other two examples are bad as the LiDAR scan does not line up with the map, and the robot is in the wrong position.  |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Bring down the plane of the map.</p></div><font size="3"><font size="2"> Using the slider on the left, adjust the map plane such that the floor of the map is now visible. |
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Once you are done with setting your robot's initial pose estimate, select the 'Done' button.</p></div><font size="3"><font size="2"> On the other hand, if you would like to restart the localisation process, press on the 'Reset Pose' button. |
@@ -358,10 +365,10 @@ Navigate to the right-hand side, where you'll find a list of the routes you've c
 #### 6.3 Running your routes
 | Instructions |
 | ------- | 
-| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><fonst size="3"><font size='2'>You can find your routes in the routes section of the 'Plan' tab.|
+| <div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><font size="3"><font size='2'>You can find your routes in the routes section of the 'Plan' tab.|
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the 'Set Route' button located at the bottom of the screen.</p></div><font size="3"><font size="2">![Run Route View](img/run-route-view.png){style="margin-top: 10px; width: 1000px;"}|
-| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the 'Ready' tab and change the control mode to 'Auto'.</p></div><fonst size="3">![Ready Tab Auto Toggle](img/running-route-ready-tab.png){style="width: 1000px; margin-top: 10px;"}|
-| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><fonst size="3"><font size='2'>|
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the 'Ready' tab and change the control mode to 'Auto'.</p></div><font size="3">![Ready Tab Auto Toggle](img/running-route-ready-tab.png){style="width: 1000px; margin-top: 10px;"}|
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div><font size="3"><font size='2'>|
 
 <div id="section7"></div>
 
@@ -372,10 +379,10 @@ Before using offline mode, ensure that your map has already been downloaded in o
  
 | Instructions |
 | ------- | 
-| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><fonst size="3"><font size='2'>Logged into the application (online mode), head into the 'Ready' tab and select 'Set Local Password' on the right of the screen.<br>![Set Local Password](img/set-local-password.jpg){style="width: 300px; margin-top: 10px;"}<br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br>![Local Password Prompt](img/local-password-prompt.jpg){style="width: 300px; margin-top: 10px;"} |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><fonst size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> ![Connected To Robot WiFi](img/connected-to-robot-wifi.jpg){style="width: 600px; margin-top: 10px;"}<br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support. |
-| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><fonst size="3"><font size='2'>![Offline Mode Button](img/offline-mode-button.png){style="width: 600px; margin-top: 10px;"}<br>|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><fonst size="3"><font size='2'>On the left hand side of the main page, select on this button boxed in red to connect to your robot.<br>![Select Robot](img/select-robot.png){style="width: 300px; margin-top: 10px;"}<br>Your robot should appear now in the form of its IP address.<br>![Offline Mode Connect To Robot](img/offline-mode-connect-to-robot.jpg){style="width: 600px; margin-top: 10px;"}<br>Select your robot and enter the local password that you have previously set in [Step 1](#step1) to finally login.|
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><font size="3"><font size='2'>Logged into the application (online mode), head into the 'Ready' tab and select 'Set Local Password' on the right of the screen.<br>![Set Local Password](img/set-local-password.jpg){style="width: 300px; margin-top: 10px;"}<br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br>![Local Password Prompt](img/local-password-prompt.jpg){style="width: 300px; margin-top: 10px;"} |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><font size="3"><font size='2'>Navigate into your device's settings, connections -> Wi-Fi, and connect to your robot's hotspot network. <br> ![Connected To Robot WiFi](img/connected-to-robot-wifi.jpg){style="width: 600px; margin-top: 10px;"}<br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support. |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><font size="3"><font size='2'>![Offline Mode Button](img/offline-mode-button.png){style="width: 600px; margin-top: 10px;"}<br>|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><font size="3"><font size='2'>On the left hand side of the main page, select on this button boxed in red to connect to your robot.<br>![Select Robot](img/select-robot.png){style="width: 300px; margin-top: 10px;"}<br>Your robot should appear now in the form of its IP address.<br>![Offline Mode Connect To Robot](img/offline-mode-connect-to-robot.jpg){style="width: 600px; margin-top: 10px;"}<br>Select your robot and enter the local password that you have previously set in [Step 1](#step1) to finally login.|
 
 You are now using offline mode. Now, you will be able to access the application's functionalities in locations without internet access.
 
@@ -384,4 +391,4 @@ You are now using offline mode. Now, you will be able to access the application'
 That is all for d.ASH Nav!
 If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.co) if you encounter any difficulties.
 
-This document was last updated on: 9 October 2023
+This document was last updated on: 10/09/2023

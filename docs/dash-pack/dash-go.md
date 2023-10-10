@@ -66,8 +66,7 @@ Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpac
 | GPU: Adreno 618                                        | GPU: Adreno 730                                         |
 | RAM: 4 GB                                             | RAM: 8 GB                                              |
 
-![Google Play Store](img/d.ASHGo/google-play.png){width="600px"}
-
+![Google Play App Search](img\google-play.png){style="width: 600px;"}
 
 #### Quick Start Guide
 The following section provides a step-by-step guide to help you start recording with your d.ASH Pack. Additional features offered by d.ASH Go are listed in the subsequent sections.

@@ -1,7 +1,7 @@
 # **1. d.ASH Nav**
 *d.ASH Nav* is *the* platform for autonomous control of robots. Being seamlessly integrated in the [d.ASH Fleet Management](https://www.dconstruct.co/products) workflow, you can enjoy easy planning and deployment of your robots for various use cases. *d.ASH Nav* allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
 
-Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](https://www.dconstruct.co/products), an internet connection is required. Should you require *d.ASH Nav* without an internet connection, please [contact us](mailto:hello@dconstruct.ai) for more details.
+Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](https://www.dconstruct.co/products), an internet connection is required. Should you require *d.ASH Nav* without an internet connection, please [contact us](mailto:hello@dconstruct.group) for more details.
 
 ### **1.1 Minimum System Requirements**
 

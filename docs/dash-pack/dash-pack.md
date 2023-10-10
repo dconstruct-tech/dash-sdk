@@ -13,7 +13,7 @@ You can view a short video overview of how **d.ASH Pack** integrates into your A
 - A Windows PC with d.ASH Xplorer
 - d.ASH Pack device
 
-\*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
+*Users can plug in a 4G USB dongle into the side USB port of d.ASH Pack to remotely control it
 
 ### 1.1 Quick Start
 
@@ -37,8 +37,8 @@ The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the ac
 
 Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (http://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.
 
-Mobile interface:
-| ![Screenshot](img/d.ASHPack/d.ASHPack-userinterface.jpg){ align=center style="width:600px"} |
+**Mobile interface:**
+![Screenshot](img/d.ASHGo/dashgo-web.png){ align=center style="width:400px"} 
 
 **Status LEDs**
 The status LEDs are able to show different colours with each colour representing a different status. These LEDs are located on the side of the d.ASH Pack itself.
@@ -91,7 +91,7 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 </ul>
 
 9. Once completed, click "Point Cloud Editor" to edit the generated 3D point cloud. The name of the new point cloud is the same as the recording file's name.
-10. Follow the [d.ASH Xplorer guide](https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#22-point-cloud-editor) to edit the point cloud accordingly.
+10. Follow the [d.ASH Xplorer guide](https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-xplorer/#251-point-cloud-editor) to edit the point cloud accordingly.
 11. Once you are satisfied with the 3D point cloud, click "Upload" to upload the point cloud to your [d.ASH Fleet Management account](https://www.dconstruct.co/products) in the cloud.
 
 ### Tips for Data Collection

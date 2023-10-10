@@ -391,4 +391,4 @@ You are now using offline mode. Now, you will be able to access the application'
 That is all for d.ASH Nav!
 If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.group) if you encounter any difficulties.
 
-This document was last updated on: 10/09/2023
+Last updated: 10/10/2023

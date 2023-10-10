@@ -1,4 +1,4 @@
-# **d.ASH Pack**
+# d.ASH Pack
 
 | ![Screenshot](img/d.ASHPack/device.jpg){ align=center style="width:600px"} |
 
@@ -112,3 +112,5 @@ For a more in-depth guide, please head to the [d.ASH Xplorer documentation page]
 11. If on a vehicle, please dismount and walk through bumpy areas
 12. Attempting to loop close long corridors (>20m) is discouraged
 13. Avoid large empty areas (e.g. fields) when recording as there are a lack of features
+
+Last updated: 10/10/2023

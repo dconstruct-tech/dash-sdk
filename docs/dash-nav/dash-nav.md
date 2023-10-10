@@ -229,7 +229,7 @@ Before starting, ensure that you have our localised your robot to the map. Refer
 
 At the bottom right corner of your screen, select on the 'Add Route' button.
 
-![Add Route Button](img/add-route-button.jpg){style="width: 300px; margin-top: 10px'"}
+![Add Route Button](img/add-route-button.jpg){style="width: 300px; margin-top: 10px;"}
 
 Give your new route a name. It is advised to use a name that is descriptive and well labelled.
 
@@ -289,7 +289,7 @@ Before setting BLK scan points, you can configure your LiDAR configurations depe
 #### 6.1.3.1 BLK Configurations
 ##### LiDAR Scan Quality
 
-LiDAR Scan Quality affects the rotation speed of the LiDAR, with "Low" indicating a slower rate and "High" representing a faster rate. Adjusting this setting directly impacts the density of data points generated in your point cloud map.
+LiDAR Scan Quality affects the density of the data points generated in your point cloud map. 
 
 ![LiDAR Scan Quality Options](img/lidar-scan-quality-options.jpg){style="width: 200px;"}
 
@@ -353,7 +353,7 @@ You are now using offline mode. Now, you will be able to access the application'
 
 ---
 
-That is all for d.ASH Nav!
+That is all for d.ASH Nav Mobile!
 If you require any support, please feel free to contact us [here](mailto:hello@dconstruct.group) if you encounter any difficulties.
 
 Last updated: 10/10/2023

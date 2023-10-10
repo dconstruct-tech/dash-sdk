@@ -62,7 +62,7 @@ Click [here](https://play.google.com/store/apps/details?id=ai.dconstruct.dashpac
 |-------------------------------------------------------------------|-------------------------------------------------------------------|
 | Android Tablet with support for OpenGL ES 3.2                     | Android Tablet with support for OpenGL ES 3.2                     |
 | Operating System: Android Version 13 \| Tiramisu \| API Level 33  | Operating System: Android Version 13 \| Tiramisu \| API Level 33  |
-| CPU: Qualcomm Snapdragon 720G                                     | CPU: Snapdragon 888 Chip                                          |
+| CPU: Qualcomm Snapdragon 720G                                     | CPU: Qualcomm Snapdragon 888 Chip                                 |
 | GPU: Adreno 618                                                   | GPU: Adreno 730                                                   |
 | RAM: 4 GB                                                         | RAM: 8 GB                                                         |
 

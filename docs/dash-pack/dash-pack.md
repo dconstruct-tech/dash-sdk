@@ -37,7 +37,7 @@ The d.ASH Pack Wi-Fi network SSID and Password will be provided to you on the ac
 
 Use this to connect to your d.ASH Pack and access the user interface by keying this IP Address (http://192.168.10.1/) into a web browser from any device of your choice. Users can check the status of their d.ASH Pack and start/stop recordings here.
 
-**Mobile interface:**
+**Mobile interface:**  
 ![Screenshot](img/d.ASHGo/dashgo-web.png){ align=center style="width:400px"} 
 
 **Status LEDs**

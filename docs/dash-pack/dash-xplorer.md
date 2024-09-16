@@ -1,6 +1,6 @@
 # **d.ASH Xplorer**
 
-| ![Screenshot](img/xplorer-twin.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/xplorerMain.png){ align=center style="width:600px"} |
 
 *d.ASH Xplorer* is *the* 3D point cloud management application, allowing users to create, edit and export 3D point clouds for the purposes of (but not limited to) Autonomous Navigation and Digital Twin Applications. *d.ASH Xplorer* is designed to work with [d.ASH Pack](https://www.dconstruct.co/products) and equipped with state-of-the-art Simultaneous Localisation And Mapping (SLAM) technology for 3D point cloud generation. Users can view, edit and export the 3D point cloud through the use of *d.ASH Xplorer*. 2D maps can be generated from the 3D point clouds using the built-in grid map generator. The entire point cloud generation workflow is fully integrated with [d.ASH Fleet Management](https://www.dconstruct.co/products) to shorten and streamline the preparation process for autonomous navigation significantly.
 
@@ -33,7 +33,7 @@ Due to the resource intensive nature of d.ASH Xplorer, we recommend the followin
 
 ## **2.2 Tutorial**
 
-| ![Screenshot](img/xplorer-tutorial.jpg){ align=center style="width:600px"} |
+| ![Screenshot](img/xplorer-tut.png){ align=center style="width:600px"} |
 
 You can watch the video tutorial to get a quick overview of how to run *d.ASH Xplorer* above [here](https://youtu.be/s6JCzOCB8DE).
 

@@ -1,0 +1,2017 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="dConstruct Technologies Team">
+      
+      
+        <link rel="canonical" href="https://dconstruct-tech.github.io/dash-sdk/dash-auto/dash-nav-mobile/">
+      
+      
+        <link rel="prev" href="../autonomy-client-v2/">
+      
+      
+        <link rel="next" href="../autonomy-client-v2-api-reference/">
+      
+      
+      <link rel="icon" href="../../img/dC-trademark-black.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>1.1 d.ASH Nav Mobile - d.ASH SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dash-nav-mobile" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-header__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/dC-trademark-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            d.ASH SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.1 d.ASH Nav Mobile
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../setup/desktop-dep/" class="md-tabs__link">
+          
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/config-spot/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../dc-pilot/pilot-guide/" class="md-tabs__link">
+          
+  
+  dC Pilot Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../autonomy-client-v2/" class="md-tabs__link">
+          
+  
+  Autonomy Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../dash-pack/dash-pack/" class="md-tabs__link">
+          
+  
+  d.ASH Pack Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sdk-config/rest-config/" class="md-tabs__link">
+          
+  
+  SDK Configuration
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.dconstruct.co/" title="d.ASH SDK" class="md-nav__button md-logo" aria-label="d.ASH SDK" data-md-component="logo">
+      
+  <img src="../../img/dC-trademark-white.svg" alt="logo">
+
+    </a>
+    d.ASH SDK
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dconstruct-tech/dash-sdk/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dconstruct-tech/dash-sdk
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Our Products
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/desktop-dep/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 Installing Desktop Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/payload-reg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 Payload Registration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.0 Setting up d.ASH VPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/dash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.0 Setting up d.ASH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-spot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 Configuring Spot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/config-connect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 Configuring Sensors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/map-loading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.0 Map Loading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/dash-eng/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.0 d.ASH with ROS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    dC Pilot Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            dC Pilot Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dc-pilot/pilot-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 d.ASH Pilot Client
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dc-pilot/pilot-sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 d.ASH Pilot SDK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Autonomy Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Autonomy Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autonomy-client-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 d.ASH Nav Desktop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.1 d.ASH Nav Mobile
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1.1 d.ASH Nav Mobile
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-application-functionalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Application Functionalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dash-nav-for-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. d.ASH Nav for Android
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-installation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Installation Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-your-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Your Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-quick-start-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Quick Start Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-welcome-to-dash-nav-mobile" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Welcome to d.ASH Nav Mobile!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-connecting-to-your-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Connecting to your robot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-loading-in-your-map-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Loading in your map file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-view-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. View Tab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. View Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-adjusting-your-view-of-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Adjusting your view of the map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-map-view-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Map View Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Map View Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clipping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-example-of-a-bad-map-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Example of a bad map visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ready-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Ready Tab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ready Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-live-video-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Live video streaming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-manually-controlling-your-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Manually controlling your robot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-localising-your-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Localising your robot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-plan-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Plan Tab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Plan Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-creating-your-route" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Creating your route
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#611-create-routes-by-manually-controlling-of-your-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Create routes by manually controlling of your robot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-create-routes-by-plotting-waypoints-on-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Create routes by plotting waypoints on the map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613-blk-scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3 BLK Scanning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6131-blk-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3.1 BLK Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.3.1 BLK Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lidar-scan-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      LiDAR Scan Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-capture-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Capture Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6132-auto-generation-of-scan-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3.2 Auto generation of scan points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6133-manually-setting-scan-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3.3 Manually setting scan points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-editing-or-deleting-your-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Editing or deleting your routes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-running-your-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Running your routes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-offline-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Offline Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autonomy-client-v2-api-reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 d.ASH Nav Scripting API Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    d.ASH Pack Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            d.ASH Pack Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-pack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 d.ASH Pack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-go/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 d.ASH Go
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dash-pack/dash-xplorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 d.ASH Xplorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SDK Configuration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            SDK Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/rest-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.0 d.ASH Service Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/register-bot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0 Register Payload Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/robot-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.0 Robot Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-config/auto-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.0 Auto Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .instructions-div {
+        display: flex; 
+        align-items: center; 
+        margin-right: 10px;
+    }
+
+    .instruction-circle {
+        width: 18px;
+        height: 18px;
+        background-color: #ff3300;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border: 1px solid #ff3300;
+    }
+
+    .table_contents {
+        color: black;
+        text-decoration: none; 
+    }
+
+    .table_contents:hover {
+        text-decoration: underline;
+    }
+
+    .instructions-div p {
+        font-size: 18px;
+    }
+</style>
+
+<h1 id="dash-nav-mobile">d.ASH Nav Mobile</h1>
+<h3 id="introduction">Introduction</h3>
+<p>Welcome to the d.ASH Nav Mobile application user guide! Whether you're using a mobile device or computer desktop for robot operations, we've got you covered. Now, let's delve into the functionalities that d.ASH Nav Mobile offers for seamless robot operations and the respective steps for each of them!</p>
+<hr />
+<h3 id="1-application-functionalities">1. Application Functionalities</h3>
+<p>d.ASH Nav is the platform for autonomous control of your robots. Being seamlessly integrated in the d.ASH Fleet Management workflow, you can enjoy easy planning and deployment of your robots for various use cases. d.ASH Nav allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.</p>
+<p>An internet connection from your robot is required. Should you require d.ASH Nav without an internet connection, please contact us <a href="mailto:hello@dconstruct.group">here</a> for more details.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Pilot</p>
+<p>Control your robots manually with low latency and high performance at any time, from any location, and in any setting.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Live Video Streaming</p>
+<p>Use d.ASH Nav to stream live video camera feeds from your robots, facilitating operation in environments with weak network infrastructure. Stay connected with minimal latency and take control of your robot across the country with d.ASH Nav.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Waypoint Autonomy</p>
+<p>Empower your robots with d.ASH Nav's advanced route creation and optimization capabilities. Seamlessly set precise routes and execute BLK scans tailored to your unique use cases. Elevate your automation experience with our state-of-the-art Waypoint Autonomy feature.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Enhanced Safety and Risk Mitigation</p>
+<p>d.ASH Nav enables robots to make informed choices to avoid obstacles and optimize their routes, mitigating potential risks while running routes and enhancing overall safety. This not only protects the robots themselves but also minimizes the risk of accidents or collisions with humans and other objects in the environment.</p>
+<p>Now, let's explore how to make the most out of d.ASH Nav on your devices.</p>
+<hr />
+<h3 id="2-dash-nav-for-android">2. d.ASH Nav for Android</h3>
+<p>This comprehensive guide will walk you through setting up the application and give you detailed insights into every function of the d.ASH Nav Android Application. Additionally, you'll find step-by-step instructions on how to control your robots directly from your devices and create routes for waypoint automation.</p>
+<h3 id="21-installation-guide">2.1 Installation Guide</h3>
+<p>Before installing, ensure that your mobile device meets the minimum system requirements. </p>
+<table>
+<thead>
+<tr>
+<th>Minimum System Requirements</th>
+<th>Recommended System Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android Tablet with support for OpenGL ES 3.2</td>
+<td>Android Tablet with support for OpenGL ES 3.2</td>
+</tr>
+<tr>
+<td>Operating System: Android Version 13 | Tiramisu | API Level 33</td>
+<td>Operating System: Android Version 13 | Tiramisu | API Level 33</td>
+</tr>
+<tr>
+<td>CPU: Qualcomm Snapdragon 720G</td>
+<td>CPU: Qualcomm Snapdragon 888</td>
+</tr>
+<tr>
+<td>GPU: Adreno 618</td>
+<td>GPU: Adreno 730</td>
+</tr>
+<tr>
+<td>RAM: 4 GB</td>
+<td>RAM: 8 GB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-your-account">2.2 Your Account</h3>
+<p>Login to d.ASH Nav with your given credentials.
+If you encounter any difficulties with logging in, please contact us <a href="mailto:hello@dconstruct.group">here</a>.</p>
+<p><img alt="Login View" src="../img/dash-nav-mobile/login.jpg" style="width: 400px;" /></p>
+<h3 id="23-quick-start-guide">2.3 Quick Start Guide</h3>
+<p>The following section provides a step-by-step guide to help you record and set your desired route for the robot to follow, as well as perform BLK scans. Additional features offered by d.ASH Nav are listed in the subsequent sections.</p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Connect to your robot and load your map into the application. </p></div><font size="2"> Refer to <a href="#section3_1">Section 3.1</a> and <a href="#section3_2">Section 3.2</a> for a guide for your robot and map respectively.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise your robot onto the map. </p></div><font size="2"> Refer to <a href="#section5.3">Section 5.3</a> for a guide to giving your robot a good initial pose estimate.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Inside the 'Plan' tab, select 'Add Route' and give your new route a name.</p></div><img alt="Add Route Button" src="../img/dash-nav-mobile/add-route-button-full.png" style="width: 1000px; margin-top: 10px;" /><br><font size="2"> Choose a name that is both memorable and descriptive.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Select the route you just created and press the 'Record Route' button at the bottom right to record your route by manually moving your robot.</p></div><img alt="Record Route Button" src="../img/dash-nav-mobile/record-route-button.png" style="width: 1000px; margin-top: 10px;" /><br><font size="2"> Alternatively, you can refer to <a href="#section6_1_2">Section 6.1.2</a> to learn how to record your route by manually plotting waypoints onto the map.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Use the joysticks to drive your robot along your preferred route. </p></div><font size="2"> Be sure to change the recording intervals and make use of the 'Add Point' buttons while recording your route. For example, when turning the robot, you can lower down the recording interval to about 1 metre for a better route recording, or use the 'Add Point' button to plot waypoints close to each other in this turn.<br><img alt="Record Route View GIF" src="../img/dash-nav-mobile/record-route-view.gif" style="margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Once you are satisfied with your route, select 'Save Recorded Route'.</p></div><font size="2"> Or, if you would like to restart, select discard route at the bottom.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Optional: Choose the points in your route where you would like your robot to apply a BLK scan. </p></div><font size="2"> Refer to <a href="#section6_1_3_2">Section 6.1.3.2</a> for a full guide on choosing waypoints to perform BLK scans.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">8</div><p style="margin: 0; margin-left: 5px;">In the list of routes, press the route you just created and select 'Set Route' located at the bottom of the screen. </p></div><img alt="Set Route Full" src="../img/dash-nav-mobile/set-route-full.png" style="width: 1000px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">9</div><p style="margin: 0; margin-left: 5px;">Head back to the 'Ready' tab and change the control mode at the bottom to 'Auto'. </p></div><img alt="Control Mode Auto Toggle" src="../img/dash-nav-mobile/running-route-ready-tab.png" style="width: 1000px; margin-top: 10px;" /><br><font size="2"> Well done! Your robot is now running on your recorded route that you have made.</td>
+</tr>
+</tbody>
+</table>
+<p>If you do not have access to internet at the location where you want to run your robot processes, you can use <a href="#section7">Offline Mode</a>.</p>
+<hr />
+<h3 id="3-welcome-to-dash-nav-mobile">3. Welcome to d.ASH Nav Mobile!</h3>
+<p>After signing into your account, you'll be directed to the main page where you need to load your robot and map files in order to get started.</p>
+<p><img alt="d.ASH Nav Home Page" src="../img/dash-nav-mobile/dash-nav-home-page.jpg" style="width: 1000px;" /></p>
+<h3 id="31-connecting-to-your-robot">3.1 Connecting to your robot</h3>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Turn on your robot.</p></div><font size="2"> Typically, robots are activated automatically by attaching a battery and pressing the Power ON button/switch. However, for robots that require activation through software, like the Boston Dynamics Spot, please refer to the detailed instructions provided on the robot manufacturer's website for specific guidance.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Ensure that your device is connected to the internet.</p></div><font size="2"></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Return to the application. On the left hand side, click on this button boxed in red to select your robot.</p></div><font size="2"><img alt="Select Robot" src="../img/dash-nav-mobile/select-robot.png" style="margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Choose the robot that you intend to use.</p></div><font size="2"> If your robot is not found, try to hard restart your robot or contact us for support.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-loading-in-your-map-file">3.2 Loading in your map file</h3>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Ensure that you have your map file.</p></div><font size="2"> If you do not have one, please refer to our <a href="https://dconstruct-tech.github.io/dash-sdk/dash-pack/dash-pack/">d.ASH Pack</a> guide to create your map.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">On the left hand side, click on this button boxed in red to select your map.</p></div><font size="2"><img alt="Select Map Button" src="../img/dash-nav-mobile/select-map-button.png" style="margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Select the map that you intend to use.</p></div><font size="2"><img alt="Select Map Panel" src="../img/dash-nav-mobile/select-map-panel.jpg" style="margin-top: 10px;" /></td>
+</tr>
+</tbody>
+</table>
+<p>Your robot and map has now been loaded into d.ASH Nav. Select the 'Menu' icon on the top right hand corner to open up the options menu, where all functions and configurations are found.</p>
+<p><img alt="Both Robot and Map Imported" src="../img/dash-nav-mobile/both-imported-view.png" /></p>
+<p>The following sections will go over the functions in the <a href="#section4">View</a> tab, which is responsible for changing the view of your map, as well as the <a href="#section6">Plan</a> and <a href="#section5">Ready</a> tabs which are responsible for all robot operations. </p>
+<p><img alt="Optional Panels" src="../img/dash-nav-mobile/option-panels.png" style="width: 300px;" /> </p>
+<hr />
+<h3 id="4-view-tab">4. View Tab</h3>
+<p>The view tab contains options for changing the view and configuring the map that was loaded into the application.</p>
+<h4 id="41-adjusting-your-view-of-the-map">4.1 Adjusting your view of the map</h4>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Pinch to zoom in or zoom out</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Swipe with one finger to adjust view angle</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Swipe with two fingers to move around the map</p>
+<p><img alt="Adjust View GIF" src="../img/dash-nav-mobile/adjust-view.gif" /></p>
+<p>Select this button on the top left corner to reset view to default.</p>
+<p><img alt="Reset View Button" src="../img/dash-nav-mobile/reset-view.png" /></p>
+<h4 id="42-map-view-configurations">4.2 Map View Configurations</h4>
+<h5 id="clipping">Clipping</h5>
+<p>Move the points on the range slider to adjust how much floor/ceiling is shown on the map of your application.</p>
+<p><img alt="Clipping Visualisations" src="../img/dash-nav-mobile/clipping.png" style="width: 600px;" /></p>
+<h5 id="contours">Contours</h5>
+<p>Toggle on and off or adjust the contour level to adjust contour sensitivity. </p>
+<p><img alt="Contour Visualisations" src="../img/dash-nav-mobile/contour.png" style="width: 600px;" /></p>
+<h4 id="43-example-of-a-bad-map-visualization">4.3 Example of a bad map visualization</h4>
+<p>The View Tab allows you to customise your map-viewing experience within the application. It provides you with the flexibility to configure the settings according to your preferences. While keeping the default settings is perfectly acceptable, it's recommended to adjust the thumbs in a way that ensures the floor of the map is visible, the ceiling is hidden, and artefacts remain visible for optimal viewing.'</p>
+<p><img alt="Bad Visualisations Example" src="../img/dash-nav-mobile/bad-visualization.jpg" style="width: 600px;" /></p>
+<p>The ceiling covers the entire map and you are unable to see the artifacts below, hence this is a bad map visualization. To make this visualization better and clearer, let's adjust the ceiling knob lower until the ceiling is hidden.</p>
+<p><img alt="Adjust Ceiling GIF" src="../img/dash-nav-mobile/adjust-ceiling.gif" style="width: 600px;" /></p>
+<p>This way, we can better see where our robot is located on the map when we run a route or control the robot.</p>
+<hr />
+<h3 id="5-ready-tab">5. Ready Tab</h3>
+<p>Within this tab, you will find all the functions for managing the robot's live video camera streaming, taking manual control of your robot, and localisation, which is essential for the 'Plan' tab. </p>
+<h4 id="51-live-video-streaming">5.1 Live video streaming</h4>
+<p>To see your robot's camera view, select or toggle the camera options here. This can be found in the options menu on the right. 
+<img alt="Camera View GIF" src="../img/dash-nav-mobile/camera-view.gif" style="width: 600px;" /></p>
+<p>You can also enlarge the camera view by pressing the enlarge button on the top left corner and adjusting the size to your preference. </p>
+<h4 id="52-manually-controlling-your-robot">5.2 Manually controlling your robot</h4>
+<p><img alt="Manual Control Mode Switch" src="../img/dash-nav-mobile/control-mode-switch-page.png" style="width: 800px;" /></p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">To move your robot, switch the control mode at the bottom of the application to 'Manual' mode.</p></div><font size='2'>Ensure that you are on the 'Ready' tab.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;"> Use the joysticks at the bottom to move your robot. </p></div><font size="2">The joystick on the left is used to move the robot front and backwards, while the joystick on the right is used to turn the robot left and right.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="53-localising-your-robot">5.3 Localising your robot</h4>
+<p>Before delving into the features in the planning tab, it is essential to establish an initial pose estimate to localise your robot. Localisation is a crucial step for the robot to accurately determine its position within the provided point cloud map. This process is a prerequisite for enabling autonomy on the robot.</p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Inside the options panel of the 'Ready' tab, press the 'Localise' button.</p></div><img alt="Localize Button" src="../img/dash-nav-mobile/localize-button.png" style="margin-top: 10px; width: 1000px;" /><br><font size='2'>Here, you can also find your robot status and see information like the battery level, localisation and stance.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Localise the robot by matching the point cloud of the current lidar scan to the map.</p></div><font size="2"> Use the following buttons to help you achieve a good localisation.<br><img alt="Localize Button Options" src="../img/dash-nav-mobile/localize-buttons-options.png" style="width: 400px;margin-top: 10px;" /><br>Set Initial Pose: Press on the point of the map where the robot is located and drag it to the direction it is facing.<br> Rotate Pose: Used to adjust the rotation of the robot's LiDAR scan.<br>Move Pose: Used to move the robot's LiDAR scan around the map.<br> Reset Pose: Resets your current localisation. <br> Done Button: Saves your current localisation.<br><br> To localize your robot, start by selecting the 'Set Initial Pose' button. Press on the point of the map where the robot is located and drag it to the direction it is facing. After which, you will be directed to the 'Move Pose' mode where you can use the directional arrows adjust the robot's LiDAR point cloud to fit the map as shown in the example below.<br> <img alt="Localize Demo GIF" src="../img/dash-nav-mobile/localize-demo.gif" style="margin-top: 10px;" /><br>Additionally, you can use 'Rotate Pose' to rotate the LiDAR point cloud to make fitting it to the map easier.<br><img alt="Localize Rotation" src="../img/dash-nav-mobile/localize_rotation.gif" style="margin-top: 10px;" /><br> Refer to the examples below for instances of successful robot localisation. You may also refer to the 'Robot Status' section where the localisation result is shown. <img alt="Localisation Examples" src="../img/dash-nav-mobile/localisation.png" style="margin-top: 10px;" />The localisation of the robot is good when the robot's current LiDAR scan (white points) is aligned well to the map, meaning it has a good initial pose estimate. The localisation on the other two examples are bad as the LiDAR scan does not line up with the map, and the robot is in the wrong position.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Bring down the plane of the map.</p></div><font size="2"> Using the slider on the left, adjust the map plane such that the floor of the map is now visible.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Once you are done with setting your robot's initial pose estimate, select the 'Done' button.</p></div><font size="2"> On the other hand, if you would like to restart the localisation process, press on the 'Reset Pose' button.</td>
+</tr>
+</tbody>
+</table>
+<p>Upon submitting the initial pose estimate, the robot will attempt to determine its current position on the map. During this process, there may be a momentary "jump" in the robot's position. You are advised to manually move the robot around using the robot's controller to ensure that the LiDAR point cloud is still aligned with the map. </p>
+<p>Redo the localisation process if the LiDAR point cloud no longer aligns with your map. </p>
+<hr />
+<h3 id="6-plan-tab">6. Plan Tab</h3>
+<p>The plan tab is used for preparing routes for your robots to follow and perform BLK scans.</p>
+<p><img alt="Plan Tab View" src="../img/dash-nav-mobile/plan-tab.png" style="margin-top: 10px; width: 1000px;" /></p>
+<h4 id="61-creating-your-route">6.1 Creating your route</h4>
+<p>Before starting, ensure that you have our localised your robot to the map. Refer to <a href="#section5_3">Section 5.3</a> if you require a guide to localise your robot onto the map. </p>
+<p>At the bottom right corner of your screen, select on the 'Add Route' button.</p>
+<p><img alt="Add Route Button" src="../img/dash-nav-mobile/add-route-button.jpg" style="width: 300px; margin-top: 10px;" /></p>
+<p>Give your new route a name. It is advised to use a name that is descriptive and well labelled.</p>
+<p><img alt="Add New Route" src="../img/dash-nav-mobile/add-new-route.jpg" style="width: 300px; margin-top: 10px;" /></p>
+<h4 id="611-create-routes-by-manually-controlling-of-your-robot">6.1.1 Create routes by manually controlling of your robot</h4>
+<p>From the list of routes on the right side, select the route that you have just created and press the 'Record Route' button boxed in red to record your route. 
+<img alt="Record Route Button" src="../img/dash-nav-mobile/record-route-button.png" style="margin-top: 10px; width: 1000px;" /></p>
+<p>You will then be directed to the route recording view. Here, you will be able to use the joysticks and 'Add Point' buttons at the bottom to manually control your robot, creating your route. 
+You are advised to use a smaller recording interval (1 metre or smaller) when making turns. </p>
+<p><img alt="Record Route View GIF" src="../img/dash-nav-mobile/record-route-view.gif" style="margin-top: 10px;" /></p>
+<p>After moving your robot, you should see a blue-coloured path being formed by the robot. This is the path your robots will follow when you run the route you are creating.</p>
+<p>Once you are finished with setting your route, press 'Save Recorded Route' at the bottom of the screen and you will be directed back to the routes page with your new route saved. Now, you will be able to make your robot run the route you have created. Refer to <a href="#section6_3">Section 6.3</a>.</p>
+<h4 id="612-create-routes-by-plotting-waypoints-on-the-map">6.1.2 Create routes by plotting waypoints on the map</h4>
+<p>From the list of routes on the right side, select the route that you have just created and press this button boxed in red to record your route. </p>
+<p><img alt="Edit Waypoint Button" src="../img/dash-nav-mobile/edit-waypoint-route-button.png" style="width: 1000px; margin-top: 10px;" /></p>
+<p>You will then be directed to the waypoint editing page.</p>
+<p><img alt="Set Route Page View" src="../img/dash-nav-mobile/set-route-view.jpg" style="width: 1000px;" /></p>
+<p>Here, you will be able to use the buttons below to add, delete and move waypoints around the map to create the final route for your robot to follow. </p>
+<p><img alt="Set Route Buttons" src="../img/dash-nav-mobile/set-route-buttons.png" style="width: 300px; margin-top: 10px;" /></p>
+<p>Add Mode: Add waypoints by manually plotting them onto your map</p>
+<p>Remove Mode: Remove waypoints by selecting the waypoint you want to remove on the map</p>
+<p>Move Mode: Move waypoints from one point of the map to another</p>
+<p>Done Button: Finalise and save your plotted route. </p>
+<p>Scan Mode: Covered in <a href="#section6_1_3_3">Section 6.1.3.3</a>.</p>
+<p>To plot your route, select the 'Add Mode' button at the bottom of the screen. Then, plot the various points on the map where you want your robot to travel along. Ensure that the points are next to each other, avoiding any obstacles in the map and hence in real life.</p>
+<p><img alt="Setting Route By Waypoint GIF" src="../img/dash-nav-mobile/setting-route-by-waypoint.gif" style="width: 400px; margin-top: 10px;" /></p>
+<p>If you want to delete a waypoint, select the 'Remove Mode' button, and click on the waypoints that you would like to delete.</p>
+<p>If you would like to move one of your waypoints, select the 'Move Mode' button and press on the waypoint that you would like to move. Drag this waypoint to your desired location on the map. </p>
+<p>Once you are finished with plotting your route, select the 'Done' button on the left of the mode buttons. Now, you will be able to make your robot run the route you have created. Refer to <a href="#section6_3">Section 6.3</a>.</p>
+<h4 id="613-blk-scanning">6.1.3 BLK Scanning</h4>
+<p>Before setting BLK scan points, you can configure your LiDAR configurations depending on your use case. 
+<img alt="BLK Scan View" src="../img/dash-nav-mobile/blk-scan-view.png" style="width: 1000px; margin-top: 10px;" /></p>
+<h4 id="6131-blk-configurations">6.1.3.1 BLK Configurations</h4>
+<h5 id="lidar-scan-quality">LiDAR Scan Quality</h5>
+<p>LiDAR Scan Quality affects the density of the data points generated in your point cloud map. </p>
+<p><img alt="LiDAR Scan Quality Options" src="../img/dash-nav-mobile/lidar-scan-quality-options.jpg" style="width: 200px;" /></p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Low: This option would produce a sparse point cloud map, but it does so at a much quicker rate.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> Medium: This option strikes a balance between point cloud density and scanning efficiency.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> High: This option will generate a dense point cloud map, but it takes considerably more time to do so.</p>
+<h5 id="image-capture-mode">Image Capture Mode</h5>
+<p><img alt="Image Capture Mode Options" src="../img/dash-nav-mobile/image-capture-mode-options.jpg" style="width: 200px;" /></p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> None: Does not utilize the camera for capturing images.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> LDR (Low Dynamic Range): Details in shadows may be lost or details in highlights may be blown out.</p>
+<p><img alt="Functionality Icon" src="../img/dash-nav-mobile/pointer.png" style="height:20px;" /> HDR (High Dynamic Range): More detail in both highlights and shadows can be captured. </p>
+<h4 id="6132-auto-generation-of-scan-points">6.1.3.2 Auto generation of scan points</h4>
+<p>In this section, you can automatically generate BLK scanning points in your route based on the distance travelled by the robot.
+To use this, you must already have a route with waypoints. If you do not have one, refer to <a href="#section6_1_1">Section 6.1.1</a> for a guide on recording your waypoints by manually controlling your robot or refer to <a href="#section6_1_2">Section 6.1.2</a> for a guide on creating your route by manually plotting waypoints.</p>
+<p>To enable this feature, turn this option on and set a distance interval. If your set distance interval is two metres, the robot will run a BLK scan roughly every two metres travelled along your route.
+<img alt="Auto Generate Scan Points GIF" src="../img/dash-nav-mobile/auto-generate-scan-points.gif" style="margin-top: 10px;" />
+The generated blinking points on the map is where your robot will apply a BLK scan.</p>
+<p>To clear all BLK scanning points, select 'Clear all Scan Points' in the options menu. </p>
+<h4 id="6133-manually-setting-scan-points">6.1.3.3 Manually setting scan points</h4>
+<p>To use this, you must already have a route with waypoints. If you do not have one, refer to <a href="#section6_1_1">Section 6.1.1</a> for a guide on recording your waypoints by manually controlling your robot or refer to <a href="#section6_1_2">Section 6.1.2</a> for a guide on creating your route by manually plotting waypoints.
+Select the Scan Mode button at the bottom of the screen, and press the waypoints where you want your robot to perform a BLK scan. 
+<img alt="Manual Select Scan Points GIF" src="../img/dash-nav-mobile/manual-select-scan-points.gif" style="margin-top: 10px;" /></p>
+<h4 id="62-editing-or-deleting-your-routes">6.2 Editing or deleting your routes</h4>
+<p>Navigate to the right-hand side, where you'll find a list of the routes you've created. To edit or delete any of these routes, press and hold on the desired route. This action will reveal options such as rename, copy, and delete at the bottom of the screen.
+<img alt="Edit Route GIF" src="../img/dash-nav-mobile/edit-route.gif" style="margin-top: 10px;" /></p>
+<h4 id="63-running-your-routes">6.3 Running your routes</h4>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the route that you would like to run.</p></div><font size='2'>You can find your routes in the routes section of the 'Plan' tab.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Once select, press the 'Set Route' button located at the bottom of the screen.</p></div><font size="2"><img alt="Run Route View" src="../img/dash-nav-mobile/run-route-view.png" style="margin-top: 10px; width: 1000px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Switch to the 'Ready' tab and change the control mode to 'Auto'.</p></div><img alt="Ready Tab Auto Toggle" src="../img/dash-nav-mobile/running-route-ready-tab.png" style="width: 1000px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Your robot will now run and follow the route that you've created.</p></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="7-offline-mode">7. Offline Mode</h4>
+<p>If your scanning location does not have internet access, you can connect to your robot's hotspot through your device's Wi-Fi settings and use offline mode to login to your robot to carry out the same tasks as you would in online mode. To use this, you may follow the instructions below. </p>
+<p>Before using offline mode, ensure that your map has already been downloaded in online mode. This is because there is no internet connection and the app is unable to fetch the maps from your cloud. Refer to <a href="#section3_2">Section 3.2</a> for a guide on loading your map into the application. </p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Set a local password to enable local robot login</p></div><font size='2'>Logged into the application (online mode), head into the 'Ready' tab and select 'Set Local Password' on the right of the screen.<br><img alt="Set Local Password" src="../img/dash-nav-mobile/set-local-password.jpg" style="width: 300px; margin-top: 10px;" /><br>For security purposes, you are advised to use a strong password that you can remember to prevent unauthorised access to your robot.<br><img alt="Local Password Prompt" src="../img/dash-nav-mobile/local-password-prompt.jpg" style="width: 300px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Connect to your robot's Wi-Fi hotspot.</p></div><font size='2'>Navigate into your device's settings, connections -&gt; Wi-Fi, and connect to your robot's hotspot network. <br> <img alt="Connected To Robot WiFi" src="../img/dash-nav-mobile/connected-to-robot-wifi.jpg" style="width: 600px; margin-top: 10px;" /><br>Your robot's Wi-Fi network name and password will be provided to you. If you have trouble connecting to your robot's network, please contact us for support.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Head back into the application and enter offline mode that can be found in the login page.</p></div><font size='2'><img alt="Offline Mode Button" src="../img/dash-nav-mobile/offline-mode-button.png" style="width: 600px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Connect to your robot.</p></div><font size='2'>On the left hand side of the main page, select on this button boxed in red to connect to your robot.<br><img alt="Select Robot" src="../img/dash-nav-mobile/select-robot.png" style="width: 300px; margin-top: 10px;" /><br>Your robot should appear now in the form of its IP address.<br><img alt="Offline Mode Connect To Robot" src="../img/dash-nav-mobile/offline-mode-connect-to-robot.jpg" style="width: 600px; margin-top: 10px;" /><br>Select your robot and enter the local password that you have previously set in <a href="#step1">Step 1</a> to finally login.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Load in your map.</p></div><font size='2'>On the left hand side of the main page, select on this button boxed in red to load in your map.<br><img alt="Select Map Button" src="../img/dash-nav-mobile/select-map-button.png" style="width: 300px; margin-top: 10px;" /><br>You should already have your maps downloaded before using offline mode. If your map does not appear, it means that you have not downloaded it yet. Head back into online mode and refer to <a href="#section3.2">Section 3.2</a> to download your map for offline use.</td>
+</tr>
+</tbody>
+</table>
+<p>You are now using offline mode. Now, you will be able to access the application's functionalities in locations without internet access.</p>
+<hr />
+<p>That is all for d.ASH Nav Mobile!
+If you require any support, please feel free to contact us <a href="mailto:hello@dconstruct.group">here</a> if you encounter any difficulties.</p>
+<p>Last updated: 10/10/2023</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "toc.integrate", "navigation.expand"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

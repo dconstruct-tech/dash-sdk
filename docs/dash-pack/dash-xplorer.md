@@ -41,13 +41,13 @@ You can watch the video tutorial to get a quick overview of how to run *d.ASH Xp
 
 *d.ASH Xplorer*'s control scheme is as follows:
 
-- WASD: Navigate around the point cloud
-- LMB/MB1: Drag mouse to pan around the point cloud
-- RMB/MB2: Drag mouse to zoom in and out
-- MMB/MB3: Drag mouse to navigate around the point cloud
-- Space: Move upwards(positive) in the Y-axis
-- L Ctrl: Move downwards(negative) in the Y-axis
-- F: Returns view to origin
+- **WASD**: Navigate around the point cloud
+- **LMB/MB1**: Drag mouse to pan around the point cloud
+- **RMB/MB2**: Drag mouse to zoom in and out
+- **MMB/MB3**: Drag mouse to navigate around the point cloud
+- **Space**: Move upwards(positive) in the Y-axis
+- **L Ctrl**: Move downwards(negative) in the Y-axis
+- **F**: Returns view to origin
 
 Additionally, at the top of the workspace exists a toolbar with buttons that can be clicked.
 
@@ -61,6 +61,7 @@ The grey buttons are fixed buttons focusing on camera control. From left to righ
 - View Along Z-Axis
 
 The buttons in blue are mutable based on the current mode of *d.ASH Xplorer*, for the *Point Cloud Editor* mode, these functions are:
+
 - Show/Hide Grid
 - Show/Hide Point Cloud
 - Show/Hide Mesh
@@ -83,34 +84,34 @@ For every export of a point cloud (*.dcloud* file) to an external file, a price 
 The following section will detail the basic steps needed to generate a point cloud for further processing. Additional features offered by *d.ASH Xplorer* are listed in the subsequent sections.
 
 1. Login to *d.ASH Xplorer*
-	![d.ASH Xplorer Login Window](img/UpdatedUI/QuickStart/1-dash-xplorer-login.png)
+	![d.ASH Xplorer Login Window](img/UpdatedUI/QuickStart/1-dash-xplorer-login-updated.png)
 > ***NOTE:*** *d.ASH Xplorer* will automatically log the current user out after one hour of being offline.
-1. Launch *d.ASH Xplorer* and click on the *d.ASHPack Manager* tab at the top of the window.
-   ![The D.AshPack Manager Tab](img/UpdatedUI/QuickStart/2-dash-pack-manager-tab.png)
-2. Download the *.dpack* recording from a d.ASHPack and click on the *Generate Point Cloud* button.
-   ![The Generate Point Cloud button at the second level navigation bar](img/UpdatedUI/QuickStart/3-generate-point-cloud-tab-button.png)
-3. When prompted, select the desired *.dpack* file and click *Generate Point Cloud* on the bottom left. 
-   >**NOTE:** For the purposes of this quick start guide, we will use the default values for point cloud generation.
-   
-   ![Generate Point Cloud Button](img/UpdatedUI/QuickStart/4-generate-point-cloud.png)
-4. Once the map is generated, configure the *Post-processing Settings* by clicking on the *Post-Process* button in the popup that follows
-   ![Post Processing Button](img/UpdatedUI/QuickStart/5-post-process-button.png)
-5. The following window will pop up. Configure the post processing as follows and click on *Post Process*.
+2. Launch *d.ASH Xplorer* and click on the *SLAM Processor* tab at the top of the window.
+   ![The D.AshPack Manager Tab](img/UpdatedUI/QuickStart/2-dash-xplorer-SLAM-processor.png)
+3. Download the *.dpack* recording from a d.ASHPack and click on the *Generate Point Cloud* button.
+   ![The Generate Point Cloud button at the second level navigation bar](img/UpdatedUI/QuickStart/3-generate-point-cloud-button.png)
+4. When prompted, select the desired *.dpack* file and click *Generate Point Cloud* on the bottom right.   
+>**NOTE:** For the purposes of this quick start guide, we will use the default values for point cloud generation.  
 
+   ![Generate Point Cloud Button](img/UpdatedUI/QuickStart/4-generate-point-cloud-button.png)
+5. Once the map is generated, configure the *Post-processing Settings* by clicking on the *Post-Process* button in the popup that follows
+   ![Post Processing Button](img/UpdatedUI/QuickStart/5-postprocess-button.png)
+6. The following window will pop up. Configure the post processing as follows and click on *Post Process*.
 > **NOTE:** In the current post processing configuration, the "*Human removal*" feature is not active in order to save on processing time. To activate this feature in the future, simply click on the *Activate Dynamic Removal* checkbox.
 
-   ![Post Processing Window](img\UpdatedUI\QuickStart\6-post-processing-window.png)
-6. Once the post processing completes, click on *Export to Point Cloud Editor*. Enter a desired name and click *Export*.
-   ![Export To Point Cloud Editor Button](img/UpdatedUI/QuickStart/7-export-to-point-cloud-editor-button.png)
-   ![Exporting With A Custom Name](img/UpdatedUI/QuickStart/7-export-name.png)
-7. Click on the *Point Cloud Editor* tab at the top navigation bar to start editing the point cloud
+   ![Post Processing Window](img\UpdatedUI\QuickStart\6-postprocess-window.png)
+7. Once the post processing completes, click on *Export to Point Cloud Editor*. Enter a desired name and click *Export*.
+   ![Export To Point Cloud Editor Button](img/UpdatedUI/QuickStart/7-export-to-point-cloud.png)
+   ![Exporting With A Custom Name](img/UpdatedUI/QuickStart/8-export.png)
+8. Click on the *Point Cloud Editor* tab at the top navigation bar to start editing the point cloud. You can click on the *eye icon* to view the map.
+   ![Navigate Back to Point Cloud Editor](img/UpdatedUI/QuickStart/9-point-cloud-editor.png)
 
 The generated recording can now be used for autonomous navigation with the [d.ASH Fleet Management system](https://www.dconstruct.co/products).
 
 ---
 
 ## **2.5 d.ASH Xplorer**
-*d.ASH Xplorer* provides 2 separate means to load, process and export point clouds, namely the **Point Cloud Editor** and **d.ASH Pack Manager** pages.
+*d.ASH Xplorer* provides 2 separate means to load, process and export point clouds, namely the **Point Cloud Editor** and **SLAM Processor** pages.
 
 ### **2.5.1 Point Cloud Editor**
 The *Point Cloud Editor* page encompases the main features associated with point cloud manipulation, including the editing of the cloud's rotation, translation and downsampling among other 3D cloud editing features.
@@ -119,44 +120,107 @@ The *Point Cloud Editor* page encompases the main features associated with point
 
 The functions offered by the *Point Cloud Editor* (in a left-to-right, top-to-bottom format) are as follows:
 
-#### <span style = color:blue>***2.5.1.1 Load File***</span>
+***
+- File Info
+- HD View
+- Camera Playback
+- Measurement
+- Annotate Point Cloud
+- Keypoint Viewer
+- Translation & Rotation
+- Point Cloud Downsample
+- Point Cloud Cropper
+- Point Cloud Denoiser
+- Statistical Outliner Remover
+- Point CLoud Aligner
+- 2D Map Generator (Beta)
+- Scan-to-BIM Comparison Tool
+- Scan-to-BIM Generator (Beta)
+- Scan-to-Semantics Manager
+- Point Cloud Merger
+- Point Cloud to Mesh
+- Point Cloud Comparison
+***
 
-![Load File Icon](img/UpdatedUI/PointCloudEditor/icon-load-file.png)
+Under file tab at the top of the toolbar:
+***
+- Open Project
+- Open File
+- Open Reconstruction Meta
 
-Allows users to load *.dcloud*, *.pcd*, *.las*, *.e57*, *ply* or *.gltf* files into *d.ASH Xplorer*. When clicked, *d.ASH Xplorer* prompts the user to select a valid file from their system.
->***NOTE:*** No other feature of Point Cloud Explorer is available for use without a valid file loaded and selected. 
+- Save Project
+- Export As
+- Send Reconstruction Meta Data for Neural Reconstruction
 
-#### <span style = color:blue>***2.5.1.2 Export Files***</span>
+- Upload Nav Map
+- Export Nav Map
 
-![Export File Icon](img/UpdatedUI/PointCloudEditor/icon-export-file.png)  
-![Export File Menu](img/UpdatedUI/PointCloudEditor/menu-export-file.png)
+- Export to SLAM Processor
 
-Allows users to export the currently selected point clouds to the *.dcloud*, *.pcd*, *.las*, *.e57*, *ply* and *.gltf* formats. Export costs differ based on the size of each individual export but cost amount of credits remains the same for all file types.
+- Connect to Autodesk Platform Services
+- AutoDesk Platform Services
 
->***NOTE:*** To export multiple files, hold *ctrl* and click on desired files under the *Loaded File List* section in the *Toolbar* before clicking *Export Files*.
+- Settings
 
-#### <span style = color:blue> ***2.5.1.3 Upload Navigation Map*** </span>
-
-![Upload Navigation Map Icon](img/UpdatedUI/PointCloudEditor/icon-upload-navigation-map.png)  
-![Upload Navigation Map Menu](img/UpdatedUI/PointCloudEditor/menu-upload_navigation-map.png)
-
-Uploads the selected 3D map to the [d.ASH Cloud Fleet Management System](https://www.dconstruct.co/products). Uploading maps to the cloud costs credits as it exports the selected map in the upload process.
-
-#### <span style = color:blue> ***2.5.1.4 File Info*** </span>
+#### <span style = color:blue> ***2.5.1.1 File Info*** </span>
 
 ![File Info Icon](img/UpdatedUI/PointCloudEditor/icon-file-info.png)
 
 Displays the selected point cloud's information.
 > ***NOTE:*** *File Info* is the default menu that is shown when exiting most functions.
 
-#### <span style = color:blue> ***2.5.1.5 HD View*** </span>
+#### <span style = color:blue> ***2.5.1.2 HD View*** </span>
 
 ![Hd View Icon](img/UpdatedUI/PointCloudEditor/icon-hd-view.png)
 
 Displays the current point cloud at a high resolution by attempting to render all points within the cloud in full colour. May cause lag when attempting to view large point clouds.
 >***NOTE:*** A discrete Nvidia GPU with CUDA capabilities is required for this feature.
 
-#### <span style = color:blue> ***2.5.1.6 Translation and Rotation*** </span>
+#### <span style = color:blue> ***2.5.1.3 Camera Playback*** </span>
+
+![Camera Playback Icon](img/UpdatedUI/PointCloudEditor/camera-playback-icon.png)
+
+Camera Playback function allows user to add camera frames manually before automatically combining them into a seamless playback of frames.
+
+After selecting the map of choice click on the camera icon.
+Maneuver the main view of the map to your desired angle and view before clicking on the _Plus_ icon at the right side bar to add in a screenshot-like camera frame.  
+![Camera Playback Adding Frame](img/UpdatedUI/PointCloudEditor/camera-window-view.png)
+
+Add as many frames you would like in sequence for a optimal and smooth playback.
+![Camera Playback positions](img/UpdatedUI/PointCloudEditor/camera-positions.png)
+
+To view a specific camera position added, click on said selected position then  the _Camera Icon_ beside the _Plus Icon_ at the right sidebar to navigate to the selected pose.
+
+![Camera Playback focus camera on selected pose](img/UpdatedUI/PointCloudEditor/focus-camera-on-pose.png)
+
+To preview all the full playback of all selected positions, click on the _Play Icon_ at the end of the right sidebar.
+> ***NOTE:*** Speed of the playback can be controlled, the whole playback of all positions can be looped as well.
+
+![Camera Playback](img/UpdatedUI/PointCloudEditor/camera-playback.png)
+
+#### <span style = color:blue> ***2.5.1.4 Measurement*** </span>
+
+![Measurement Icon](img/UpdatedUI/PointCloudEditor/measurement-icon.png)
+
+Select choice of map and click on the _Measurement Icon_.
+
+To find the estimated length through the point cloud, _double click_ using the computer mouse on one starting point, and _double click_ at the other end. The estimated value will be shown on the right sidebar
+
+![Measurement View](img/UpdatedUI/PointCloudEditor/measurements.png)
+
+#### <span style = color:blue> ***2.5.1.5 Annotate Point Cloud*** </span>
+
+![Annotate Point Cloud Icon](img/UpdatedUI/PointCloudEditor/annotate-point-cloud-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.6 Keypoint Viewer*** </span>
+
+![Keypoint Viewer Icon](img/UpdatedUI/PointCloudEditor/keypoint-viewer-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.7 Translation and Rotation*** </span>
 
 ![Translation And Rotation Icon](img/UpdatedUI/PointCloudEditor/icon-translation-and-rotation.png)
 
@@ -172,19 +236,9 @@ Adjustment of these values is done through one of two methods:
   
   ![Translation And Rotation Gizmo](img/UpdatedUI/PointCloudEditor/menu-tandr-gizmo.png)
 
-#### <span style = color:blue> ***2.5.1.7 Point Cloud Aligner*** </span>
-
-![Point Cloud Aligner Icon](img/UpdatedUI/PointCloudEditor/icon-pca.png)
-
-Does a "best fit" alignment of any two selected point clouds.
-
-To align the point clouds, click the *Point Cloud Aligner* button and swap the point clouds (if necessary) and click the *align* icon. (Icons from left to right are: *Align Point Cloud*, *Swap Point Cloud*, *Exit*).
-
-![Point Cloud Aligner Toolbar](img/UpdatedUI/PointCloudEditor/menu-pca-toolbar.png)
-
->***NOTE:*** *Point Cloud Aligner* is not available if only a single point cloud is selected. To select more than one point cloud, hold *ctrl* and click on the desired point clouds in the *Loaded File List* widget.
-
 #### <span style = color:blue> ***2.5.1.8 Point Cloud Downsample*** </span>
+
+![Point Cloud Downsample Icon](img/UpdatedUI/PointCloudEditor/point-cloud-downsample-icon.png)
 
 Allows the user to reduce the number of points within the selected point cloud using the *Downsample Grid Size* option as a reference
 
@@ -232,7 +286,62 @@ The features of the point cloud denoiser include:
 - **Uniform Sampling**: Specifies whether inferential surfaces in the point cloud should be accentuated. This setting should be switched off should shapes in the point cloud appear distorted.
 - **With Smoothing**: Specifies whether points within the cloud should be shifted in order to make surfaces more pronounced. Disable this option if distortions are observed within the point cloud.
 
-#### <span style = color:blue> ***2.5.1.11 Point Cloud Merger*** </span>
+#### <span style = color:blue> ***2.5.1.11 Statistical Outliner Remover*** </span>
+
+![Statistical Outliner Remover Icon](img/UpdatedUI/PointCloudEditor/statistical-outliner-remcver-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.12 Point Cloud Aligner*** </span>
+
+![Point Cloud Aligner Icon](img/UpdatedUI/PointCloudEditor/icon-pca.png)
+
+Does a "best fit" alignment of any two selected point clouds.
+
+To align the point clouds, click the *Point Cloud Aligner* button and swap the point clouds (if necessary) and click the *align* icon. (Icons from left to right are: *Align Point Cloud*, *Swap Point Cloud*, *Exit*).
+
+![Point Cloud Aligner Toolbar](img/UpdatedUI/PointCloudEditor/menu-pca-toolbar.png)
+
+>***NOTE:*** *Point Cloud Aligner* is not available if only a single point cloud is selected. To select more than one point cloud, hold *ctrl* and click on the desired point clouds in the *Loaded File List* widget.
+
+#### <span style = color:blue> ***2.5.1.13 2D Map Generator (BETA)*** </span>
+
+![2d Map Generator Icon](img/UpdatedUI/PointCloudEditor/icon-2D-map-generator.png)
+
+Creates a 2-dimensional map of the point cloud through projecting the specified section of the point cloud to an image file using a top-down perspective.
+
+![2d Map Generator Toolbar Widget](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator.png)
+
+The configuration options for the generator area are as follows:
+
+- **Max Height**: The highest point that will be captured in the map generation
+- **Min Height**: The lowest point that will be captured in the map generation
+- **Resolution (m./pixel)**: The number of meters per pixel of the 2 dimensional capture of the selected point cloud
+- **Show Height Bounds**: Visualises the highest and lowest points that will be captured using translucent planes
+
+![2d Map Generator Height Bound Visualisation](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png)
+
+Additionally, the three options that are present at the bottom of the toolbar widget are: *Generate*, which executes the two-dimensional map generation, *Reset Config*, which resets the configuration settings to their default values and *Exit*, which reverts the toolbar widget view to the *File Info*.
+
+#### <span style = color:blue> ***2.5.1.14 Scan-to-BIM Comparison Tool*** </span>
+
+![Scan-to-BIM Comparison Tool Icon](img/UpdatedUI/PointCloudEditor/scan-to-bim-comparison-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.15 Scan-to-BIM Generator (BETA) *** </span>
+
+![Scan-to-BIM Comparison Tool Icon](img/UpdatedUI/PointCloudEditor/scan-to-bim-generator-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.16 Scan-to-Semantics Manager*** </span>
+
+![Scan-to-semantics Icon](img/UpdatedUI/PointCloudEditor/scan-to-semantics-icon.png)
+
+>***WORK IN PROGRESS***  
+
+#### <span style = color:blue> ***2.5.1.17 Point Cloud Merger*** </span>
 
 ![Point Cloud Merger Icon](img/UpdatedUI/PointCloudEditor/icon-point-cloud-merger.png)
 
@@ -243,7 +352,7 @@ Attempts to merge all selected point clouds.
 The only setting for the point cloud merger is for the name of the new point cloud created post merge. The two buttons are *Merge Point Cloud* which executes the merge and *Exit*.
 >***NOTE:*** *Point Cloud Merger* is not available if only a single point cloud is selected. To select more than one point cloud, hold *ctrl* and click on the desired point clouds in the *Loaded File List* widget.
 
-#### <span style = color:blue> ***2.5.1.12 Point Cloud to Mesh*** </span>
+#### <span style = color:blue> ***2.5.1.18 Point Cloud Mesh*** </span>
 
 ![Point Cloud To Mesh Icon](img/UpdatedUI/PointCloudEditor/icon-pctm.png)
 
@@ -266,26 +375,7 @@ The settings found in the toolbar for this feature are as follows:
 
 Lastly, the buttons at the bottom of the toolbar widget are *Start*, which executes the conversion and export, and *Exit*, which reverts the toolbar widget view to the *File Info*.
 
-#### <span style = color:blue> ***2.5.1.13 2D Map Generator*** </span>
-
-![2d Map Generator Icon](img/UpdatedUI/PointCloudEditor/icon-2D-map-generator.png)
-
-Creates a 2-dimensional map of the point cloud through projecting the specified section of the point cloud to an image file using a top-down perspective.
-
-![2d Map Generator Toolbar Widget](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator.png)
-
-The configuration options for the generator area are as follows:
-
-- **Max Height**: The highest point that will be captured in the map generation
-- **Min Height**: The lowest point that will be captured in the map generation
-- **Resolution (m./pixel)**: The number of meters per pixel of the 2 dimensional capture of the selected point cloud
-- **Show Height Bounds**: Visualises the highest and lowest points that will be captured using translucent planes
-
-![2d Map Generator Height Bound Visualisation](img/UpdatedUI/PointCloudEditor/menu-2D-map-generator-show-height-bounds.png)
-
-Additionally, the three options that are present at the bottom of the toolbar widget are: *Generate*, which executes the two-dimensional map generation, *Reset Config*, which resets the configuration settings to their default values and *Exit*, which reverts the toolbar widget view to the *File Info*.
-
-#### <span style = color:blue> ***2.5.1.14 Point Cloud Comparison*** </span>
+#### <span style = color:blue> ***2.5.1.19 Point Cloud Comparison*** </span>
 
 ![Point Cloud Comparison Icon](img/UpdatedUI/PointCloudEditor/icon-point-cloud-comparison.png)
 
@@ -313,13 +403,44 @@ As seen from the pictures above, the point clouds are compared using red, blue a
 
 > ***NOTE:*** *Point Cloud Comparison* is **ONLY** available for use if exactly **TWO** point clouds are selected.
 
-#### <span style = color:blue> ***2.5.1.15 BIM Manager*** </span>
+#### <span style = color:blue> ***2.5.1.20 BIM Manager*** </span>
 
 ![BIM Manager Icon](img/UpdatedUI/PointCloudEditor/icon-bim-manager.png)
 
->***WORK IN PROGRESS***
+>***WORK IN PROGRESS***  
 
-### **2.5.2 d.ASHPack Manager**
+In _Point Cloud Editor_ tab, click on _Scan to BIM Comparator_ button 
+Generate a dBIM file _(\*.dbim)_ from Revit _(\*.rvt)_
+> ***NOTE:*** Please note that if your **Revit file** is *updated* you will need to generate the **dBIM file** again.
+
+Select the Point Cloud that has been aligned with the BIM Model and click on the _Calculate_ button, the difference will then be shown on the screen
+
+#### <span style = color:blue> ***2.5.1.21 Object Segementation*** </span>
+
+From _SLAM Processor_, Under _Post Processing_, click on _Semantics Options_
+
+**Label Semantics** counts and gives labels to relative objects like trees, cars, buildings, etc. There may be an additonal option of _For 40_ generates and extended list of classes available. After generating _Point Cloud_ with _segmentation_ and exporting it to the _Point Cloud editor_, user can now click on _Scan2Semantics_ to show all identified categories. User can also click or unclick the _eye icon_ to visualise the selected categories.
+
+**Remove Dynamic Objects** removes humans and vehicles or any of sort of moving objects.  
+Choosing high for dynamic removal takes more time but produces a cleaner results.
+
+#### <span style = color:blue> ***2.5.1.22 AutoDesk*** </span>
+
+Under _Point Cloud Editor_ tab, to connect to _AutoDesk_, click on _file_ and navigate to _Connect Autodesk Platform Services_
+![AutoDesk](img/UpdatedUI/PointCloudEditor/autodesk-connect-to.png)
+
+You will be directed to a _Login Page_ on your web browser, sign in with your email and password. 
+![AutoDesk Login Page](img/UpdatedUI/PointCloudEditor/autodesk-login.png)
+
+Allow the authorization, and you will be directed to a page prompting you to go back to _d.ASH Xplorer_
+![AutoDesk Authorization](img/UpdatedUI/PointCloudEditor/autodesk-authorization.png)
+![AutoDesk Back to Xplorer](img/UpdatedUI/PointCloudEditor/autodesk-Xplorer-page.png)
+
+Navigate yourself back to _d.ASH Xplorer_ and back under _Point Cloud Editor_ tab, click on _File_ and you can now access _Autodesk Platform Services_
+![AutoDesk Connected](img/UpdatedUI/PointCloudEditor/autodesk-connected.png)
+
+
+### **2.5.2 d.ASHPack Manager(SLAM Processor)**
 *d.ASHPack Manager* mode provides an easy and convenient way to interface with a valid *d.ASHPack* system, including the downloading and processing of the files found within a *d.ASHPack*.
 
 The toolbar found on the workspace has also changed, wherein the mutable buttons (blue buttons) have changed in functionality. The blue buttons now have the following functionality (from left to right):
@@ -330,6 +451,29 @@ The toolbar found on the workspace has also changed, wherein the mutable buttons
 - Hide Photo360 Poses
 
 The functions offered by the d.ASHPack Manager (in a left-to-right, top-to-bottom format) are as follows:
+
+***
+- Generate Point Cloud
+- Export to Point Cloud Editor
+- Manual Loop Closure
+- Post-Process Point Cloud
+- Flip Post-Processed Point Cloud Color
+- Point Cloud Manipulation
+- Reset Manipulation
+- Resume Point Cloud Generation
+- Stop Point Cloud Generation
+***
+
+Under *File* tab at the top of the tool bar:
+***
+- Load d.ASHPack File
+
+- Export to Point Cloud Editor
+
+- Connect to d.ASHPack
+- d.ASHPack
+
+- Settings
 
 #### <span style = color:blue> ***2.5.2.1 Connect to a d.ASHPack*** </span>
 
@@ -482,6 +626,27 @@ Checking the box presents the user with two new options. These are as follows:
 *d.ASH Xplorer* Pro provides additional features that allow for more granular control over generated point clouds, providing the aforementioned features mentione above, along with a *Scan Manager* and *AutoMerge* feature.
 
 ### **2.6.1 Scan Manager**
+
+The functions offered by the *Scan Manager* (in a left-to-right, top-to-bottom format) are as follows:
+
+***
+- Load Scan Project
+- Export to Point Cloud Editor
+***
+
+Under the *File* Tab at the top tool bar:
+
+***
+- Load Scan Project
+
+- Download Scan from BLK360
+
+- Connect to Robot
+- Robot
+
+- Settings
+***
+
 *Scan Manager* allows users to manage third-party 3D scanners and integrate them with *d.ASH Xplorer*. As of *April 2023* only the *Leica BLK360* 3D scanner is supported.
 
 *Scan Manager* serves the following purposes:

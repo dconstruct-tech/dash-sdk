@@ -1,7 +1,46 @@
-# **1. d.ASH Nav**
-*d.ASH Nav* is *the* platform for autonomous control of robots. Being seamlessly integrated in the [d.ASH Fleet Management](https://www.dconstruct.co/products) workflow, you can enjoy easy planning and deployment of your robots for various use cases. *d.ASH Nav* allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
 
-Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](https://www.dconstruct.co/products), an internet connection is required. Should you require *d.ASH Nav* without an internet connection, please [contact us](mailto:hello@dconstruct.group) for more details.
+    .instructions-div {
+        display: flex; 
+        align-items: center; 
+        margin-right: 10px;
+    }
+
+    .instruction-circle {
+        width: 18px;
+        height: 18px;
+        background-color: #ff3300;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border: 1px solid #ff3300;
+    }
+
+    .table_contents {
+        color: black;
+        text-decoration: none; 
+    }
+
+    .table_contents:hover {
+        text-decoration: underline;
+    }
+
+    .instructions-div p {
+        font-size: 18px;
+    }
+</style>
+
+# **1. d.ASH Ops**
+*d.ASH Ops* is *the* platform for autonomous control of robots. Being seamlessly integrated in the [d.ASH Fleet Management](https://www.dconstruct.co/products) workflow, you can enjoy easy planning and deployment of your robots for various use cases. *d.ASH Ops* allows you to plot waypoints for autonomous navigation on maps, tracking and monitoring path planning, as well as overall monitoring of your robots.
+
+Because *d.ASH Ops* is fully integrated with [d.ASH Fleet Management system](https://www.dconstruct.co/products), an internet connection is required. Should you require *d.ASH Ops* without an internet connection, please [contact us](mailto:hello@dconstruct.group) for more details.
 
 ### **1.1 Minimum System Requirements**
 
@@ -18,7 +57,7 @@ Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](htt
 
 **Control Scheme**
 
-*d.ASH Nav*'s control scheme is as follows:
+*d.ASH Ops*'s control scheme is as follows:
 
 - Tilt/Camera: Hold down the *Right Mouse* Button and drag
 - Zoom: Use the mouse scroll wheel to zoom in/zoom out
@@ -28,7 +67,7 @@ Because *d.ASH Nav* is fully integrated with [d.ASH Fleet Management system](htt
 
 The general workflow to operate and run an autonomous waypoint mission is as follows:
 
-1. Login to *d.ASH Nav*
+1. Login to *d.ASH Ops*
 2. Create a new project, this allows you to save any routes created for use later on
 3. Load the map of your choice
 4. Create a new mission Route and plot the waypoints
@@ -36,11 +75,22 @@ The general workflow to operate and run an autonomous waypoint mission is as fol
 6. Set the robot's initial starting pose on the 3D map
 7. Start the robot with the route for your new mission
 
-## **2. Download**
-Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH Nav*.
+| Instructions |
+| ------- | 
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Login to *d.ASH Ops* with your given credentials.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div><font size='2'>This allows you to save any routes created for use later on.<br> ![Create New Project](img/dash-ops/create-new-project.png){style="width: 600px; margin-top: 10px;"} |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Load the map of your choice.</p></div><font size='2'>![Loading Map](img/dash-ops/loading-map.png)|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Create a new mission route and plot the waypoints.</p></div><font size='2'>Refer to [Section whatever](placeholder) for more details regarding creating a route.<br>![Create Route](img/dash-ops/create-route.png){style="width: 300px; margin-top: 10px;"} |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Connect to your desired robot in your robot fleet.</p></div><br>![Connecting To Robot](img/dash-ops/connecting-to-robot.png) |
+| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Set the robot's initial starting pose on the 3D map.</p></div><font size='2'>Refer to [Section whatever](placeholder) for more details on how to localise your robot.<br>![Relocalising Robot](img/dash-ops/relocalising-robot.png) |
+| <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Start the robot with the route for your new mission.</p></div>![Start Route](img/dash-ops/start-route)
 
-## **3. Project management**
-Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Nav* from anywhere in the world!
+## **2. Download**
+Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH Ops*.
+
+## **3. Project Management**
+Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Ops* from anywhere in the world!
+![Project Management](img/dash-ops/project-management)
 
 ### **3.1 Creating a project**
 To create a new project, simply click on the "New Project" button. You will then be prompted to enter a project name. After creating your new project, you will be redirected to the *Map Browser*.  If a project with the same name exists, a prompt will pop up asking you to choose another name for the project.
@@ -52,7 +102,7 @@ To load an existing project, select an existing project saved to the cloud using
 After creating/loading an existing a project, you will be taken to the *Map Selection Screen*. This screen allows you to select the map which relates to your deployment location. After selecting your map, you can begin to deploy your robots. Maps can be sorted by whether they are coloured or not.
 
 ## **4. Main Menu**
-This is the main hub of all things *d.ASH Nav*. Everything concerning deployment of your robots can be found here.
+This is the main hub of all things *d.ASH Ops*. Everything concerning deployment of your robots can be found here.
 
 ## **4.1 Top Menu**
 The top bar contains several crucial pieces of information, such as which part of the deployment process you are currently in and actions that you can perform in each part of deployment. In the *Main Menu*, options to manage your projects and browse through available maps are available. The arrows indicate the proper flow of how a deployment should be run.
@@ -62,7 +112,7 @@ The top bar contains several crucial pieces of information, such as which part o
 - ![Screenshot](img/icons/OpenProj_32_Black.png) *Open Project*: Load an existing project
 - ![Screenshot](img/icons/Save_32_Black.png) *Save*: Save any changes to the current project
 - ![Screenshot](img/icons/SaveAs_32_Black.png) *Save as*: Save any changes to the current project under a different file/project name
-- ![Screenshot](img/icons/Prefs_32_Black.png) *Preferences*: Edit *d.ASH Nav* settings
+- ![Screenshot](img/icons/Prefs_32_Black.png) *Preferences*: Edit *d.ASH Ops* settings
 
 ### **4.1.2 Map Browser**
 - ![Screenshot](img/icons/MapBrowser_32_Black.png) *Map Browser*: Browse through all maps saved to your account
@@ -149,7 +199,7 @@ Views from the cameras on the robots can be found here. To add a view, simply dr
 - *Sit/Stand*: [See above](#63-robot-actions)
 
 ## **8. Telegram Configuration**
-d.ASH Nav supports status notifications of the robots in your fleet via Telegram! Add [dconstruct-bot](https://t.me/dconstruct_bot)!
+d.ASH Ops supports status notifications of the robots in your fleet via Telegram! Add [dconstruct-bot](https://t.me/dconstruct_bot)!
 
 ### **8.1 Setup**
 1. Add the Telegram bot to the Telegram chat of your choice

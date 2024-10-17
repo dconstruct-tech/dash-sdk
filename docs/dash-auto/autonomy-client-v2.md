@@ -67,18 +67,10 @@ Because *d.ASH Ops* is fully integrated with [d.ASH Fleet Management system](htt
 
 The general workflow to operate and run an autonomous waypoint mission is as follows:
 
-1. Login to *d.ASH Ops*
-2. Create a new project, this allows you to save any routes created for use later on
-3. Load the map of your choice
-4. Create a new mission Route and plot the waypoints
-5. Connect to your desired robot in your robot fleet
-6. Set the robot's initial starting pose on the 3D map
-7. Start the robot with the route for your new mission
-
 | Instructions |
 | ------- | 
 | <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Login to *d.ASH Ops* with your given credentials.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div> ![Create New Project](img/dash-ops/new-project.png)<font size='2'>This allows you to save any routes created for use later on.<br> |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div> ![Create New Project](img/dash-ops/new-project.png)<font size='2'><br>This allows you to save any routes created for use later on.<br> |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Load the map of your choice.</p></div><font size='2'>![Loading Map](img/dash-ops/loading-map.png)|
 | <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Create a new mission route and plot the waypoints.</p></div><font size='2'>Refer to [Section 5](#5-plan-tab) for more details regarding creating a route.<br> |
 | <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Connect to your desired robot in your robot fleet.</p></div><br>![Connecting To Robot](img/dash-ops/connecting-robot.png) |
@@ -155,15 +147,16 @@ This menu contains all available actions for editing waypoints on a route. This 
 - ![Screenshot](img/icons/Finish_32_Black.png) *Finish*: Closes the menu.
 
 ### **5.3 Recording Waypoint**
-You can use a robot in your fleet to record a mission route. This requires manual teleoperation of the robot for the first recording, but you do not need to have manual control afterwards.
+You can use a robot in your fleet to record a mission route, which you can then assign as a mission to your robots.
 
 | Instructions |
 | ------- | 
-| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px";>Click 'Record Route'.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px";>Click 'Record Route' and name your route.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
 | <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Select the robot which you want to record the route with.<font size='2'>This allows you to save any routes created for use later on.<br> |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Set an appropriate interval between recorded waypoints.</p></div><font size='2'>We recommend setting a lower interval in tight areas and a higher interval in open areas.![Loading Map](img/dash-ops/loading-map.png)|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Start recording the route.</p></div> |
-| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">When you are finished recording, stop the recording of the route.</p></div><br> |
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Click 'Start' to start recording the route.</p></div> |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Through manual teleoperation, drive your robot along the route you want to be recorded.</p></div> |
+| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">When you are finished recording, click 'End'.</p></div><br><font size="2">Your recorded route will be saved in the route list. |
 
 ### **5.4 Robot List**
 Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.
@@ -186,6 +179,16 @@ Shows a list of all connected robots with several different pieces of informatio
 - ![Screenshot](img/icons/Auto_32_Black.png) / ![Screenshot](img/icons/Manual_32_Black.png) *Auto/Manual Control*: Manually change the operating mode of the selected robot.
 - *Sit/Stand Robot*: **SPOT ONLY**. Sit or stand Boston Dynamics Spot Robot.
 
+#### **6.3.1 Localisation**
+Before running a mission, you should make sure that your robot is localised to ensure that it follows the route accurately.
+
+| Instructions |
+| ------- | 
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Click 'Localise'.</p></div>![Localise](img/dash-ops/login-screen.png) |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Set the initial pose of your robot on the 3D map.<br> |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Relocalise your robot to make slight adjustments to it's position.</p></div>![Relocalise](img/dash-ops/loading-map.png)<br><font size='2'>Your LIDAR scan should match up with the map.|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">After localising, click 'Finish'.</p></div><font size="2">The localisation icon beside your robot should turn green. |
+
 ### **6.4 Assign Route to Robot**
 - *Drop Down*: Choose the route to assign.
 - *Tag Robot*: Choose the robot to assign the route to (i.e: tagging the robot)
@@ -198,7 +201,7 @@ Controls for stopping and resuming a mission/robot movement can be found here.
 - ![Screenshot](img/icons/Localise_32_Black.png) *Stop All*: Stops all robots in case of an emergency.
 - ![Screenshot](img/icons/Resume_32_Black.png) *Resume All*: Resumes all robots that are stopped.
 
-### **7.2 Live views**
+### **7.2 Live Views**
 Views from the cameras on the robots can be found here. To add a view, simply drag and drop a robot from the right side bar into an empty view slot and select which camera to view. There are three templates to follow.
 
 - ![Screenshot](img/icons/MapView_32_Black.png) *Map View*: Shows less of the view from the robot cameras to make space for viewing the Point Cloud Map.

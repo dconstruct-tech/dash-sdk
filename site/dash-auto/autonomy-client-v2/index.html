@@ -70,6 +70,44 @@
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+      <style>
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        .instructions-div {
+            display: flex; 
+            align-items: center; 
+            margin-right: 10px;
+        }
+    
+        .instruction-circle {
+            width: 18px;
+            height: 18px;
+            background-color: #ff3300;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid #ff3300;
+        }
+    
+        .table_contents {
+            color: black;
+            text-decoration: none; 
+        }
+    
+        .table_contents:hover {
+            text-decoration: underline;
+        }
+    
+        .instructions-div p {
+            font-size: 18px;
+        }
+    </style>
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -1592,21 +1630,43 @@
 <li>Zoom: Use the mouse scroll wheel to zoom in/zoom out</li>
 <li>Move Around: Use the <em>WASD</em> keys to pan/move around the world</li>
 </ul>
-<h3 id="13-quick-start"><strong>1.3 Quick Start</strong></h3>
+<h3 id="13-quick-start-guide"><strong>1.3 Quick Start Guide</strong></h3>
 <p>The general workflow to operate and run an autonomous waypoint mission is as follows:</p>
-<ol>
-<li>Login to <em>d.ASH Nav</em></li>
-<li>Create a new project, this allows you to save any routes created for use later on</li>
-<li>Load the map of your choice</li>
-<li>Create a new mission Route and plot the waypoints</li>
-<li>Connect to your desired robot in your robot fleet</li>
-<li>Set the robot's initial starting pose on the 3D map</li>
-<li>Start the robot with the route for your new mission</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Login to <i>d.ASH Ops</i> with your given credentials.</p></div><img alt="Login Screen" src="../img/dash-ops/login-screen.png" style="margin-top: 10px; width: 600px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div><img alt="Create New Project" src="../img/dash-ops/creating-new-project.png" style="margin-top: 10px; width: 600px;" /><br><font size="2">This allows you to save any routes created for use later on. </td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Load the map of your choice.</p></div><img alt="Load Map" src="../img/dash-ops/loading-map.png" style="width: 600px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Create a new mission route and plot or record the waypoints.</p></div><font size = "2">Refer to <a href="#5-plan-tab">Section 5</a> for more details regarding creating a route.</font></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Connect to your desired robot in your robot fleet.</p></div><img alt="Connect To Robot" src="../img/dash-ops/connecting-robot.png"></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Set the robot's initial starting pose on the 3D map.</p></div><font size="2">Refer to <a href="#whatever">Section whatever</a> for more details on how to localise your robot.</td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Start the robot with the route for your new mission.</p></div></td>
+</tr>
+</tbody>
+</table>
 <h2 id="2-download"><strong>2. Download</strong></h2>
 <p>Please <a href="mailto:hello@dconstruct.ai">contact us</a> for the link to download <em>d.ASH Nav</em>.</p>
-<h2 id="3-project-management"><strong>3. Project management</strong></h2>
+<h2 id="3-project-management"><strong>3. Project Management</strong></h2>
 <p>Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use <em>d.ASH Nav</em> from anywhere in the world!</p>
+<img alt="Opening Project" src="../img/dash-ops/open-folder.png" width="600">
 <h3 id="31-creating-a-project"><strong>3.1 Creating a project</strong></h3>
 <p>To create a new project, simply click on the "New Project" button. You will then be prompted to enter a project name. After creating your new project, you will be redirected to the <em>Map Browser</em>.  If a project with the same name exists, a prompt will pop up asking you to choose another name for the project.</p>
 <h3 id="32-loading-an-existing-project"><strong>3.2 Loading an existing project</strong></h3>
@@ -1653,7 +1713,7 @@
 <li><img alt="Screenshot" src="../img/icons/WPRec_32_Black.png" /> <em>Record Waypoints</em>: Records and plots waypoints as you manually navigate the robot in real life.</li>
 <li><img alt="Screenshot" src="../img/icons/AddRoute_32_Black.png" /> <em>Create Route</em>: Creates an empty route for you to edit and add waypoints later on.</li>
 </ul>
-<h3 id="52-waypoint"><strong>5.2 Waypoint</strong></h3>
+<h3 id="52-edit-waypoint"><strong>5.2 Edit Waypoint</strong></h3>
 <p>This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.</p>
 <ul>
 <li><img alt="Screenshot" src="../img/icons/WPAdd_32_Black.png" /> / <img alt="Screenshot" src="../img/icons/WPDel_32_Black.png" /> <em>Add/Delete Waypoint</em>: Add or remove a waypoint from a selected route</li>
@@ -1663,7 +1723,36 @@
 <li><img alt="Screenshot" src="../img/icons/ScanAll_32_Black.png" /> <em>Scan All</em>: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3<sup>rd</sup> party scanners.</li>
 <li><img alt="Screenshot" src="../img/icons/Finish_32_Black.png" /> <em>Finish</em>: Closes the menu.</li>
 </ul>
-<h3 id="53-robots"><strong>5.3 Robots</strong></h3>
+<h3 id="53-recording-waypoint"><strong>5.3 Recording Waypoint</strong></h3>
+<p></p>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Click 'Record Route' and name your route.</p></div><img alt="Login Screen" src="../img/dash-ops/login-screen.png" style="margin-top: 10px; width: 600px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Select the robot which you want to record the route with.</p></div><img alt="Create New Project" src="../img/dash-ops/creating-new-project.png" style="margin-top: 10px; width: 600px;" /> </td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Set an appropriate interval between recorded waypoints.</p></div><font size="2">We recommend setting a lower interval in tight areas and a higher interval in open areas.</font><br><img alt="Load Map" src="../img/dash-ops/loading-map.png" style="width: 600px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Click 'Start' to start recording the route.</p></div></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Through manual teleoperation, drive your robot along the route you want to be recorded.</p></div><img alt="Connect To Robot" src="../img/dash-ops/connecting-robot.png"></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">When you are finished recording, click 'End'.</p></div><font size="2">Your recorded route will be saved in the route list.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="54-robot-list"><strong>5.4 Robot List</strong></h3>
 <p>Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.</p>
 <h2 id="6-ready-tab"><strong>6. Ready Tab</strong></h2>
 <p>This tab contains all actions necessary to deploy your robot</p>
@@ -1681,6 +1770,36 @@
 <li><img alt="Screenshot" src="../img/icons/Auto_32_Black.png" /> / <img alt="Screenshot" src="../img/icons/Manual_32_Black.png" /> <em>Auto/Manual Control</em>: Manually change the operating mode of the selected robot.</li>
 <li><em>Sit/Stand Robot</em>: <strong>SPOT ONLY</strong>. Sit or stand Boston Dynamics Spot Robot.</li>
 </ul>
+<h3 id="631-localisation"><strong>6.3.1 Localisation</strong></h3>
+<p>Before running a mission, you should make sure that your robot is localised to ensure that it follows the route accurately.</p>
+<br>
+<table>
+<thead>
+<tr>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Select the robot that you want to localise and click 'Localise'.</p></div></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Select the robot which you want to record the route with.</p></div><img alt="Create New Project" src="../img/dash-ops/creating-new-project.png" style="margin-top: 10px; width: 600px;" /> </td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Set an appropriate interval between recorded waypoints.</p></div><font size="2">We recommend setting a lower interval in tight areas and a higher interval in open areas.</font><br><img alt="Load Map" src="../img/dash-ops/loading-map.png" style="width: 600px; margin-top: 10px;" /></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Click 'Start' to start recording the route.</p></div></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Through manual teleoperation, drive your robot along the route you want to be recorded.</p></div><img alt="Connect To Robot" src="../img/dash-ops/connecting-robot.png"></td>
+</tr>
+<tr>
+<td><div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">When you are finished recording, click 'End'.</p></div><font size="2">Your recorded route will be saved in the route list.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="64-assign-route-to-robot"><strong>6.4 Assign Route to Robot</strong></h3>
 <ul>
 <li><em>Drop Down</em>: Choose the route to assign.</li>

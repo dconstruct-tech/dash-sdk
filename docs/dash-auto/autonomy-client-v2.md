@@ -78,11 +78,11 @@ The general workflow to operate and run an autonomous waypoint mission is as fol
 | Instructions |
 | ------- | 
 | <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px;">Login to *d.ASH Ops* with your given credentials.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
-| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div><font size='2'>This allows you to save any routes created for use later on.<br> ![Create New Project](img/dash-ops/create-new-project.png){style="width: 600px; margin-top: 10px;"} |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Create a new project.</p></div> ![Create New Project](img/dash-ops/new-project.png)<font size='2'>This allows you to save any routes created for use later on.<br> |
 | <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Load the map of your choice.</p></div><font size='2'>![Loading Map](img/dash-ops/loading-map.png)|
-| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Create a new mission route and plot the waypoints.</p></div><font size='2'>Refer to [Section whatever](placeholder) for more details regarding creating a route.<br>![Create Route](img/dash-ops/create-route.png){style="width: 300px; margin-top: 10px;"} |
-| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Connect to your desired robot in your robot fleet.</p></div><br>![Connecting To Robot](img/dash-ops/connecting-to-robot.png) |
-| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Set the robot's initial starting pose on the 3D map.</p></div><font size='2'>Refer to [Section whatever](placeholder) for more details on how to localise your robot.<br>![Relocalising Robot](img/dash-ops/relocalising-robot.png) |
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Create a new mission route and plot the waypoints.</p></div><font size='2'>Refer to [Section 5](#5-plan-tab) for more details regarding creating a route.<br> |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">Connect to your desired robot in your robot fleet.</p></div><br>![Connecting To Robot](img/dash-ops/connecting-robot.png) |
+| <div class="instructions-div"><div class="instruction-circle">6</div><p style="margin: 0; margin-left: 5px;">Set the robot's initial starting pose on the 3D map.</p></div><font size='2'>Refer to [Section whatever](placeholder) for more details on how to localise your robot.<br>![Relocalising Robot](img/dash-ops/set-initial-pose.png) |
 | <div class="instructions-div"><div class="instruction-circle">7</div><p style="margin: 0; margin-left: 5px;">Start the robot with the route for your new mission.</p></div>![Start Route](img/dash-ops/start-route)
 
 ## **2. Download**
@@ -90,7 +90,7 @@ Please [contact us](mailto:hello@dconstruct.ai) for the link to download *d.ASH 
 
 ## **3. Project Management**
 Once you've logged in, you will be greeted by the project window. Here, you can manage all existing projects as well as create new projects. These projects are synced to the cloud, thus allowing you to manage your projects and use *d.ASH Ops* from anywhere in the world!
-![Project Management](img/dash-ops/project-management)
+![Project Management](img/dash-ops/open-folder.png)
 
 ### **3.1 Creating a project**
 To create a new project, simply click on the "New Project" button. You will then be prompted to enter a project name. After creating your new project, you will be redirected to the *Map Browser*.  If a project with the same name exists, a prompt will pop up asking you to choose another name for the project.
@@ -100,6 +100,7 @@ To load an existing project, select an existing project saved to the cloud using
 
 ### **3.3 Map Browser**
 After creating/loading an existing a project, you will be taken to the *Map Selection Screen*. This screen allows you to select the map which relates to your deployment location. After selecting your map, you can begin to deploy your robots. Maps can be sorted by whether they are coloured or not.
+![Loading Map](img/dash-ops/loading-map.png)
 
 ## **4. Main Menu**
 This is the main hub of all things *d.ASH Ops*. Everything concerning deployment of your robots can be found here.
@@ -141,8 +142,10 @@ Three actions are available for you to use:
 - ![Screenshot](img/icons/WPRec_32_Black.png) *Record Waypoints*: Records and plots waypoints as you manually navigate the robot in real life.
 - ![Screenshot](img/icons/AddRoute_32_Black.png) *Create Route*: Creates an empty route for you to edit and add waypoints later on.
 
-### **5.2 Waypoint**
+### **5.2 Edit Waypoint**
 This menu contains all available actions for editing waypoints on a route. This is greyed out by default and will only be accessible after selecting a route to edit. Several options are available to you.
+
+![Edit Waypoint](img/dash-ops/edit-route-menu.png)
 
 - ![Screenshot](img/icons/WPAdd_32_Black.png) / ![Screenshot](img/icons/WPDel_32_Black.png) *Add/Delete Waypoint*: Add or remove a waypoint from a selected route
 - ![Screenshot](img/icons/WPRepos_32_Black.png) *Reposition Waypoint*: Select a waypoint to shift the waypoint from one position to another. 
@@ -151,14 +154,25 @@ This menu contains all available actions for editing waypoints on a route. This 
 - ![Screenshot](img/icons/ScanAll_32_Black.png) *Scan All*: Marks all waypoint as a scan point. This will tell the robot to stop and perform a scan with 3rd party scanners.
 - ![Screenshot](img/icons/Finish_32_Black.png) *Finish*: Closes the menu.
 
-### **5.3 Robots**
+### **5.3 Recording Waypoint**
+You can use a robot in your fleet to record a mission route. This requires manual teleoperation of the robot for the first recording, but you do not need to have manual control afterwards.
+
+| Instructions |
+| ------- | 
+| <div class="instructions-div" id="step1"><div class="instruction-circle">1</div><p style="margin: 0; margin-left: 5px";>Click 'Record Route'.</p></div>![Login Screen](img/dash-ops/login-screen.png) |
+| <div class="instructions-div"><div class="instruction-circle">2</div><p style="margin: 0; margin-left: 5px;">Select the robot which you want to record the route with.<font size='2'>This allows you to save any routes created for use later on.<br> |
+| <div class="instructions-div"><div class="instruction-circle">3</div><p style="margin: 0; margin-left: 5px;">Set an appropriate interval between recorded waypoints.</p></div><font size='2'>We recommend setting a lower interval in tight areas and a higher interval in open areas.![Loading Map](img/dash-ops/loading-map.png)|
+| <div class="instructions-div"><div class="instruction-circle">4</div><p style="margin: 0; margin-left: 5px;">Start recording the route.</p></div> |
+| <div class="instructions-div"><div class="instruction-circle">5</div><p style="margin: 0; margin-left: 5px;">When you are finished recording, stop the recording of the route.</p></div><br> |
+
+### **5.4 Robot List**
 Clicking this button will show a popup containing a list of all available robots. Connect to your preferred robot from this popup menu.
 
 ## **6. Ready Tab**
-This tab contains all actions necessary to deploy your robot
+The **Ready Tab** contains all the actions needed for you to ready your robot for deployment.
 
 ### **6.1 E-Stop/Resume**
-Controls for stopping and resuming a mission/robot movement can be found here.
+The emergency stop and resume buttons allow you to force-stop all robots in your fleet in the event of an emergency.
 
 ### **6.2 List of robots**
 Shows a list of all connected robots with several different pieces of information tied to each robot.
